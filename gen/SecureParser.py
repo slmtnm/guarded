@@ -12,30 +12,31 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\27")
-        buf.write("O\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
+        buf.write("P\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
         buf.write("\t\b\4\t\t\t\4\n\t\n\3\2\3\2\3\2\5\2\30\n\2\3\2\3\2\3")
         buf.write("\2\3\2\3\2\3\2\3\2\3\2\3\2\7\2#\n\2\f\2\16\2&\13\2\3\3")
         buf.write("\3\3\3\3\3\4\3\4\3\4\7\4.\n\4\f\4\16\4\61\13\4\3\5\3\5")
-        buf.write("\5\5\65\n\5\3\6\3\6\3\6\3\6\3\7\3\7\3\7\7\7>\n\7\f\7\16")
-        buf.write("\7A\13\7\3\b\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\n\3\n\3\n\3")
-        buf.write("\n\3\n\2\3\2\13\2\4\6\b\n\f\16\20\22\2\5\3\2\16\17\3\2")
-        buf.write("\20\21\3\2\22\27\2L\2\27\3\2\2\2\4\'\3\2\2\2\6*\3\2\2")
-        buf.write("\2\b\64\3\2\2\2\n\66\3\2\2\2\f:\3\2\2\2\16B\3\2\2\2\20")
-        buf.write("F\3\2\2\2\22J\3\2\2\2\24\25\b\2\1\2\25\30\7\f\2\2\26\30")
-        buf.write("\7\r\2\2\27\24\3\2\2\2\27\26\3\2\2\2\30$\3\2\2\2\31\32")
-        buf.write("\f\7\2\2\32\33\t\2\2\2\33#\5\2\2\b\34\35\f\6\2\2\35\36")
-        buf.write("\t\3\2\2\36#\5\2\2\7\37 \f\5\2\2 !\t\4\2\2!#\5\2\2\6\"")
-        buf.write("\31\3\2\2\2\"\34\3\2\2\2\"\37\3\2\2\2#&\3\2\2\2$\"\3\2")
-        buf.write("\2\2$%\3\2\2\2%\3\3\2\2\2&$\3\2\2\2\'(\5\6\4\2()\7\2\2")
-        buf.write("\3)\5\3\2\2\2*/\5\b\5\2+,\7\n\2\2,.\5\b\5\2-+\3\2\2\2")
-        buf.write(".\61\3\2\2\2/-\3\2\2\2/\60\3\2\2\2\60\7\3\2\2\2\61/\3")
-        buf.write("\2\2\2\62\65\5\n\6\2\63\65\5\20\t\2\64\62\3\2\2\2\64\63")
-        buf.write("\3\2\2\2\65\t\3\2\2\2\66\67\7\r\2\2\678\7\3\2\289\5\2")
-        buf.write("\2\29\13\3\2\2\2:?\5\16\b\2;<\7\4\2\2<>\5\16\b\2=;\3\2")
-        buf.write("\2\2>A\3\2\2\2?=\3\2\2\2?@\3\2\2\2@\r\3\2\2\2A?\3\2\2")
-        buf.write("\2BC\5\2\2\2CD\7\5\2\2DE\5\b\5\2E\17\3\2\2\2FG\7\6\2\2")
-        buf.write("GH\5\f\7\2HI\7\7\2\2I\21\3\2\2\2JK\7\b\2\2KL\5\f\7\2L")
-        buf.write("M\7\t\2\2M\23\3\2\2\2\b\27\"$/\64?")
+        buf.write("\3\5\5\5\66\n\5\3\6\3\6\3\6\3\6\3\7\3\7\3\7\7\7?\n\7\f")
+        buf.write("\7\16\7B\13\7\3\b\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\n\3\n")
+        buf.write("\3\n\3\n\3\n\2\3\2\13\2\4\6\b\n\f\16\20\22\2\5\3\2\16")
+        buf.write("\17\3\2\20\21\3\2\22\27\2N\2\27\3\2\2\2\4\'\3\2\2\2\6")
+        buf.write("*\3\2\2\2\b\65\3\2\2\2\n\67\3\2\2\2\f;\3\2\2\2\16C\3\2")
+        buf.write("\2\2\20G\3\2\2\2\22K\3\2\2\2\24\25\b\2\1\2\25\30\7\f\2")
+        buf.write("\2\26\30\7\r\2\2\27\24\3\2\2\2\27\26\3\2\2\2\30$\3\2\2")
+        buf.write("\2\31\32\f\7\2\2\32\33\t\2\2\2\33#\5\2\2\b\34\35\f\6\2")
+        buf.write("\2\35\36\t\3\2\2\36#\5\2\2\7\37 \f\5\2\2 !\t\4\2\2!#\5")
+        buf.write("\2\2\6\"\31\3\2\2\2\"\34\3\2\2\2\"\37\3\2\2\2#&\3\2\2")
+        buf.write("\2$\"\3\2\2\2$%\3\2\2\2%\3\3\2\2\2&$\3\2\2\2\'(\5\6\4")
+        buf.write("\2()\7\2\2\3)\5\3\2\2\2*/\5\b\5\2+,\7\n\2\2,.\5\b\5\2")
+        buf.write("-+\3\2\2\2.\61\3\2\2\2/-\3\2\2\2/\60\3\2\2\2\60\7\3\2")
+        buf.write("\2\2\61/\3\2\2\2\62\66\5\n\6\2\63\66\5\20\t\2\64\66\5")
+        buf.write("\22\n\2\65\62\3\2\2\2\65\63\3\2\2\2\65\64\3\2\2\2\66\t")
+        buf.write("\3\2\2\2\678\7\r\2\289\7\3\2\29:\5\2\2\2:\13\3\2\2\2;")
+        buf.write("@\5\16\b\2<=\7\4\2\2=?\5\16\b\2><\3\2\2\2?B\3\2\2\2@>")
+        buf.write("\3\2\2\2@A\3\2\2\2A\r\3\2\2\2B@\3\2\2\2CD\5\2\2\2DE\7")
+        buf.write("\5\2\2EF\5\b\5\2F\17\3\2\2\2GH\7\6\2\2HI\5\f\7\2IJ\7\7")
+        buf.write("\2\2J\21\3\2\2\2KL\7\b\2\2LM\5\f\7\2MN\7\t\2\2N\23\3\2")
+        buf.write("\2\2\b\27\"$/\65@")
         return buf.getvalue()
 
 
@@ -528,6 +529,10 @@ class SecureParser ( Parser ):
             return self.getTypedRuleContext(SecureParser.IfOperatorContext,0)
 
 
+        def doOperator(self):
+            return self.getTypedRuleContext(SecureParser.DoOperatorContext,0)
+
+
         def getRuleIndex(self):
             return SecureParser.RULE_operator
 
@@ -553,7 +558,7 @@ class SecureParser ( Parser ):
         localctx = SecureParser.OperatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_operator)
         try:
-            self.state = 50
+            self.state = 51
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [SecureParser.ID]:
@@ -565,6 +570,11 @@ class SecureParser ( Parser ):
                 self.enterOuterAlt(localctx, 2)
                 self.state = 49
                 self.ifOperator()
+                pass
+            elif token in [SecureParser.T__5]:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 50
+                self.doOperator()
                 pass
             else:
                 raise NoViableAltException(self)
@@ -618,11 +628,11 @@ class SecureParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_assignOperator)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 52
-            self.match(SecureParser.ID)
             self.state = 53
-            self.match(SecureParser.T__0)
+            self.match(SecureParser.ID)
             self.state = 54
+            self.match(SecureParser.T__0)
+            self.state = 55
             self.expression(0)
         except RecognitionException as re:
             localctx.exception = re
@@ -674,17 +684,17 @@ class SecureParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 56
+            self.state = 57
             self.command()
-            self.state = 61
+            self.state = 62
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==SecureParser.T__1:
-                self.state = 57
-                self.match(SecureParser.T__1)
                 self.state = 58
+                self.match(SecureParser.T__1)
+                self.state = 59
                 self.command()
-                self.state = 63
+                self.state = 64
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -738,11 +748,11 @@ class SecureParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_command)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 64
-            self.expression(0)
             self.state = 65
-            self.match(SecureParser.T__2)
+            self.expression(0)
             self.state = 66
+            self.match(SecureParser.T__2)
+            self.state = 67
             self.operator()
         except RecognitionException as re:
             localctx.exception = re
@@ -790,11 +800,11 @@ class SecureParser ( Parser ):
         self.enterRule(localctx, 14, self.RULE_ifOperator)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 68
-            self.match(SecureParser.T__3)
             self.state = 69
-            self.commandList()
+            self.match(SecureParser.T__3)
             self.state = 70
+            self.commandList()
+            self.state = 71
             self.match(SecureParser.T__4)
         except RecognitionException as re:
             localctx.exception = re
@@ -842,11 +852,11 @@ class SecureParser ( Parser ):
         self.enterRule(localctx, 16, self.RULE_doOperator)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 72
-            self.match(SecureParser.T__5)
             self.state = 73
-            self.commandList()
+            self.match(SecureParser.T__5)
             self.state = 74
+            self.commandList()
+            self.state = 75
             self.match(SecureParser.T__6)
         except RecognitionException as re:
             localctx.exception = re

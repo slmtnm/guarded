@@ -50,7 +50,7 @@ class MySecureVisitor(SecureVisitor):
         op = children[1]
         if op == ctx.LT():
             self.stack.append(left < right)
-        if op == ctx.LE():
+        elif op == ctx.LE():
             self.stack.append(left <= right)
         elif op == ctx.GT():
             self.stack.append(left > right)
@@ -61,7 +61,7 @@ class MySecureVisitor(SecureVisitor):
         elif op == ctx.NEQ():
             self.stack.append(left != right)
         else:
-            raise Exception(f"Unexpected logical operation: {ctx.getText()}")
+            raise Exception(f"Unexpected logical operation: {op}")
 
     def visitAssignOperator(self, ctx: SecureParser.AssignOperatorContext):
         self.visitChildren(ctx)
@@ -84,26 +84,27 @@ class MySecureVisitor(SecureVisitor):
     def visitCommandList(self, ctx: SecureParser.CommandListContext):
         self.visitChildren(ctx)
 
-        true_commands = []
+        ctx.true_commands = []
         for child in ctx.getChildren():
             if isinstance(child, SecureParser.CommandContext) and child.fuse:
-                true_commands.append(child.command)
+                ctx.true_commands.append(child.command)
 
-        if len(true_commands) != 0:
-            rand = randint(0, len(true_commands) - 1)
-            self.visitOperator(true_commands[rand])
+    def visitIfOperator(self, ctx: SecureParser.IfOperatorContext):
+        self.visitChildren(ctx)
+
+        command_list = list(ctx.getChildren())[1]
+        if len(command_list.true_commands) != 0:
+            rand = randint(0, len(command_list.true_commands) - 1)
+            self.visitOperator(command_list.true_commands[rand])
 
     def visitDoOperator(self, ctx: SecureParser.DoOperatorContext):
         flag = True
         while flag:
             self.visitChildren(ctx)
-            true_commands = []
-            for child in ctx.getChildren():
-                if isinstance(child, SecureParser.CommandContext) and child.fuse:
-                    true_commands.append(child.command)
+            command_list = list(ctx.getChildren())[1]
 
-            if len(true_commands) != 0:
-                rand = randint(0, len(true_commands) - 1)
-                self.visitOperator(true_commands[rand])
+            if len(command_list.true_commands) != 0:
+                rand = randint(0, len(command_list.true_commands) - 1)
+                self.visitOperator(command_list.true_commands[rand])
             else:
                 flag = False

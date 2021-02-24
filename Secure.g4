@@ -3,7 +3,7 @@ grammar Secure;
 // Tokens
 SEP: ';';
 WHITESPACE: [ \r\n\t]+ -> skip;
-NUMBER : [1-9][0-9]*;
+NUMBER : [0-9]+;
 ID : [a-zA-Z_][a-zA-Z]*;
 MUL: '*';
 DIV: '/';
@@ -29,7 +29,7 @@ start : operatorList EOF;
 operatorList: operator (SEP operator)*;
 
 // Operators
-operator: assignOperator | ifOperator;
+operator: assignOperator | ifOperator | doOperator;
 
 // assign operator
 assignOperator: ID ':=' expression;
