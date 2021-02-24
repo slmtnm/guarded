@@ -36,7 +36,7 @@ assignOperator: ID ':=' expression;
 
 // secure commands
 commandList: command ('|' command)*;
-command: expression '->' operator;
+command: expression '->' operatorList;
 
 ifOperator: 'if' commandList 'fi';
 doOperator: 'do' commandList 'od';

@@ -34,7 +34,7 @@ def serializedATN():
         buf.write("\3\2\2\2\678\7\r\2\289\7\3\2\29:\5\2\2\2:\13\3\2\2\2;")
         buf.write("@\5\16\b\2<=\7\4\2\2=?\5\16\b\2><\3\2\2\2?B\3\2\2\2@>")
         buf.write("\3\2\2\2@A\3\2\2\2A\r\3\2\2\2B@\3\2\2\2CD\5\2\2\2DE\7")
-        buf.write("\5\2\2EF\5\b\5\2F\17\3\2\2\2GH\7\6\2\2HI\5\f\7\2IJ\7\7")
+        buf.write("\5\2\2EF\5\6\4\2F\17\3\2\2\2GH\7\6\2\2HI\5\f\7\2IJ\7\7")
         buf.write("\2\2J\21\3\2\2\2KL\7\b\2\2LM\5\f\7\2MN\7\t\2\2N\23\3\2")
         buf.write("\2\2\b\27\"$/\65@")
         return buf.getvalue()
@@ -718,8 +718,8 @@ class SecureParser ( Parser ):
             return self.getTypedRuleContext(SecureParser.ExpressionContext,0)
 
 
-        def operator(self):
-            return self.getTypedRuleContext(SecureParser.OperatorContext,0)
+        def operatorList(self):
+            return self.getTypedRuleContext(SecureParser.OperatorListContext,0)
 
 
         def getRuleIndex(self):
@@ -753,7 +753,7 @@ class SecureParser ( Parser ):
             self.state = 66
             self.match(SecureParser.T__2)
             self.state = 67
-            self.operator()
+            self.operatorList()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)

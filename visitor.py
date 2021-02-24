@@ -95,7 +95,7 @@ class MySecureVisitor(SecureVisitor):
         command_list = list(ctx.getChildren())[1]
         if len(command_list.true_commands) != 0:
             rand = randint(0, len(command_list.true_commands) - 1)
-            self.visitOperator(command_list.true_commands[rand])
+            self.visitOperatorList(command_list.true_commands[rand])
 
     def visitDoOperator(self, ctx: SecureParser.DoOperatorContext):
         flag = True
@@ -105,6 +105,6 @@ class MySecureVisitor(SecureVisitor):
 
             if len(command_list.true_commands) != 0:
                 rand = randint(0, len(command_list.true_commands) - 1)
-                self.visitOperator(command_list.true_commands[rand])
+                self.visitOperatorList(command_list.true_commands[rand])
             else:
                 flag = False
