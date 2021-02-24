@@ -8,23 +8,8 @@ import "github.com/antlr/antlr4/runtime/Go/antlr"
 type SecureListener interface {
 	antlr.ParseTreeListener
 
-	// EnterStart is called when entering the start production.
-	EnterStart(c *StartContext)
-
-	// EnterOperator is called when entering the operator production.
-	EnterOperator(c *OperatorContext)
-
-	// EnterAssignOperator is called when entering the assignOperator production.
-	EnterAssignOperator(c *AssignOperatorContext)
-
-	// EnterIfOperator is called when entering the ifOperator production.
-	EnterIfOperator(c *IfOperatorContext)
-
-	// EnterCommandList is called when entering the commandList production.
-	EnterCommandList(c *CommandListContext)
-
-	// EnterCommand is called when entering the command production.
-	EnterCommand(c *CommandContext)
+	// EnterIdentifier is called when entering the Identifier production.
+	EnterIdentifier(c *IdentifierContext)
 
 	// EnterNumber is called when entering the Number production.
 	EnterNumber(c *NumberContext)
@@ -38,23 +23,29 @@ type SecureListener interface {
 	// EnterLogic is called when entering the Logic production.
 	EnterLogic(c *LogicContext)
 
-	// ExitStart is called when exiting the start production.
-	ExitStart(c *StartContext)
+	// EnterStart is called when entering the start production.
+	EnterStart(c *StartContext)
 
-	// ExitOperator is called when exiting the operator production.
-	ExitOperator(c *OperatorContext)
+	// EnterOperatorList is called when entering the operatorList production.
+	EnterOperatorList(c *OperatorListContext)
 
-	// ExitAssignOperator is called when exiting the assignOperator production.
-	ExitAssignOperator(c *AssignOperatorContext)
+	// EnterOperator is called when entering the operator production.
+	EnterOperator(c *OperatorContext)
 
-	// ExitIfOperator is called when exiting the ifOperator production.
-	ExitIfOperator(c *IfOperatorContext)
+	// EnterAssignOperator is called when entering the assignOperator production.
+	EnterAssignOperator(c *AssignOperatorContext)
 
-	// ExitCommandList is called when exiting the commandList production.
-	ExitCommandList(c *CommandListContext)
+	// EnterCommandList is called when entering the commandList production.
+	EnterCommandList(c *CommandListContext)
 
-	// ExitCommand is called when exiting the command production.
-	ExitCommand(c *CommandContext)
+	// EnterCommand is called when entering the command production.
+	EnterCommand(c *CommandContext)
+
+	// EnterIfOperator is called when entering the ifOperator production.
+	EnterIfOperator(c *IfOperatorContext)
+
+	// ExitIdentifier is called when exiting the Identifier production.
+	ExitIdentifier(c *IdentifierContext)
 
 	// ExitNumber is called when exiting the Number production.
 	ExitNumber(c *NumberContext)
@@ -67,4 +58,25 @@ type SecureListener interface {
 
 	// ExitLogic is called when exiting the Logic production.
 	ExitLogic(c *LogicContext)
+
+	// ExitStart is called when exiting the start production.
+	ExitStart(c *StartContext)
+
+	// ExitOperatorList is called when exiting the operatorList production.
+	ExitOperatorList(c *OperatorListContext)
+
+	// ExitOperator is called when exiting the operator production.
+	ExitOperator(c *OperatorContext)
+
+	// ExitAssignOperator is called when exiting the assignOperator production.
+	ExitAssignOperator(c *AssignOperatorContext)
+
+	// ExitCommandList is called when exiting the commandList production.
+	ExitCommandList(c *CommandListContext)
+
+	// ExitCommand is called when exiting the command production.
+	ExitCommand(c *CommandContext)
+
+	// ExitIfOperator is called when exiting the ifOperator production.
+	ExitIfOperator(c *IfOperatorContext)
 }

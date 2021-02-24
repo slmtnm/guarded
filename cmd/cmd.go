@@ -32,12 +32,11 @@ var rootCmd = &cobra.Command{
 		is := antlr.NewInputStream(string(content))
 		lexer := parser.NewSecureLexer(is)
 
-		listener := &secureListener{}
 		stream := antlr.NewCommonTokenStream(lexer, antlr.TokenDefaultChannel)
 		p := parser.NewSecureParser(stream)
-		antlr.ParseTreeWalkerDefault.Walk(listener, p.Start())
+		antlr.ParseTreeWalkerDefault.Walk(&Listener, p.Start())
 
-		fmt.Println("Variables:", Vars)
+		fmt.Println("Variables:", Listener.vars)
 	},
 }
 

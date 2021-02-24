@@ -3,118 +3,27 @@ package cmd
 import (
 	"fmt"
 	"log"
-	"strconv"
 
 	"github.com/slmtnm/secure/parser"
 
 	"github.com/antlr/antlr4/runtime/Go/antlr"
 )
 
-// Vars is a map containing all variable that defined
-// with assign operator
-var Vars map[string]float64 = make(map[string]float64)
+// Listener is main secureListener instance
+var Listener secureListener
+
+func init() {
+	newStack := Stack(make([]interface{}, 0))
+
+	Listener.vars = make(map[string]interface{})
+	Listener.stack = &newStack
+}
 
 type secureListener struct {
 	*parser.BaseSecureListener
-	stack []float64
-}
 
-func (l *secureListener) push(i float64) {
-	l.stack = append(l.stack, i)
-}
-
-func (l *secureListener) pop() float64 {
-	if len(l.stack) < 1 {
-		panic("stack is empty unable to pop")
-	}
-
-	// Get the last value from the stack.
-	result := l.stack[len(l.stack)-1]
-
-	// Remove the last element from the stack.
-	l.stack = l.stack[:len(l.stack)-1]
-
-	return result
-}
-
-func (l *secureListener) ExitMulDiv(c *parser.MulDivContext) {
-	right, left := l.pop(), l.pop()
-
-	switch c.GetOp().GetTokenType() {
-	case parser.SecureParserMUL:
-		l.push(left * right)
-	case parser.SecureParserDIV:
-		l.push(left / right)
-	default:
-		panic(fmt.Sprintf("unexpected op: %s", c.GetOp().GetText()))
-	}
-}
-
-func (l *secureListener) ExitAddSub(c *parser.AddSubContext) {
-	right, left := l.pop(), l.pop()
-
-	switch c.GetOp().GetTokenType() {
-	case parser.SecureParserADD:
-		l.push(left + right)
-	case parser.SecureParserSUB:
-		l.push(left - right)
-	default:
-		panic(fmt.Sprintf("unexpected op: %s", c.GetOp().GetText()))
-	}
-}
-
-func (l *secureListener) ExitNumber(c *parser.NumberContext) {
-	i, err := strconv.ParseFloat(c.GetText(), 64)
-	if err != nil {
-		panic(err.Error())
-	}
-
-	l.push(i)
-}
-
-func (l *secureListener) ExitLogic(c *parser.LogicContext) {
-	right, left := l.pop(), l.pop()
-
-	switch c.GetOp().GetTokenType() {
-	case parser.SecureParserLT:
-		if left < right {
-			l.push(1)
-		} else {
-			l.push(0)
-		}
-	case parser.SecureParserLE:
-		if left <= right {
-			l.push(1)
-		} else {
-			l.push(0)
-		}
-	case parser.SecureParserGT:
-		if left > right {
-			l.push(1)
-		} else {
-			l.push(0)
-		}
-	case parser.SecureParserGE:
-		if left >= right {
-			l.push(1)
-		} else {
-			l.push(0)
-		}
-	case parser.SecureParserEQ:
-		if left == right {
-			l.push(1)
-		} else {
-			l.push(0)
-		}
-	case parser.SecureParserNEQ:
-		if left != right {
-			l.push(1)
-		} else {
-			l.push(0)
-		}
-	default:
-		panic(fmt.Sprintf("unexpected op: %s", c.GetOp().GetText()))
-	}
+	stack *Stack
+	vars  map[string]interface{}
 }
 
 func (l *secureListener) ExitAssignOperator(c *parser.AssignOperatorContext) {
@@ -130,9 +39,9 @@ func (l *secureListener) ExitAssignOperator(c *parser.AssignOperatorContext) {
 	}
 
 	varName := name.GetText()
-	varValue := l.pop()
+	varValue := l.stack.pop()
 
-	Vars[varName] = varValue
+	l.vars[varName] = varValue
 }
 
 func (l *secureListener) ExitIfOperator(c *parser.IfOperatorContext) {
@@ -160,6 +69,4 @@ func (l *secureListener) ExitIfOperator(c *parser.IfOperatorContext) {
 		fmt.Printf(" Statement: %v\n", commandChildren[2].
 			GetPayload().(*antlr.BaseParserRuleContext).GetText())
 	}
-
-	fmt.Println(commands[1].GetPayload().(*antlr.CommonToken).GetText())
 }

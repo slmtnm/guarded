@@ -16,16 +16,26 @@ LE: '<=';
 EQ: '==';
 NEQ: '!=';
 
-// Rules
-start : operator (SEP operator)* EOF;
+expression
+   : expression op=('*'|'/') expression                     # MulDiv
+   | expression op=('+'|'-') expression                     # AddSub
+   | expression op=('>'|'<'|'>='|'<='|'=='|'!=') expression # Logic
+   | NUMBER                                                 # Number
+   | ID                                                     # Identifier
+   ;
+
+// Program is an operator or multiple operators
+start : operatorList EOF;
+operatorList: operator (SEP operator)*;
+
+// Operators
 operator: assignOperator | ifOperator;
+
+// assign operator
 assignOperator: ID ':=' expression;
-ifOperator: 'if' commandList 'fi';
+
+// secure commands
 commandList: command ('|' command)*;
 command: expression '->' operator;
-expression
-   : expression op=('*'|'/') expression # MulDiv
-   | expression op=('+'|'-') expression # AddSub
-   | expression op=('>'|'<'|'>='|'<='|'=='|'!=') expression # Logic
-   | NUMBER                             # Number
-   ;
+
+ifOperator: 'if' commandList 'fi';
