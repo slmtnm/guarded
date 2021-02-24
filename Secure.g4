@@ -39,3 +39,4 @@ commandList: command ('|' command)*;
 command: expression '->' operator;
 
 ifOperator: 'if' commandList 'fi';
+doOperator: 'do' commandList 'od';
