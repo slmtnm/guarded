@@ -38,8 +38,8 @@ if
 
         if 
             d >= 0 -> dSign := d |
-            d < 0  -> dSign := d - 2 * d
-        fi
+            d < 0  -> dSign := -d
+        fi;
 
         newtonCnt := 20;
         sqrtd := 10;
@@ -47,7 +47,7 @@ if
             newtonCnt != 0 ->
                 sqrtd := 1 / 2 * sqrtd + dSign / 2 / sqrtd;
                 newtonCnt := newtonCnt - 1
-        od
+        od;
 
         sqrtdDiv2a := sqrtd / 2 / a;
               
@@ -56,7 +56,7 @@ if
                 root1re := root1re - sqrtdDiv2a;
                 root2re := root2re + sqrtdDiv2a |
             d < 0 ->
-                root1im := sqrtdDiv2a - 2 * sqrtdDiv2a;
+                root1im := -sqrtdDiv2a;
                 root2im := sqrtdDiv2a |
             d == 0 ->
                 rootNum := 1
