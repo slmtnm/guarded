@@ -52,11 +52,13 @@ if
         sqrtdDiv2a := sqrtd / 2 / a;
               
         if
-            d >= 0 -> 
+            d > 0 -> 
                 root1re := root1re - sqrtdDiv2a;
                 root2re := root2re + sqrtdDiv2a |
             d < 0 ->
                 root1im := sqrtdDiv2a - 2 * sqrtdDiv2a;
-                root2im := sqrtdDiv2a
+                root2im := sqrtdDiv2a |
+            d == 0 ->
+                rootNum := 1
         fi
 fi
