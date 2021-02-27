@@ -4,7 +4,7 @@ grammar Secure;
 SEP: ';';
 WHITESPACE: [ \r\n\t]+ -> skip;
 NUMBER : [0-9]+;
-ID : [a-zA-Z_][a-zA-Z]*;
+ID : [a-zA-Z_][0-9a-zA-Z_]*;
 MUL: '*';
 DIV: '/';
 ADD: '+';
