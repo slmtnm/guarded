@@ -29,6 +29,11 @@ class SecureVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SecureParser#UnarySub.
+    def visitUnarySub(self, ctx:SecureParser.UnarySubContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SecureParser#Logic.
     def visitLogic(self, ctx:SecureParser.LogicContext):
         return self.visitChildren(ctx)

@@ -17,7 +17,8 @@ EQ: '==';
 NEQ: '!=';
 
 expression
-   : expression op=('*'|'/') expression                     # MulDiv
+   : SUB expression                                         # UnarySub
+   | expression op=('*'|'/') expression                     # MulDiv
    | expression op=('+'|'-') expression                     # AddSub
    | expression op=('>'|'<'|'>='|'<='|'=='|'!=') expression # Logic
    | NUMBER                                                 # Number

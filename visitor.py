@@ -16,6 +16,11 @@ class MySecureVisitor(SecureVisitor):
         value = self.vars[ctx.getText()]
         self.stack.append(value)
 
+    def visitUnarySub(self, ctx: SecureParser.UnarySubContext):
+        self.visitChildren(ctx)
+        value = self.stack.pop()
+        self.stack.append(-value)
+
     def visitAddSub(self, ctx: SecureParser.AddSubContext):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())

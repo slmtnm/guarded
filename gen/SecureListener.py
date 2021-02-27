@@ -44,6 +44,15 @@ class SecureListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SecureParser#UnarySub.
+    def enterUnarySub(self, ctx:SecureParser.UnarySubContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#UnarySub.
+    def exitUnarySub(self, ctx:SecureParser.UnarySubContext):
+        pass
+
+
     # Enter a parse tree produced by SecureParser#Logic.
     def enterLogic(self, ctx:SecureParser.LogicContext):
         pass
