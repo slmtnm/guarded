@@ -3,4 +3,4 @@
 ## How to run:
 `pip install -r requirements.txt`
 
-`python main.py main.secure`
+`python main.py examples/equclid.secure`
