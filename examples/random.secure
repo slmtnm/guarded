@@ -1,0 +1,9 @@
+a := 0;
+
+if
+    True -> a := a + 1 |
+    True -> a := a + 2 |
+    True -> a := a + 3 |
+    True -> a := a + 4 |
+    True -> a := a + 5
+fi

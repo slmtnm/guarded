@@ -101,9 +101,20 @@ class MySecureVisitor(SecureVisitor):
 
     def visitCommand(self, ctx: SecureParser.CommandContext):
         children = list(ctx.getChildren())
-        if not isinstance(children[0], SecureParser.LogicContext):
+        if isinstance(children[0], SecureParser.LogicContext):
+            self.visitLogic(children[0])
+        elif isinstance(children[0], SecureParser.TrueContext):
+            self.visitTrue(children[0])
+        elif isinstance(children[0], SecureParser.FalseContext):
+            self.visitFalse(children[0])
+        elif isinstance(children[0], SecureParser.AndContext):
+            self.visitAnd(children[0])
+        elif isinstance(children[0], SecureParser.OrContext):
+            self.visitOr(children[0])
+        elif isinstance(children[0], SecureParser.NegateContext):
+            self.visitNegate(children[0])
+        else:
             raise Exception(f"Fuse of secure command must be valid logical expression")
-        self.visitLogic(children[0])
 
         ctx.fuse = self.stack.pop()
         ctx.command = children[2]
