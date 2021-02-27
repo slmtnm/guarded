@@ -1,0 +1,62 @@
+a := 1;
+b := 2;
+c := 1;
+
+rootNum := 3;
+root1re := 0;
+root1im := 0;
+root2re := 0;
+root2im := 0;
+d := 10;
+dSign := d;
+newtonCnt := 10;
+sqrtd := 10;
+sqrtdDiv2a := 10;
+
+
+if
+    a == 0 ->
+        if
+            b == 0 ->
+                if
+                    c == 0 -> rootNum := -1 |
+                    c != 0 -> rootNum := 0
+                fi |
+            b != 0 ->
+                rootNum := 1;
+                root1_re := -c / b;
+                root1_im := 0;
+        fi |
+    a != 0 ->
+        d := b * b - 4 * a * c;
+        
+        root1re := b * -1 / 2 / a;
+        root2re := b * -1 / 2 / a;
+        root1im := 0;
+        root2im := 0;
+        rootNum := 2;
+
+        if 
+            d >= 0 -> dSign := d |
+            d < 0  -> dSign := d * -1
+        fi
+
+        newtonCnt := 20;
+        sqrtd := 10;
+        do
+            newtonCnt != 0 ->
+                sqrtd := 1 / 2 * sqrtd + dSign / 2 / sqrtd;
+                newtonCnt := newtonCnt - 1;
+        od
+
+        sqrtdDiv2a := sqrtd / 2 / a;
+              
+        if
+            d >= 0 -> 
+                root1re := root1re - sqrtdDiv2a;
+                root2re := root2re + sqrtdDiv2a; |
+            d < 0 ->
+                root1im := sqrtdDiv2a * -1;
+                root2im := sqrtdDiv2a;
+        fi
+fi
