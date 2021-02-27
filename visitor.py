@@ -16,10 +16,32 @@ class MySecureVisitor(SecureVisitor):
         value = self.vars[ctx.getText()]
         self.stack.append(value)
 
+    def visitTrue(self, ctx: SecureParser.TrueContext):
+        self.stack.append(True)
+
+    def visitFalse(self, ctx: SecureParser.FalseContext):
+        self.stack.append(False)
+
     def visitUnarySub(self, ctx: SecureParser.UnarySubContext):
         self.visitChildren(ctx)
         value = self.stack.pop()
         self.stack.append(-value)
+
+    def visitNegate(self, ctx: SecureParser.NegateContext):
+        self.visitChildren(ctx)
+        value = self.stack.pop()
+        self.stack.append(not value)
+
+    def visitAnd(self, ctx: SecureParser.AndContext):
+        self.visitChildren(ctx)
+        right, left = self.stack.pop(), self.stack.pop()
+        self.stack.append(left and right)
+
+    def visitOr(self, ctx: SecureParser.OrContext):
+        self.visitChildren(ctx)
+        right, left = self.stack.pop(), self.stack.pop()
+        print(left, right)
+        self.stack.append(left or right)
 
     def visitAddSub(self, ctx: SecureParser.AddSubContext):
         self.visitChildren(ctx)

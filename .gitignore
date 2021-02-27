@@ -1,4 +1,5 @@
 parser
 secure
 .idea
+venv
 **/__pycache__

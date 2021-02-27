@@ -4,6 +4,8 @@ grammar Secure;
 SEP: ';';
 WHITESPACE: [ \r\n\t]+ -> skip;
 NUMBER : [0-9]+;
+TRUE: 'True';
+FALSE: 'False';
 ID : [a-zA-Z_][0-9a-zA-Z_]*;
 MUL: '*';
 DIV: '/';
@@ -15,15 +17,23 @@ GE: '>=';
 LE: '<=';
 EQ: '==';
 NEQ: '!=';
+AND: '&&';
+OR: '||';
+NEG: '!';
 
 expression
    : SUB expression                                         # UnarySub
+   | NEG expression                                         # Negate
    | '(' expression ')'                                     # Brackets
    | expression op=('*'|'/') expression                     # MulDiv
    | expression op=('+'|'-') expression                     # AddSub
    | expression op=('>'|'<'|'>='|'<='|'=='|'!=') expression # Logic
+   | expression AND expression                              # And
+   | expression OR expression                               # Or
    | NUMBER                                                 # Number
    | ID                                                     # Identifier
+   | TRUE                                                   # True
+   | FALSE                                                  # False
    ;
 
 // Program is an operator or multiple operators
