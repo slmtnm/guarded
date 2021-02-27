@@ -17,6 +17,15 @@ class SecureListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SecureParser#Brackets.
+    def enterBrackets(self, ctx:SecureParser.BracketsContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#Brackets.
+    def exitBrackets(self, ctx:SecureParser.BracketsContext):
+        pass
+
+
     # Enter a parse tree produced by SecureParser#Number.
     def enterNumber(self, ctx:SecureParser.NumberContext):
         pass

@@ -14,6 +14,11 @@ class SecureVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SecureParser#Brackets.
+    def visitBrackets(self, ctx:SecureParser.BracketsContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SecureParser#Number.
     def visitNumber(self, ctx:SecureParser.NumberContext):
         return self.visitChildren(ctx)

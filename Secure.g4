@@ -18,6 +18,7 @@ NEQ: '!=';
 
 expression
    : SUB expression                                         # UnarySub
+   | '(' expression ')'                                     # Brackets
    | expression op=('*'|'/') expression                     # MulDiv
    | expression op=('+'|'-') expression                     # AddSub
    | expression op=('>'|'<'|'>='|'<='|'=='|'!=') expression # Logic
