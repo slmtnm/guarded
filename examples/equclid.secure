@@ -4,6 +4,6 @@ do
     a != b ->
         if
             a > b -> a := a - b |
-            a <= b -> b := b - a
+            a < b -> b := b - a
         fi
 od

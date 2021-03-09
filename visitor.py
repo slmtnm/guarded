@@ -69,7 +69,7 @@ class MySecureVisitor(SecureVisitor):
         else:
             raise Exception(f"Unexpected operation: {ctx.getText()}")
 
-    def visitLogic(self, ctx:SecureParser.LogicContext):
+    def visitLogic(self, ctx: SecureParser.LogicContext):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())
 
