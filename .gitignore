@@ -1,5 +1,6 @@
 parser
 secure
 .idea
+.antlr
 venv
 **/__pycache__

@@ -9,23 +9,13 @@ else:
 
 class SecureVisitor(ParseTreeVisitor):
 
-    # Visit a parse tree produced by SecureParser#Identifier.
-    def visitIdentifier(self, ctx:SecureParser.IdentifierContext):
+    # Visit a parse tree produced by SecureParser#Impl.
+    def visitImpl(self, ctx:SecureParser.ImplContext):
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by SecureParser#Or.
     def visitOr(self, ctx:SecureParser.OrContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by SecureParser#Brackets.
-    def visitBrackets(self, ctx:SecureParser.BracketsContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by SecureParser#Number.
-    def visitNumber(self, ctx:SecureParser.NumberContext):
         return self.visitChildren(ctx)
 
 
@@ -39,11 +29,6 @@ class SecureVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by SecureParser#And.
-    def visitAnd(self, ctx:SecureParser.AndContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by SecureParser#UnarySub.
     def visitUnarySub(self, ctx:SecureParser.UnarySubContext):
         return self.visitChildren(ctx)
@@ -54,13 +39,38 @@ class SecureVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by SecureParser#Negate.
-    def visitNegate(self, ctx:SecureParser.NegateContext):
+    # Visit a parse tree produced by SecureParser#False.
+    def visitFalse(self, ctx:SecureParser.FalseContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by SecureParser#False.
-    def visitFalse(self, ctx:SecureParser.FalseContext):
+    # Visit a parse tree produced by SecureParser#Identifier.
+    def visitIdentifier(self, ctx:SecureParser.IdentifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SecureParser#Brackets.
+    def visitBrackets(self, ctx:SecureParser.BracketsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SecureParser#Number.
+    def visitNumber(self, ctx:SecureParser.NumberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SecureParser#And.
+    def visitAnd(self, ctx:SecureParser.AndContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SecureParser#Equiv.
+    def visitEquiv(self, ctx:SecureParser.EquivContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SecureParser#Negate.
+    def visitNegate(self, ctx:SecureParser.NegateContext):
         return self.visitChildren(ctx)
 
 
@@ -106,6 +116,11 @@ class SecureVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SecureParser#doOperator.
     def visitDoOperator(self, ctx:SecureParser.DoOperatorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SecureParser#postCondition.
+    def visitPostCondition(self, ctx:SecureParser.PostConditionContext):
         return self.visitChildren(ctx)
 
 

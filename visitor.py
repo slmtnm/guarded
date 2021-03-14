@@ -43,6 +43,16 @@ class MySecureVisitor(SecureVisitor):
         print(left, right)
         self.stack.append(left or right)
 
+    def visitImpl(self, ctx: SecureParser.ImplContext):
+        self.visitChildren(ctx)
+        right, left = self.stack.pop(), self.stack.pop()
+        return right or not left
+
+    def visitEquiv(self, ctx: SecureParser.EquivContext):
+        self.visitChildren(ctx)
+        right, left = self.stack.pop(), self.stack.pop()
+        return bool(left) == bool(right)
+
     def visitAddSub(self, ctx: SecureParser.AddSubContext):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())
@@ -136,13 +146,16 @@ class MySecureVisitor(SecureVisitor):
             self.visitOperatorList(command_list.true_commands[rand])
 
     def visitDoOperator(self, ctx: SecureParser.DoOperatorContext):
-        flag = True
-        while flag:
+        while True:
+            # recalc all fuses on each iteration
             self.visitChildren(ctx)
-            command_list = list(ctx.getChildren())[1]
 
+            command_list = list(ctx.getChildren())[1]
             if len(command_list.true_commands) != 0:
                 rand = randint(0, len(command_list.true_commands) - 1)
                 self.visitOperatorList(command_list.true_commands[rand])
             else:
-                flag = False
+                break
+
+    def visitStart(self, ctx: SecureParser.StartContext):
+        self.visitChildren(ctx) # execute program

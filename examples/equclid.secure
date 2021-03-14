@@ -7,3 +7,4 @@ do
             a < b -> b := b - a
         fi
 od
+[a == b]

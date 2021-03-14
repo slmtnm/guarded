@@ -8,12 +8,12 @@ else:
 # This class defines a complete listener for a parse tree produced by SecureParser.
 class SecureListener(ParseTreeListener):
 
-    # Enter a parse tree produced by SecureParser#Identifier.
-    def enterIdentifier(self, ctx:SecureParser.IdentifierContext):
+    # Enter a parse tree produced by SecureParser#Impl.
+    def enterImpl(self, ctx:SecureParser.ImplContext):
         pass
 
-    # Exit a parse tree produced by SecureParser#Identifier.
-    def exitIdentifier(self, ctx:SecureParser.IdentifierContext):
+    # Exit a parse tree produced by SecureParser#Impl.
+    def exitImpl(self, ctx:SecureParser.ImplContext):
         pass
 
 
@@ -23,24 +23,6 @@ class SecureListener(ParseTreeListener):
 
     # Exit a parse tree produced by SecureParser#Or.
     def exitOr(self, ctx:SecureParser.OrContext):
-        pass
-
-
-    # Enter a parse tree produced by SecureParser#Brackets.
-    def enterBrackets(self, ctx:SecureParser.BracketsContext):
-        pass
-
-    # Exit a parse tree produced by SecureParser#Brackets.
-    def exitBrackets(self, ctx:SecureParser.BracketsContext):
-        pass
-
-
-    # Enter a parse tree produced by SecureParser#Number.
-    def enterNumber(self, ctx:SecureParser.NumberContext):
-        pass
-
-    # Exit a parse tree produced by SecureParser#Number.
-    def exitNumber(self, ctx:SecureParser.NumberContext):
         pass
 
 
@@ -62,15 +44,6 @@ class SecureListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by SecureParser#And.
-    def enterAnd(self, ctx:SecureParser.AndContext):
-        pass
-
-    # Exit a parse tree produced by SecureParser#And.
-    def exitAnd(self, ctx:SecureParser.AndContext):
-        pass
-
-
     # Enter a parse tree produced by SecureParser#UnarySub.
     def enterUnarySub(self, ctx:SecureParser.UnarySubContext):
         pass
@@ -89,21 +62,66 @@ class SecureListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by SecureParser#Negate.
-    def enterNegate(self, ctx:SecureParser.NegateContext):
-        pass
-
-    # Exit a parse tree produced by SecureParser#Negate.
-    def exitNegate(self, ctx:SecureParser.NegateContext):
-        pass
-
-
     # Enter a parse tree produced by SecureParser#False.
     def enterFalse(self, ctx:SecureParser.FalseContext):
         pass
 
     # Exit a parse tree produced by SecureParser#False.
     def exitFalse(self, ctx:SecureParser.FalseContext):
+        pass
+
+
+    # Enter a parse tree produced by SecureParser#Identifier.
+    def enterIdentifier(self, ctx:SecureParser.IdentifierContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#Identifier.
+    def exitIdentifier(self, ctx:SecureParser.IdentifierContext):
+        pass
+
+
+    # Enter a parse tree produced by SecureParser#Brackets.
+    def enterBrackets(self, ctx:SecureParser.BracketsContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#Brackets.
+    def exitBrackets(self, ctx:SecureParser.BracketsContext):
+        pass
+
+
+    # Enter a parse tree produced by SecureParser#Number.
+    def enterNumber(self, ctx:SecureParser.NumberContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#Number.
+    def exitNumber(self, ctx:SecureParser.NumberContext):
+        pass
+
+
+    # Enter a parse tree produced by SecureParser#And.
+    def enterAnd(self, ctx:SecureParser.AndContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#And.
+    def exitAnd(self, ctx:SecureParser.AndContext):
+        pass
+
+
+    # Enter a parse tree produced by SecureParser#Equiv.
+    def enterEquiv(self, ctx:SecureParser.EquivContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#Equiv.
+    def exitEquiv(self, ctx:SecureParser.EquivContext):
+        pass
+
+
+    # Enter a parse tree produced by SecureParser#Negate.
+    def enterNegate(self, ctx:SecureParser.NegateContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#Negate.
+    def exitNegate(self, ctx:SecureParser.NegateContext):
         pass
 
 
@@ -185,6 +203,15 @@ class SecureListener(ParseTreeListener):
 
     # Exit a parse tree produced by SecureParser#doOperator.
     def exitDoOperator(self, ctx:SecureParser.DoOperatorContext):
+        pass
+
+
+    # Enter a parse tree produced by SecureParser#postCondition.
+    def enterPostCondition(self, ctx:SecureParser.PostConditionContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#postCondition.
+    def exitPostCondition(self, ctx:SecureParser.PostConditionContext):
         pass
 
 

@@ -20,6 +20,8 @@ NEQ: '!=';
 AND: '&&';
 OR: '||';
 NEG: '!';
+IMPL: '=>';
+EQUIV: '<=>';
 
 expression
    : SUB expression                                         # UnarySub
@@ -30,6 +32,8 @@ expression
    | expression op=('>'|'<'|'>='|'<='|'=='|'!=') expression # Logic
    | expression AND expression                              # And
    | expression OR expression                               # Or
+   | expression IMPL expression                             # Impl
+   | expression EQUIV expression                            # Equiv
    | NUMBER                                                 # Number
    | ID                                                     # Identifier
    | TRUE                                                   # True
@@ -37,7 +41,7 @@ expression
    ;
 
 // Program is an operator or multiple operators
-start : operatorList EOF;
+start : operatorList postCondition EOF;
 operatorList: operator (SEP operator)*;
 
 // Operators
@@ -52,3 +56,6 @@ command: expression '->' operatorList;
 
 ifOperator: 'if' commandList 'fi';
 doOperator: 'do' commandList 'od';
+
+// logical programming section
+postCondition: '[' expression ']';
