@@ -3,6 +3,6 @@
 ## Quick start:
 ```console
 $ pip install -r requirements.txt
-$ ./guarded run examples/quclid.gua
+$ ./guarded run examples/euqclid.gua
 $ ./guarded derive examples/derive.gua
 ```
