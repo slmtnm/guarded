@@ -1,6 +1,9 @@
-# Dijkstra Secure Command language interpreter
+# Dijkstra Guarded Command Language interpreter
 
-## How to run:
-`pip install -r requirements.txt`
-
-`python main.py examples/equclid.secure`
+## Quick start:
+```console
+$ pip install -r requirements.txt
+$ ./secure run examples/quclid.secure
+$ ./secure derive examples/derive.secure
+```
+python main.py examples/equclid.secure`

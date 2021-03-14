@@ -1,5 +1,0 @@
-l1 := True || False;
-l2 := True && False;
-l3 := 10 > 20 && 20 > 10;
-l4 := 10 > 20 || 20 > 10;
-l5 := True && False || True

@@ -17,9 +17,9 @@ GE: '>=';
 LE: '<=';
 EQ: '==';
 NEQ: '!=';
-AND: '&&';
-OR: '||';
-NEG: '!';
+AND: 'and';
+OR: 'or';
+NEG: 'not';
 IMPL: '=>';
 EQUIV: '<=>';
 
@@ -41,7 +41,7 @@ expression
    ;
 
 // Program is an operator or multiple operators
-start : operatorList postCondition EOF;
+start : initialState? operatorList postCondition? EOF;
 operatorList: operator (SEP operator)*;
 
 // Operators
@@ -58,4 +58,5 @@ ifOperator: 'if' commandList 'fi';
 doOperator: 'do' commandList 'od';
 
 // logical programming section
-postCondition: '[' expression ']';
+postCondition: '{' expression '}';
+initialState: '[' assignOperator (SEP assignOperator)* ']';

@@ -3,66 +3,69 @@ from gen.SecureVisitor import SecureVisitor
 from gen.SecureParser import SecureParser
 
 
-class MySecureVisitor(SecureVisitor):
+class ExecutingVisitor(SecureVisitor):
     def __init__(self):
-        self.stack = []
-        self.vars = {}
+        self._stack = []
+
+        self._state_var_names: list[str] = [] # names of state variables
+        self._in_initial_state = False
+        self.vars = {} # name -> value mapping of all variables, including state and temporary variables
 
     def visitNumber(self, ctx: SecureParser.NumberContext):
         num = int(ctx.getText())
-        self.stack.append(num)
+        self._stack.append(num)
 
     def visitIdentifier(self, ctx: SecureParser.IdentifierContext):
         value = self.vars[ctx.getText()]
-        self.stack.append(value)
+        self._stack.append(value)
 
     def visitTrue(self, ctx: SecureParser.TrueContext):
-        self.stack.append(True)
+        self._stack.append(True)
 
     def visitFalse(self, ctx: SecureParser.FalseContext):
-        self.stack.append(False)
+        self._stack.append(False)
 
     def visitUnarySub(self, ctx: SecureParser.UnarySubContext):
         self.visitChildren(ctx)
-        value = self.stack.pop()
-        self.stack.append(-value)
+        value = self._stack.pop()
+        self._stack.append(-value)
 
     def visitNegate(self, ctx: SecureParser.NegateContext):
         self.visitChildren(ctx)
-        value = self.stack.pop()
-        self.stack.append(not value)
+        value = self._stack.pop()
+        self._stack.append(not value)
 
     def visitAnd(self, ctx: SecureParser.AndContext):
         self.visitChildren(ctx)
-        right, left = self.stack.pop(), self.stack.pop()
-        self.stack.append(left and right)
+        right, left = self._stack.pop(), self._stack.pop()
+        self._stack.append(left and right)
 
     def visitOr(self, ctx: SecureParser.OrContext):
         self.visitChildren(ctx)
-        right, left = self.stack.pop(), self.stack.pop()
+        right, left = self._stack.pop(), self._stack.pop()
         print(left, right)
-        self.stack.append(left or right)
+        self._stack.append(left or right)
 
     def visitImpl(self, ctx: SecureParser.ImplContext):
         self.visitChildren(ctx)
-        right, left = self.stack.pop(), self.stack.pop()
+        right, left = self._stack.pop(), self._stack.pop()
         return right or not left
 
     def visitEquiv(self, ctx: SecureParser.EquivContext):
         self.visitChildren(ctx)
-        right, left = self.stack.pop(), self.stack.pop()
+        right, left = self._stack.pop(), self._stack.pop()
         return bool(left) == bool(right)
 
     def visitAddSub(self, ctx: SecureParser.AddSubContext):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())
 
-        right, left = self.stack.pop(), self.stack.pop()
+        right, left = self._stack.pop(), self._stack.pop()
         op = children[1]
         if op == ctx.ADD():
-            self.stack.append(left + right)
+            self._stack.append(left + right)
         elif op == ctx.SUB():
-            self.stack.append(left - right)
+            self._stack.append(left - right)
         else:
             raise Exception(f"Unexpected operation: {ctx.op}")
 
@@ -70,12 +73,12 @@ class MySecureVisitor(SecureVisitor):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())
 
-        right, left = self.stack.pop(), self.stack.pop()
+        right, left = self._stack.pop(), self._stack.pop()
         op = children[1]
         if op == ctx.MUL():
-            self.stack.append(left * right)
+            self._stack.append(left * right)
         elif op == ctx.DIV():
-            self.stack.append(left / right)
+            self._stack.append(left / right)
         else:
             raise Exception(f"Unexpected operation: {ctx.getText()}")
 
@@ -83,20 +86,20 @@ class MySecureVisitor(SecureVisitor):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())
 
-        right, left = self.stack.pop(), self.stack.pop()
+        right, left = self._stack.pop(), self._stack.pop()
         op = children[1]
         if op == ctx.LT():
-            self.stack.append(left < right)
+            self._stack.append(left < right)
         elif op == ctx.LE():
-            self.stack.append(left <= right)
+            self._stack.append(left <= right)
         elif op == ctx.GT():
-            self.stack.append(left > right)
+            self._stack.append(left > right)
         elif op == ctx.GE():
-            self.stack.append(left >= right)
+            self._stack.append(left >= right)
         elif op == ctx.EQ():
-            self.stack.append(left == right)
+            self._stack.append(left == right)
         elif op == ctx.NEQ():
-            self.stack.append(left != right)
+            self._stack.append(left != right)
         else:
             raise Exception(f"Unexpected logical operation: {op}")
 
@@ -105,9 +108,12 @@ class MySecureVisitor(SecureVisitor):
 
         children = list(ctx.getChildren())
         var_name = children[0].getText()
-        var_value = self.stack.pop()
+        var_value = self._stack.pop()
 
         self.vars[var_name] = var_value
+
+        if self._in_initial_state:
+            self._state_var_names.append(var_name)
 
     def visitCommand(self, ctx: SecureParser.CommandContext):
         children = list(ctx.getChildren())
@@ -126,7 +132,7 @@ class MySecureVisitor(SecureVisitor):
         else:
             raise Exception(f"Fuse of secure command must be valid logical expression")
 
-        ctx.fuse = self.stack.pop()
+        ctx.fuse = self._stack.pop()
         ctx.command = children[2]
 
     def visitCommandList(self, ctx: SecureParser.CommandListContext):
@@ -157,5 +163,14 @@ class MySecureVisitor(SecureVisitor):
             else:
                 break
 
-    def visitStart(self, ctx: SecureParser.StartContext):
-        self.visitChildren(ctx) # execute program
+    def visitPostCondition(self, ctx: SecureParser.PostConditionContext):
+        return # do not perform anything
+
+    def visitInitialState(self, ctx: SecureParser.InitialStateContext):
+        self._in_initial_state = True
+        self.visitChildren(ctx)
+        self._in_initial_state = False
+
+    def getState(self) -> tuple[str, object]:
+        for name in self._state_var_names:
+            yield name, self.vars[name]

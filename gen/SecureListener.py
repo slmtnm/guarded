@@ -215,5 +215,14 @@ class SecureListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by SecureParser#initialState.
+    def enterInitialState(self, ctx:SecureParser.InitialStateContext):
+        pass
+
+    # Exit a parse tree produced by SecureParser#initialState.
+    def exitInitialState(self, ctx:SecureParser.InitialStateContext):
+        pass
+
+
 
 del SecureParser

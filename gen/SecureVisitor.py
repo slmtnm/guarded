@@ -124,5 +124,10 @@ class SecureVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SecureParser#initialState.
+    def visitInitialState(self, ctx:SecureParser.InitialStateContext):
+        return self.visitChildren(ctx)
+
+
 
 del SecureParser
