@@ -171,6 +171,8 @@ class ExecutingVisitor(SecureVisitor):
         self.visitChildren(ctx)
         self._in_initial_state = False
 
+        self._state_var_names
+
     def getState(self) -> tuple[str, object]:
         for name in self._state_var_names:
             yield name, self.vars[name]

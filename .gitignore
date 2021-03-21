@@ -3,4 +3,5 @@ secure
 .idea
 .antlr
 venv
+.vscode
 **/__pycache__

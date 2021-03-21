@@ -24,6 +24,7 @@ def main():
     stream = antlr4.CommonTokenStream(lexer)
     parser = SecureParser(stream)
     tree = parser.start()
+    print()
 
     if mode == 'run':
         visitor = ExecutingVisitor()
@@ -36,7 +37,6 @@ def main():
     elif mode == 'derive':
         visitor = DerivingVisitor()
         visitor.visit(tree)
-        print(f"{', '.join(visitor.getStateVars())}: {visitor.getPreCondition()}")
 
 
 if __name__ == '__main__':
