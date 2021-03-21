@@ -11,7 +11,7 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3$")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3#")
         buf.write("\177\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4")
         buf.write("\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\3\2\3\2\3\2\3")
         buf.write("\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\2&\n\2\3\2\3")
@@ -22,35 +22,35 @@ def serializedATN():
         buf.write("\7\3\7\3\7\7\7_\n\7\f\7\16\7b\13\7\3\b\3\b\3\b\3\b\3\t")
         buf.write("\3\t\3\t\3\t\3\n\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\f\3")
         buf.write("\f\3\f\3\f\7\fx\n\f\f\f\16\f{\13\f\3\f\3\f\3\f\2\3\2\r")
-        buf.write("\2\4\6\b\n\f\16\20\22\24\26\2\5\3\2\26\27\3\2\30\31\3")
-        buf.write("\2\32\37\2\u0087\2%\3\2\2\2\4B\3\2\2\2\6J\3\2\2\2\bU\3")
+        buf.write("\2\4\6\b\n\f\16\20\22\24\26\2\5\3\2\25\26\3\2\27\30\3")
+        buf.write("\2\31\36\2\u0087\2%\3\2\2\2\4B\3\2\2\2\6J\3\2\2\2\bU\3")
         buf.write("\2\2\2\nW\3\2\2\2\f[\3\2\2\2\16c\3\2\2\2\20g\3\2\2\2\22")
         buf.write("k\3\2\2\2\24o\3\2\2\2\26s\3\2\2\2\30\31\b\2\1\2\31\32")
-        buf.write("\7\31\2\2\32&\5\2\2\20\33\34\7\"\2\2\34&\5\2\2\17\35\36")
-        buf.write("\7\3\2\2\36\37\5\2\2\2\37 \7\4\2\2 &\3\2\2\2!&\7\22\2")
-        buf.write("\2\"&\7\25\2\2#&\7\23\2\2$&\7\24\2\2%\30\3\2\2\2%\33\3")
+        buf.write("\7\30\2\2\32&\5\2\2\20\33\34\7!\2\2\34&\5\2\2\17\35\36")
+        buf.write("\7\3\2\2\36\37\5\2\2\2\37 \7\4\2\2 &\3\2\2\2!&\7\21\2")
+        buf.write("\2\"&\7\24\2\2#&\7\22\2\2$&\7\23\2\2%\30\3\2\2\2%\33\3")
         buf.write("\2\2\2%\35\3\2\2\2%!\3\2\2\2%\"\3\2\2\2%#\3\2\2\2%$\3")
         buf.write("\2\2\2&>\3\2\2\2\'(\f\r\2\2()\t\2\2\2)=\5\2\2\16*+\f\f")
         buf.write("\2\2+,\t\3\2\2,=\5\2\2\r-.\f\13\2\2./\t\4\2\2/=\5\2\2")
-        buf.write("\f\60\61\f\n\2\2\61\62\7 \2\2\62=\5\2\2\13\63\64\f\t\2")
-        buf.write("\2\64\65\7!\2\2\65=\5\2\2\n\66\67\f\b\2\2\678\7#\2\28")
-        buf.write("=\5\2\2\t9:\f\7\2\2:;\7$\2\2;=\5\2\2\b<\'\3\2\2\2<*\3")
-        buf.write("\2\2\2<-\3\2\2\2<\60\3\2\2\2<\63\3\2\2\2<\66\3\2\2\2<")
-        buf.write("9\3\2\2\2=@\3\2\2\2><\3\2\2\2>?\3\2\2\2?\3\3\2\2\2@>\3")
-        buf.write("\2\2\2AC\5\26\f\2BA\3\2\2\2BC\3\2\2\2CD\3\2\2\2DF\5\6")
-        buf.write("\4\2EG\5\24\13\2FE\3\2\2\2FG\3\2\2\2GH\3\2\2\2HI\7\2\2")
-        buf.write("\3I\5\3\2\2\2JO\5\b\5\2KL\7\20\2\2LN\5\b\5\2MK\3\2\2\2")
-        buf.write("NQ\3\2\2\2OM\3\2\2\2OP\3\2\2\2P\7\3\2\2\2QO\3\2\2\2RV")
-        buf.write("\5\n\6\2SV\5\20\t\2TV\5\22\n\2UR\3\2\2\2US\3\2\2\2UT\3")
-        buf.write("\2\2\2V\t\3\2\2\2WX\7\25\2\2XY\7\5\2\2YZ\5\2\2\2Z\13\3")
-        buf.write("\2\2\2[`\5\16\b\2\\]\7\6\2\2]_\5\16\b\2^\\\3\2\2\2_b\3")
-        buf.write("\2\2\2`^\3\2\2\2`a\3\2\2\2a\r\3\2\2\2b`\3\2\2\2cd\5\2")
-        buf.write("\2\2de\7\7\2\2ef\5\6\4\2f\17\3\2\2\2gh\7\b\2\2hi\5\f\7")
-        buf.write("\2ij\7\t\2\2j\21\3\2\2\2kl\7\n\2\2lm\5\f\7\2mn\7\13\2")
-        buf.write("\2n\23\3\2\2\2op\7\f\2\2pq\5\2\2\2qr\7\r\2\2r\25\3\2\2")
-        buf.write("\2st\7\16\2\2ty\5\n\6\2uv\7\20\2\2vx\5\n\6\2wu\3\2\2\2")
-        buf.write("x{\3\2\2\2yw\3\2\2\2yz\3\2\2\2z|\3\2\2\2{y\3\2\2\2|}\7")
-        buf.write("\17\2\2}\27\3\2\2\2\13%<>BFOU`y")
+        buf.write("\f\60\61\f\n\2\2\61\62\7\37\2\2\62=\5\2\2\13\63\64\f\t")
+        buf.write("\2\2\64\65\7 \2\2\65=\5\2\2\n\66\67\f\b\2\2\678\7\"\2")
+        buf.write("\28=\5\2\2\t9:\f\7\2\2:;\7#\2\2;=\5\2\2\b<\'\3\2\2\2<")
+        buf.write("*\3\2\2\2<-\3\2\2\2<\60\3\2\2\2<\63\3\2\2\2<\66\3\2\2")
+        buf.write("\2<9\3\2\2\2=@\3\2\2\2><\3\2\2\2>?\3\2\2\2?\3\3\2\2\2")
+        buf.write("@>\3\2\2\2AC\5\26\f\2BA\3\2\2\2BC\3\2\2\2CD\3\2\2\2DF")
+        buf.write("\5\6\4\2EG\5\24\13\2FE\3\2\2\2FG\3\2\2\2GH\3\2\2\2HI\7")
+        buf.write("\2\2\3I\5\3\2\2\2JO\5\b\5\2KL\7\17\2\2LN\5\b\5\2MK\3\2")
+        buf.write("\2\2NQ\3\2\2\2OM\3\2\2\2OP\3\2\2\2P\7\3\2\2\2QO\3\2\2")
+        buf.write("\2RV\5\n\6\2SV\5\20\t\2TV\5\22\n\2UR\3\2\2\2US\3\2\2\2")
+        buf.write("UT\3\2\2\2V\t\3\2\2\2WX\7\24\2\2XY\7\5\2\2YZ\5\2\2\2Z")
+        buf.write("\13\3\2\2\2[`\5\16\b\2\\]\7 \2\2]_\5\16\b\2^\\\3\2\2\2")
+        buf.write("_b\3\2\2\2`^\3\2\2\2`a\3\2\2\2a\r\3\2\2\2b`\3\2\2\2cd")
+        buf.write("\5\2\2\2de\7\6\2\2ef\5\6\4\2f\17\3\2\2\2gh\7\7\2\2hi\5")
+        buf.write("\f\7\2ij\7\b\2\2j\21\3\2\2\2kl\7\t\2\2lm\5\f\7\2mn\7\n")
+        buf.write("\2\2n\23\3\2\2\2op\7\13\2\2pq\5\2\2\2qr\7\f\2\2r\25\3")
+        buf.write("\2\2\2st\7\r\2\2ty\5\n\6\2uv\7\17\2\2vx\5\n\6\2wu\3\2")
+        buf.write("\2\2x{\3\2\2\2yw\3\2\2\2yz\3\2\2\2z|\3\2\2\2{y\3\2\2\2")
+        buf.write("|}\7\16\2\2}\27\3\2\2\2\13%<>BFOU`y")
         return buf.getvalue()
 
 
@@ -64,20 +64,20 @@ class SecureParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'('", "')'", "':='", "'|'", "'->'", "'if'", 
+    literalNames = [ "<INVALID>", "'('", "')'", "':='", "'->'", "'if'", 
                      "'fi'", "'do'", "'od'", "'{'", "'}'", "'['", "']'", 
                      "';'", "<INVALID>", "<INVALID>", "'True'", "'False'", 
                      "<INVALID>", "'*'", "'/'", "'+'", "'-'", "'>'", "'<'", 
-                     "'>='", "'<='", "'=='", "'!='", "'and'", "'or'", "'not'", 
-                     "'=>'", "'<=>'" ]
+                     "'>='", "'<='", "'=='", "'!='", "'&'", "'|'", "'~'", 
+                     "'>>'", "'<=>'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "SEP", "WHITESPACE", "NUMBER", 
-                      "TRUE", "FALSE", "ID", "MUL", "DIV", "ADD", "SUB", 
-                      "GT", "LT", "GE", "LE", "EQ", "NEQ", "AND", "OR", 
-                      "NEG", "IMPL", "EQUIV" ]
+                      "<INVALID>", "SEP", "WHITESPACE", "NUMBER", "TRUE", 
+                      "FALSE", "ID", "MUL", "DIV", "ADD", "SUB", "GT", "LT", 
+                      "GE", "LE", "EQ", "NEQ", "AND", "OR", "NEG", "IMPL", 
+                      "EQUIV" ]
 
     RULE_expression = 0
     RULE_start = 1
@@ -108,28 +108,27 @@ class SecureParser ( Parser ):
     T__9=10
     T__10=11
     T__11=12
-    T__12=13
-    SEP=14
-    WHITESPACE=15
-    NUMBER=16
-    TRUE=17
-    FALSE=18
-    ID=19
-    MUL=20
-    DIV=21
-    ADD=22
-    SUB=23
-    GT=24
-    LT=25
-    GE=26
-    LE=27
-    EQ=28
-    NEQ=29
-    AND=30
-    OR=31
-    NEG=32
-    IMPL=33
-    EQUIV=34
+    SEP=13
+    WHITESPACE=14
+    NUMBER=15
+    TRUE=16
+    FALSE=17
+    ID=18
+    MUL=19
+    DIV=20
+    ADD=21
+    SUB=22
+    GT=23
+    LT=24
+    GE=25
+    LE=26
+    EQ=27
+    NEQ=28
+    AND=29
+    OR=30
+    NEG=31
+    IMPL=32
+    EQUIV=33
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -820,7 +819,7 @@ class SecureParser ( Parser ):
             self.state = 64
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SecureParser.T__11:
+            if _la==SecureParser.T__10:
                 self.state = 63
                 self.initialState()
 
@@ -830,7 +829,7 @@ class SecureParser ( Parser ):
             self.state = 68
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SecureParser.T__9:
+            if _la==SecureParser.T__8:
                 self.state = 67
                 self.postCondition()
 
@@ -968,12 +967,12 @@ class SecureParser ( Parser ):
                 self.state = 80
                 self.assignOperator()
                 pass
-            elif token in [SecureParser.T__5]:
+            elif token in [SecureParser.T__4]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 81
                 self.ifOperator()
                 pass
-            elif token in [SecureParser.T__7]:
+            elif token in [SecureParser.T__6]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 82
                 self.doOperator()
@@ -1059,6 +1058,12 @@ class SecureParser ( Parser ):
                 return self.getTypedRuleContext(SecureParser.CommandContext,i)
 
 
+        def OR(self, i:int=None):
+            if i is None:
+                return self.getTokens(SecureParser.OR)
+            else:
+                return self.getToken(SecureParser.OR, i)
+
         def getRuleIndex(self):
             return SecureParser.RULE_commandList
 
@@ -1091,9 +1096,9 @@ class SecureParser ( Parser ):
             self.state = 94
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==SecureParser.T__3:
+            while _la==SecureParser.OR:
                 self.state = 90
-                self.match(SecureParser.T__3)
+                self.match(SecureParser.OR)
                 self.state = 91
                 self.command()
                 self.state = 96
@@ -1153,7 +1158,7 @@ class SecureParser ( Parser ):
             self.state = 97
             self.expression(0)
             self.state = 98
-            self.match(SecureParser.T__4)
+            self.match(SecureParser.T__3)
             self.state = 99
             self.operatorList()
         except RecognitionException as re:
@@ -1203,11 +1208,11 @@ class SecureParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 101
-            self.match(SecureParser.T__5)
+            self.match(SecureParser.T__4)
             self.state = 102
             self.commandList()
             self.state = 103
-            self.match(SecureParser.T__6)
+            self.match(SecureParser.T__5)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1255,11 +1260,11 @@ class SecureParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 105
-            self.match(SecureParser.T__7)
+            self.match(SecureParser.T__6)
             self.state = 106
             self.commandList()
             self.state = 107
-            self.match(SecureParser.T__8)
+            self.match(SecureParser.T__7)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1307,11 +1312,11 @@ class SecureParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 109
-            self.match(SecureParser.T__9)
+            self.match(SecureParser.T__8)
             self.state = 110
             self.expression(0)
             self.state = 111
-            self.match(SecureParser.T__10)
+            self.match(SecureParser.T__9)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1369,7 +1374,7 @@ class SecureParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 113
-            self.match(SecureParser.T__11)
+            self.match(SecureParser.T__10)
             self.state = 114
             self.assignOperator()
             self.state = 119
@@ -1385,7 +1390,7 @@ class SecureParser ( Parser ):
                 _la = self._input.LA(1)
 
             self.state = 122
-            self.match(SecureParser.T__12)
+            self.match(SecureParser.T__11)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)

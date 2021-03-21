@@ -34,12 +34,12 @@ class DerivingVisitor(SecureVisitor):
             predicate = self._stack.pop()
 
             operator_list_predicates.append((fuse, predicate))
-        fuses_str = ' or '.join(fuses)
+        fuses_str = ' | '.join(fuses)
         fuses_str = f'({fuses_str})'
-        pred_str = ' and '.join(f'({fuse} => {pred})' for fuse, pred in operator_list_predicates)
+        pred_str = ' & '.join(f'({fuse} >> {pred})' for fuse, pred in operator_list_predicates)
         pred_str = f'({pred_str})'
 
-        self._stack.append(f'{fuses_str} and {pred_str}')
+        self._stack.append(f'{fuses_str} & {pred_str}')
 
 
     def visitOperatorList(self, ctx: SecureParser.OperatorListContext):
@@ -63,6 +63,9 @@ class DerivingVisitor(SecureVisitor):
         children = list(ctx.getChildren())[1:-1]
 
         for ao in children:
+            if not isinstance(ao, SecureParser.AssignOperatorContext):
+                continue
+
             self._state_var_names.append(next(ao.getChildren()).getText())
 
     def getStateVars(self):

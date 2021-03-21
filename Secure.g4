@@ -17,10 +17,10 @@ GE: '>=';
 LE: '<=';
 EQ: '==';
 NEQ: '!=';
-AND: 'and';
-OR: 'or';
-NEG: 'not';
-IMPL: '=>';
+AND: '&';
+OR: '|';
+NEG: '~';
+IMPL: '>>';
 EQUIV: '<=>';
 
 expression
