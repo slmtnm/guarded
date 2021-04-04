@@ -47,7 +47,7 @@ class DerivingVisitor(GuardedVisitor):
         var_name = ctx.getText()
         self._expr_stack.append(sp.Symbol(var_name))
     def visitNumber(self, ctx: GuardedParser.NumberContext):
-        num = int(ctx.getText())
+        num = float(ctx.getText())
         self._expr_stack.append(num)
     def visitUnarySub(self, ctx: GuardedParser.UnarySubContext):
         self.visitChildren(ctx)

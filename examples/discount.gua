@@ -4,14 +4,10 @@
 # start_price := 100;
 # final_price := 0;
 
-if
-    start_price > 1000 & start_price <= 1500 ->
-        final_price := 0.97 * start_price
-    | start_price > 1500 ->
-        final_price := 0.95 * start_price
-    | start_price <= 1000 ->
-        final_price := start_price
+if start_price > 1000 & start_price <= 1500 -> final_price := 0.97 * start_price
+| start_price > 1500 -> final_price := 0.95 * start_price
+| start_price <= 1000 -> final_price := start_price
 fi
 
-{final_price == 0.95 * start_price}
+{final_price == 0.97 * start_price}
 

@@ -3,20 +3,13 @@
 
 quadrant := 0;
 
-if 
-    x >= 0 ->
-        if
-            y >= 0 ->
-                quadrant := 1
-            | y <= 0 ->
-                quadrant := 4
+if x >= 0 ->
+        if y >= 0 -> quadrant := 1
+        | y <= 0 -> quadrant := 4
         fi
-    | x <= 0 ->
-        if
-            y >= 0 ->
-                quadrant := 2
-	    | y <= 0 -> 
-                quadrant := 3
+| x <= 0 ->
+        if y >= 0 -> quadrant := 2
+	    | y <= 0 -> quadrant := 3
         fi
 fi
 

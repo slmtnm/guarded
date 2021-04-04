@@ -3,7 +3,7 @@ grammar Guarded;
 // Tokens
 SEP: ';';
 WHITESPACE: [ \r\n\t]+ -> skip;
-NUMBER : [0-9]+;
+NUMBER : [0-9]+('.'[0-9]*)?;
 TRUE: 'True';
 FALSE: 'False';
 ID : [a-zA-Z_][0-9a-zA-Z_]*;

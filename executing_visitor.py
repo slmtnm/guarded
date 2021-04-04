@@ -10,7 +10,7 @@ class ExecutingVisitor(GuardedVisitor):
         self.vars = {} # name -> value mapping of all variables
 
     def visitNumber(self, ctx: GuardedParser.NumberContext):
-        num = int(ctx.getText())
+        num = float(ctx.getText())
         self._stack.append(num)
 
     def visitIdentifier(self, ctx: GuardedParser.IdentifierContext):
