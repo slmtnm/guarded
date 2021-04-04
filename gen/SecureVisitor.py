@@ -119,13 +119,8 @@ class SecureVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by SecureParser#postCondition.
-    def visitPostCondition(self, ctx:SecureParser.PostConditionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by SecureParser#initialState.
-    def visitInitialState(self, ctx:SecureParser.InitialStateContext):
+    # Visit a parse tree produced by SecureParser#condition.
+    def visitCondition(self, ctx:SecureParser.ConditionContext):
         return self.visitChildren(ctx)
 
 

@@ -7,9 +7,7 @@ class ExecutingVisitor(SecureVisitor):
     def __init__(self):
         self._stack = []
 
-        self._state_var_names: list[str] = [] # names of state variables
-        self._in_initial_state = False
-        self.vars = {} # name -> value mapping of all variables, including state and temporary variables
+        self.vars = {} # name -> value mapping of all variables
 
     def visitNumber(self, ctx: SecureParser.NumberContext):
         num = int(ctx.getText())
@@ -112,9 +110,6 @@ class ExecutingVisitor(SecureVisitor):
 
         self.vars[var_name] = var_value
 
-        if self._in_initial_state:
-            self._state_var_names.append(var_name)
-
     def visitCommand(self, ctx: SecureParser.CommandContext):
         children = list(ctx.getChildren())
         if isinstance(children[0], SecureParser.LogicContext):
@@ -151,28 +146,18 @@ class ExecutingVisitor(SecureVisitor):
             rand = randint(0, len(command_list.true_commands) - 1)
             self.visitOperatorList(command_list.true_commands[rand])
 
+
     def visitDoOperator(self, ctx: SecureParser.DoOperatorContext):
         while True:
             # recalc all fuses on each iteration
             self.visitChildren(ctx)
 
-            command_list = list(ctx.getChildren())[1]
+            command_list = next(c for c in ctx.getChildren() if isinstance(c, SecureParser.CommandListContext))
             if len(command_list.true_commands) != 0:
                 rand = randint(0, len(command_list.true_commands) - 1)
                 self.visitOperatorList(command_list.true_commands[rand])
             else:
                 break
 
-    def visitPostCondition(self, ctx: SecureParser.PostConditionContext):
+    def visitCondition(self, ctx: SecureParser.ConditionContext):
         return # do not perform anything
-
-    def visitInitialState(self, ctx: SecureParser.InitialStateContext):
-        self._in_initial_state = True
-        self.visitChildren(ctx)
-        self._in_initial_state = False
-
-        self._state_var_names
-
-    def getState(self) -> tuple[str, object]:
-        for name in self._state_var_names:
-            yield name, self.vars[name]

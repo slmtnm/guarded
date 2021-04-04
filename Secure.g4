@@ -41,7 +41,7 @@ expression
    ;
 
 // Program is an operator or multiple operators
-start : initialState? operatorList postCondition? EOF;
+start : operatorList condition? EOF;
 operatorList: operator (SEP operator)*;
 
 // Operators
@@ -55,8 +55,10 @@ commandList: command ('|' command)*;
 command: expression '->' operatorList;
 
 ifOperator: 'if' commandList 'fi';
-doOperator: 'do' commandList 'od';
+doOperator: condition? 'do' commandList 'od';
+condition: '{' expression '}';
 
-// logical programming section
-postCondition: '{' expression '}';
-initialState: '[' assignOperator (SEP assignOperator)* ']';
+// comments
+LINE_COMMENT
+    : '#' ~[\r\n]* -> skip
+;

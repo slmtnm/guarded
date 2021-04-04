@@ -8,7 +8,6 @@ class DerivingVisitor(SecureVisitor):
     def __init__(self):
         self._expr_stack = []
         self._predicate_stack = []
-        self._state_var_names: list[str] = []
 
         self._depth = 0
 
@@ -160,6 +159,15 @@ class DerivingVisitor(SecureVisitor):
         print('    ' * self._depth + f'{str(current_predicate)} --[if]--> {str(new_predicate)}')
         self._predicate_stack.append(new_predicate)
 
+    def visitDoOperator(self, ctx: SecureParser.DoOperatorContext):
+        children = list(ctx.getChildren())
+        assert isinstance(children[0], SecureParser.ConditionContext), "do..od operator without invariant in deriving mode"
+
+        self.visitCondition(children[0])
+        invariant = self._expr_stack.pop()
+
+        _ = self._predicate_stack.pop()
+        self._predicate_stack.append(invariant)
 
     def visitOperatorList(self, ctx: SecureParser.OperatorListContext):
         for operator in reversed(list(ctx.getChildren())):
@@ -167,12 +175,12 @@ class DerivingVisitor(SecureVisitor):
 
     def visitStart(self, ctx: SecureParser.StartContext):
         try:
-            post_condition_ctx: SecureParser.PostConditionContext = next(c for c in ctx.getChildren()
-                if isinstance(c, SecureParser.PostConditionContext))
+            post_condition_ctx: SecureParser.ConditionContext = next(c for c in ctx.getChildren()
+                if isinstance(c, SecureParser.ConditionContext))
         except StopIteration:
             raise Exception('Post-condition not found')
 
-        self.visitPostCondition(post_condition_ctx)
+        self.visitCondition(post_condition_ctx)
         post_condition = self._expr_stack.pop()
 
         # post_condition_str = list(post_condition_ctx.getChildren())[1].getText()
@@ -183,15 +191,3 @@ class DerivingVisitor(SecureVisitor):
         self.visitChildren(ctx)
         pre_condition = sp.simplify(self._predicate_stack.pop())
         print('Pre-condition:', str(pre_condition.simplify()))
-
-    def visitInitialState(self, ctx: SecureParser.InitialStateContext):
-        children = list(ctx.getChildren())[1:-1]
-
-        for ao in children:
-            if not isinstance(ao, SecureParser.AssignOperatorContext):
-                continue
-
-            self._state_var_names.append(next(ao.getChildren()).getText())
-
-    def getStateVars(self):
-        yield from self._state_var_names

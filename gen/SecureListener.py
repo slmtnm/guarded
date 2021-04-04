@@ -206,21 +206,12 @@ class SecureListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by SecureParser#postCondition.
-    def enterPostCondition(self, ctx:SecureParser.PostConditionContext):
+    # Enter a parse tree produced by SecureParser#condition.
+    def enterCondition(self, ctx:SecureParser.ConditionContext):
         pass
 
-    # Exit a parse tree produced by SecureParser#postCondition.
-    def exitPostCondition(self, ctx:SecureParser.PostConditionContext):
-        pass
-
-
-    # Enter a parse tree produced by SecureParser#initialState.
-    def enterInitialState(self, ctx:SecureParser.InitialStateContext):
-        pass
-
-    # Exit a parse tree produced by SecureParser#initialState.
-    def exitInitialState(self, ctx:SecureParser.InitialStateContext):
+    # Exit a parse tree produced by SecureParser#condition.
+    def exitCondition(self, ctx:SecureParser.ConditionContext):
         pass
 
 

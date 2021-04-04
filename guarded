@@ -31,7 +31,7 @@ def main():
         visitor.visit(tree)
 
         print('Final state:')
-        for var_name, var_value in visitor.getState():
+        for var_name, var_value in visitor.vars.items():
             print(f'{var_name} = {var_value}')
 
     elif mode == 'derive':

@@ -11,46 +11,43 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3#")
-        buf.write("\177\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4")
-        buf.write("\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\3\2\3\2\3\2\3")
-        buf.write("\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\2&\n\2\3\2\3")
-        buf.write("\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2")
-        buf.write("\3\2\3\2\3\2\3\2\3\2\3\2\7\2=\n\2\f\2\16\2@\13\2\3\3\5")
-        buf.write("\3C\n\3\3\3\3\3\5\3G\n\3\3\3\3\3\3\4\3\4\3\4\7\4N\n\4")
-        buf.write("\f\4\16\4Q\13\4\3\5\3\5\3\5\5\5V\n\5\3\6\3\6\3\6\3\6\3")
-        buf.write("\7\3\7\3\7\7\7_\n\7\f\7\16\7b\13\7\3\b\3\b\3\b\3\b\3\t")
-        buf.write("\3\t\3\t\3\t\3\n\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\f\3")
-        buf.write("\f\3\f\3\f\7\fx\n\f\f\f\16\f{\13\f\3\f\3\f\3\f\2\3\2\r")
-        buf.write("\2\4\6\b\n\f\16\20\22\24\26\2\5\3\2\25\26\3\2\27\30\3")
-        buf.write("\2\31\36\2\u0087\2%\3\2\2\2\4B\3\2\2\2\6J\3\2\2\2\bU\3")
-        buf.write("\2\2\2\nW\3\2\2\2\f[\3\2\2\2\16c\3\2\2\2\20g\3\2\2\2\22")
-        buf.write("k\3\2\2\2\24o\3\2\2\2\26s\3\2\2\2\30\31\b\2\1\2\31\32")
-        buf.write("\7\30\2\2\32&\5\2\2\20\33\34\7!\2\2\34&\5\2\2\17\35\36")
-        buf.write("\7\3\2\2\36\37\5\2\2\2\37 \7\4\2\2 &\3\2\2\2!&\7\21\2")
-        buf.write("\2\"&\7\24\2\2#&\7\22\2\2$&\7\23\2\2%\30\3\2\2\2%\33\3")
-        buf.write("\2\2\2%\35\3\2\2\2%!\3\2\2\2%\"\3\2\2\2%#\3\2\2\2%$\3")
-        buf.write("\2\2\2&>\3\2\2\2\'(\f\r\2\2()\t\2\2\2)=\5\2\2\16*+\f\f")
-        buf.write("\2\2+,\t\3\2\2,=\5\2\2\r-.\f\13\2\2./\t\4\2\2/=\5\2\2")
-        buf.write("\f\60\61\f\n\2\2\61\62\7\37\2\2\62=\5\2\2\13\63\64\f\t")
-        buf.write("\2\2\64\65\7 \2\2\65=\5\2\2\n\66\67\f\b\2\2\678\7\"\2")
-        buf.write("\28=\5\2\2\t9:\f\7\2\2:;\7#\2\2;=\5\2\2\b<\'\3\2\2\2<")
-        buf.write("*\3\2\2\2<-\3\2\2\2<\60\3\2\2\2<\63\3\2\2\2<\66\3\2\2")
-        buf.write("\2<9\3\2\2\2=@\3\2\2\2><\3\2\2\2>?\3\2\2\2?\3\3\2\2\2")
-        buf.write("@>\3\2\2\2AC\5\26\f\2BA\3\2\2\2BC\3\2\2\2CD\3\2\2\2DF")
-        buf.write("\5\6\4\2EG\5\24\13\2FE\3\2\2\2FG\3\2\2\2GH\3\2\2\2HI\7")
-        buf.write("\2\2\3I\5\3\2\2\2JO\5\b\5\2KL\7\17\2\2LN\5\b\5\2MK\3\2")
-        buf.write("\2\2NQ\3\2\2\2OM\3\2\2\2OP\3\2\2\2P\7\3\2\2\2QO\3\2\2")
-        buf.write("\2RV\5\n\6\2SV\5\20\t\2TV\5\22\n\2UR\3\2\2\2US\3\2\2\2")
-        buf.write("UT\3\2\2\2V\t\3\2\2\2WX\7\24\2\2XY\7\5\2\2YZ\5\2\2\2Z")
-        buf.write("\13\3\2\2\2[`\5\16\b\2\\]\7 \2\2]_\5\16\b\2^\\\3\2\2\2")
-        buf.write("_b\3\2\2\2`^\3\2\2\2`a\3\2\2\2a\r\3\2\2\2b`\3\2\2\2cd")
-        buf.write("\5\2\2\2de\7\6\2\2ef\5\6\4\2f\17\3\2\2\2gh\7\7\2\2hi\5")
-        buf.write("\f\7\2ij\7\b\2\2j\21\3\2\2\2kl\7\t\2\2lm\5\f\7\2mn\7\n")
-        buf.write("\2\2n\23\3\2\2\2op\7\13\2\2pq\5\2\2\2qr\7\f\2\2r\25\3")
-        buf.write("\2\2\2st\7\r\2\2ty\5\n\6\2uv\7\17\2\2vx\5\n\6\2wu\3\2")
-        buf.write("\2\2x{\3\2\2\2yw\3\2\2\2yz\3\2\2\2z|\3\2\2\2{y\3\2\2\2")
-        buf.write("|}\7\16\2\2}\27\3\2\2\2\13%<>BFOU`y")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\"")
+        buf.write("r\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
+        buf.write("\t\b\4\t\t\t\4\n\t\n\4\13\t\13\3\2\3\2\3\2\3\2\3\2\3\2")
+        buf.write("\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\2$\n\2\3\2\3\2\3\2\3\2")
+        buf.write("\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3")
+        buf.write("\2\3\2\3\2\3\2\7\2;\n\2\f\2\16\2>\13\2\3\3\3\3\5\3B\n")
+        buf.write("\3\3\3\3\3\3\4\3\4\3\4\7\4I\n\4\f\4\16\4L\13\4\3\5\3\5")
+        buf.write("\3\5\5\5Q\n\5\3\6\3\6\3\6\3\6\3\7\3\7\3\7\7\7Z\n\7\f\7")
+        buf.write("\16\7]\13\7\3\b\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\n\5\nh\n")
+        buf.write("\n\3\n\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\13\2\3\2\f\2")
+        buf.write("\4\6\b\n\f\16\20\22\24\2\5\3\2\23\24\3\2\25\26\3\2\27")
+        buf.write("\34\2z\2#\3\2\2\2\4?\3\2\2\2\6E\3\2\2\2\bP\3\2\2\2\nR")
+        buf.write("\3\2\2\2\fV\3\2\2\2\16^\3\2\2\2\20b\3\2\2\2\22g\3\2\2")
+        buf.write("\2\24m\3\2\2\2\26\27\b\2\1\2\27\30\7\26\2\2\30$\5\2\2")
+        buf.write("\20\31\32\7\37\2\2\32$\5\2\2\17\33\34\7\3\2\2\34\35\5")
+        buf.write("\2\2\2\35\36\7\4\2\2\36$\3\2\2\2\37$\7\17\2\2 $\7\22\2")
+        buf.write("\2!$\7\20\2\2\"$\7\21\2\2#\26\3\2\2\2#\31\3\2\2\2#\33")
+        buf.write("\3\2\2\2#\37\3\2\2\2# \3\2\2\2#!\3\2\2\2#\"\3\2\2\2$<")
+        buf.write("\3\2\2\2%&\f\r\2\2&\'\t\2\2\2\';\5\2\2\16()\f\f\2\2)*")
+        buf.write("\t\3\2\2*;\5\2\2\r+,\f\13\2\2,-\t\4\2\2-;\5\2\2\f./\f")
+        buf.write("\n\2\2/\60\7\35\2\2\60;\5\2\2\13\61\62\f\t\2\2\62\63\7")
+        buf.write("\36\2\2\63;\5\2\2\n\64\65\f\b\2\2\65\66\7 \2\2\66;\5\2")
+        buf.write("\2\t\678\f\7\2\289\7!\2\29;\5\2\2\b:%\3\2\2\2:(\3\2\2")
+        buf.write("\2:+\3\2\2\2:.\3\2\2\2:\61\3\2\2\2:\64\3\2\2\2:\67\3\2")
+        buf.write("\2\2;>\3\2\2\2<:\3\2\2\2<=\3\2\2\2=\3\3\2\2\2><\3\2\2")
+        buf.write("\2?A\5\6\4\2@B\5\24\13\2A@\3\2\2\2AB\3\2\2\2BC\3\2\2\2")
+        buf.write("CD\7\2\2\3D\5\3\2\2\2EJ\5\b\5\2FG\7\r\2\2GI\5\b\5\2HF")
+        buf.write("\3\2\2\2IL\3\2\2\2JH\3\2\2\2JK\3\2\2\2K\7\3\2\2\2LJ\3")
+        buf.write("\2\2\2MQ\5\n\6\2NQ\5\20\t\2OQ\5\22\n\2PM\3\2\2\2PN\3\2")
+        buf.write("\2\2PO\3\2\2\2Q\t\3\2\2\2RS\7\22\2\2ST\7\5\2\2TU\5\2\2")
+        buf.write("\2U\13\3\2\2\2V[\5\16\b\2WX\7\36\2\2XZ\5\16\b\2YW\3\2")
+        buf.write("\2\2Z]\3\2\2\2[Y\3\2\2\2[\\\3\2\2\2\\\r\3\2\2\2][\3\2")
+        buf.write("\2\2^_\5\2\2\2_`\7\6\2\2`a\5\6\4\2a\17\3\2\2\2bc\7\7\2")
+        buf.write("\2cd\5\f\7\2de\7\b\2\2e\21\3\2\2\2fh\5\24\13\2gf\3\2\2")
+        buf.write("\2gh\3\2\2\2hi\3\2\2\2ij\7\t\2\2jk\5\f\7\2kl\7\n\2\2l")
+        buf.write("\23\3\2\2\2mn\7\13\2\2no\5\2\2\2op\7\f\2\2p\25\3\2\2\2")
+        buf.write("\n#:<AJP[g")
         return buf.getvalue()
 
 
@@ -65,19 +62,17 @@ class SecureParser ( Parser ):
     sharedContextCache = PredictionContextCache()
 
     literalNames = [ "<INVALID>", "'('", "')'", "':='", "'->'", "'if'", 
-                     "'fi'", "'do'", "'od'", "'{'", "'}'", "'['", "']'", 
-                     "';'", "<INVALID>", "<INVALID>", "'True'", "'False'", 
-                     "<INVALID>", "'*'", "'/'", "'+'", "'-'", "'>'", "'<'", 
-                     "'>='", "'<='", "'=='", "'!='", "'&'", "'|'", "'~'", 
-                     "'>>'", "'<=>'" ]
+                     "'fi'", "'do'", "'od'", "'{'", "'}'", "';'", "<INVALID>", 
+                     "<INVALID>", "'True'", "'False'", "<INVALID>", "'*'", 
+                     "'/'", "'+'", "'-'", "'>'", "'<'", "'>='", "'<='", 
+                     "'=='", "'!='", "'&'", "'|'", "'~'", "'>>'", "'<=>'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "SEP", "WHITESPACE", "NUMBER", "TRUE", 
-                      "FALSE", "ID", "MUL", "DIV", "ADD", "SUB", "GT", "LT", 
-                      "GE", "LE", "EQ", "NEQ", "AND", "OR", "NEG", "IMPL", 
-                      "EQUIV" ]
+                      "<INVALID>", "<INVALID>", "<INVALID>", "SEP", "WHITESPACE", 
+                      "NUMBER", "TRUE", "FALSE", "ID", "MUL", "DIV", "ADD", 
+                      "SUB", "GT", "LT", "GE", "LE", "EQ", "NEQ", "AND", 
+                      "OR", "NEG", "IMPL", "EQUIV", "LINE_COMMENT" ]
 
     RULE_expression = 0
     RULE_start = 1
@@ -88,12 +83,11 @@ class SecureParser ( Parser ):
     RULE_command = 6
     RULE_ifOperator = 7
     RULE_doOperator = 8
-    RULE_postCondition = 9
-    RULE_initialState = 10
+    RULE_condition = 9
 
     ruleNames =  [ "expression", "start", "operatorList", "operator", "assignOperator", 
                    "commandList", "command", "ifOperator", "doOperator", 
-                   "postCondition", "initialState" ]
+                   "condition" ]
 
     EOF = Token.EOF
     T__0=1
@@ -106,29 +100,28 @@ class SecureParser ( Parser ):
     T__7=8
     T__8=9
     T__9=10
-    T__10=11
-    T__11=12
-    SEP=13
-    WHITESPACE=14
-    NUMBER=15
-    TRUE=16
-    FALSE=17
-    ID=18
-    MUL=19
-    DIV=20
-    ADD=21
-    SUB=22
-    GT=23
-    LT=24
-    GE=25
-    LE=26
-    EQ=27
-    NEQ=28
-    AND=29
-    OR=30
-    NEG=31
-    IMPL=32
-    EQUIV=33
+    SEP=11
+    WHITESPACE=12
+    NUMBER=13
+    TRUE=14
+    FALSE=15
+    ID=16
+    MUL=17
+    DIV=18
+    ADD=19
+    SUB=20
+    GT=21
+    LT=22
+    GE=23
+    LE=24
+    EQ=25
+    NEQ=26
+    AND=27
+    OR=28
+    NEG=29
+    IMPL=30
+    EQUIV=31
+    LINE_COMMENT=32
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -568,7 +561,7 @@ class SecureParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 35
+            self.state = 33
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [SecureParser.SUB]:
@@ -576,64 +569,64 @@ class SecureParser ( Parser ):
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 23
+                self.state = 21
                 self.match(SecureParser.SUB)
-                self.state = 24
+                self.state = 22
                 self.expression(14)
                 pass
             elif token in [SecureParser.NEG]:
                 localctx = SecureParser.NegateContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 25
+                self.state = 23
                 self.match(SecureParser.NEG)
-                self.state = 26
+                self.state = 24
                 self.expression(13)
                 pass
             elif token in [SecureParser.T__0]:
                 localctx = SecureParser.BracketsContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 27
+                self.state = 25
                 self.match(SecureParser.T__0)
-                self.state = 28
+                self.state = 26
                 self.expression(0)
-                self.state = 29
+                self.state = 27
                 self.match(SecureParser.T__1)
                 pass
             elif token in [SecureParser.NUMBER]:
                 localctx = SecureParser.NumberContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 31
+                self.state = 29
                 self.match(SecureParser.NUMBER)
                 pass
             elif token in [SecureParser.ID]:
                 localctx = SecureParser.IdentifierContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 32
+                self.state = 30
                 self.match(SecureParser.ID)
                 pass
             elif token in [SecureParser.TRUE]:
                 localctx = SecureParser.TrueContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 33
+                self.state = 31
                 self.match(SecureParser.TRUE)
                 pass
             elif token in [SecureParser.FALSE]:
                 localctx = SecureParser.FalseContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 34
+                self.state = 32
                 self.match(SecureParser.FALSE)
                 pass
             else:
                 raise NoViableAltException(self)
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 60
+            self.state = 58
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,2,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
@@ -641,17 +634,17 @@ class SecureParser ( Parser ):
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 58
+                    self.state = 56
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
                     if la_ == 1:
                         localctx = SecureParser.MulDivContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 37
+                        self.state = 35
                         if not self.precpred(self._ctx, 11):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 11)")
-                        self.state = 38
+                        self.state = 36
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
                         if not(_la==SecureParser.MUL or _la==SecureParser.DIV):
@@ -659,18 +652,18 @@ class SecureParser ( Parser ):
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 39
+                        self.state = 37
                         self.expression(12)
                         pass
 
                     elif la_ == 2:
                         localctx = SecureParser.AddSubContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 40
+                        self.state = 38
                         if not self.precpred(self._ctx, 10):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 10)")
-                        self.state = 41
+                        self.state = 39
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
                         if not(_la==SecureParser.ADD or _la==SecureParser.SUB):
@@ -678,18 +671,18 @@ class SecureParser ( Parser ):
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 42
+                        self.state = 40
                         self.expression(11)
                         pass
 
                     elif la_ == 3:
                         localctx = SecureParser.LogicContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 43
+                        self.state = 41
                         if not self.precpred(self._ctx, 9):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 9)")
-                        self.state = 44
+                        self.state = 42
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
                         if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SecureParser.GT) | (1 << SecureParser.LT) | (1 << SecureParser.GE) | (1 << SecureParser.LE) | (1 << SecureParser.EQ) | (1 << SecureParser.NEQ))) != 0)):
@@ -697,64 +690,64 @@ class SecureParser ( Parser ):
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 45
+                        self.state = 43
                         self.expression(10)
                         pass
 
                     elif la_ == 4:
                         localctx = SecureParser.AndContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 46
+                        self.state = 44
                         if not self.precpred(self._ctx, 8):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 8)")
-                        self.state = 47
+                        self.state = 45
                         self.match(SecureParser.AND)
-                        self.state = 48
+                        self.state = 46
                         self.expression(9)
                         pass
 
                     elif la_ == 5:
                         localctx = SecureParser.OrContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 49
+                        self.state = 47
                         if not self.precpred(self._ctx, 7):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
-                        self.state = 50
+                        self.state = 48
                         self.match(SecureParser.OR)
-                        self.state = 51
+                        self.state = 49
                         self.expression(8)
                         pass
 
                     elif la_ == 6:
                         localctx = SecureParser.ImplContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 52
+                        self.state = 50
                         if not self.precpred(self._ctx, 6):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
-                        self.state = 53
+                        self.state = 51
                         self.match(SecureParser.IMPL)
-                        self.state = 54
+                        self.state = 52
                         self.expression(7)
                         pass
 
                     elif la_ == 7:
                         localctx = SecureParser.EquivContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 55
+                        self.state = 53
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
-                        self.state = 56
+                        self.state = 54
                         self.match(SecureParser.EQUIV)
-                        self.state = 57
+                        self.state = 55
                         self.expression(6)
                         pass
 
              
-                self.state = 62
+                self.state = 60
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,2,self._ctx)
 
@@ -781,12 +774,8 @@ class SecureParser ( Parser ):
         def EOF(self):
             return self.getToken(SecureParser.EOF, 0)
 
-        def initialState(self):
-            return self.getTypedRuleContext(SecureParser.InitialStateContext,0)
-
-
-        def postCondition(self):
-            return self.getTypedRuleContext(SecureParser.PostConditionContext,0)
+        def condition(self):
+            return self.getTypedRuleContext(SecureParser.ConditionContext,0)
 
 
         def getRuleIndex(self):
@@ -816,25 +805,17 @@ class SecureParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 64
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==SecureParser.T__10:
-                self.state = 63
-                self.initialState()
-
-
-            self.state = 66
+            self.state = 61
             self.operatorList()
-            self.state = 68
+            self.state = 63
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==SecureParser.T__8:
-                self.state = 67
-                self.postCondition()
+                self.state = 62
+                self.condition()
 
 
-            self.state = 70
+            self.state = 65
             self.match(SecureParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -892,17 +873,17 @@ class SecureParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 72
+            self.state = 67
             self.operator()
-            self.state = 77
+            self.state = 72
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==SecureParser.SEP:
-                self.state = 73
+                self.state = 68
                 self.match(SecureParser.SEP)
-                self.state = 74
+                self.state = 69
                 self.operator()
-                self.state = 79
+                self.state = 74
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -959,22 +940,22 @@ class SecureParser ( Parser ):
         localctx = SecureParser.OperatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_operator)
         try:
-            self.state = 83
+            self.state = 78
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [SecureParser.ID]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 80
+                self.state = 75
                 self.assignOperator()
                 pass
             elif token in [SecureParser.T__4]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 81
+                self.state = 76
                 self.ifOperator()
                 pass
-            elif token in [SecureParser.T__6]:
+            elif token in [SecureParser.T__6, SecureParser.T__8]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 82
+                self.state = 77
                 self.doOperator()
                 pass
             else:
@@ -1029,11 +1010,11 @@ class SecureParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_assignOperator)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 85
+            self.state = 80
             self.match(SecureParser.ID)
-            self.state = 86
+            self.state = 81
             self.match(SecureParser.T__2)
-            self.state = 87
+            self.state = 82
             self.expression(0)
         except RecognitionException as re:
             localctx.exception = re
@@ -1091,17 +1072,17 @@ class SecureParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 89
+            self.state = 84
             self.command()
-            self.state = 94
+            self.state = 89
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==SecureParser.OR:
-                self.state = 90
+                self.state = 85
                 self.match(SecureParser.OR)
-                self.state = 91
+                self.state = 86
                 self.command()
-                self.state = 96
+                self.state = 91
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1155,11 +1136,11 @@ class SecureParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_command)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 97
+            self.state = 92
             self.expression(0)
-            self.state = 98
+            self.state = 93
             self.match(SecureParser.T__3)
-            self.state = 99
+            self.state = 94
             self.operatorList()
         except RecognitionException as re:
             localctx.exception = re
@@ -1207,11 +1188,11 @@ class SecureParser ( Parser ):
         self.enterRule(localctx, 14, self.RULE_ifOperator)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 101
+            self.state = 96
             self.match(SecureParser.T__4)
-            self.state = 102
+            self.state = 97
             self.commandList()
-            self.state = 103
+            self.state = 98
             self.match(SecureParser.T__5)
         except RecognitionException as re:
             localctx.exception = re
@@ -1231,6 +1212,10 @@ class SecureParser ( Parser ):
 
         def commandList(self):
             return self.getTypedRuleContext(SecureParser.CommandListContext,0)
+
+
+        def condition(self):
+            return self.getTypedRuleContext(SecureParser.ConditionContext,0)
 
 
         def getRuleIndex(self):
@@ -1257,13 +1242,22 @@ class SecureParser ( Parser ):
 
         localctx = SecureParser.DoOperatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_doOperator)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 105
+            self.state = 101
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==SecureParser.T__8:
+                self.state = 100
+                self.condition()
+
+
+            self.state = 103
             self.match(SecureParser.T__6)
-            self.state = 106
+            self.state = 104
             self.commandList()
-            self.state = 107
+            self.state = 105
             self.match(SecureParser.T__7)
         except RecognitionException as re:
             localctx.exception = re
@@ -1274,7 +1268,7 @@ class SecureParser ( Parser ):
         return localctx
 
 
-    class PostConditionContext(ParserRuleContext):
+    class ConditionContext(ParserRuleContext):
         __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1286,111 +1280,37 @@ class SecureParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return SecureParser.RULE_postCondition
+            return SecureParser.RULE_condition
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPostCondition" ):
-                listener.enterPostCondition(self)
+            if hasattr( listener, "enterCondition" ):
+                listener.enterCondition(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPostCondition" ):
-                listener.exitPostCondition(self)
+            if hasattr( listener, "exitCondition" ):
+                listener.exitCondition(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitPostCondition" ):
-                return visitor.visitPostCondition(self)
+            if hasattr( visitor, "visitCondition" ):
+                return visitor.visitCondition(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def postCondition(self):
+    def condition(self):
 
-        localctx = SecureParser.PostConditionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_postCondition)
+        localctx = SecureParser.ConditionContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 18, self.RULE_condition)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 109
+            self.state = 107
             self.match(SecureParser.T__8)
-            self.state = 110
+            self.state = 108
             self.expression(0)
-            self.state = 111
+            self.state = 109
             self.match(SecureParser.T__9)
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class InitialStateContext(ParserRuleContext):
-        __slots__ = 'parser'
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def assignOperator(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(SecureParser.AssignOperatorContext)
-            else:
-                return self.getTypedRuleContext(SecureParser.AssignOperatorContext,i)
-
-
-        def SEP(self, i:int=None):
-            if i is None:
-                return self.getTokens(SecureParser.SEP)
-            else:
-                return self.getToken(SecureParser.SEP, i)
-
-        def getRuleIndex(self):
-            return SecureParser.RULE_initialState
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterInitialState" ):
-                listener.enterInitialState(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitInitialState" ):
-                listener.exitInitialState(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInitialState" ):
-                return visitor.visitInitialState(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def initialState(self):
-
-        localctx = SecureParser.InitialStateContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_initialState)
-        self._la = 0 # Token type
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 113
-            self.match(SecureParser.T__10)
-            self.state = 114
-            self.assignOperator()
-            self.state = 119
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            while _la==SecureParser.SEP:
-                self.state = 115
-                self.match(SecureParser.SEP)
-                self.state = 116
-                self.assignOperator()
-                self.state = 121
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-
-            self.state = 122
-            self.match(SecureParser.T__11)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
