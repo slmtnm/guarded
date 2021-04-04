@@ -1,10 +1,10 @@
-from gen.SecureVisitor import SecureVisitor
-from gen.SecureParser import SecureParser
+from gen.GuardedVisitor import GuardedVisitor
+from gen.GuardedParser import GuardedParser
 from antlr4.tree.Tree import TerminalNode
 import sympy as sp
 
 
-class DerivingVisitor(SecureVisitor):
+class DerivingVisitor(GuardedVisitor):
     def __init__(self):
         self._expr_stack = []
         self._predicate_stack = []
@@ -12,64 +12,64 @@ class DerivingVisitor(SecureVisitor):
         self._depth = 0
 
     def visitExpression(self, ctx):
-        if isinstance(ctx, SecureParser.TrueContext):
+        if isinstance(ctx, GuardedParser.TrueContext):
             self.visitTrue(ctx)
-        elif isinstance(ctx, SecureParser.FalseContext):
+        elif isinstance(ctx, GuardedParser.FalseContext):
             self.visitFalse(ctx)
-        elif isinstance(ctx, SecureParser.AndContext):
+        elif isinstance(ctx, GuardedParser.AndContext):
             self.visitAnd(ctx)
-        elif isinstance(ctx, SecureParser.OrContext):
+        elif isinstance(ctx, GuardedParser.OrContext):
             self.visitOr(ctx)
-        elif isinstance(ctx, SecureParser.ImplContext):
+        elif isinstance(ctx, GuardedParser.ImplContext):
             self.visitImpl(ctx)
-        elif isinstance(ctx, SecureParser.IdentifierContext):
+        elif isinstance(ctx, GuardedParser.IdentifierContext):
             self.visitIdentifier(ctx)
-        elif isinstance(ctx, SecureParser.LogicContext):
+        elif isinstance(ctx, GuardedParser.LogicContext):
             self.visitLogic(ctx)
-        elif isinstance(ctx, SecureParser.MulDivContext):
+        elif isinstance(ctx, GuardedParser.MulDivContext):
             self.visitMulDiv(ctx)
-        elif isinstance(ctx, SecureParser.AddSubContext):
+        elif isinstance(ctx, GuardedParser.AddSubContext):
             self.visitAddSub(ctx)
-        elif isinstance(ctx, SecureParser.BracketsContext):
+        elif isinstance(ctx, GuardedParser.BracketsContext):
             self.visitBrackets(ctx)
-        elif isinstance(ctx, SecureParser.NegateContext):
+        elif isinstance(ctx, GuardedParser.NegateContext):
             self.visitNegate(ctx)
-        elif isinstance(ctx, SecureParser.NumberContext):
+        elif isinstance(ctx, GuardedParser.NumberContext):
             self.visitNumber(ctx)
-        elif isinstance(ctx, SecureParser.UnarySubContext):
+        elif isinstance(ctx, GuardedParser.UnarySubContext):
             self.visitUnarySub(ctx)
     
     def visitTrue(self, ctx):
         self._expr_stack.append(sp.true)
     def visitFalse(self, ctx):
         self._expr_stack.append(sp.false)
-    def visitIdentifier(self, ctx: SecureParser.IdentifierContext):
+    def visitIdentifier(self, ctx: GuardedParser.IdentifierContext):
         var_name = ctx.getText()
         self._expr_stack.append(sp.Symbol(var_name))
-    def visitNumber(self, ctx: SecureParser.NumberContext):
+    def visitNumber(self, ctx: GuardedParser.NumberContext):
         num = int(ctx.getText())
         self._expr_stack.append(num)
-    def visitUnarySub(self, ctx: SecureParser.UnarySubContext):
+    def visitUnarySub(self, ctx: GuardedParser.UnarySubContext):
         self.visitChildren(ctx)
         value = self._expr_stack.pop()
         self._expr_stack.append(-value)
-    def visitNegate(self, ctx: SecureParser.NegateContext):
+    def visitNegate(self, ctx: GuardedParser.NegateContext):
         self.visitChildren(ctx)
         value = self._expr_stack.pop()
         self._expr_stack.append(sp.Not(value))
-    def visitAnd(self, ctx: SecureParser.AndContext):
+    def visitAnd(self, ctx: GuardedParser.AndContext):
         self.visitChildren(ctx)
         right, left = self._expr_stack.pop(), self._expr_stack.pop()
         self._expr_stack.append(sp.And(left, right))
-    def visitOr(self, ctx: SecureParser.OrContext):
+    def visitOr(self, ctx: GuardedParser.OrContext):
         self.visitChildren(ctx)
         right, left = self._expr_stack.pop(), self._expr_stack.pop()
         self._expr_stack.append(sp.Or(left, right))
-    def visitImpl(self, ctx: SecureParser.ImplContext):
+    def visitImpl(self, ctx: GuardedParser.ImplContext):
         self.visitChildren(ctx)
         right, left = self._expr_stack.pop(), self._expr_stack.pop()
         self._expr_stack.append(sp.Implies(left, right))
-    def visitLogic(self, ctx: SecureParser.LogicContext):
+    def visitLogic(self, ctx: GuardedParser.LogicContext):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())
 
@@ -89,7 +89,7 @@ class DerivingVisitor(SecureVisitor):
             self._expr_stack.append(sp.Not(sp.Eq(left, right)))
         else:
             raise Exception(f"Unexpected logical operation: {op}")
-    def visitAddSub(self, ctx: SecureParser.AddSubContext):
+    def visitAddSub(self, ctx: GuardedParser.AddSubContext):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())
 
@@ -101,7 +101,7 @@ class DerivingVisitor(SecureVisitor):
             self._expr_stack.append(sp.Add(left, sp.Mul(-1, right)))
         else:
             raise Exception(f"Unexpected operation: {ctx.op}")
-    def visitMulDiv(self, ctx: SecureParser.MulDivContext):
+    def visitMulDiv(self, ctx: GuardedParser.MulDivContext):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())
 
@@ -114,7 +114,7 @@ class DerivingVisitor(SecureVisitor):
         else:
             raise Exception(f"Unexpected operation: {ctx.getText()}")
 
-    def visitAssignOperator(self, ctx: SecureParser.AssignOperatorContext):
+    def visitAssignOperator(self, ctx: GuardedParser.AssignOperatorContext):
         self.visitChildren(ctx)
         children = list(ctx.getChildren())
 
@@ -128,9 +128,9 @@ class DerivingVisitor(SecureVisitor):
         
         self._predicate_stack.append(new_condition)
 
-    def visitIfOperator(self, ctx: SecureParser.AssignOperatorContext):
+    def visitIfOperator(self, ctx: GuardedParser.AssignOperatorContext):
         children = list(ctx.getChildren())
-        commandList = filter(lambda c: isinstance(c, SecureParser.CommandContext),
+        commandList = filter(lambda c: isinstance(c, GuardedParser.CommandContext),
             children[1].getChildren())
         current_predicate = self._predicate_stack.pop()
 
@@ -140,7 +140,7 @@ class DerivingVisitor(SecureVisitor):
             self.visitExpression(command_children[0])
             fuse = self._expr_stack.pop() # take fuse predicate
 
-            operator_list: SecureParser.OperatorListContext = command_children[2]
+            operator_list: GuardedParser.OperatorListContext = command_children[2]
             self._predicate_stack.append(current_predicate)
             self._depth += 1
             self.visitOperatorList(operator_list)
@@ -159,9 +159,9 @@ class DerivingVisitor(SecureVisitor):
         print('    ' * self._depth + f'{str(current_predicate)} --[if]--> {str(new_predicate)}')
         self._predicate_stack.append(new_predicate)
 
-    def visitDoOperator(self, ctx: SecureParser.DoOperatorContext):
+    def visitDoOperator(self, ctx: GuardedParser.DoOperatorContext):
         children = list(ctx.getChildren())
-        assert isinstance(children[0], SecureParser.ConditionContext), "do..od operator without invariant in deriving mode"
+        assert isinstance(children[0], GuardedParser.ConditionContext), "do..od operator without invariant in deriving mode"
 
         self.visitCondition(children[0])
         invariant = self._expr_stack.pop()
@@ -169,14 +169,14 @@ class DerivingVisitor(SecureVisitor):
         _ = self._predicate_stack.pop()
         self._predicate_stack.append(invariant)
 
-    def visitOperatorList(self, ctx: SecureParser.OperatorListContext):
+    def visitOperatorList(self, ctx: GuardedParser.OperatorListContext):
         for operator in reversed(list(ctx.getChildren())):
             self.visitOperator(operator)
 
-    def visitStart(self, ctx: SecureParser.StartContext):
+    def visitStart(self, ctx: GuardedParser.StartContext):
         try:
-            post_condition_ctx: SecureParser.ConditionContext = next(c for c in ctx.getChildren()
-                if isinstance(c, SecureParser.ConditionContext))
+            post_condition_ctx: GuardedParser.ConditionContext = next(c for c in ctx.getChildren()
+                if isinstance(c, GuardedParser.ConditionContext))
         except StopIteration:
             raise Exception('Post-condition not found')
 

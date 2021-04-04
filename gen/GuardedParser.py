@@ -1,4 +1,4 @@
-# Generated from Secure.g4 by ANTLR 4.9.1
+# Generated from Guarded.g4 by ANTLR 4.9.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -51,9 +51,9 @@ def serializedATN():
         return buf.getvalue()
 
 
-class SecureParser ( Parser ):
+class GuardedParser ( Parser ):
 
-    grammarFileName = "Secure.g4"
+    grammarFileName = "Guarded.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -141,7 +141,7 @@ class SecureParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return SecureParser.RULE_expression
+            return GuardedParser.RULE_expression
 
      
         def copyFrom(self, ctx:ParserRuleContext):
@@ -150,18 +150,18 @@ class SecureParser ( Parser ):
 
     class ImplContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expression(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SecureParser.ExpressionContext)
+                return self.getTypedRuleContexts(GuardedParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SecureParser.ExpressionContext,i)
+                return self.getTypedRuleContext(GuardedParser.ExpressionContext,i)
 
         def IMPL(self):
-            return self.getToken(SecureParser.IMPL, 0)
+            return self.getToken(GuardedParser.IMPL, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterImpl" ):
@@ -180,18 +180,18 @@ class SecureParser ( Parser ):
 
     class OrContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expression(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SecureParser.ExpressionContext)
+                return self.getTypedRuleContexts(GuardedParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SecureParser.ExpressionContext,i)
+                return self.getTypedRuleContext(GuardedParser.ExpressionContext,i)
 
         def OR(self):
-            return self.getToken(SecureParser.OR, 0)
+            return self.getToken(GuardedParser.OR, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterOr" ):
@@ -210,21 +210,21 @@ class SecureParser ( Parser ):
 
     class MulDivContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.op = None # Token
             self.copyFrom(ctx)
 
         def expression(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SecureParser.ExpressionContext)
+                return self.getTypedRuleContexts(GuardedParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SecureParser.ExpressionContext,i)
+                return self.getTypedRuleContext(GuardedParser.ExpressionContext,i)
 
         def MUL(self):
-            return self.getToken(SecureParser.MUL, 0)
+            return self.getToken(GuardedParser.MUL, 0)
         def DIV(self):
-            return self.getToken(SecureParser.DIV, 0)
+            return self.getToken(GuardedParser.DIV, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMulDiv" ):
@@ -243,21 +243,21 @@ class SecureParser ( Parser ):
 
     class AddSubContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.op = None # Token
             self.copyFrom(ctx)
 
         def expression(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SecureParser.ExpressionContext)
+                return self.getTypedRuleContexts(GuardedParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SecureParser.ExpressionContext,i)
+                return self.getTypedRuleContext(GuardedParser.ExpressionContext,i)
 
         def ADD(self):
-            return self.getToken(SecureParser.ADD, 0)
+            return self.getToken(GuardedParser.ADD, 0)
         def SUB(self):
-            return self.getToken(SecureParser.SUB, 0)
+            return self.getToken(GuardedParser.SUB, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterAddSub" ):
@@ -276,14 +276,14 @@ class SecureParser ( Parser ):
 
     class UnarySubContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def SUB(self):
-            return self.getToken(SecureParser.SUB, 0)
+            return self.getToken(GuardedParser.SUB, 0)
         def expression(self):
-            return self.getTypedRuleContext(SecureParser.ExpressionContext,0)
+            return self.getTypedRuleContext(GuardedParser.ExpressionContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -303,12 +303,12 @@ class SecureParser ( Parser ):
 
     class TrueContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def TRUE(self):
-            return self.getToken(SecureParser.TRUE, 0)
+            return self.getToken(GuardedParser.TRUE, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterTrue" ):
@@ -327,12 +327,12 @@ class SecureParser ( Parser ):
 
     class FalseContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def FALSE(self):
-            return self.getToken(SecureParser.FALSE, 0)
+            return self.getToken(GuardedParser.FALSE, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterFalse" ):
@@ -351,12 +351,12 @@ class SecureParser ( Parser ):
 
     class IdentifierContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def ID(self):
-            return self.getToken(SecureParser.ID, 0)
+            return self.getToken(GuardedParser.ID, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterIdentifier" ):
@@ -375,12 +375,12 @@ class SecureParser ( Parser ):
 
     class BracketsContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expression(self):
-            return self.getTypedRuleContext(SecureParser.ExpressionContext,0)
+            return self.getTypedRuleContext(GuardedParser.ExpressionContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -400,12 +400,12 @@ class SecureParser ( Parser ):
 
     class NumberContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def NUMBER(self):
-            return self.getToken(SecureParser.NUMBER, 0)
+            return self.getToken(GuardedParser.NUMBER, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterNumber" ):
@@ -424,18 +424,18 @@ class SecureParser ( Parser ):
 
     class AndContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expression(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SecureParser.ExpressionContext)
+                return self.getTypedRuleContexts(GuardedParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SecureParser.ExpressionContext,i)
+                return self.getTypedRuleContext(GuardedParser.ExpressionContext,i)
 
         def AND(self):
-            return self.getToken(SecureParser.AND, 0)
+            return self.getToken(GuardedParser.AND, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterAnd" ):
@@ -454,18 +454,18 @@ class SecureParser ( Parser ):
 
     class EquivContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expression(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SecureParser.ExpressionContext)
+                return self.getTypedRuleContexts(GuardedParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SecureParser.ExpressionContext,i)
+                return self.getTypedRuleContext(GuardedParser.ExpressionContext,i)
 
         def EQUIV(self):
-            return self.getToken(SecureParser.EQUIV, 0)
+            return self.getToken(GuardedParser.EQUIV, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterEquiv" ):
@@ -484,14 +484,14 @@ class SecureParser ( Parser ):
 
     class NegateContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def NEG(self):
-            return self.getToken(SecureParser.NEG, 0)
+            return self.getToken(GuardedParser.NEG, 0)
         def expression(self):
-            return self.getTypedRuleContext(SecureParser.ExpressionContext,0)
+            return self.getTypedRuleContext(GuardedParser.ExpressionContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -511,29 +511,29 @@ class SecureParser ( Parser ):
 
     class LogicContext(ExpressionContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a SecureParser.ExpressionContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a GuardedParser.ExpressionContext
             super().__init__(parser)
             self.op = None # Token
             self.copyFrom(ctx)
 
         def expression(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SecureParser.ExpressionContext)
+                return self.getTypedRuleContexts(GuardedParser.ExpressionContext)
             else:
-                return self.getTypedRuleContext(SecureParser.ExpressionContext,i)
+                return self.getTypedRuleContext(GuardedParser.ExpressionContext,i)
 
         def GT(self):
-            return self.getToken(SecureParser.GT, 0)
+            return self.getToken(GuardedParser.GT, 0)
         def LT(self):
-            return self.getToken(SecureParser.LT, 0)
+            return self.getToken(GuardedParser.LT, 0)
         def GE(self):
-            return self.getToken(SecureParser.GE, 0)
+            return self.getToken(GuardedParser.GE, 0)
         def LE(self):
-            return self.getToken(SecureParser.LE, 0)
+            return self.getToken(GuardedParser.LE, 0)
         def EQ(self):
-            return self.getToken(SecureParser.EQ, 0)
+            return self.getToken(GuardedParser.EQ, 0)
         def NEQ(self):
-            return self.getToken(SecureParser.NEQ, 0)
+            return self.getToken(GuardedParser.NEQ, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterLogic" ):
@@ -554,7 +554,7 @@ class SecureParser ( Parser ):
     def expression(self, _p:int=0):
         _parentctx = self._ctx
         _parentState = self.state
-        localctx = SecureParser.ExpressionContext(self, self._ctx, _parentState)
+        localctx = GuardedParser.ExpressionContext(self, self._ctx, _parentState)
         _prevctx = localctx
         _startState = 0
         self.enterRecursionRule(localctx, 0, self.RULE_expression, _p)
@@ -564,63 +564,63 @@ class SecureParser ( Parser ):
             self.state = 33
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SecureParser.SUB]:
-                localctx = SecureParser.UnarySubContext(self, localctx)
+            if token in [GuardedParser.SUB]:
+                localctx = GuardedParser.UnarySubContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
                 self.state = 21
-                self.match(SecureParser.SUB)
+                self.match(GuardedParser.SUB)
                 self.state = 22
                 self.expression(14)
                 pass
-            elif token in [SecureParser.NEG]:
-                localctx = SecureParser.NegateContext(self, localctx)
+            elif token in [GuardedParser.NEG]:
+                localctx = GuardedParser.NegateContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 23
-                self.match(SecureParser.NEG)
+                self.match(GuardedParser.NEG)
                 self.state = 24
                 self.expression(13)
                 pass
-            elif token in [SecureParser.T__0]:
-                localctx = SecureParser.BracketsContext(self, localctx)
+            elif token in [GuardedParser.T__0]:
+                localctx = GuardedParser.BracketsContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 25
-                self.match(SecureParser.T__0)
+                self.match(GuardedParser.T__0)
                 self.state = 26
                 self.expression(0)
                 self.state = 27
-                self.match(SecureParser.T__1)
+                self.match(GuardedParser.T__1)
                 pass
-            elif token in [SecureParser.NUMBER]:
-                localctx = SecureParser.NumberContext(self, localctx)
+            elif token in [GuardedParser.NUMBER]:
+                localctx = GuardedParser.NumberContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 29
-                self.match(SecureParser.NUMBER)
+                self.match(GuardedParser.NUMBER)
                 pass
-            elif token in [SecureParser.ID]:
-                localctx = SecureParser.IdentifierContext(self, localctx)
+            elif token in [GuardedParser.ID]:
+                localctx = GuardedParser.IdentifierContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 30
-                self.match(SecureParser.ID)
+                self.match(GuardedParser.ID)
                 pass
-            elif token in [SecureParser.TRUE]:
-                localctx = SecureParser.TrueContext(self, localctx)
+            elif token in [GuardedParser.TRUE]:
+                localctx = GuardedParser.TrueContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 31
-                self.match(SecureParser.TRUE)
+                self.match(GuardedParser.TRUE)
                 pass
-            elif token in [SecureParser.FALSE]:
-                localctx = SecureParser.FalseContext(self, localctx)
+            elif token in [GuardedParser.FALSE]:
+                localctx = GuardedParser.FalseContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 32
-                self.match(SecureParser.FALSE)
+                self.match(GuardedParser.FALSE)
                 pass
             else:
                 raise NoViableAltException(self)
@@ -638,7 +638,7 @@ class SecureParser ( Parser ):
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
                     if la_ == 1:
-                        localctx = SecureParser.MulDivContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
+                        localctx = GuardedParser.MulDivContext(self, GuardedParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 35
                         if not self.precpred(self._ctx, 11):
@@ -647,7 +647,7 @@ class SecureParser ( Parser ):
                         self.state = 36
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
-                        if not(_la==SecureParser.MUL or _la==SecureParser.DIV):
+                        if not(_la==GuardedParser.MUL or _la==GuardedParser.DIV):
                             localctx.op = self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -657,7 +657,7 @@ class SecureParser ( Parser ):
                         pass
 
                     elif la_ == 2:
-                        localctx = SecureParser.AddSubContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
+                        localctx = GuardedParser.AddSubContext(self, GuardedParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 38
                         if not self.precpred(self._ctx, 10):
@@ -666,7 +666,7 @@ class SecureParser ( Parser ):
                         self.state = 39
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
-                        if not(_la==SecureParser.ADD or _la==SecureParser.SUB):
+                        if not(_la==GuardedParser.ADD or _la==GuardedParser.SUB):
                             localctx.op = self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -676,7 +676,7 @@ class SecureParser ( Parser ):
                         pass
 
                     elif la_ == 3:
-                        localctx = SecureParser.LogicContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
+                        localctx = GuardedParser.LogicContext(self, GuardedParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 41
                         if not self.precpred(self._ctx, 9):
@@ -685,7 +685,7 @@ class SecureParser ( Parser ):
                         self.state = 42
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
-                        if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << SecureParser.GT) | (1 << SecureParser.LT) | (1 << SecureParser.GE) | (1 << SecureParser.LE) | (1 << SecureParser.EQ) | (1 << SecureParser.NEQ))) != 0)):
+                        if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << GuardedParser.GT) | (1 << GuardedParser.LT) | (1 << GuardedParser.GE) | (1 << GuardedParser.LE) | (1 << GuardedParser.EQ) | (1 << GuardedParser.NEQ))) != 0)):
                             localctx.op = self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
@@ -695,53 +695,53 @@ class SecureParser ( Parser ):
                         pass
 
                     elif la_ == 4:
-                        localctx = SecureParser.AndContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
+                        localctx = GuardedParser.AndContext(self, GuardedParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 44
                         if not self.precpred(self._ctx, 8):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 8)")
                         self.state = 45
-                        self.match(SecureParser.AND)
+                        self.match(GuardedParser.AND)
                         self.state = 46
                         self.expression(9)
                         pass
 
                     elif la_ == 5:
-                        localctx = SecureParser.OrContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
+                        localctx = GuardedParser.OrContext(self, GuardedParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 47
                         if not self.precpred(self._ctx, 7):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
                         self.state = 48
-                        self.match(SecureParser.OR)
+                        self.match(GuardedParser.OR)
                         self.state = 49
                         self.expression(8)
                         pass
 
                     elif la_ == 6:
-                        localctx = SecureParser.ImplContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
+                        localctx = GuardedParser.ImplContext(self, GuardedParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 50
                         if not self.precpred(self._ctx, 6):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
                         self.state = 51
-                        self.match(SecureParser.IMPL)
+                        self.match(GuardedParser.IMPL)
                         self.state = 52
                         self.expression(7)
                         pass
 
                     elif la_ == 7:
-                        localctx = SecureParser.EquivContext(self, SecureParser.ExpressionContext(self, _parentctx, _parentState))
+                        localctx = GuardedParser.EquivContext(self, GuardedParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
                         self.state = 53
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
                         self.state = 54
-                        self.match(SecureParser.EQUIV)
+                        self.match(GuardedParser.EQUIV)
                         self.state = 55
                         self.expression(6)
                         pass
@@ -768,18 +768,18 @@ class SecureParser ( Parser ):
             self.parser = parser
 
         def operatorList(self):
-            return self.getTypedRuleContext(SecureParser.OperatorListContext,0)
+            return self.getTypedRuleContext(GuardedParser.OperatorListContext,0)
 
 
         def EOF(self):
-            return self.getToken(SecureParser.EOF, 0)
+            return self.getToken(GuardedParser.EOF, 0)
 
         def condition(self):
-            return self.getTypedRuleContext(SecureParser.ConditionContext,0)
+            return self.getTypedRuleContext(GuardedParser.ConditionContext,0)
 
 
         def getRuleIndex(self):
-            return SecureParser.RULE_start
+            return GuardedParser.RULE_start
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterStart" ):
@@ -800,7 +800,7 @@ class SecureParser ( Parser ):
 
     def start(self):
 
-        localctx = SecureParser.StartContext(self, self._ctx, self.state)
+        localctx = GuardedParser.StartContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_start)
         self._la = 0 # Token type
         try:
@@ -810,13 +810,13 @@ class SecureParser ( Parser ):
             self.state = 63
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SecureParser.T__8:
+            if _la==GuardedParser.T__8:
                 self.state = 62
                 self.condition()
 
 
             self.state = 65
-            self.match(SecureParser.EOF)
+            self.match(GuardedParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -835,19 +835,19 @@ class SecureParser ( Parser ):
 
         def operator(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SecureParser.OperatorContext)
+                return self.getTypedRuleContexts(GuardedParser.OperatorContext)
             else:
-                return self.getTypedRuleContext(SecureParser.OperatorContext,i)
+                return self.getTypedRuleContext(GuardedParser.OperatorContext,i)
 
 
         def SEP(self, i:int=None):
             if i is None:
-                return self.getTokens(SecureParser.SEP)
+                return self.getTokens(GuardedParser.SEP)
             else:
-                return self.getToken(SecureParser.SEP, i)
+                return self.getToken(GuardedParser.SEP, i)
 
         def getRuleIndex(self):
-            return SecureParser.RULE_operatorList
+            return GuardedParser.RULE_operatorList
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterOperatorList" ):
@@ -868,7 +868,7 @@ class SecureParser ( Parser ):
 
     def operatorList(self):
 
-        localctx = SecureParser.OperatorListContext(self, self._ctx, self.state)
+        localctx = GuardedParser.OperatorListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_operatorList)
         self._la = 0 # Token type
         try:
@@ -878,9 +878,9 @@ class SecureParser ( Parser ):
             self.state = 72
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==SecureParser.SEP:
+            while _la==GuardedParser.SEP:
                 self.state = 68
-                self.match(SecureParser.SEP)
+                self.match(GuardedParser.SEP)
                 self.state = 69
                 self.operator()
                 self.state = 74
@@ -904,19 +904,19 @@ class SecureParser ( Parser ):
             self.parser = parser
 
         def assignOperator(self):
-            return self.getTypedRuleContext(SecureParser.AssignOperatorContext,0)
+            return self.getTypedRuleContext(GuardedParser.AssignOperatorContext,0)
 
 
         def ifOperator(self):
-            return self.getTypedRuleContext(SecureParser.IfOperatorContext,0)
+            return self.getTypedRuleContext(GuardedParser.IfOperatorContext,0)
 
 
         def doOperator(self):
-            return self.getTypedRuleContext(SecureParser.DoOperatorContext,0)
+            return self.getTypedRuleContext(GuardedParser.DoOperatorContext,0)
 
 
         def getRuleIndex(self):
-            return SecureParser.RULE_operator
+            return GuardedParser.RULE_operator
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterOperator" ):
@@ -937,23 +937,23 @@ class SecureParser ( Parser ):
 
     def operator(self):
 
-        localctx = SecureParser.OperatorContext(self, self._ctx, self.state)
+        localctx = GuardedParser.OperatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_operator)
         try:
             self.state = 78
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [SecureParser.ID]:
+            if token in [GuardedParser.ID]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 75
                 self.assignOperator()
                 pass
-            elif token in [SecureParser.T__4]:
+            elif token in [GuardedParser.T__4]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 76
                 self.ifOperator()
                 pass
-            elif token in [SecureParser.T__6, SecureParser.T__8]:
+            elif token in [GuardedParser.T__6, GuardedParser.T__8]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 77
                 self.doOperator()
@@ -978,14 +978,14 @@ class SecureParser ( Parser ):
             self.parser = parser
 
         def ID(self):
-            return self.getToken(SecureParser.ID, 0)
+            return self.getToken(GuardedParser.ID, 0)
 
         def expression(self):
-            return self.getTypedRuleContext(SecureParser.ExpressionContext,0)
+            return self.getTypedRuleContext(GuardedParser.ExpressionContext,0)
 
 
         def getRuleIndex(self):
-            return SecureParser.RULE_assignOperator
+            return GuardedParser.RULE_assignOperator
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterAssignOperator" ):
@@ -1006,14 +1006,14 @@ class SecureParser ( Parser ):
 
     def assignOperator(self):
 
-        localctx = SecureParser.AssignOperatorContext(self, self._ctx, self.state)
+        localctx = GuardedParser.AssignOperatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_assignOperator)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 80
-            self.match(SecureParser.ID)
+            self.match(GuardedParser.ID)
             self.state = 81
-            self.match(SecureParser.T__2)
+            self.match(GuardedParser.T__2)
             self.state = 82
             self.expression(0)
         except RecognitionException as re:
@@ -1034,19 +1034,19 @@ class SecureParser ( Parser ):
 
         def command(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SecureParser.CommandContext)
+                return self.getTypedRuleContexts(GuardedParser.CommandContext)
             else:
-                return self.getTypedRuleContext(SecureParser.CommandContext,i)
+                return self.getTypedRuleContext(GuardedParser.CommandContext,i)
 
 
         def OR(self, i:int=None):
             if i is None:
-                return self.getTokens(SecureParser.OR)
+                return self.getTokens(GuardedParser.OR)
             else:
-                return self.getToken(SecureParser.OR, i)
+                return self.getToken(GuardedParser.OR, i)
 
         def getRuleIndex(self):
-            return SecureParser.RULE_commandList
+            return GuardedParser.RULE_commandList
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterCommandList" ):
@@ -1067,7 +1067,7 @@ class SecureParser ( Parser ):
 
     def commandList(self):
 
-        localctx = SecureParser.CommandListContext(self, self._ctx, self.state)
+        localctx = GuardedParser.CommandListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_commandList)
         self._la = 0 # Token type
         try:
@@ -1077,9 +1077,9 @@ class SecureParser ( Parser ):
             self.state = 89
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==SecureParser.OR:
+            while _la==GuardedParser.OR:
                 self.state = 85
-                self.match(SecureParser.OR)
+                self.match(GuardedParser.OR)
                 self.state = 86
                 self.command()
                 self.state = 91
@@ -1103,15 +1103,15 @@ class SecureParser ( Parser ):
             self.parser = parser
 
         def expression(self):
-            return self.getTypedRuleContext(SecureParser.ExpressionContext,0)
+            return self.getTypedRuleContext(GuardedParser.ExpressionContext,0)
 
 
         def operatorList(self):
-            return self.getTypedRuleContext(SecureParser.OperatorListContext,0)
+            return self.getTypedRuleContext(GuardedParser.OperatorListContext,0)
 
 
         def getRuleIndex(self):
-            return SecureParser.RULE_command
+            return GuardedParser.RULE_command
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterCommand" ):
@@ -1132,14 +1132,14 @@ class SecureParser ( Parser ):
 
     def command(self):
 
-        localctx = SecureParser.CommandContext(self, self._ctx, self.state)
+        localctx = GuardedParser.CommandContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_command)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 92
             self.expression(0)
             self.state = 93
-            self.match(SecureParser.T__3)
+            self.match(GuardedParser.T__3)
             self.state = 94
             self.operatorList()
         except RecognitionException as re:
@@ -1159,11 +1159,11 @@ class SecureParser ( Parser ):
             self.parser = parser
 
         def commandList(self):
-            return self.getTypedRuleContext(SecureParser.CommandListContext,0)
+            return self.getTypedRuleContext(GuardedParser.CommandListContext,0)
 
 
         def getRuleIndex(self):
-            return SecureParser.RULE_ifOperator
+            return GuardedParser.RULE_ifOperator
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterIfOperator" ):
@@ -1184,16 +1184,16 @@ class SecureParser ( Parser ):
 
     def ifOperator(self):
 
-        localctx = SecureParser.IfOperatorContext(self, self._ctx, self.state)
+        localctx = GuardedParser.IfOperatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_ifOperator)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 96
-            self.match(SecureParser.T__4)
+            self.match(GuardedParser.T__4)
             self.state = 97
             self.commandList()
             self.state = 98
-            self.match(SecureParser.T__5)
+            self.match(GuardedParser.T__5)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1211,15 +1211,15 @@ class SecureParser ( Parser ):
             self.parser = parser
 
         def commandList(self):
-            return self.getTypedRuleContext(SecureParser.CommandListContext,0)
+            return self.getTypedRuleContext(GuardedParser.CommandListContext,0)
 
 
         def condition(self):
-            return self.getTypedRuleContext(SecureParser.ConditionContext,0)
+            return self.getTypedRuleContext(GuardedParser.ConditionContext,0)
 
 
         def getRuleIndex(self):
-            return SecureParser.RULE_doOperator
+            return GuardedParser.RULE_doOperator
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterDoOperator" ):
@@ -1240,7 +1240,7 @@ class SecureParser ( Parser ):
 
     def doOperator(self):
 
-        localctx = SecureParser.DoOperatorContext(self, self._ctx, self.state)
+        localctx = GuardedParser.DoOperatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_doOperator)
         self._la = 0 # Token type
         try:
@@ -1248,17 +1248,17 @@ class SecureParser ( Parser ):
             self.state = 101
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==SecureParser.T__8:
+            if _la==GuardedParser.T__8:
                 self.state = 100
                 self.condition()
 
 
             self.state = 103
-            self.match(SecureParser.T__6)
+            self.match(GuardedParser.T__6)
             self.state = 104
             self.commandList()
             self.state = 105
-            self.match(SecureParser.T__7)
+            self.match(GuardedParser.T__7)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1276,11 +1276,11 @@ class SecureParser ( Parser ):
             self.parser = parser
 
         def expression(self):
-            return self.getTypedRuleContext(SecureParser.ExpressionContext,0)
+            return self.getTypedRuleContext(GuardedParser.ExpressionContext,0)
 
 
         def getRuleIndex(self):
-            return SecureParser.RULE_condition
+            return GuardedParser.RULE_condition
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterCondition" ):
@@ -1301,16 +1301,16 @@ class SecureParser ( Parser ):
 
     def condition(self):
 
-        localctx = SecureParser.ConditionContext(self, self._ctx, self.state)
+        localctx = GuardedParser.ConditionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_condition)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 107
-            self.match(SecureParser.T__8)
+            self.match(GuardedParser.T__8)
             self.state = 108
             self.expression(0)
             self.state = 109
-            self.match(SecureParser.T__9)
+            self.match(GuardedParser.T__9)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)

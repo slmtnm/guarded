@@ -1,4 +1,4 @@
-# Generated from Secure.g4 by ANTLR 4.9.1
+# Generated from Guarded.g4 by ANTLR 4.9.1
 from antlr4 import *
 from io import StringIO
 from typing.io import TextIO
@@ -74,7 +74,7 @@ def serializedATN():
         return buf.getvalue()
 
 
-class SecureLexer(Lexer):
+class GuardedLexer(Lexer):
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -134,7 +134,7 @@ class SecureLexer(Lexer):
                   "LT", "GE", "LE", "EQ", "NEQ", "AND", "OR", "NEG", "IMPL", 
                   "EQUIV", "LINE_COMMENT" ]
 
-    grammarFileName = "Secure.g4"
+    grammarFileName = "Guarded.g4"
 
     def __init__(self, input=None, output:TextIO = sys.stdout):
         super().__init__(input, output)

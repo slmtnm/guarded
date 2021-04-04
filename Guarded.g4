@@ -1,4 +1,4 @@
-grammar Secure;
+grammar Guarded;
 
 // Tokens
 SEP: ';';
@@ -50,7 +50,7 @@ operator: assignOperator | ifOperator | doOperator;
 // assign operator
 assignOperator: ID ':=' expression;
 
-// secure commands
+// Guarded commands
 commandList: command ('|' command)*;
 command: expression '->' operatorList;
 

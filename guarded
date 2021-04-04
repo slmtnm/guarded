@@ -2,13 +2,13 @@
 import sys
 import argparse
 import antlr4
-from gen.SecureLexer import SecureLexer
-from gen.SecureParser import SecureParser
+from gen.GuardedLexer import GuardedLexer
+from gen.GuardedParser import GuardedParser
 from executing_visitor import ExecutingVisitor
 from deriving_visitor import DerivingVisitor
 
 def parse_arguments() -> (str, str):
-    arg_parser = argparse.ArgumentParser(description="Dijkstra's secure command language interpreter")
+    arg_parser = argparse.ArgumentParser(description="Dijkstra's Guarded command language interpreter")
     arg_parser.add_argument('mode', metavar='MODE', type=str, help='mode for interpreter execution')
     arg_parser.add_argument('file', metavar='FILE', type=str, help='file path of script')
 
@@ -20,9 +20,9 @@ def main():
     mode, file = parse_arguments()
 
     text = antlr4.FileStream(file)
-    lexer = SecureLexer(text)
+    lexer = GuardedLexer(text)
     stream = antlr4.CommonTokenStream(lexer)
-    parser = SecureParser(stream)
+    parser = GuardedParser(stream)
     tree = parser.start()
     print()
 
