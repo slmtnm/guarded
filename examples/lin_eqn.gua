@@ -1,0 +1,21 @@
+#a := 1;
+#b := 2;
+
+rootNum := 2;
+root := 0;
+
+if
+    a == 0 ->
+        if
+            b == 0 -> rootNum := -1 |
+            b != 0 -> rootNum := 0
+        fi |
+    a != 0 ->
+        root := -b / a;
+	rootNum := 1
+fi
+
+{((rootNum == 1) & (a * root + b == 0)) |
+ ((rootNum == 0) & (a == 0) & (b != 0)) |
+ ((rootNum == -1) & (a == 0) & (b == 0))}
+
