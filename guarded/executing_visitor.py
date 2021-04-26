@@ -41,18 +41,17 @@ class ExecutingVisitor(GuardedVisitor):
     def visitOr(self, ctx: GuardedParser.OrContext):
         self.visitChildren(ctx)
         right, left = self._stack.pop(), self._stack.pop()
-        print(left, right)
         self._stack.append(left or right)
 
     def visitImpl(self, ctx: GuardedParser.ImplContext):
         self.visitChildren(ctx)
         right, left = self._stack.pop(), self._stack.pop()
-        return right or not left
+        self._stack.append(right or not left)
 
     def visitEquiv(self, ctx: GuardedParser.EquivContext):
         self.visitChildren(ctx)
         right, left = self._stack.pop(), self._stack.pop()
-        return bool(left) == bool(right)
+        self._stack.append(bool(left) == bool(right))
 
     def visitAddSub(self, ctx: GuardedParser.AddSubContext):
         self.visitChildren(ctx)
@@ -146,7 +145,6 @@ class ExecutingVisitor(GuardedVisitor):
             rand = randint(0, len(command_list.true_commands) - 1)
             self.visitOperatorList(command_list.true_commands[rand])
 
-
     def visitDoOperator(self, ctx: GuardedParser.DoOperatorContext):
         while True:
             # recalc all fuses on each iteration
@@ -160,7 +158,7 @@ class ExecutingVisitor(GuardedVisitor):
                 break
 
     def visitCondition(self, ctx: GuardedParser.ConditionContext):
-        return # do not perform anything
+        pass
 
     def visitStart(self, ctx:GuardedParser.StartContext):
         self.visitChildren(ctx)
