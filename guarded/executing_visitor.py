@@ -161,3 +161,9 @@ class ExecutingVisitor(GuardedVisitor):
 
     def visitCondition(self, ctx: GuardedParser.ConditionContext):
         return # do not perform anything
+
+    def visitStart(self, ctx:GuardedParser.StartContext):
+        self.visitChildren(ctx)
+
+        for key, val in self.vars.items():
+            print(f"{key} = {val}")

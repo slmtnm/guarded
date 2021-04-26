@@ -2,5 +2,6 @@ parser
 .idea
 .antlr
 venv
+.venv
 .vscode
 **/__pycache__

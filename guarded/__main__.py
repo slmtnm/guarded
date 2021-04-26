@@ -1,43 +1,32 @@
-import argparse
-
-import antlr4
+import click
 
 from .deriving_visitor import DerivingVisitor
 from .executing_visitor import ExecutingVisitor
 from guarded.gen.GuardedLexer import GuardedLexer
 from guarded.gen.GuardedParser import GuardedParser
 
-
-def parse_arguments() -> (str, str):
-    arg_parser = argparse.ArgumentParser(description="Dijkstra's Guarded command language interpreter")
-    arg_parser.add_argument('mode', metavar='MODE', type=str, help='mode for interpreter execution')
-    arg_parser.add_argument('file', metavar='FILE', type=str, help='file path of script')
-
-    args = arg_parser.parse_args()
-    return args.mode, args.file
+from antlr4 import CommonTokenStream, FileStream
 
 
-def main():
-    mode, file = parse_arguments()
-
-    text = antlr4.FileStream(file)
-    lexer = GuardedLexer(text)
-    stream = antlr4.CommonTokenStream(lexer)
-    parser = GuardedParser(stream)
-    tree = parser.start()
-    print()
-
-    if mode == 'run':
-        visitor = ExecutingVisitor()
-        visitor.visit(tree)
-
-        print('Final state:')
-        for var_name, var_value in visitor.vars.items():
-            print(f'{var_name} = {var_value}')
-
-    elif mode == 'derive':
-        visitor = DerivingVisitor()
-        visitor.visit(tree)
+@click.group(help='Guarded command language interpreter')
+@click.version_option(prog_name='guarded')
+def cli():
+    ...
 
 
-main()
+@cli.command(help='Run program and print final state')
+@click.argument('file')
+def run(file):
+    ast = GuardedParser(CommonTokenStream(GuardedLexer(FileStream(file)))).start()
+    ExecutingVisitor().visit(ast)
+
+
+@cli.command(help='Derive initial state from specified final state')
+@click.argument('file')
+def derive(file):
+    ast = GuardedParser(CommonTokenStream(GuardedLexer(FileStream(file)))).start()
+    DerivingVisitor().visit(ast)
+
+
+if __name__ == '__main__':
+    cli()
