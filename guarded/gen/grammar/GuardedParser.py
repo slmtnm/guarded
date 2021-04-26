@@ -1,4 +1,4 @@
-# Generated from Guarded.g4 by ANTLR 4.9.1
+# Generated from grammar/Guarded.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -125,7 +125,7 @@ class GuardedParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.9.1")
+        self.checkVersion("4.9.2")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -171,12 +171,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitImpl" ):
                 listener.exitImpl(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitImpl" ):
-                return visitor.visitImpl(self)
-            else:
-                return visitor.visitChildren(self)
-
 
     class OrContext(ExpressionContext):
 
@@ -200,12 +194,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitOr" ):
                 listener.exitOr(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitOr" ):
-                return visitor.visitOr(self)
-            else:
-                return visitor.visitChildren(self)
 
 
     class MulDivContext(ExpressionContext):
@@ -234,12 +222,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitMulDiv" ):
                 listener.exitMulDiv(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitMulDiv" ):
-                return visitor.visitMulDiv(self)
-            else:
-                return visitor.visitChildren(self)
-
 
     class AddSubContext(ExpressionContext):
 
@@ -267,12 +249,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitAddSub" ):
                 listener.exitAddSub(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAddSub" ):
-                return visitor.visitAddSub(self)
-            else:
-                return visitor.visitChildren(self)
-
 
     class UnarySubContext(ExpressionContext):
 
@@ -294,12 +270,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitUnarySub" ):
                 listener.exitUnarySub(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitUnarySub" ):
-                return visitor.visitUnarySub(self)
-            else:
-                return visitor.visitChildren(self)
-
 
     class TrueContext(ExpressionContext):
 
@@ -317,12 +287,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTrue" ):
                 listener.exitTrue(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTrue" ):
-                return visitor.visitTrue(self)
-            else:
-                return visitor.visitChildren(self)
 
 
     class FalseContext(ExpressionContext):
@@ -342,12 +306,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitFalse" ):
                 listener.exitFalse(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFalse" ):
-                return visitor.visitFalse(self)
-            else:
-                return visitor.visitChildren(self)
-
 
     class IdentifierContext(ExpressionContext):
 
@@ -365,12 +323,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitIdentifier" ):
                 listener.exitIdentifier(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitIdentifier" ):
-                return visitor.visitIdentifier(self)
-            else:
-                return visitor.visitChildren(self)
 
 
     class BracketsContext(ExpressionContext):
@@ -391,12 +343,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitBrackets" ):
                 listener.exitBrackets(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitBrackets" ):
-                return visitor.visitBrackets(self)
-            else:
-                return visitor.visitChildren(self)
-
 
     class NumberContext(ExpressionContext):
 
@@ -414,12 +360,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitNumber" ):
                 listener.exitNumber(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumber" ):
-                return visitor.visitNumber(self)
-            else:
-                return visitor.visitChildren(self)
 
 
     class AndContext(ExpressionContext):
@@ -445,12 +385,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitAnd" ):
                 listener.exitAnd(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAnd" ):
-                return visitor.visitAnd(self)
-            else:
-                return visitor.visitChildren(self)
-
 
     class EquivContext(ExpressionContext):
 
@@ -475,12 +409,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitEquiv" ):
                 listener.exitEquiv(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitEquiv" ):
-                return visitor.visitEquiv(self)
-            else:
-                return visitor.visitChildren(self)
-
 
     class NegateContext(ExpressionContext):
 
@@ -501,12 +429,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitNegate" ):
                 listener.exitNegate(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNegate" ):
-                return visitor.visitNegate(self)
-            else:
-                return visitor.visitChildren(self)
 
 
     class LogicContext(ExpressionContext):
@@ -542,12 +464,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitLogic" ):
                 listener.exitLogic(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitLogic" ):
-                return visitor.visitLogic(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -789,12 +705,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitStart" ):
                 listener.exitStart(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitStart" ):
-                return visitor.visitStart(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -856,12 +766,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitOperatorList" ):
                 listener.exitOperatorList(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitOperatorList" ):
-                return visitor.visitOperatorList(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -926,12 +830,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitOperator" ):
                 listener.exitOperator(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitOperator" ):
-                return visitor.visitOperator(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -995,12 +893,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitAssignOperator" ):
                 listener.exitAssignOperator(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAssignOperator" ):
-                return visitor.visitAssignOperator(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1055,12 +947,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitCommandList" ):
                 listener.exitCommandList(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCommandList" ):
-                return visitor.visitCommandList(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1121,12 +1007,6 @@ class GuardedParser ( Parser ):
             if hasattr( listener, "exitCommand" ):
                 listener.exitCommand(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCommand" ):
-                return visitor.visitCommand(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1172,12 +1052,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitIfOperator" ):
                 listener.exitIfOperator(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitIfOperator" ):
-                return visitor.visitIfOperator(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1228,12 +1102,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDoOperator" ):
                 listener.exitDoOperator(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDoOperator" ):
-                return visitor.visitDoOperator(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1289,12 +1157,6 @@ class GuardedParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitCondition" ):
                 listener.exitCondition(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCondition" ):
-                return visitor.visitCondition(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
