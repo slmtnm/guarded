@@ -1,3 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
-antlr4 -Dlanguage=Python3 -o guarded/gen/ grammar/Guarded.g4
+cd "$(dirname ${BASH_SOURCE[0]})"
+antlr4 -Dlanguage=Python3 -visitor -o ../guarded/gen/ Guarded.g4

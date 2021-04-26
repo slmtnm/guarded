@@ -1,6 +1,6 @@
 from random import randint
-from gen.GuardedVisitor import GuardedVisitor
-from gen.GuardedParser import GuardedParser
+from .gen.GuardedVisitor import GuardedVisitor
+from .gen.GuardedParser import GuardedParser
 
 
 class ExecutingVisitor(GuardedVisitor):

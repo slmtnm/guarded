@@ -1,5 +1,5 @@
-from gen.GuardedVisitor import GuardedVisitor
-from gen.GuardedParser import GuardedParser
+from .gen.GuardedVisitor import GuardedVisitor
+from .gen.GuardedParser import GuardedParser
 from antlr4.tree.Tree import TerminalNode
 import sympy as sp
 
