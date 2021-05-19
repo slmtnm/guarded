@@ -1,12 +1,13 @@
 from random import randint
 from .gen.GuardedVisitor import GuardedVisitor
 from .gen.GuardedParser import GuardedParser
+from .macro_visitor import MacroVisitor
 
 
-class ExecutingVisitor(GuardedVisitor):
+class ExecutingVisitor(MacroVisitor):
     def __init__(self):
+        super(ExecutingVisitor, self).__init__()
         self._stack = []
-
         self.vars = {} # name -> value mapping of all variables
 
     def visitNumber(self, ctx: GuardedParser.NumberContext):
@@ -14,7 +15,17 @@ class ExecutingVisitor(GuardedVisitor):
         self._stack.append(num)
 
     def visitIdentifier(self, ctx: GuardedParser.IdentifierContext):
-        value = self.vars[ctx.getText()]
+        identifier = ctx.getText()
+        if identifier in self.vars:
+            value = self.vars[identifier]
+        else:
+            assert len(self.replacementStack) > 0, "Undefined identifier " + identifier
+            replacement = self.replacementStack[-1]
+            assert identifier in replacement, "Undefined identifier " + identifier
+
+            self.visitIdentifier(replacement[identifier])
+            value = self._stack.pop()
+
         self._stack.append(value)
 
     def visitTrue(self, ctx: GuardedParser.TrueContext):
@@ -160,7 +171,14 @@ class ExecutingVisitor(GuardedVisitor):
     def visitCondition(self, ctx: GuardedParser.ConditionContext):
         pass
 
-    def visitStart(self, ctx:GuardedParser.StartContext):
+    def visitStart(self, ctx: GuardedParser.StartContext):
+        # macro layer
+        children = list(ctx.getChildren())
+        [self.visitFunctionDefinition(f) for f in children if isinstance(f, GuardedParser.FunctionDefinitionContext)]
+
+        print("functions: ", self.functions)
+
+        # execute
         self.visitChildren(ctx)
 
         for key, val in self.vars.items():

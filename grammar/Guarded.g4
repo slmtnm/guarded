@@ -41,11 +41,11 @@ expression
    ;
 
 // Program is an operator or multiple operators
-start : operatorList condition? EOF;
+start : operatorList condition? functionDefinition* EOF;
 operatorList: operator (SEP operator)*;
 
 // Operators
-operator: assignOperator | ifOperator | doOperator;
+operator: assignOperator | ifOperator | doOperator | functionCall;
 
 // assign operator
 assignOperator: ID ':=' expression;
@@ -57,6 +57,17 @@ command: expression '->' operatorList;
 ifOperator: 'if' commandList 'fi';
 doOperator: condition? 'do' commandList 'od';
 condition: '{' expression '}';
+
+// macro-functions
+functionCall: voidFunctionCall | parametrizedFunctionCall;
+voidFunctionCall: ID '(' ')';
+parametrizedFunctionCall: ID '(' parameters ')';
+
+functionDefinition: (voidFunctionDefinition | parametrizedFunctionDefinition) ':=' operatorList;
+voidFunctionDefinition: ID '(' ')';
+parametrizedFunctionDefinition: ID '(' parameters ')';
+
+parameters: ID (',' ID)*;
 
 // comments
 LINE_COMMENT
