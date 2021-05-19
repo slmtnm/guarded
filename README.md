@@ -27,5 +27,11 @@ To start using interpreter, follow these steps:
 
 * Launch program of your choice with:
 ```console
-  $ python -m guarded run ./examples/euqclid.gua
+  $ python -m guarded ./examples/euqclid.gua run
+```
+
+### Installing package
+```console
+  $ pip install --editable .
+  $ guarded --help
 ```
