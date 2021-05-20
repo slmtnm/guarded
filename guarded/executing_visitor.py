@@ -1,4 +1,5 @@
 from random import randint
+from pprint import pprint
 from .gen.GuardedVisitor import GuardedVisitor
 from .gen.GuardedParser import GuardedParser
 from .macro_visitor import MacroVisitor
@@ -16,17 +17,18 @@ class ExecutingVisitor(MacroVisitor):
 
     def visitIdentifier(self, ctx: GuardedParser.IdentifierContext):
         identifier = ctx.getText()
+
         if identifier in self.vars:
-            value = self.vars[identifier]
-        else:
-            assert len(self.replacementStack) > 0, "Undefined identifier " + identifier
+            self._stack.append(self.vars[identifier])
+            return
+
+        if self.replacementStack:
             replacement = self.replacementStack[-1]
-            assert identifier in replacement, "Undefined identifier " + identifier
+            if identifier in replacement:
+                self._stack.append(replacement[identifier])
+                return
 
-            self.visitIdentifier(replacement[identifier])
-            value = self._stack.pop()
-
-        self._stack.append(value)
+        raise AssertionError("Undefined identifier " + identifier)  
 
     def visitTrue(self, ctx: GuardedParser.TrueContext):
         self._stack.append(True)
@@ -112,11 +114,14 @@ class ExecutingVisitor(MacroVisitor):
             raise Exception(f"Unexpected logical operation: {op}")
 
     def visitAssignOperator(self, ctx: GuardedParser.AssignOperatorContext):
+        children = list(ctx.getChildren())
         self.visitChildren(ctx)
 
-        children = list(ctx.getChildren())
-        var_name = children[0].getText()
         var_value = self._stack.pop()
+        var_name = children[0].getText()
+
+        # if self.replacementStack and var_name in self.replacementStack[-1]:
+        #     var_name = self.replacementStack[-1][var_name]
 
         self.vars[var_name] = var_value
 
@@ -176,10 +181,28 @@ class ExecutingVisitor(MacroVisitor):
         children = list(ctx.getChildren())
         [self.visitFunctionDefinition(f) for f in children if isinstance(f, GuardedParser.FunctionDefinitionContext)]
 
-        print("functions: ", self.functions)
+        pprint(self.functions, width=1)
 
         # execute
         self.visitChildren(ctx)
 
         for key, val in self.vars.items():
             print(f"{key} = {val}")
+
+    def visitFunctionCall(self, ctx: GuardedParser.FunctionCallContext):
+        children = list(ctx.getChildren())
+        function_name = children[0].getText()
+        function = self.functions[function_name]
+
+        params_ctx = children[2]
+        self.visitChildren(params_ctx)
+        params = reversed([self._stack.pop() for p in function.parameters])
+        replacement = dict(zip(function.parameters, params))
+        print('replacement: ', replacement)
+
+        self.replacementStack.append(replacement)
+        old_vars = self.vars
+        self.vars = {}
+        self.visitOperatorList(function.body)
+        self.vars = old_vars | self.vars
+        self.replacementStack.pop()

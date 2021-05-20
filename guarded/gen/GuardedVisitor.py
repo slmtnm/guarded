@@ -129,33 +129,18 @@ class GuardedVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GuardedParser#voidFunctionCall.
-    def visitVoidFunctionCall(self, ctx:GuardedParser.VoidFunctionCallContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by GuardedParser#parametrizedFunctionCall.
-    def visitParametrizedFunctionCall(self, ctx:GuardedParser.ParametrizedFunctionCallContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by GuardedParser#functionDefinition.
     def visitFunctionDefinition(self, ctx:GuardedParser.FunctionDefinitionContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GuardedParser#voidFunctionDefinition.
-    def visitVoidFunctionDefinition(self, ctx:GuardedParser.VoidFunctionDefinitionContext):
+    # Visit a parse tree produced by GuardedParser#formalParameters.
+    def visitFormalParameters(self, ctx:GuardedParser.FormalParametersContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GuardedParser#parametrizedFunctionDefinition.
-    def visitParametrizedFunctionDefinition(self, ctx:GuardedParser.ParametrizedFunctionDefinitionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by GuardedParser#parameters.
-    def visitParameters(self, ctx:GuardedParser.ParametersContext):
+    # Visit a parse tree produced by GuardedParser#actualParameters.
+    def visitActualParameters(self, ctx:GuardedParser.ActualParametersContext):
         return self.visitChildren(ctx)
 
 

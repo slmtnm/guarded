@@ -224,24 +224,6 @@ class GuardedListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GuardedParser#voidFunctionCall.
-    def enterVoidFunctionCall(self, ctx:GuardedParser.VoidFunctionCallContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#voidFunctionCall.
-    def exitVoidFunctionCall(self, ctx:GuardedParser.VoidFunctionCallContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#parametrizedFunctionCall.
-    def enterParametrizedFunctionCall(self, ctx:GuardedParser.ParametrizedFunctionCallContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#parametrizedFunctionCall.
-    def exitParametrizedFunctionCall(self, ctx:GuardedParser.ParametrizedFunctionCallContext):
-        pass
-
-
     # Enter a parse tree produced by GuardedParser#functionDefinition.
     def enterFunctionDefinition(self, ctx:GuardedParser.FunctionDefinitionContext):
         pass
@@ -251,30 +233,21 @@ class GuardedListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GuardedParser#voidFunctionDefinition.
-    def enterVoidFunctionDefinition(self, ctx:GuardedParser.VoidFunctionDefinitionContext):
+    # Enter a parse tree produced by GuardedParser#formalParameters.
+    def enterFormalParameters(self, ctx:GuardedParser.FormalParametersContext):
         pass
 
-    # Exit a parse tree produced by GuardedParser#voidFunctionDefinition.
-    def exitVoidFunctionDefinition(self, ctx:GuardedParser.VoidFunctionDefinitionContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#parametrizedFunctionDefinition.
-    def enterParametrizedFunctionDefinition(self, ctx:GuardedParser.ParametrizedFunctionDefinitionContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#parametrizedFunctionDefinition.
-    def exitParametrizedFunctionDefinition(self, ctx:GuardedParser.ParametrizedFunctionDefinitionContext):
+    # Exit a parse tree produced by GuardedParser#formalParameters.
+    def exitFormalParameters(self, ctx:GuardedParser.FormalParametersContext):
         pass
 
 
-    # Enter a parse tree produced by GuardedParser#parameters.
-    def enterParameters(self, ctx:GuardedParser.ParametersContext):
+    # Enter a parse tree produced by GuardedParser#actualParameters.
+    def enterActualParameters(self, ctx:GuardedParser.ActualParametersContext):
         pass
 
-    # Exit a parse tree produced by GuardedParser#parameters.
-    def exitParameters(self, ctx:GuardedParser.ParametersContext):
+    # Exit a parse tree produced by GuardedParser#actualParameters.
+    def exitActualParameters(self, ctx:GuardedParser.ActualParametersContext):
         pass
 
 

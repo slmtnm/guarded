@@ -59,15 +59,11 @@ doOperator: condition? 'do' commandList 'od';
 condition: '{' expression '}';
 
 // macro-functions
-functionCall: voidFunctionCall | parametrizedFunctionCall;
-voidFunctionCall: ID '(' ')';
-parametrizedFunctionCall: ID '(' parameters ')';
+functionCall: ID '(' actualParameters ')';
+functionDefinition: ID '(' formalParameters ')' ':=' operatorList;
 
-functionDefinition: (voidFunctionDefinition | parametrizedFunctionDefinition) ':=' operatorList;
-voidFunctionDefinition: ID '(' ')';
-parametrizedFunctionDefinition: ID '(' parameters ')';
-
-parameters: ID (',' ID)*;
+formalParameters: (ID (',' ID)* )?;
+actualParameters: (expression (',' expression)* )?;
 
 // comments
 LINE_COMMENT
