@@ -25,6 +25,4 @@ class MacroVisitor(GuardedVisitor):
         params = list(filter(lambda t: t != ',', map(lambda c: c.getText(), function_params.getChildren())))
         body = children[5]
 
-        # TODO: check if all external identifiers in body are function parameters
-
         self.functions[function_name] = Function(params, body)
