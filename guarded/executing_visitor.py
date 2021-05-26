@@ -125,6 +125,9 @@ class ExecutingVisitor(MacroVisitor):
 
         self.vars[var_name] = var_value
 
+    def visitExprFnCall(self, ctx: GuardedParser.ExprFnCallContext):
+        raise Exception("Macro function call in expression")
+
     def visitCommand(self, ctx: GuardedParser.CommandContext):
         children = list(ctx.getChildren())
         if isinstance(children[0], GuardedParser.LogicContext):

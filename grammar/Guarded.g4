@@ -24,7 +24,8 @@ IMPL: '>>';
 EQUIV: '<=>';
 
 expression
-   : SUB expression                                         # UnarySub
+   : functionCall                                           # ExprFnCall
+   | SUB expression                                         # UnarySub
    | NEG expression                                         # Negate
    | '(' expression ')'                                     # Brackets
    | expression op=('*'|'/') expression                     # MulDiv
@@ -50,7 +51,7 @@ operator: assignOperator | ifOperator | doOperator | functionCall;
 // assign operator
 assignOperator: ID ':=' expression;
 
-// Guarded commands
+// Guarded comm ands
 commandList: command ('|' command)*;
 command: expression '->' operatorList;
 

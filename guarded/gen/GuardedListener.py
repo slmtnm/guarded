@@ -71,6 +71,15 @@ class GuardedListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GuardedParser#ExprFnCall.
+    def enterExprFnCall(self, ctx:GuardedParser.ExprFnCallContext):
+        pass
+
+    # Exit a parse tree produced by GuardedParser#ExprFnCall.
+    def exitExprFnCall(self, ctx:GuardedParser.ExprFnCallContext):
+        pass
+
+
     # Enter a parse tree produced by GuardedParser#Identifier.
     def enterIdentifier(self, ctx:GuardedParser.IdentifierContext):
         pass

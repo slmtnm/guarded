@@ -44,6 +44,11 @@ class GuardedVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by GuardedParser#ExprFnCall.
+    def visitExprFnCall(self, ctx:GuardedParser.ExprFnCallContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by GuardedParser#Identifier.
     def visitIdentifier(self, ctx:GuardedParser.IdentifierContext):
         return self.visitChildren(ctx)
