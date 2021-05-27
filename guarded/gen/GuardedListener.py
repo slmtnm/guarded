@@ -260,5 +260,14 @@ class GuardedListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GuardedParser#initialAssignments.
+    def enterInitialAssignments(self, ctx:GuardedParser.InitialAssignmentsContext):
+        pass
+
+    # Exit a parse tree produced by GuardedParser#initialAssignments.
+    def exitInitialAssignments(self, ctx:GuardedParser.InitialAssignmentsContext):
+        pass
+
+
 
 del GuardedParser

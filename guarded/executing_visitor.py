@@ -1,5 +1,8 @@
 from random import randint
 from pprint import pprint
+
+import antlr4
+import itertools
 from .gen.GuardedVisitor import GuardedVisitor
 from .gen.GuardedParser import GuardedParser
 from .macro_visitor import MacroVisitor
@@ -114,16 +117,21 @@ class ExecutingVisitor(MacroVisitor):
             raise Exception(f"Unexpected logical operation: {op}")
 
     def visitAssignOperator(self, ctx: GuardedParser.AssignOperatorContext):
-        children = list(ctx.getChildren())
+        children_iter = ctx.getChildren()
+        var_names = list(map(
+            lambda c: c.getText(),
+            filter(lambda c: c.getText() != ',',
+                itertools.takewhile(lambda c: c.getText() != ':=', children_iter))
+            ) 
+        )
+        expressions = list(filter(lambda c: c.getText() != ',', children_iter))
+        assert len(var_names) == len(expressions), "Multi assignment with different number of variables and values"
+
         self.visitChildren(ctx)
-
-        var_value = self._stack.pop()
-        var_name = children[0].getText()
-
-        # if self.replacementStack and var_name in self.replacementStack[-1]:
-        #     var_name = self.replacementStack[-1][var_name]
-
-        self.vars[var_name] = var_value
+        values = list(reversed(
+            list(self._stack.pop() for i in range(len(expressions)))
+        ))
+        self.vars |= dict(zip(var_names, values))
 
     def visitExprFnCall(self, ctx: GuardedParser.ExprFnCallContext):
         raise Exception("Macro function call in expression")
@@ -179,12 +187,13 @@ class ExecutingVisitor(MacroVisitor):
     def visitCondition(self, ctx: GuardedParser.ConditionContext):
         pass
 
+    def visitInitialAssignments(self, ctx: GuardedParser.InitialAssignmentsContext):
+        self.visitChildren(ctx)
+
     def visitStart(self, ctx: GuardedParser.StartContext):
         # macro layer
         children = list(ctx.getChildren())
         [self.visitFunctionDefinition(f) for f in children if isinstance(f, GuardedParser.FunctionDefinitionContext)]
-
-        pprint(self.functions, width=1)
 
         # execute
         self.visitChildren(ctx)

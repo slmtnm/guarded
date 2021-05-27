@@ -1,11 +1,8 @@
-a := 45;
-b := 15;
+[X, Y := 45, 15]
+x, y := X, Y;
 
-{a == 45}
-do a != b ->
-        if a > b -> a := a - b |
-           a < b -> b := b - a
-        fi
+{gcd(x, y) == gcd(X, Y) & x >= 0 & y >= 0}
+do x > y -> x := x - y
+|  x < y -> y := y - x
 od
-
-{a == b}
+{x == gcd(X, Y)}
