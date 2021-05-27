@@ -124,6 +124,8 @@ class ExecutingVisitor(MacroVisitor):
                 itertools.takewhile(lambda c: c.getText() != ':=', children_iter))
             ) 
         )
+        assert len(var_names) == len(set(var_names)), "Multi assignment with same variables in left-hand side"
+
         expressions = list(filter(lambda c: c.getText() != ',', children_iter))
         assert len(var_names) == len(expressions), "Multi assignment with different number of variables and values"
 
