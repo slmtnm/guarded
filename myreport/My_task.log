@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.22)  22 MAY 2021 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.22)  29 MAY 2021 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2288,26 +2288,1270 @@ with kernel methods
 (/usr/share/texmf-dist/tex/latex/xassoccnt/xassoccnt.sty
 Package: xassoccnt 2020/07/19 - v1.8
 
-! Interruption.
-tl_if_empty:oTF ...el_tl_to_str:w exp_after:wN {#1
-                                                  }scan_stop: exp_after:wN u...
-l.30 \RequirePackage
-                    {l3keys2e}
-? 
-! Emergency stop.
-tl_if_empty:oTF ...el_tl_to_str:w exp_after:wN {#1
-                                                  }scan_stop: exp_after:wN u...
-l.30 \RequirePackage
-                    {l3keys2e}
-End of file on the terminal!
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-12-03 L3 programming layer (loader) 
 
- 
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count379
+\l__pdf_internal_box=\box106
+))
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
+(/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
+)
+\g__xassoccnt_tmpa_int=\count380
+\l__xassoccnt_tmpa_int=\count381
+\l__xassoccnt_initialcountervalue_int=\count382
+\g__xassoccnt_lastcountervalue_int=\count383
+\g__xassoccnt_backupcalls_int=\count384
+\l__xassoccnt_backuptmpa_int=\count385
+\l_xassoccnt_resetlist_counter=\count386
+)
+Package xassoccnt Info: 2020/07/19-v1.8--steppingcounterssimultaneouslyandother
+features on input line 248.
+
+
+Package xassoccnt Warning: Warning: Package "calc" is loaded -- this is not
+(xassoccnt)                recommended for xassoccnt
+(xassoccnt)                
+
+(/usr/share/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+LaTeX Info: Redefining \Cref on input line 925.
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `amsthm' support loaded on input line 3026.
+))
+(./template_settings/Dissertation/dispackages.tex
+(/usr/share/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks55
+\AP@partial=\box107
+\AP@footins=\box108
+))
+(./template_settings/Dissertation/userpackages.tex
+(/usr/share/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+
+(/usr/share/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(/usr/share/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count387
+)
+(/usr/share/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+
+(/usr/share/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/share/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count388
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count389
+\FP@xia=\count390
+\FP@xib=\count391
+\FP@xfa=\count392
+\FP@xfb=\count393
+\FP@rega=\count394
+\FP@regb=\count395
+\FP@regs=\count396
+\FP@times=\count397
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count398
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/share/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks56
+\@dtl@tmpcount=\count399
+\dtl@tmplength=\skip271
+\dtl@sortresult=\count400
+\@dtl@numgrpsepcount=\count401
+\@dtl@datatype=\count402
+\dtl@codeA=\count403
+\dtl@codeB=\count404
+\@dtl@foreach@level=\count405
+)
+(/usr/share/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+\@glsmfirst=\toks57
+\@glsmrest=\toks58
+)
+(/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box109
+\UL@hyphenbox=\box110
+\UL@skip=\skip272
+\UL@hook=\toks59
+\UL@height=\dimen301
+\UL@pe=\count406
+\UL@pixel=\dimen302
+\ULC@box=\box111
+Package: ulem 2019/11/18
+\ULdepth=\dimen303
+)
+(/usr/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/share/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box112
+\sift@deathcycles=\count407
+\@vwid@loff=\dimen304
+\@vwid@roff=\dimen305
+)
+\c@taburow=\count408
+\tabu@nbcols=\count409
+\tabu@cnt=\count410
+\tabu@Xcol=\count411
+\tabu@alloc=\count412
+\tabu@nested=\count413
+\tabu@target=\dimen306
+\tabu@spreadtarget=\dimen307
+\tabu@naturalX=\dimen308
+\tabucolX=\dimen309
+\tabu@Xsum=\dimen310
+\extrarowdepth=\dimen311
+\abovetabulinesep=\dimen312
+\belowtabulinesep=\dimen313
+\tabustrutrule=\dimen314
+\tabu@thebody=\toks60
+\tabu@footnotes=\toks61
+\tabu@box=\box113
+\tabu@arstrutbox=\box114
+\tabu@hleads=\box115
+\tabu@vleads=\box116
+\tabu@cellskip=\skip273
+)
+(/usr/share/texmf-dist/tex/latex/tabulary/tabulary.sty
+Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
+\TY@count=\count414
+\TY@linewidth=\dimen315
+\tymin=\dimen316
+\tymax=\dimen317
+\TY@tablewidth=\dimen318
+)
+(/usr/share/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
+
+\flrow@LT@lasthead=\box117
+\flrow@LT@prelastfoot=\box118
+\c@FBLTpage=\count415
+)
+(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count416
+\FV@InFile=\read5
+\FV@TabBox=\box119
+\c@FancyVerbLine=\count417
+\FV@StepNumber=\count418
+\FV@OutFile=\write6
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count419
+\lst@gtempboxa=\box120
+\lst@token=\toks62
+\lst@length=\count420
+\lst@currlwidth=\dimen319
+\lst@column=\count421
+\lst@pos=\count422
+\lst@lostspace=\dimen320
+\lst@width=\dimen321
+\lst@newlines=\count423
+\lst@lineno=\count424
+\lst@maxwidth=\dimen322
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count425
+\lst@skipnumbers=\count426
+\lst@framebox=\box121
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/usr/share/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup14
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \upalpha on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \upbeta on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \upgamma on input line 42.
+LaTeX Font Info:    Redeclaring math symbol \updelta on input line 43.
+LaTeX Font Info:    Redeclaring math symbol \upepsilon on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \upzeta on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \upeta on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \uptheta on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \upiota on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \upkappa on input line 49.
+LaTeX Font Info:    Redeclaring math symbol \uplambda on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \upmu on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \upnu on input line 52.
+LaTeX Font Info:    Redeclaring math symbol \upxi on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \uprho on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \upsigma on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \uptau on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \upupsilon on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \upphi on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \upchi on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \uppsi on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \upomega on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \upvarepsilon on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \upvartheta on input line 64.
+LaTeX Font Info:    Redeclaring math symbol \upvarpi on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \upvarphi on input line 68.
+)
+(/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+\MT@toks=\toks63
+\MT@count=\count427
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen323
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
+\MT@listname@count=\count428
+
+(/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 914.
+LaTeX Info: Redefining \lslig on input line 914.
+\MT@outer@space=\skip274
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+)))
+(./template_settings/Dissertation/setup.tex
+\c@intvl=\count429
+\c@otstup=\count430
+\c@contnumeq=\count431
+\c@contnumfig=\count432
+\c@contnumtab=\count433
+\c@pgnum=\count434
+\c@chapstyle=\count435
+\c@headingdelim=\count436
+\c@headingalign=\count437
+\c@headingsize=\count438
+\c@tabcap=\count439
+\c@tablaba=\count440
+\c@tabtita=\count441
+\c@docType=\count442
+\c@tskPrint=\count443
+\c@tskPages=\count444
+\c@tskPageFirst=\count445
+\c@tskPageLast=\count446
+\c@sumPrint=\count447
+\c@sumPages=\count448
+\c@sumPageFirst=\count449
+\c@sumPageLast=\count450
+)
+(./template_settings/Dissertation/preamblenames.tex)
+(./template_settings/common/styles.tex
+\mfloatsep=\skip275
+\ltskip=\skip276
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box122
+)
+\tc@llx=\dimen324
+\tc@lly=\dimen325
+\tc@urx=\dimen326
+\tc@ury=\dimen327
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen328
+\adjbox@Height=\dimen329
+\adjbox@Depth=\dimen330
+\adjbox@Totalheight=\dimen331
+\adjbox@pwidth=\dimen332
+\adjbox@pheight=\dimen333
+\adjbox@pdepth=\dimen334
+\adjbox@ptotalheight=\dimen335
+
+(/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count451
+LaTeX Info: Redefining \checkoddpage on input line 45.
+))
+Package hyperref Info: Option `linktocpage' set `true' on input line 188.
+Package hyperref Info: Option `plainpages' set `false' on input line 188.
+
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 188.
+
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 188.
+
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 188.
+\c@m-theorem=\count452
+\c@m-corollary=\count453
+\c@m-proposition=\count454
+\c@m-lemma=\count455
+\c@m-axiom=\count456
+\c@m-example=\count457
+\c@m-definition=\count458
+\c@m-condition=\count459
+\c@m-problem=\count460
+\c@m-exercise=\count461
+\c@m-question=\count462
+\c@m-hypothesis=\count463
+\c@m-task=\count464
+) (./template_settings/Dissertation/disstyles.tex
+\otstuplen=\skip277
+
+(/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+\c@mychapternumber=\count465
+\c@chapterDOI=\count466
+\c@mytotalfigures=\count467
+\c@xassoccnt@total@mytotalfigures=\count468
+\c@mytotalfiguresInApp=\count469
+\c@xassoccnt@total@mytotalfiguresInApp=\count470
+\c@mytotaltables=\count471
+\c@xassoccnt@total@mytotaltables=\count472
+\c@mytotaltablesInApp=\count473
+\c@xassoccnt@total@mytotaltablesInApp=\count474
+\c@myappendices=\count475
+\c@xassoccnt@total@myappendices=\count476
+\c@mypages=\count477
+\c@mytotalpagesInApp=\count478
+\c@myfigures=\count479
+\c@mytables=\count480
+\c@citenum=\count481
+\c@citenum@totc=\count482
+
+(/usr/share/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count483
+\algocf@hangindent=\skip278
+
+(/usr/share/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip279
+\skiplinenumber=\skip280
+\skiprule=\skip281
+\skiphlne=\skip282
+\skiptext=\skip283
+\skiplength=\skip284
+\algomargin=\skip285
+\skipalgocfslide=\skip286
+\algowidth=\dimen336
+\inoutsize=\dimen337
+\inoutindent=\dimen338
+\interspacetitleruled=\dimen339
+\interspacealgoruled=\dimen340
+\interspacetitleboxruled=\dimen341
+\algocf@ruledwidth=\skip287
+\algocf@inoutbox=\box123
+\algocf@inputbox=\box124
+\AlCapSkip=\skip288
+\AlCapHSkip=\skip289
+\algoskipindent=\skip290
+\algocf@nlbox=\box125
+\algocf@hangingbox=\box126
+\algocf@untilbox=\box127
+\algocf@skipuntil=\skip291
+\algocf@capbox=\box128
+\algocf@lcaptionbox=\skip292
+\algoheightruledefault=\skip293
+\algoheightrule=\skip294
+\algotitleheightruledefault=\skip295
+\algotitleheightrule=\skip296
+\c@algocfline=\count484
+\c@algocfproc=\count485
+\c@algocf=\count486
+\algocf@algoframe=\box129
+\algocf@algobox=\box130
+))
+(./template_settings/Dissertation/userstyles.tex
+\twless=\skip297
+\lmarg=\skip298
+\c@ListingEnv=\count487
+\c@loldepth=\count488
+\c@rowcnt=\count489
+)
+(./template_settings/biblio/bibliopreamble.tex
+(./template_settings/biblio/biblatex.tex
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
+
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count490
+
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count491
+\c@listtotal=\count492
+\c@listcount=\count493
+\c@liststart=\count494
+\c@liststop=\count495
+\c@citecount=\count496
+\c@citetotal=\count497
+\c@multicitecount=\count498
+\c@multicitetotal=\count499
+\c@instcount=\count500
+\c@maxnames=\count501
+\c@minnames=\count502
+\c@maxitems=\count503
+\c@minitems=\count504
+\c@citecounter=\count505
+\c@maxcitecounter=\count506
+\c@savedcitecounter=\count507
+\c@uniquelist=\count508
+\c@uniquename=\count509
+\c@refsection=\count510
+\c@refsegment=\count511
+\c@maxextratitle=\count512
+\c@maxextratitleyear=\count513
+\c@maxextraname=\count514
+\c@maxextradate=\count515
+\c@maxextraalpha=\count516
+\c@abbrvpenalty=\count517
+\c@highnamepenalty=\count518
+\c@lownamepenalty=\count519
+\c@maxparens=\count520
+\c@parenlevel=\count521
+\blx@tempcnta=\count522
+\blx@tempcntb=\count523
+\blx@tempcntc=\count524
+\blx@maxsection=\count525
+\blx@maxsegment@0=\count526
+\blx@notetype=\count527
+\blx@parenlevel@text=\count528
+\blx@parenlevel@foot=\count529
+\blx@sectionciteorder@0=\count530
+\blx@entrysetcounter=\count531
+\blx@biblioinstance=\count532
+\labelnumberwidth=\skip299
+\labelalphawidth=\skip300
+\biblabelsep=\skip301
+\bibnamesep=\skip302
+\bibinitsep=\skip303
+\bibparsep=\skip304
+\bibhang=\skip305
+\blx@bcfin=\read6
+\blx@bcfout=\write7
+\blx@langwohyphens=\language87
+\c@mincomprange=\count533
+\c@maxcomprange=\count534
+\c@mincompwidth=\count535
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'gost-numeric.dbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex-gost/gost-numeric.dbx
+File: gost-numeric.dbx 2020/10/28 v1.21 biblatex-gost data model
+Package biblatex Info: Trying to load biblatex-gost data model...
+Package biblatex Info: ... file 'biblatex-gost.dbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.dbx
+File: biblatex-gost.dbx 2020/10/28 v1.21 biblatex-gost data model
+))
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count536
+\c@savedafterword=\count537
+\c@annotator=\count538
+\c@savedannotator=\count539
+\c@author=\count540
+\c@savedauthor=\count541
+\c@bookauthor=\count542
+\c@savedbookauthor=\count543
+\c@commentator=\count544
+\c@savedcommentator=\count545
+\c@editor=\count546
+\c@savededitor=\count547
+\c@editora=\count548
+\c@savededitora=\count549
+\c@editorb=\count550
+\c@savededitorb=\count551
+\c@editorc=\count552
+\c@savededitorc=\count553
+\c@foreword=\count554
+\c@savedforeword=\count555
+\c@holder=\count556
+\c@savedholder=\count557
+\c@introduction=\count558
+\c@savedintroduction=\count559
+\c@namea=\count560
+\c@savednamea=\count561
+\c@nameb=\count562
+\c@savednameb=\count563
+\c@namec=\count564
+\c@savednamec=\count565
+\c@translator=\count566
+\c@savedtranslator=\count567
+\c@shortauthor=\count568
+\c@savedshortauthor=\count569
+\c@shorteditor=\count570
+\c@savedshorteditor=\count571
+\c@booktranslator=\count572
+\c@savedbooktranslator=\count573
+\c@bookcommentator=\count574
+\c@savedbookcommentator=\count575
+\c@bookannotator=\count576
+\c@savedbookannotator=\count577
+\c@bookintroduction=\count578
+\c@savedbookintroduction=\count579
+\c@bookforeword=\count580
+\c@savedbookforeword=\count581
+\c@bookafterword=\count582
+\c@savedbookafterword=\count583
+\c@labelname=\count584
+\c@savedlabelname=\count585
+\c@institution=\count586
+\c@savedinstitution=\count587
+\c@lista=\count588
+\c@savedlista=\count589
+\c@listb=\count590
+\c@savedlistb=\count591
+\c@listc=\count592
+\c@savedlistc=\count593
+\c@listd=\count594
+\c@savedlistd=\count595
+\c@liste=\count596
+\c@savedliste=\count597
+\c@listf=\count598
+\c@savedlistf=\count599
+\c@location=\count600
+\c@savedlocation=\count601
+\c@organization=\count602
+\c@savedorganization=\count603
+\c@origlocation=\count604
+\c@savedoriglocation=\count605
+\c@origpublisher=\count606
+\c@savedorigpublisher=\count607
+\c@publisher=\count608
+\c@savedpublisher=\count609
+\c@language=\count610
+\c@savedlanguage=\count611
+\c@origlanguage=\count612
+\c@savedoriglanguage=\count613
+\c@bookoriglanguage=\count614
+\c@savedbookoriglanguage=\count615
+\c@specdata=\count616
+\c@savedspecdata=\count617
+\c@credits=\count618
+\c@savedcredits=\count619
+\c@bookcredits=\count620
+\c@savedbookcredits=\count621
+\c@editioncredits=\count622
+\c@savededitioncredits=\count623
+\c@pageref=\count624
+\c@savedpageref=\count625
+\shorthandwidth=\skip306
+\shortjournalwidth=\skip307
+\shortserieswidth=\skip308
+\shorttitlewidth=\skip309
+\shortauthorwidth=\skip310
+\shorteditorwidth=\skip311
+\locallabelnumberwidth=\skip312
+\locallabelalphawidth=\skip313
+\localshorthandwidth=\skip314
+\localshortjournalwidth=\skip315
+\localshortserieswidth=\skip316
+\localshorttitlewidth=\skip317
+\localshortauthorwidth=\skip318
+\localshorteditorwidth=\skip319
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+)
+Package biblatex Info: expl3
+(biblatex)             2020-12-03 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+Package biblatex Info: Trying to load expl3 case changing code...
+Package biblatex Info: ... file 'blx-case-expl3.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.def
+File: blx-case-expl3 2020/08/23 v3.15a expl3 case changing code for biblatex
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+\c@textcitecount=\count626
+\c@textcitetotal=\count627
+\c@textcitemaxnames=\count628
+\c@biburlbigbreakpenalty=\count629
+\c@biburlbreakpenalty=\count630
+\c@biburlnumpenalty=\count631
+\c@biburlucpenalty=\count632
+\c@biburllcpenalty=\count633
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count634
+)
+Package biblatex Info: Trying to load bibliography style 'gost-numeric'...
+Package biblatex Info: ... file 'gost-numeric.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex-gost/gost-numeric.bbx
+File: gost-numeric.bbx 2020/10/28 v1.21 biblatex-gost styles
+Package biblatex Info: Trying to load bibliography style 'gost-standard'...
+Package biblatex Info: ... file 'gost-standard.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex-gost/gost-standard.bbx
+File: gost-standard.bbx 2020/10/28 v1.21 biblatex-gost styles
+
+
+Package biblatex-gost Warning: Applying temporary patch for Unicode symbols.
+(biblatex-gost)                For details see biblatex issue #960.
+
+Package biblatex Info: Trying to load biblatex-gost generic definitions...
+Package biblatex Info: ... file 'biblatex-gost.def' found.
+(/usr/share/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.def
+File: biblatex-gost.def 2020/10/28 v1.21 biblatex-gost styles
+)
+\c@blx@gost@pointer=\count635
+\c@bbx:relatedcount=\count636
+\c@bbx:relatedtotal=\count637
+Package biblatex Info: Redefining autocite command 'footnote'.
+Package biblatex Info: Redefining autocite command 'superscript'.
+))
+Package biblatex Info: Trying to load citation style 'gost-numeric'...
+Package biblatex Info: ... file 'gost-numeric.cbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex-gost/gost-numeric.cbx
+File: gost-numeric.cbx 2020/10/28 v1.21 biblatex-gost styles
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2020/08/23 v3.15a biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count638
+\c@cbx@tempcntb=\count639
+\c@cbx@tempcntc=\count640
+\c@cbx@tempcntd=\count641
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+
+Package biblatex Warning: 'babel' option is deprecated.
+(biblatex)                Please use 'autolang' instead.
+
+)
+
+Package biblatex Warning: Macro 'chapter+pages' already defined.
+(biblatex)                Using \renewbibmacro on input line 435.
+
+)) (./template_settings/Dissertation/inclusioncontrol.tex)
+(./template_settings/common/TO-DO-list.tex)) (./my_folder/my_settings.tex
+(/usr/share/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+
+(/usr/share/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
+
+(/usr/share/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(/usr/share/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count642
+))
+\c@padzeroesN=\count643
+\fc@tmpcatcode=\count644
+
+(/usr/share/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2016/01/12
+)
+\@DT@modctr=\count645
+\@ordinalctr=\count646
+\@orgargctr=\count647
+\@strctr=\count648
+\@tmpstrctr=\count649
+\@DT@loopN=\count650
+\@DT@X=\count651
+)
+(/usr/share/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count652
+\@month=\count653
+\@year=\count654
+\c@HOUR=\count655
+\c@HOURXII=\count656
+\c@MINUTE=\count657
+\c@TOHOUR=\count658
+\c@TOMINUTE=\count659
+\c@SECOND=\count660
+\currenthour=\count661
+\currentminute=\count662
+\currentsecond=\count663
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count664
+\dayofyear=\count665
+\dayofweek=\count666
+LaTeX Info: Redefining \today on input line 736.
+
+(/usr/share/texmf-dist/tex/latex/datetime/dt-russian.def
+File: dt-russian.def 2013/09/10
+LaTeX Info: Redefining \daterussian on input line 64.
+)
+\dt@a=\toks64
+\dt@b=\toks65
+)
+\c@m-new-env-first=\count667
+\c@m-new-env-second=\count668
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'russian'.
+LaTeX Font Info:    Trying to load font information for T1+Tempora-TLF on input
+ line 37.
+
+(/usr/share/texmf-dist/tex/latex/tempora/T1Tempora-TLF.fd
+File: T1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for T1/Tempora-TL
+F.
+)
+LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 37.
+<<t1.cmap>>
+(./My_task.aux
+LaTeX Font Info:    Trying to load font information for T2A+Tempora-TLF on inpu
+t line 30.
+ (/usr/share/texmf-dist/tex/latex/tempora/t2atempora-tlf.fd
+File: t2atempora-tlf.fd 2015/09/13 Font definitions for T2A/Tempora-TLF.
+)
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 30.
+<<t2a.cmap>>
+\c@mypages@totc=\count669
+\c@TotPages@totc=\count670
+\c@myfigures@totc=\count671
+\c@mytotalfigures@totc=\count672
+\c@mytables@totc=\count673
+\c@mytotaltables@totc=\count674
+\c@myappendices@totc=\count675
+)
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 37.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
+ 37.
+ (/usr/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
+File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 37.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
+37.
+
+(/usr/share/texmf-dist/tex/latex/newtx/untxexa.fd
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 37.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 3
+7.
+
+(/usr/share/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 37.
+LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 3
+7.
+
+(/usr/share/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
+File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T2C/cmr/m/n on input line 37.
+LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 3
+7.
+
+(/usr/share/texmf-dist/tex/latex/cyrillic/t2ccmr.fd
+File: t2ccmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T2B/cmr/m/n on input line 37.
+LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 3
+7.
+
+(/usr/share/texmf-dist/tex/latex/cyrillic/t2bcmr.fd
+File: t2bcmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 37.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 3
+7.
+
+(/usr/share/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 37.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
+ 37.
+
+(/usr/share/texmf-dist/tex/latex/newtx/lmsntxsy.fd
+File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 37.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
+e 37.
+
+(/usr/share/texmf-dist/tex/latex/newtx/lmxntxexx.fd
+File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+Package nag Info: Command \RaggedLeft not defined, skipping amendment on input 
+line 37.
+Package nag Info: Command \RaggedRight not defined, skipping amendment on input
+ line 37.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count676
+\scratchdimen=\dimen342
+\scratchbox=\box131
+\nofMPsegments=\count677
+\nofMParguments=\count678
+\everyMPshowfont=\toks66
+\MPscratchCnt=\count679
+\MPscratchDim=\dimen343
+\MPnumerator=\count680
+\makeMPintoPDFobject=\count681
+\everyMPtoPDFconversion=\toks67
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 483.69687pt, 28.45274pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-58.0436pt
+* \headheight=28.45274pt
+* \headsep=14.22636pt
+* \topskip=14.4pt
+* \footskip=0.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \th on input line 37.
+\c@mv@tabular=\count682
+\c@mv@boldtabular=\count683
+Package hyperref Info: Link coloring OFF on input line 37.
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count684
+)
+Redoing nameref's sectioning
+Redoing nameref's label
+LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
+(./My_task.out) (./My_task.out)
+\@outlinefile=\write8
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count685
+LaTeX Info: Redefining \microtypecontext on input line 37.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+LaTeX Info: Redefining \showhyphens on input line 37.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(/usr/share/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Tempora-TLF' (encoding: T2A).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package biblatex Info: Trying to load language 'russian' -> 'russian-gost'...
+Package biblatex Info: ... file 'russian-gost.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex-gost/russian-gost.lbx
+File: russian-gost.lbx 2020/10/28 v1.21 biblatex-gost styles
+Package biblatex Info: Trying to load language 'russian'...
+Package biblatex Info: ... file 'russian.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/russian.lbx
+File: russian.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'russian'...
+Package biblatex Info: ... file 'russian.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/russian.lbx
+File: russian.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'english' -> 'english-gost'...
+Package biblatex Info: ... file 'english-gost.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex-gost/english-gost.lbx
+File: english-gost.lbx 2020/10/28 v1.21 biblatex-gost styles
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'My_task.bbl' not found.
+
+No file My_task.bbl.
+Package biblatex Info: Reference section=0 on input line 37.
+Package biblatex Info: Reference segment=0 on input line 37.
+Package nag Info: Command \captionabove not defined, skipping amendment on inpu
+t line 37.
+Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
+t line 37.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input 
+line 37.
+Package nag Info: Command \topcaption not defined, skipping amendment on input 
+line 37.
+(./template_settings/common/renames.tex) (./my_folder/task.tex
+(./my_folder/task_settings.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 483.69687pt, 28.45274pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-43.81723pt
+* \headheight=28.45274pt
+* \headsep=0.0pt
+* \topskip=14.4pt
+* \footskip=0.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
+(Font)              scaled to size 14.05249pt on input line 22.
+)
+(/usr/share/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd)<<ot1.cmap>><<oml.cm
+ap>> (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd)
+(/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd)
+(/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-eur.cfg)
+Underfull \hbox (badness 1448) in paragraph at lines 34--35
+[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Тема ра^^?бо^^?ты: |   []   |   []   |   
+[]   |   []   |   []   |   []
+ []
+
+
+LaTeX Warning: Empty bibliography on input line 54.
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[1.1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+! Extra }, or forgotten \endgroup.
+\UL@stop ...alty \ifnum \lastkern =\thr@@ \egroup 
+                                                  \egroup \ifdim \wd \UL@box...
+l.81 ...line{\hspace*{0.1\textheight} \Supervisor}
+                                                  
+? 
+! Extra }, or forgotten \endgroup.
+\UL@stop ...num \lastkern =\thr@@ \egroup \egroup 
+                                                  \ifdim \wd \UL@box =\z@ \e...
+l.81 ...line{\hspace*{0.1\textheight} \Supervisor}
+                                                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.81 ...line{\hspace*{0.1\textheight} \Supervisor}
+                                                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.81 ...line{\hspace*{0.1\textheight} \Supervisor}
+                                                  
+? 
+! Extra }, or forgotten \endgroup.
+\UL@stop ...alty \ifnum \lastkern =\thr@@ \egroup 
+                                                  \egroup \ifdim \wd \UL@box...
+l.97 ... \uline{\hspace*{0.1\textheight}  \Author}
+                                                  
+? 
+! Extra }, or forgotten \endgroup.
+\UL@stop ...num \lastkern =\thr@@ \egroup \egroup 
+                                                  \ifdim \wd \UL@box =\z@ \e...
+l.97 ... \uline{\hspace*{0.1\textheight}  \Author}
+                                                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.97 ... \uline{\hspace*{0.1\textheight}  \Author}
+                                                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.97 ... \uline{\hspace*{0.1\textheight}  \Author}
+                                                  
+? 
+(./my_folder/task_settings_restore.tex
+\blx@maxsegment@1=\count686
+\blx@sectionciteorder@1=\count687
+Package biblatex Info: Reference section=1 on input line 3.
+Package biblatex Info: Setting label 'refsection:1' on input line 3.
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[2.2]))
+
+Package caption Warning: Unused \captionsetup[figure] on input line 71.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 119.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[subfigure] on input line 138.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[ListingEnv] on input line 238.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 245.
+See the caption package documentation for explanation.
+
+No complaints by nag.
+(./My_task.aux
+Package cleveref Info: loaded `russian' language definitions on input line 30.
+)
+Package rerunfilecheck Info: File `My_task.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                My_task
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'My_task.run.xml'.
+ ) 
 Here is how much of TeX's memory you used:
- 21963 strings out of 479383
- 308302 string characters out of 5875830
- 688255 words of memory out of 5000000
- 38734 multiletter control sequences out of 15000+600000
- 415721 words of font info for 32 fonts, out of 8000000 for 9000
+ 42582 strings out of 479383
+ 706486 string characters out of 5875830
+ 1819437 words of memory out of 5000000
+ 58858 multiletter control sequences out of 15000+600000
+ 447860 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,1n,119p,757b,148s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 88i,12n,119p,1152b,3053s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}</usr/share/te
+xmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fon
+ts/type1/public/tempora/Tempora-Regular.pfb>
+Output written on My_task.pdf (2 pages, 71379 bytes).
+PDF statistics:
+ 46 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 9233 words of extra memory for PDF output out of 10000 (max. 10000000)
+
