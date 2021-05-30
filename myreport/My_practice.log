@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.22)  29 MAY 2021 22:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.30)  30 MAY 2021 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3108,11 +3108,27 @@ F.
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/n' will be
 (Font)              scaled to size 14.05249pt on input line 35.
 <<t1.cmap>>
-No file My_practice.aux.
+(./My_practice.aux
+LaTeX Font Info:    Trying to load font information for T2A+Tempora-TLF on inpu
+t line 29.
+ (/usr/share/texmf-dist/tex/latex/tempora/t2atempora-tlf.fd
+File: t2atempora-tlf.fd 2015/09/13 Font definitions for T2A/Tempora-TLF.
+)
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 29.
+<<t2a.cmap>>
+\c@mypages@totc=\count669
+\c@TotPages@totc=\count670
+\c@myfigures@totc=\count671
+\c@mytotalfigures@totc=\count672
+\c@mytables@totc=\count673
+\c@mytotaltables@totc=\count674
+\c@myappendices@totc=\count675
+)
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 35.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
  35.
-(/usr/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
+ (/usr/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3201,16 +3217,16 @@ Package nag Info: Command \RaggedRight not defined, skipping amendment on input
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count669
+\scratchcounter=\count676
 \scratchdimen=\dimen342
 \scratchbox=\box131
-\nofMPsegments=\count670
-\nofMParguments=\count671
+\nofMPsegments=\count677
+\nofMParguments=\count678
 \everyMPshowfont=\toks66
-\MPscratchCnt=\count672
+\MPscratchCnt=\count679
 \MPscratchDim=\dimen343
-\MPnumerator=\count673
-\makeMPintoPDFobject=\count674
+\MPnumerator=\count680
+\makeMPintoPDFobject=\count681
 \everyMPtoPDFconversion=\toks67
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -3255,19 +3271,10 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for T2A+Tempora-TLF on inpu
-t line 35.
-(/usr/share/texmf-dist/tex/latex/tempora/t2atempora-tlf.fd
-File: t2atempora-tlf.fd 2015/09/13 Font definitions for T2A/Tempora-TLF.
-)
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 35.
-<<t2a.cmap>>
 LaTeX Info: Redefining \th on input line 35.
-\c@mv@tabular=\count675
-\c@mv@boldtabular=\count676
+\c@mv@tabular=\count682
+\c@mv@boldtabular=\count683
 Package hyperref Info: Link coloring OFF on input line 35.
-
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -3277,7 +3284,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count677
+\c@section@level=\count684
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -3285,11 +3292,12 @@ LaTeX Info: Redefining \nameref on input line 35.
 LaTeX Info: Redefining \ref on input line 35.
 LaTeX Info: Redefining \pageref on input line 35.
 LaTeX Info: Redefining \nameref on input line 35.
+(./My_practice.out) (./My_practice.out)
 \@outlinefile=\write8
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count678
+\c@lstlisting=\count685
 LaTeX Info: Redefining \microtypecontext on input line 35.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -3301,6 +3309,7 @@ LaTeX Info: Redefining \showhyphens on input line 35.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
+
 (/usr/share/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
@@ -3308,13 +3317,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Tempora-TLF' (encoding: T2A).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@mypages@totc=\count679
-\c@TotPages@totc=\count680
-\c@myfigures@totc=\count681
-\c@mytotalfigures@totc=\count682
-\c@mytables@totc=\count683
-\c@mytotaltables@totc=\count684
-\c@myappendices@totc=\count685
 Package biblatex Info: Trying to load language 'russian' -> 'russian-gost'...
 Package biblatex Info: ... file 'russian-gost.lbx' found.
 
@@ -3356,6 +3358,136 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'My_practice.bbl' not found.
 
 No file My_practice.bbl.
+
+Package biblatex Warning: citation 'spbpu-student-thesis-template-author-guide'
+ was not found at all in the .bbl, bibliography labels cannot be generated, ple
+ase correct the citation.
+
+
+Package biblatex Warning: citation 'spbpu-gallery' was not found at all in the 
+.bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Ganter1999' was not found at all in the .bb
+l, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Article' was not found at all in the .bbl, 
+bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Book' was not found at all in the .bbl, bib
+liography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Booklet' was not found at all in the .bbl, 
+bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Conference' was not found at all in the .bb
+l, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Inbook' was not found at all in the .bbl, b
+ibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Incollection' was not found at all in the .
+bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Manual' was not found at all in the .bbl, b
+ibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Mastersthesis' was not found at all in the 
+.bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Misc' was not found at all in the .bbl, bib
+liography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Phdthesis' was not found at all in the .bbl
+, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Proceedings' was not found at all in the .b
+bl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Techreport' was not found at all in the .bb
+l, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Unpublished' was not found at all in the .b
+bl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'badiou:briefings' was not found at all in t
+he .bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Naidenova2017' was not found at all in the 
+.bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'gost-russian-text-documents' was not found 
+at all in the .bbl, bibliography labels cannot be generated, please correct the
+ citation.
+
+
+Package biblatex Warning: citation 'Peskov2004' was not found at all in the .bb
+l, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'spbpu-bci-template-author-guide' was not fo
+und at all in the .bbl, bibliography labels cannot be generated, please correct
+ the citation.
+
+
+Package biblatex Warning: citation 'ctan-tikz' was not found at all in the .bbl
+, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'ctan-algorithm2e' was not found at all in t
+he .bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'ctan-biblatex-gost' was not found at all in
+ the .bbl, bibliography labels cannot be generated, please correct the citation
+.
+
+
+Package biblatex Warning: citation 'ctan-biblatex-gost-examples' was not found 
+at all in the .bbl, bibliography labels cannot be generated, please correct the
+ citation.
+
+
+Package biblatex Warning: citation 'latex-miktex' was not found at all in the .
+bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'latex-texstudio' was not found at all in th
+e .bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'avtonomova:fya' was not found at all in the
+ .bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Peskov2004-ru' was not found at all in the 
+.bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+Package biblatex Warning: citation 'Kotelnikov2004-ru' was not found at all in 
+the .bbl, bibliography labels cannot be generated, please correct the citation.
+
+
+
+Package biblatex Warning: citation 'Kotelnikov2004' was not found at all in the
+ .bbl, bibliography labels cannot be generated, please correct the citation.
+
 Package biblatex Info: Reference section=0 on input line 35.
 Package biblatex Info: Reference segment=0 on input line 35.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
@@ -3399,102 +3531,25 @@ line 35.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 24
-.
-LaTeX Font Info:    Trying to load font information for OT1+Tempora-TLF on inpu
-t line 24.
-
-(/usr/share/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd
-File: OT1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for OT1/Tempora-
-TLF.
-)
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 24.
-<<ot1.cmap>>
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.25826pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 7.72891pt on input line 24.
-<<oml.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
-
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
-
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-24.
-
-(/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd
-File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
-)
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-24.
-
-(/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd
-File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
-)
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-24.
-
-(/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd
-File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-)
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 10.25826pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 7.72891pt on input line 24.
-
-(/usr/share/texmf-dist/tex/latex/microtype/mt-eur.cfg
-File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-)
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 24.
-
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 8.8pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 6.6pt on input line 24.
+(Font)              scaled to size 12.0pt on input line 29.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 24.
+(Font)              scaled to size 12.0pt on input line 31.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 64.
+(Font)              scaled to size 14.05249pt on input line 49.
 
-Underfull \hbox (badness 4569) in paragraph at lines 88--89
+Underfull \hbox (badness 4569) in paragraph at lines 73--74
 \T2A/Tempora-TLF/b/n/14.05249 Руководитель прак^^?ти^^?ки от ФГА^^?ОУ ВО <<СПб^
 ^?ПУ>>: |   []   |   []
  []
 
 
-Overfull \hbox (79.3877pt too wide) in paragraph at lines 88--89
+Overfull \hbox (79.3877pt too wide) in paragraph at lines 73--74
 |   []   |   []
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 92--98
+Underfull \hbox (badness 3482) in paragraph at lines 77--83
 \T2A/Tempora-TLF/b/n/14.05249 Консультант прак^^?ти^^?ки от ФГА^^?ОУ ВО <<СПб^^
 ?ПУ>>:  |   []   |   []
  []
@@ -3502,28 +3557,36 @@ Underfull \hbox (badness 3482) in paragraph at lines 92--98
 ! Extra }, or forgotten \endgroup.
 \UL@stop ...alty \ifnum \lastkern =\thr@@ \egroup 
                                                   \egroup \ifdim \wd \UL@box...
-l.99 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
+l.84 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
                                                    % РќР• Р—РђРџРћР›РќРЇР•Рњ!
 ? 
 ! Extra }, or forgotten \endgroup.
 \UL@stop ...num \lastkern =\thr@@ \egroup \egroup 
                                                   \ifdim \wd \UL@box =\z@ \e...
-l.99 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
+l.84 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
                                                    % РќР• Р—РђРџРћР›РќРЇР•Рњ!
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.99 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
+l.84 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
                                                    % РќР• Р—РђРџРћР›РќРЇР•Рњ!
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.99 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
+l.84 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
                                                    % РќР• Р—РђРџРћР›РќРЇР•Рњ!
 ? 
-
+(/usr/share/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd)<<ot1.cmap>><<oml.cm
+ap>> (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd)
+(/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd)
+(/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-eur.cfg)
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3537,7 +3600,9 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
-(./my_folder/contents.tex
+(./my_folder/contents.tex (./My_practice.toc
+Package cleveref Info: loaded `russian' language definitions on input line 3.
+)
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3590,9 +3655,9 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 [5.5]
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 14.05249pt on input line 105.
+(Font)              scaled to size 14.05249pt on input line 109.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.25826pt on input line 113.
+(Font)              scaled to size 10.25826pt on input line 117.
 ) (./my_folder/chapter1.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -3604,54 +3669,217 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [6.6]
-
-LaTeX Warning: Reference `ch1:sec1' on page 7 undefined on input line 6.
-
-
-LaTeX Warning: Reference `ch1:sec2' on page 7 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'spbpu-student-thesis-template-author-guide' on page 7 
-undefined on input line 8.
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 8--9
-[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Текст дан^^?ной гла^^?вы при^^?зван при^^
-?ве^^?сти \T2A/Tempora-TLF/m/it/14.05249 (+20) крат^^?кие \T2A/Tempora-TLF/m/n/
-14.05249 (+20) при^^?ме^^?ры оформ^^?
- []
-
-
-Underfull \hbox (badness 2302) in paragraph at lines 8--9
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ле^^?ния тек^^?стово-^^?гра^^?фи^^?че^^?ски
-х объ^^?ек^^?тов. Бо^^?лее по^^?дроб^^?ные при^^?ме^^?ры мож^^?
- []
-
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/it' will be
-(Font)              scaled to size 14.05249pt on input line 14.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T2A).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<my_folder/images//spbpu_hydrotower.jpg, id=45, 1284.8pt x 856.19875pt>
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 31.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 7 undefined on input line 32.
 
 
-LaTeX Warning: Reference `fig:spbpu_hydrotower' on page 7 undefined on input li
-ne 60.
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 	\begin{figure}[H]
+                       
+? ^^[[6~
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+<my_folder/images/virth/number.jpg, id=116, 617.01483pt x 293.74258pt>
+File: my_folder/images/virth/number.jpg Graphic file (type jpg)
+<use my_folder/images/virth/number.jpg>
+Package pdftex.def Info: my_folder/images/virth/number.jpg  used on input line 
+35.
+(pdftex.def)             Requested size: 308.50665pt x 146.87093pt.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 37.
+
+<my_folder/images/virth/expr.jpg, id=117, 617.01483pt x 293.74258pt>
+File: my_folder/images/virth/expr.jpg Graphic file (type jpg)
+<use my_folder/images/virth/expr.jpg>
+Package pdftex.def Info: my_folder/images/virth/expr.jpg  used on input line 42
+.
+(pdftex.def)             Requested size: 555.30821pt x 264.36588pt.
+
+Overfull \hbox (71.61134pt too wide) in paragraph at lines 42--43
+ [] 
+ []
 
 
-LaTeX Warning: Reference `tab:ToyCompare' on page 7 undefined on input line 60.
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 44.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Warning: Citation 'Ganter1999' on page 7 undefined on input line 67.
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47     \begin{figure}[H]
+                          
+? 
+<my_folder/images/virth/var.jpg, id=118, 617.01483pt x 293.74258pt>
+File: my_folder/images/virth/var.jpg Graphic file (type jpg)
+<use my_folder/images/virth/var.jpg>
+Package pdftex.def Info: my_folder/images/virth/var.jpg  used on input line 49.
+
+(pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 51.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54     \begin{figure}[H]
+                          
+? 
+<my_folder/images/virth/op.jpg, id=119, 617.01483pt x 293.74258pt>
+File: my_folder/images/virth/op.jpg Graphic file (type jpg)
+<use my_folder/images/virth/op.jpg>
+Package pdftex.def Info: my_folder/images/virth/op.jpg  used on input line 56.
+(pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 58.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61     \begin{figure}[H]
+                          
+? 
+<my_folder/images/virth/op_list.jpg, id=120, 617.01483pt x 293.74258pt>
+File: my_folder/images/virth/op_list.jpg Graphic file (type jpg)
+<use my_folder/images/virth/op_list.jpg>
+Package pdftex.def Info: my_folder/images/virth/op_list.jpg  used on input line
+ 63.
+(pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 65.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68     \begin{figure}[H]
+                          
+? 
+<my_folder/images/virth/ass_op.jpg, id=121, 617.01483pt x 293.74258pt>
+File: my_folder/images/virth/ass_op.jpg Graphic file (type jpg)
+<use my_folder/images/virth/ass_op.jpg>
+Package pdftex.def Info: my_folder/images/virth/ass_op.jpg  used on input line 
+70.
+(pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 72.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75     \begin{figure}[H]
+                          
+? 
+<my_folder/images/virth/guarded_command.jpg, id=122, 617.01483pt x 293.74258pt>
+
+File: my_folder/images/virth/guarded_command.jpg Graphic file (type jpg)
+<use my_folder/images/virth/guarded_command.jpg>
+Package pdftex.def Info: my_folder/images/virth/guarded_command.jpg  used on in
+put line 77.
+(pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 79.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82     \begin{figure}[H]
+                          
+? 
+<my_folder/images/virth/command_list.jpg, id=123, 617.01483pt x 293.74258pt>
+File: my_folder/images/virth/command_list.jpg Graphic file (type jpg)
+<use my_folder/images/virth/command_list.jpg>
+Package pdftex.def Info: my_folder/images/virth/command_list.jpg  used on input
+ line 84.
+(pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 86.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89     \begin{figure}[H]
+                          
+? 
+<my_folder/images/virth/if.jpg, id=124, 617.01483pt x 293.74258pt>
+File: my_folder/images/virth/if.jpg Graphic file (type jpg)
+<use my_folder/images/virth/if.jpg>
+Package pdftex.def Info: my_folder/images/virth/if.jpg  used on input line 91.
+(pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 93.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96     \begin{figure}[H]
+                          
+? 
+
+! LaTeX Error: File `images/virth/do' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 ...ncludegraphics[scale=0.7]{images/virth/do}
+                                                  
+? 
+
+Package nag Warning: `center' environment in figure.
+(nag)                Maybe you want \centering instead on input line 100.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3667,31 +3895,59 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 ]
 
-LaTeX Warning: Reference `eq:fConcept-order-ch1' on page 1 undefined on input l
-ine 78.
+LaTeX Warning: Citation 'spbpu-student-thesis-template-author-guide' on page 8 
+undefined on input line 108.
 
 
-LaTeX Warning: Reference `eq:Pi-ch1' on page 1 undefined on input line 78.
+Underfull \hbox (badness 2626) in paragraph at lines 108--109
+[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Текст дан^^?ной гла^^?вы при^^?зван при^^
+?ве^^?сти \T2A/Tempora-TLF/m/it/14.05249 (+20) крат^^?кие \T2A/Tempora-TLF/m/n/
+14.05249 (+20) при^^?ме^^?ры оформ^^?
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 108--109
+\T2A/Tempora-TLF/m/n/14.05249 (+20) ле^^?ния тек^^?стово-^^?гра^^?фи^^?че^^?ски
+х объ^^?ек^^?тов. Бо^^?лее по^^?дроб^^?ные при^^?ме^^?ры мож^^?
+ []
+
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/it' will be
+(Font)              scaled to size 14.05249pt on input line 114.
+<my_folder/images//spbpu_hydrotower.jpg, id=133, 1284.8pt x 856.19875pt>
+File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
+<use my_folder/images//spbpu_hydrotower.jpg>
+Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
+line 131.
+(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
+
+LaTeX Warning: Citation 'spbpu-gallery' on page 8 undefined on input line 132.
+
+
+LaTeX Warning: Reference `fig:spbpu_hydrotower' on page 8 undefined on input li
+ne 160.
+
+
+LaTeX Warning: Citation 'Ganter1999' on page 8 undefined on input line 167.
 
 (./my_folder/tex/fig-spbpu-whitehall-three-in-one.tex
 
 LaTeX Warning: Reference `fig:spbpu_whitehall-three-photos' on page 8 undefined
  on input line 1.
 
-<my_folder/images//spbpu_whitehall.jpg, id=62, 606.265pt x 404.51125pt>
+<my_folder/images//spbpu_whitehall.jpg, id=137, 606.265pt x 404.51125pt>
 File: my_folder/images//spbpu_whitehall.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_whitehall.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_whitehall.jpg  used on input l
 ine 7.
 (pdftex.def)             Requested size: 120.49974pt x 80.39468pt.
-<my_folder/images//spbpu_whitehall_ligh.jpg, id=63, 770.88pt x 514.17094pt>
+<my_folder/images//spbpu_whitehall_ligh.jpg, id=138, 770.88pt x 514.17094pt>
 File: my_folder/images//spbpu_whitehall_ligh.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_whitehall_ligh.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_whitehall_ligh.jpg  used on in
 put line 13.
 (pdftex.def)             Requested size: 120.49974pt x 80.37039pt.
-<my_folder/images//spbpu_whitehall_sculpture.jpg, id=64, 606.265pt x 404.51125p
-t>
+<my_folder/images//spbpu_whitehall_sculpture.jpg, id=139, 606.265pt x 404.51125
+pt>
 File: my_folder/images//spbpu_whitehall_sculpture.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_whitehall_sculpture.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_whitehall_sculpture.jpg  used 
@@ -3703,71 +3959,6 @@ LaTeX Warning: Citation 'spbpu-gallery' on page 8 undefined on input line 22.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 22.
 
-LaTeX Warning: Reference `fig:spbpu_whitehall-a' on page 8 undefined on input l
-ine 25.
-
-
-LaTeX Warning: Reference `fig:spbpu_whitehall-b' on page 8 undefined on input l
-ine 25.
-
-
-LaTeX Warning: Reference `fig:spbpu_whitehall-c' on page 8 undefined on input l
-ine 25.
-
-)
-
-LaTeX Warning: Citation 'Article' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Book' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Booklet' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Conference' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Inbook' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Incollection' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Manual' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Mastersthesis' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Misc' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Phdthesis' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Proceedings' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Techreport' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Unpublished' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'badiou:briefings' on page 8 undefined on input line 83
-.
-
-
-LaTeX Warning: Citation 'Naidenova2017' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Naidenova2017' on page 8 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Ganter1999' on page 8 undefined on input line 83.
-
-
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3777,54 +3968,101 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[8.8 <./my_folder/images//spbpu_hydrotower.jpg> <./my_folder/images//spbpu_whit
-ehall.jpg> <./my_folder/images//spbpu_whitehall_ligh.jpg> <./my_folder/images//
-spbpu_whitehall_sculpture.jpg>]) (./my_folder/chapter2.tex
+[8.8]
 
-LaTeX Warning: Reference `ch2:title-abbr' on page 9 undefined on input line 8.
-
-
-LaTeX Warning: Reference `ch2:sec-abbr' on page 9 undefined on input line 8.
+LaTeX Warning: Reference `fig:spbpu_whitehall-a' on page 9 undefined on input l
+ine 25.
 
 
-LaTeX Warning: Reference `ch2:sec-very-short-title' on page 9 undefined on inpu
-t line 8.
-
-(./my_folder/tex/eq-Galois.tex
-
-LaTeX Warning: Reference `eq:UpArrow-G' on page 9 undefined on input line 2.
+LaTeX Warning: Reference `fig:spbpu_whitehall-b' on page 9 undefined on input l
+ine 25.
 
 
-LaTeX Warning: Reference `eq:DownArrow-G' on page 9 undefined on input line 2.
-
-
-LaTeX Warning: Citation 'Ganter1999' on page 9 undefined on input line 2.
+LaTeX Warning: Reference `fig:spbpu_whitehall-c' on page 9 undefined on input l
+ine 25.
 
 )
 
-LaTeX Warning: Reference `fig:spbpu-new-bld-autumn-ch2' on page 9 undefined on 
-input line 23.
+LaTeX Warning: Citation 'Article' on page 9 undefined on input line 183.
 
-<my_folder/images/spbpu_new_bld_autumn.jpg, id=73, 722.7pt x 481.8pt>
+
+LaTeX Warning: Citation 'Book' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Booklet' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Conference' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Inbook' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Incollection' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Manual' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Mastersthesis' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Misc' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Phdthesis' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Proceedings' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Techreport' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Unpublished' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'badiou:briefings' on page 9 undefined on input line 18
+3.
+
+
+LaTeX Warning: Citation 'Naidenova2017' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Naidenova2017' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Citation 'Ganter1999' on page 9 undefined on input line 183.
+
+) (./my_folder/chapter2.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[9.9] (./my_folder/tex/eq-Galois.tex
+
+LaTeX Warning: Citation 'Ganter1999' on page 10 undefined on input line 2.
+
+)
+
+LaTeX Warning: Reference `fig:spbpu-new-bld-autumn-ch2' on page 10 undefined on
+ input line 23.
+
+<my_folder/images/spbpu_new_bld_autumn.jpg, id=162, 722.7pt x 481.8pt>
 File: my_folder/images/spbpu_new_bld_autumn.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_new_bld_autumn.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_new_bld_autumn.jpg  used on inp
 ut line 27.
 (pdftex.def)             Requested size: 195.1316pt x 130.08772pt.
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 9 undefined on input line 28.
+LaTeX Warning: Citation 'spbpu-gallery' on page 10 undefined on input line 28.
 
 
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[9.9]
 Overfull \hbox (4.97789pt too wide) in paragraph at lines 43--44
 []\T2A/Tempora-TLF/m/n/14.05249 (-20) Название под^^?па^^?ра^^?гра^^?фа оформ^^
 ?ля^^?ет^^?ся с по^^?мо^^?щью ко^^?ман^^?ды \T2A/cmtt/m/n/14.05249 \subsection{
@@ -3832,21 +4070,21 @@ Overfull \hbox (4.97789pt too wide) in paragraph at lines 43--44
  []
 
 (./my_folder/tex/enumeration.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
 
-LaTeX Warning: Citation 'gost-russian-text-documents' on page 10 undefined on i
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[10.10]
+
+LaTeX Warning: Citation 'gost-russian-text-documents' on page 11 undefined on i
 nput line 27.
 
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[10.10 <./my_folder/images/spbpu_new_bld_autumn.jpg>])
+)
 
 LaTeX Warning: Reference `alg:AlgoFDSCALING' on page 11 undefined on input line
  56.
@@ -3895,40 +4133,39 @@ LaTeX Warning: Reference `alg:AlgoFDSCALING' on page 11 undefined on input line
 LaTeX Warning: Citation 'Ganter1999' on page 11 undefined on input line 2.
 
 
-LaTeX Warning: Reference `eq:fConcept-order-G' on page 1 undefined on input lin
-e 11.
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
 
 
-LaTeX Warning: Reference `eq:DownArrow-G' on page 1 undefined on input line 11.
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
 
+[11.11]) (./my_folder/tex/fig-spbpu-sc-four-in-one.tex
 
-
-LaTeX Warning: Reference `eq:UpArrow-G' on page 1 undefined on input line 11.
-
-) (./my_folder/tex/fig-spbpu-sc-four-in-one.tex
-
-LaTeX Warning: Reference `fig:spbpu_sc-four-photos' on page 11 undefined on inp
+LaTeX Warning: Reference `fig:spbpu_sc-four-photos' on page 12 undefined on inp
 ut line 1.
 
-<my_folder/images/spbpu_sc_system.jpg, id=99, 722.7pt x 480.29437pt>
+<my_folder/images/spbpu_sc_system.jpg, id=190, 722.7pt x 480.29437pt>
 File: my_folder/images/spbpu_sc_system.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_sc_system.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_sc_system.jpg  used on input li
 ne 7.
 (pdftex.def)             Requested size: 212.40045pt x 141.15793pt.
-<my_folder/images/spbpu_sc_refr.jpg, id=100, 722.7pt x 316.18124pt>
+<my_folder/images/spbpu_sc_refr.jpg, id=191, 722.7pt x 316.18124pt>
 File: my_folder/images/spbpu_sc_refr.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_sc_refr.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_sc_refr.jpg  used on input line
  13.
 (pdftex.def)             Requested size: 212.40045pt x 92.92528pt.
-<my_folder/images/spbpu_sc_hall.jpg, id=101, 722.7pt x 480.29437pt>
+<my_folder/images/spbpu_sc_hall.jpg, id=192, 722.7pt x 480.29437pt>
 File: my_folder/images/spbpu_sc_hall.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_sc_hall.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_sc_hall.jpg  used on input line
  19.
 (pdftex.def)             Requested size: 212.40045pt x 141.15793pt.
-<my_folder/images/spbpu_sc_box.jpg, id=102, 722.7pt x 423.08063pt>
+<my_folder/images/spbpu_sc_box.jpg, id=193, 722.7pt x 423.08063pt>
 File: my_folder/images/spbpu_sc_box.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_sc_box.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_sc_box.jpg  used on input line 
@@ -3940,22 +4177,22 @@ Overfull \hbox (2.10788pt too wide) in paragraph at lines 4--28
  []
 
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 11 undefined on input line 28.
+LaTeX Warning: Citation 'spbpu-gallery' on page 12 undefined on input line 28.
 
 
-LaTeX Warning: Reference `fig:spbpu_sc-a' on page 11 undefined on input line 32
+LaTeX Warning: Reference `fig:spbpu_sc-a' on page 12 undefined on input line 32
 .
 
 
-LaTeX Warning: Reference `fig:spbpu_sc-b' on page 11 undefined on input line 32
+LaTeX Warning: Reference `fig:spbpu_sc-b' on page 12 undefined on input line 32
 .
 
 
-LaTeX Warning: Reference `fig:spbpu_sc-c' on page 11 undefined on input line 32
+LaTeX Warning: Reference `fig:spbpu_sc-c' on page 12 undefined on input line 32
 .
 
 
-LaTeX Warning: Reference `fig:spbpu_sc-d' on page 11 undefined on input line 32
+LaTeX Warning: Reference `fig:spbpu_sc-d' on page 12 undefined on input line 32
 .
 
 
@@ -3971,22 +4208,21 @@ LaTeX Warning: Reference `fig:spbpu_sc-a' on page 1 undefined on input line 32.
 
 
 ) (./my_folder/tex/tab-more-than-one-page.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[11.11]
-
-LaTeX Warning: Reference `tab:long' on page 12 undefined on input line 1.
-
 
 LaTeX Warning: Citation 'Peskov2004' on page 12 undefined on input line 13.
 
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 6.6pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 8.8pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 6.6pt on input line 17.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -3997,12 +4233,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[12.12]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.1 on input line 77.
-
-)
+[12.12])
 
 LaTeX Warning: Citation 'Peskov2004' on page 13 undefined on input line 79.
 
@@ -4031,21 +4262,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [13.13]
-Overfull \vbox (1.65385pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[14.14 <./my_folder/images/spbpu_sc_system.jpg> <./my_folder/images/spbpu_sc_re
-fr.jpg> <./my_folder/images/spbpu_sc_hall.jpg> <./my_folder/images/spbpu_sc_box
-.jpg>]
 File: my_folder/images/spbpu_new_bld_autumn.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_new_bld_autumn.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_new_bld_autumn.jpg  used on inp
@@ -4058,7 +4274,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 15 undefined on input line 6.
+LaTeX Warning: Citation 'spbpu-gallery' on page 14 undefined on input line 6.
 
 )
 Underfull \hbox (badness 10000) in paragraph at lines 1--103
@@ -4067,17 +4283,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--103
 
 (./my_folder/tex/rules-theorem-like-expressions.tex)
 
-LaTeX Warning: Citation 'spbpu-bci-template-author-guide' on page 15 undefined 
+LaTeX Warning: Citation 'spbpu-bci-template-author-guide' on page 14 undefined 
 on input line 109.
 
 (./my_folder/tex/rules-list-of-environments.tex
-
-LaTeX Warning: Reference `tab:enum-std' on page 15 undefined on input line 1.
-
-
-LaTeX Warning: Reference `tab:enum-spbpu' on page 15 undefined on input line 1.
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
 
 
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[14.14 <./my_folder/images/spbpu_new_bld_autumn.jpg>]
 
 LaTeX Warning: Citation 'ctan-tikz' on page 15 undefined on input line 26.
 
@@ -4104,24 +4323,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 ?
  []
 
-) (./my_folder/tex/theorem-example.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
+) (./my_folder/tex/theorem-example.tex) (./my_folder/tex/definition-example.tex
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[16.16]
 
-LaTeX Warning: Reference `th:ex' on page 17 undefined on input line 15.
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
 
-
-LaTeX Warning: Reference `th:ex' on page 17 undefined on input line 15.
-
-) (./my_folder/tex/definition-example.tex)
+[16.16])
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 121.
 LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
@@ -4138,6 +4351,81 @@ LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
 (Font)              scaled to size 6.1pt on input line 121.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 121.
+
+
+LaTeX Warning: Citation 'Article' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Book' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Booklet' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Conference' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Inbook' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Incollection' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Manual' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Mastersthesis' on page 17 undefined on input line 131.
+
+
+
+LaTeX Warning: Citation 'Misc' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Phdthesis' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Proceedings' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Techreport' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Unpublished' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'badiou:briefings' on page 17 undefined on input line 1
+31.
+
+
+LaTeX Warning: Citation 'Naidenova2017' on page 17 undefined on input line 131.
+
+
+
+LaTeX Warning: Citation 'Naidenova2017' on page 17 undefined on input line 131.
+
+
+
+LaTeX Warning: Citation 'Ganter1999' on page 17 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'ctan-biblatex-gost' on page 17 undefined on input line
+ 133.
+
+
+LaTeX Warning: Citation 'ctan-biblatex-gost-examples' on page 17 undefined on i
+nput line 134.
+
+
+LaTeX Warning: Reference `appendix-MikTeX-TexStudio' on page 17 undefined on in
+put line 136.
+
+
+LaTeX Warning: Citation 'latex-miktex' on page 17 undefined on input line 136.
+
+
+LaTeX Warning: Citation 'latex-texstudio' on page 17 undefined on input line 13
+6.
+
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -4149,80 +4437,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [17.17]
-
-LaTeX Warning: Citation 'Article' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Book' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Booklet' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Conference' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Inbook' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Incollection' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Manual' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Mastersthesis' on page 18 undefined on input line 131.
-
-
-
-LaTeX Warning: Citation 'Misc' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Phdthesis' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Proceedings' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Techreport' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'Unpublished' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'badiou:briefings' on page 18 undefined on input line 1
-31.
-
-
-LaTeX Warning: Citation 'Naidenova2017' on page 18 undefined on input line 131.
-
-
-
-LaTeX Warning: Citation 'Naidenova2017' on page 18 undefined on input line 131.
-
-
-
-LaTeX Warning: Citation 'Ganter1999' on page 18 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'ctan-biblatex-gost' on page 18 undefined on input line
- 133.
-
-
-LaTeX Warning: Citation 'ctan-biblatex-gost-examples' on page 18 undefined on i
-nput line 134.
-
-
-LaTeX Warning: Reference `appendix-MikTeX-TexStudio' on page 18 undefined on in
-put line 136.
-
-
-LaTeX Warning: Citation 'latex-miktex' on page 18 undefined on input line 136.
-
-
-LaTeX Warning: Citation 'latex-texstudio' on page 18 undefined on input line 13
-6.
-
 
 LaTeX Warning: Reference `appendix-extra-examples' on page 18 undefined on inpu
 t line 138.
@@ -4238,19 +4452,29 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [18.18]) (./my_folder/chapter4.tex
-
-LaTeX Warning: Citation 'avtonomova:fya' on page 19 undefined on input line 12.
-
-
-
-LaTeX Warning: Citation 'Peskov2004-ru' on page 19 undefined on input line 12.
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
 
 
-LaTeX Warning: Citation 'Kotelnikov2004-ru' on page 19 undefined on input line 
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[19.19]
+
+LaTeX Warning: Citation 'avtonomova:fya' on page 20 undefined on input line 12.
+
+
+
+LaTeX Warning: Citation 'Peskov2004-ru' on page 20 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'Kotelnikov2004-ru' on page 20 undefined on input line 
 12.
 
 
-LaTeX Warning: Citation 'Kotelnikov2004' on page 19 undefined on input line 12.
+LaTeX Warning: Citation 'Kotelnikov2004' on page 20 undefined on input line 12.
 
 
 
@@ -4269,7 +4493,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[19.19]) (./my_folder/acronyms.tex
+[20.20]) (./my_folder/references.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4279,236 +4503,16 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[20.20]) (./my_folder/dictionary.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[21.21]) (./my_folder/references.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[22.22]
+[21.21]
 
 LaTeX Warning: Empty bibliography on input line 16.
 
 )
 
-Package xassoccnt Warning: Warning: An accidental(?) addition of associated
-(xassoccnt)                counter(s) without DeclareAssociatedCounters was
-(xassoccnt)                detected for
-(xassoccnt)                the driver counter "chapter" and following driven
-(xassoccnt)                counters:
-(xassoccnt)                --- myappendices ---
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[23.23] (./my_folder/appendix1.tex
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 10.25826pt on input line 1.
-
-
-LaTeX Warning: Citation 'latex-miktex' on page 24 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'latex-texstudio' on page 24 undefined on input line 9.
-
-
-
-Underfull \hbox (badness 3557) in paragraph at lines 36--37
-\T2A/Tempora-TLF/m/n/14.05249 (+20) го): \T2A/cmtt/m/n/14.05249 txs:///pdflatex
- | txs:///biber | txs:///pdflatex
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[24.24]
-
-LaTeX Warning: Reference `eq:Pi-app2' on page 25 undefined on input line 61.
-
-
-LaTeX Warning: Reference `eq:Pi-app2-' on page 25 undefined on input line 61.
-
-
-LaTeX Warning: Reference `fig:spbpu_hydrotower-app2' on page 25 undefined on in
-put line 61.
-
-
-LaTeX Warning: Reference `fig:spbpu_hydrotower-app2-' on page 25 undefined on i
-nput line 61.
-
-
-LaTeX Warning: Reference `tab:ToyCompare-app2' on page 25 undefined on input li
-ne 61.
-
-
-LaTeX Warning: Reference `tab:ToyCompare-app2-' on page 25 undefined on input l
-ine 61.
-
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 72.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 25 undefined on input line 73.
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 25 undefined on input line 79.
-
-
-Overfull \hbox (7.43707pt too wide) in paragraph at lines 104--105
-[]\T2A/Tempora-TLF/m/n/14.05249 (-20) Название под^^?па^^?ра^^?гра^^?фа оформ^^
-?ля^^?ет^^?ся с по^^?мо^^?щью ко^^?ман^^?ды \T2A/cmtt/m/n/14.05249 \subsection{
-...}\T2A/Tempora-TLF/m/n/14.05249 (-20) . 
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[25.25]
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 117.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 26 undefined on input line 118.
-
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 26 undefined on input line 128.
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[26.26]
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[27.27]) (./my_folder/appendix2.tex
-
-LaTeX Warning: Reference `eq:Pi-app' on page 28 undefined on input line 3.
-
-
-LaTeX Warning: Reference `eq:Pi-app-' on page 28 undefined on input line 3.
-
-
-LaTeX Warning: Reference `fig:spbpu_hydrotower-app' on page 28 undefined on inp
-ut line 3.
-
-
-LaTeX Warning: Reference `fig:spbpu_hydrotower-app-' on page 28 undefined on in
-put line 3.
-
-
-LaTeX Warning: Reference `tab:ToyCompare-app' on page 28 undefined on input lin
-e 3.
-
-
-LaTeX Warning: Reference `tab:ToyCompare-app-' on page 28 undefined on input li
-ne 3.
-
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 14.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 28 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 28 undefined on input line 21.
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[28.28]
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 51.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 29 undefined on input line 52.
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 29 undefined on input line 58.
-
-)
-
-Package nag Warning: Unmatched ``\center'' command on line 50.
-
-
-Package nag Warning: Unmatched ``\center'' command on line 13.
-
-
-Package nag Warning: Unmatched ``\center'' command on line 116.
-
-
-Package nag Warning: Unmatched ``\center'' command on line 71.
-
-
 Package nag Warning: Unmatched ``\center'' command on line 26.
 
 
-Package nag Warning: Unmatched ``\center'' command on line 30.
+Package nag Warning: Unmatched ``\center'' command on line 130.
 
 
 Class memoir Warning: The material used in the footer is too large
@@ -4525,7 +4529,7 @@ Package caption Warning: Unused \captionsetup[lstlisting] on input line 245.
 See the caption package documentation for explanation.
 
 
-Package nag Warning: 12 complaints in total.
+Package nag Warning: 18 complaints in total.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4537,28 +4541,16 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[29.29]
+[22.22]
 \tf@toc=\write9
-
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(./My_practice.aux
+ (./My_practice.aux
 Package cleveref Info: loaded `russian' language definitions on input line 29.
 )
+Package rerunfilecheck Info: File `My_practice.out' has not changed.
+(rerunfilecheck)             Checksum: 02BA1C66116F113161FC2FC8C49F4770;2938.
 
-Package rerunfilecheck Warning: File `My_practice.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `My_practice.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8FCB2B3B3EB561A2D06BB3D7A23B0FE5;5430.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -4569,34 +4561,33 @@ Package logreq Info: Writing requests to 'My_practice.run.xml'.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 99 ({)
+### simple group (level 1) entered at line 84 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 43816 strings out of 479383
- 733339 string characters out of 5875830
- 1862097 words of memory out of 5000000
- 59692 multiletter control sequences out of 15000+600000
- 538920 words of font info for 288 fonts, out of 8000000 for 9000
+ 43791 strings out of 479383
+ 733952 string characters out of 5875830
+ 1873341 words of memory out of 5000000
+ 59705 multiletter control sequences out of 15000+600000
+ 536038 words of font info for 285 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,20n,119p,1573b,3147s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,20n,119p,1573b,3053s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.en
-c} </home/makar/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbmsl12.720pk>{/u
-sr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}{/usr/share/texmf-di
-st/fonts/enc/dvips/tempora/t2a-tempora.enc}</usr/share/texmf-dist/fonts/type1/p
-ublic/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempo
-ra-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-BoldItali
-c.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></us
-r/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txbsys
-.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/tex
-mf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1
-/public/newtx/txsys.pfb>
-Output written on My_practice.pdf (29 pages, 2081251 bytes).
+c}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}{/usr/share/tex
+mf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}</usr/share/texmf-dist/fonts/ty
+pe1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/
+Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold
+Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb
+></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/t
+xbsys.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/
+type1/public/newtx/txsys.pfb>
+Output written on My_practice.pdf (22 pages, 449417 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 140 named destinations out of 1000 (max. 500000)
- 32830 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 32427 words of extra memory for PDF output out of 35830 (max. 10000000)
 

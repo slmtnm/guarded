@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.22)  29 MAY 2021 22:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.30)  30 MAY 2021 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3885,7 +3885,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T2A).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<my_folder/images//spbpu_hydrotower.jpg, id=177, 1284.8pt x 856.19875pt>
+<my_folder/images//spbpu_hydrotower.jpg, id=171, 1284.8pt x 856.19875pt>
 File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_hydrotower.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
@@ -3910,19 +3910,19 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 [11.11
 
 ] (./my_folder/tex/fig-spbpu-whitehall-three-in-one.tex
-<my_folder/images//spbpu_whitehall.jpg, id=196, 606.265pt x 404.51125pt>
+<my_folder/images//spbpu_whitehall.jpg, id=190, 606.265pt x 404.51125pt>
 File: my_folder/images//spbpu_whitehall.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_whitehall.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_whitehall.jpg  used on input l
 ine 7.
 (pdftex.def)             Requested size: 120.49974pt x 80.39468pt.
-<my_folder/images//spbpu_whitehall_ligh.jpg, id=197, 770.88pt x 514.17094pt>
+<my_folder/images//spbpu_whitehall_ligh.jpg, id=191, 770.88pt x 514.17094pt>
 File: my_folder/images//spbpu_whitehall_ligh.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_whitehall_ligh.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_whitehall_ligh.jpg  used on in
 put line 13.
 (pdftex.def)             Requested size: 120.49974pt x 80.37039pt.
-<my_folder/images//spbpu_whitehall_sculpture.jpg, id=198, 606.265pt x 404.51125
+<my_folder/images//spbpu_whitehall_sculpture.jpg, id=192, 606.265pt x 404.51125
 pt>
 File: my_folder/images//spbpu_whitehall_sculpture.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_whitehall_sculpture.jpg>
@@ -4006,7 +4006,7 @@ itehall.jpg> <./my_folder/images//spbpu_whitehall_ligh.jpg> <./my_folder/images
 LaTeX Warning: Citation 'Ganter1999' on page 13 undefined on input line 2.
 
 )
-<my_folder/images/spbpu_new_bld_autumn.jpg, id=215, 722.7pt x 481.8pt>
+<my_folder/images/spbpu_new_bld_autumn.jpg, id=209, 722.7pt x 481.8pt>
 File: my_folder/images/spbpu_new_bld_autumn.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_new_bld_autumn.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_new_bld_autumn.jpg  used on inp
@@ -4085,25 +4085,25 @@ LaTeX Warning: Citation 'Naidenova2017' on page 15 undefined on input line 32.
 LaTeX Warning: Citation 'Ganter1999' on page 15 undefined on input line 2.
 
 ) (./my_folder/tex/fig-spbpu-sc-four-in-one.tex
-<my_folder/images/spbpu_sc_system.jpg, id=241, 722.7pt x 480.29437pt>
+<my_folder/images/spbpu_sc_system.jpg, id=235, 722.7pt x 480.29437pt>
 File: my_folder/images/spbpu_sc_system.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_sc_system.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_sc_system.jpg  used on input li
 ne 7.
 (pdftex.def)             Requested size: 212.40045pt x 141.15793pt.
-<my_folder/images/spbpu_sc_refr.jpg, id=242, 722.7pt x 316.18124pt>
+<my_folder/images/spbpu_sc_refr.jpg, id=236, 722.7pt x 316.18124pt>
 File: my_folder/images/spbpu_sc_refr.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_sc_refr.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_sc_refr.jpg  used on input line
  13.
 (pdftex.def)             Requested size: 212.40045pt x 92.92528pt.
-<my_folder/images/spbpu_sc_hall.jpg, id=243, 722.7pt x 480.29437pt>
+<my_folder/images/spbpu_sc_hall.jpg, id=237, 722.7pt x 480.29437pt>
 File: my_folder/images/spbpu_sc_hall.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_sc_hall.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_sc_hall.jpg  used on input line
  19.
 (pdftex.def)             Requested size: 212.40045pt x 141.15793pt.
-<my_folder/images/spbpu_sc_box.jpg, id=244, 722.7pt x 423.08063pt>
+<my_folder/images/spbpu_sc_box.jpg, id=238, 722.7pt x 423.08063pt>
 File: my_folder/images/spbpu_sc_box.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_sc_box.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_sc_box.jpg  used on input line 
@@ -4623,40 +4623,31 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'My_thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 43909 strings out of 479383
- 734846 string characters out of 5875830
+ 43906 strings out of 479383
+ 734813 string characters out of 5875830
  1864789 words of memory out of 5000000
  59726 multiletter control sequences out of 15000+600000
  544844 words of font info for 297 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,20n,119p,1569b,3053s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.0.3} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.1} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/makar/
-.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbmsl12.720pk>{/usr/share/texmf-d
-ist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}{/usr/share/texmf-dist/fonts/enc/dvi
-ps/tempora/t2a-tempora.enc}</usr/share/texmf-dist/fonts/type1/public/newtx/NewT
-XMI.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></us
-r/share/texmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-di
-st/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt
-1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txbsys.pfb></usr/share
-/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/tx
-sys.pfb>
-Output written on My_thesis.pdf (34 pages, 2095961 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/maka
+r/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbmsl12.720pk>{/usr/share/texmf
+-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}{/usr/share/texmf-dist/fonts/enc/d
+vips/tempora/t2a-tempora.enc}</usr/share/texmf-dist/fonts/type1/public/newtx/Ne
+wTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></
+usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-
+dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+tt1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txbsys.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/
+type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/
+txsys.pfb>
+Output written on My_thesis.pdf (34 pages, 2095740 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
- 440 compressed objects within 5 object streams
- 164 named destinations out of 1000 (max. 500000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 433 compressed objects within 5 object streams
+ 161 named destinations out of 1000 (max. 500000)
  35486 words of extra memory for PDF output out of 35830 (max. 10000000)
 

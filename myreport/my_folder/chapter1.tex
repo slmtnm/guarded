@@ -1,4 +1,104 @@
-\chapter{Название первой главы: всестороннее изучение объекта и предмета исследования, анализ результатов, полученных другими авторами} \label{ch1}
+\chapter{Описание языка} \label{ch1}
+В этой главе приведено синтаксическое описание грамматики языка охраняемых команд с помощью
+расширенной формы Бэкуса-Наура и синтаксических диаграмм Вирта.
+
+\section{Расширенная форма Бэкуса-Наура}
+	\begin{verbatim}
+	    <программа> ::= <список операторов>
+	    <список операторов> ::= <оператор> {; <оператор>}
+	    <оператор> ::= <оператор присваивания> |
+	        <условный оператор> | <оператор цикла>
+	    <оператор присваивания> ::= <идентификатор> := <выражение>
+    	<цифра> ::= "0" | ... | "9"
+    	<число> ::= <цифра> {<цифра>} [. <цифра> {<цифра>}]
+    	<буква> ::= ("_" | "a" | ... | "z" | "A" | ... "Z")
+    	<идентификатор> ::= <буква> {<буква> | <цифра>}
+	    <выражение> ::= <идентификатор> | <число> | True | False |
+	        (<выражение>) | -<выражение> | ~<выражение> |
+	        <выражение> + <выражение> | <выражение> - <выражение> |
+	        <выражение> * <выражение> | <выражение> / <выражение> |
+	        <выражение> & <выражение> | <выражение> ``|'' <выражение> |
+	        <выражение> == <выражение> | <выражение> != <выражение> |
+	        <выражение> > <выражение> | <выражение> >= <выражение> |
+	        <выражение> < <выражение> | <выражение> <= <выражение>
+	        <выражение> >> <выражение>
+	    <охраняемая команда> ::= <выражение> -> <список операторов>
+	    <список охраняемых команд> ::= <охраняемая команда> 
+	        {| <охраняемая команда>}
+	    <условный оператор> ::= if <список охраняемых команд> fi
+	    <оператор цикла> ::= do <список охраняемых команд> od
+	\end{verbatim}
+
+\section{Синтаксические диаграммы Вирта}
+	\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{my_folder/images/virth/number}
+		\caption{Синтаксическая диаграмма: число}
+	\end{center}
+    \end{figure}
+    
+    \begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.9]{my_folder/images/virth/expr}
+		\caption{Синтаксическая диаграмма: выражение}
+	\end{center}
+    \end{figure}
+
+    \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{my_folder/images/virth/var}
+		\caption{Синтаксическая диаграмма: идентификатор}
+	\end{center}
+    \end{figure}
+    
+    \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{my_folder/images/virth/op}
+		\caption{Синтаксическая диаграмма: оператор}
+	\end{center}
+    \end{figure}
+    
+    \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{my_folder/images/virth/op_list}
+		\caption{Синтаксическая диаграмма: список операторов}
+	\end{center}
+    \end{figure}
+    
+    \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{my_folder/images/virth/ass_op}
+		\caption{Синтаксическая диаграмма: оператор присваивания}
+	\end{center}
+    \end{figure}
+    
+    \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{my_folder/images/virth/guarded_command}
+		\caption{Синтаксическая диаграмма: охраняемая команда}
+	\end{center}
+    \end{figure}
+    
+    \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{my_folder/images/virth/command_list}
+		\caption{Синтаксическая диаграмма: список охраняемых команд}
+	\end{center}
+    \end{figure}
+    
+    \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{my_folder/images/virth/if}
+		\caption{Синтаксическая диаграмма: условный оператор}
+	\end{center}
+    \end{figure}
+    
+    \begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{images/virth/do}
+		\caption{Синтаксическая диаграмма: оператор цикла}
+	\end{center}
+    \end{figure}
 
 % не рекомендуется использовать отдельную section <<введение>> после лета 2020 года
 %\section{Введение. Сложносоставное название первого параграфа первой главы для~демонстрации переноса слов в содержании} \label{ch1:intro}
