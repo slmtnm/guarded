@@ -2,6 +2,7 @@ from .gen.GuardedVisitor import GuardedVisitor
 from .gen.GuardedParser import GuardedParser
 from pprint import pprint
 import sympy as sp
+import itertools
 sp.Eq
 
 # todo: assert using fucntion call in expressions not in condition
@@ -145,16 +146,25 @@ class DerivingVisitor(GuardedVisitor):
             raise Exception(f"Unexpected operation: {ctx.getText()}")
 
     def visitAssignOperator(self, ctx: GuardedParser.AssignOperatorContext):
-        self.visitChildren(ctx)
-        children = list(ctx.getChildren())
+        children_iter = ctx.getChildren()
+        var_names = list(map(
+            lambda c: sp.Symbol(c.getText()),
+            filter(lambda c: c.getText() != ',',
+                itertools.takewhile(lambda c: c.getText() != ':=', children_iter))
+            ) 
+        )
+        expressions = list(filter(lambda c: c.getText() != ',', children_iter))
+        assert len(var_names) == len(expressions), "Multi assignment with different number of variables and values"
 
-        var_name = children[0].getText()
-        var_value = self._expr_stack.pop()
+        self.visitChildren(ctx)
+        values = list(reversed(
+            list(self._expr_stack.pop() for i in range(len(expressions)))
+        ))
 
         old_condition = self._predicate_stack.pop()
-        new_condition = old_condition.xreplace({sp.Symbol(var_name): var_value})
+        new_condition = old_condition.xreplace(dict(zip(var_names, values)))
 
-        print('    ' * self._depth + f'{old_condition} --[assign {var_name}:={var_value}]--> {new_condition}')
+        print('    ' * self._depth + f'{old_condition} --[assign {var_names}:={values}]--> {new_condition}')
         
         self._predicate_stack.append(new_condition)
 
@@ -213,6 +223,9 @@ class DerivingVisitor(GuardedVisitor):
     def visitOperatorList(self, ctx: GuardedParser.OperatorListContext):
         for operator in reversed(list(ctx.getChildren())):
             self.visitOperator(operator)
+    
+    def visitInitialAssignments(self, ctx: GuardedParser.InitialAssignmentsContext):
+        pass
 
     def visitStart(self, ctx: GuardedParser.StartContext):
         try:
@@ -233,6 +246,6 @@ class DerivingVisitor(GuardedVisitor):
         pre_condition = sp.simplify(self._predicate_stack.pop())
         print('Pre-condition:', str(pre_condition.simplify()))
 
-        print('\nPROVE manually, that following formulas are tauthologies:')        
+        self._claims and print('\nPROVE manually, that following formulas are tauthologies:')        
         for i in range(len(self._claims)):
             print(f'{i + 1}. {self._claims[i]}')

@@ -149,5 +149,10 @@ class GuardedVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by GuardedParser#initialAssignments.
+    def visitInitialAssignments(self, ctx:GuardedParser.InitialAssignmentsContext):
+        return self.visitChildren(ctx)
+
+
 
 del GuardedParser

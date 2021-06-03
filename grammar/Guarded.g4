@@ -42,14 +42,14 @@ expression
    ;
 
 // Program is an operator or multiple operators
-start : operatorList condition? functionDefinition* EOF;
+start : initialAssignments? operatorList condition? functionDefinition* EOF;
 operatorList: operator (SEP operator)*;
 
 // Operators
 operator: assignOperator | ifOperator | doOperator | functionCall;
 
 // assign operator
-assignOperator: ID ':=' expression;
+assignOperator: ID (',' ID)* ':=' expression (',' expression)*;
 
 // Guarded comm ands
 commandList: command ('|' command)*;
@@ -65,6 +65,8 @@ functionDefinition: ID '(' formalParameters ')' ':=' operatorList;
 
 formalParameters: (ID (',' ID)* )?;
 actualParameters: (expression (',' expression)* )?;
+
+initialAssignments: '[' assignOperator (';' assignOperator)* ']';
 
 // comments
 LINE_COMMENT

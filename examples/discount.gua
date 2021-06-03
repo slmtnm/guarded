@@ -1,9 +1,7 @@
 # 3% discount is given if purchase is bigger than 1000 
 # 5% -- if bigger than 1500
 
-# start_price := 100;
-# final_price := 0;
-
+[start_price, final_price := 100, 0]
 if start_price > 1000 & start_price <= 1500 -> final_price := 0.97 * start_price
 | start_price > 1500 -> final_price := 0.95 * start_price
 | start_price <= 1000 -> final_price := start_price
