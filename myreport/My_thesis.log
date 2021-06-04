@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.6.3)  3 JUN 2021 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.6.3)  4 JUN 2021 20:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/makar/git/guarded/myreport/My_practice.tex
-(/home/makar/git/guarded/myreport/My_practice.tex
+**/home/makar/git/guarded/myreport/My_thesis.tex
+(/home/makar/git/guarded/myreport/My_thesis.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-03> xparse <2020-03-03> (/home/makar/git/guarded/myreport/template_settings/ch_preamble.tex (/usr/share/texmf-dist/tex/latex/nag/nag.sty
 Package: nag 2011/11/25 0.7 warning about old commands (ulmi)
@@ -2869,83 +2869,83 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'russian'.
-LaTeX Font Info:    Trying to load font information for T1+Tempora-TLF on input line 35.
+LaTeX Font Info:    Trying to load font information for T1+Tempora-TLF on input line 34.
  (/usr/share/texmf-dist/tex/latex/tempora/T1Tempora-TLF.fd
 File: T1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for T1/Tempora-TLF.
 )
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 35.
-<<t1.cmap>> (/home/makar/git/guarded/myreport/My_practice.aux)
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 35.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 35.
+(Font)              scaled to size 14.05249pt on input line 34.
+<<t1.cmap>> (/home/makar/git/guarded/myreport/My_thesis.aux)
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 34.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 34.
  (/usr/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 35.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 34.
  (/usr/share/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 35.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 34.
  (/usr/share/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 35.
-LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 34.
  (/usr/share/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
 File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T2C/cmr/m/n on input line 35.
-LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T2C/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 34.
  (/usr/share/texmf-dist/tex/latex/cyrillic/t2ccmr.fd
 File: t2ccmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T2B/cmr/m/n on input line 35.
-LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T2B/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 34.
  (/usr/share/texmf-dist/tex/latex/cyrillic/t2bcmr.fd
 File: t2bcmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 35.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 34.
  (/usr/share/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 35.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 34.
  (/usr/share/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 35.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 34.
  (/usr/share/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 35.
-Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 35.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 34.
+Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 34.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count669
@@ -2999,17 +2999,17 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for T2A+Tempora-TLF on input line 35.
+LaTeX Font Info:    Trying to load font information for T2A+Tempora-TLF on input line 34.
 (/usr/share/texmf-dist/tex/latex/tempora/t2atempora-tlf.fd
 File: t2atempora-tlf.fd 2015/09/13 Font definitions for T2A/Tempora-TLF.
 )
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 35.
+(Font)              scaled to size 14.05249pt on input line 34.
 <<t2a.cmap>>
-LaTeX Info: Redefining \th on input line 35.
+LaTeX Info: Redefining \th on input line 34.
 \c@mv@tabular=\count675
 \c@mv@boldtabular=\count676
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 34.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -3021,23 +3021,23 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 35.
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 \@outlinefile=\write8
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count678
-LaTeX Info: Redefining \microtypecontext on input line 35.
+LaTeX Info: Redefining \microtypecontext on input line 34.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 35.
+LaTeX Info: Redefining \showhyphens on input line 34.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -3087,16 +3087,16 @@ Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'My_practice.bbl' not found.
+Package biblatex Info: ... file 'My_thesis.bbl' not found.
 
-No file My_practice.bbl.
-Package biblatex Info: Reference section=0 on input line 35.
-Package biblatex Info: Reference segment=0 on input line 35.
-Package nag Info: Command \captionabove not defined, skipping amendment on input line 35.
-Package nag Info: Command \captionbelow not defined, skipping amendment on input line 35.
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 35.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 35.
-(/home/makar/git/guarded/myreport/template_settings/common/renames.tex) (/home/makar/git/guarded/myreport/my_folder/practice.tex
+No file My_thesis.bbl.
+Package biblatex Info: Reference section=0 on input line 34.
+Package biblatex Info: Reference segment=0 on input line 34.
+Package nag Info: Command \captionabove not defined, skipping amendment on input line 34.
+Package nag Info: Command \captionbelow not defined, skipping amendment on input line 34.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 34.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 34.
+(/home/makar/git/guarded/myreport/template_settings/common/renames.tex) (/home/makar/git/guarded/myreport/my_folder/title.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -3129,72 +3129,108 @@ Package nag Info: Command \topcaption not defined, skipping amendment on input l
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 25.
+LaTeX Font Info:    Trying to load font information for OT1+Tempora-TLF on input line 25.
+ (/usr/share/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd
+File: OT1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for OT1/Tempora-TLF.
+)
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 14.05249pt on input line 25.
+<<ot1.cmap>>
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 10.25826pt on input line 25.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 7.72891pt on input line 25.
+<<oml.cmap>>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 25.
+ (/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 25.
+ (/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 25.
+ (/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 14.05249pt on input line 25.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 10.25826pt on input line 25.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 7.72891pt on input line 25.
+ (/usr/share/texmf-dist/tex/latex/microtype/mt-eur.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 25.
+
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 29.
+(Font)              scaled to size 12.0pt on input line 25.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 25.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 25.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 6.6pt on input line 25.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 25.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 8.8pt on input line 25.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 6.6pt on input line 25.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 31.
+(Font)              scaled to size 12.0pt on input line 25.
+
+Package tabularx Warning: X Columns too narrow (table too wide)
+(tabularx)                 on input line 49.
+
+
+Overfull \hbox (66.82176pt too wide) in alignment at lines 49--49
+[][] 
+ []
+
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 49.
+(Font)              scaled to size 14.05249pt on input line 59.
 
-Underfull \hbox (badness 4569) in paragraph at lines 73--74
-\T2A/Tempora-TLF/b/n/14.05249 Руководитель прак^^?ти^^?ки от ФГА^^?ОУ ВО <<СПб^^?ПУ>>: |   []   |   []
+Package tabularx Warning: X Columns too narrow (table too wide)
+(tabularx)                 on input line 97.
+
+
+Overfull \hbox (131.31761pt too wide) in alignment at lines 97--97
+[][][] 
  []
 
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 97.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 97.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 97.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 6.1pt on input line 97.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 97.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 97.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 6.1pt on input line 97.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 97.
 
-Overfull \hbox (79.3877pt too wide) in paragraph at lines 73--74
-|   []   |   []
- []
-
-
-Underfull \hbox (badness 3482) in paragraph at lines 77--83
-\T2A/Tempora-TLF/b/n/14.05249 Консультант прак^^?ти^^?ки от ФГА^^?ОУ ВО <<СПб^^?ПУ>>:  |   []   |   []
- []
-
-/home/makar/git/guarded/myreport/my_folder/practice.tex:84: Extra }, or forgotten \endgroup.
-\UL@stop ...alty \ifnum \lastkern =\thr@@ \egroup 
-                                                  \egroup \ifdim \wd \UL@box...
-l.84 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
-                                                   % РќР• Р—РђРџРћР›РќРЇР•Рњ!
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/makar/git/guarded/myreport/my_folder/practice.tex:84: Extra }, or forgotten \endgroup.
-\UL@stop ...num \lastkern =\thr@@ \egroup \egroup 
-                                                  \ifdim \wd \UL@box =\z@ \e...
-l.84 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
-                                                   % РќР• Р—РђРџРћР›РќРЇР•Рњ!
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/makar/git/guarded/myreport/my_folder/practice.tex:84: Missing } inserted.
-<inserted text> 
-                }
-l.84 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
-                                                   % РќР• Р—РђРџРћР›РќРЇР•Рњ!
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/makar/git/guarded/myreport/my_folder/practice.tex:84: Missing } inserted.
-<inserted text> 
-                }
-l.84 ...µРЅРєР°:} \uline{\hspace*{0.1\textheight}}
-                                                   % РќР• Р—РђРџРћР›РќРЇР•Рњ!
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-(/usr/share/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd)<<ot1.cmap>><<oml.cmap>> (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg) (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg) (/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd) (/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd) (/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd) (/usr/share/texmf-dist/tex/latex/microtype/mt-eur.cfg)
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3207,7 +3243,192 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 [1.1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (/home/makar/git/guarded/myreport/my_folder/contents.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (/home/makar/git/guarded/myreport/my_folder/task.tex (/home/makar/git/guarded/myreport/my_folder/task_settings.tex)
+Underfull \hbox (badness 1448) in paragraph at lines 34--35
+[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Тема ра^^?бо^^?ты: |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+LaTeX Warning: Empty bibliography on input line 54.
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[2.2
+
+]
+/home/makar/git/guarded/myreport/my_folder/task.tex:81: Extra }, or forgotten \endgroup.
+\UL@stop ...alty \ifnum \lastkern =\thr@@ \egroup 
+                                                  \egroup \ifdim \wd \UL@box...
+l.81 ...line{\hspace*{0.1\textheight} \Supervisor}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/home/makar/git/guarded/myreport/my_folder/task.tex:81: Extra }, or forgotten \endgroup.
+\UL@stop ...num \lastkern =\thr@@ \egroup \egroup 
+                                                  \ifdim \wd \UL@box =\z@ \e...
+l.81 ...line{\hspace*{0.1\textheight} \Supervisor}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/home/makar/git/guarded/myreport/my_folder/task.tex:81: Missing } inserted.
+<inserted text> 
+                }
+l.81 ...line{\hspace*{0.1\textheight} \Supervisor}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/home/makar/git/guarded/myreport/my_folder/task.tex:81: Missing } inserted.
+<inserted text> 
+                }
+l.81 ...line{\hspace*{0.1\textheight} \Supervisor}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/home/makar/git/guarded/myreport/my_folder/task.tex:97: Extra }, or forgotten \endgroup.
+\UL@stop ...alty \ifnum \lastkern =\thr@@ \egroup 
+                                                  \egroup \ifdim \wd \UL@box...
+l.97 ... \uline{\hspace*{0.1\textheight}  \Author}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/home/makar/git/guarded/myreport/my_folder/task.tex:97: Extra }, or forgotten \endgroup.
+\UL@stop ...num \lastkern =\thr@@ \egroup \egroup 
+                                                  \ifdim \wd \UL@box =\z@ \e...
+l.97 ... \uline{\hspace*{0.1\textheight}  \Author}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/home/makar/git/guarded/myreport/my_folder/task.tex:97: Missing } inserted.
+<inserted text> 
+                }
+l.97 ... \uline{\hspace*{0.1\textheight}  \Author}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/home/makar/git/guarded/myreport/my_folder/task.tex:97: Missing } inserted.
+<inserted text> 
+                }
+l.97 ... \uline{\hspace*{0.1\textheight}  \Author}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+(/home/makar/git/guarded/myreport/my_folder/task_settings_restore.tex
+\blx@maxsegment@1=\count686
+\blx@sectionciteorder@1=\count687
+Package biblatex Info: Reference section=1 on input line 3.
+Package biblatex Info: Setting label 'refsection:1' on input line 3.
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[3.3])) (/home/makar/git/guarded/myreport/my_folder/summary.tex
+
+Package totcount Warning: Rerun to get correct total counts on input line 23.
+
+\@c=\count688
+\@last=\count689
+\@pnul=\count690
+
+Package totcount Warning: Rerun to get correct total counts on input line 24.
+
+\@c=\count691
+\@last=\count692
+\@pnul=\count693
+
+Package totcount Warning: Rerun to get correct total counts on input line 25.
+
+\@c=\count694
+\@last=\count695
+\@pnul=\count696
+
+Package totcount Warning: Rerun to get correct total counts on input line 26.
+
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 29.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 29.
+
+Package totcount Warning: Rerun to get correct total counts on input line 43.
+
+
+Package totcount Warning: Rerun to get correct total counts on input line 44.
+
+
+Package totcount Warning: Rerun to get correct total counts on input line 45.
+
+
+Package totcount Warning: Rerun to get correct total counts on input line 46.
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[4.4
+
+
+]) (/home/makar/git/guarded/myreport/my_folder/contents.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[5.5]
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3223,8 +3444,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[2.2
-
+[6.6
 
 ]) (/home/makar/git/guarded/myreport/my_folder/introduction.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3236,9 +3456,9 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[3.3
+[7.7
 
-]
+]) (/home/makar/git/guarded/myreport/my_folder/chapter1.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3248,243 +3468,208 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[4.4]
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[5.5]
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 14.05249pt on input line 116.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.25826pt on input line 124.
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[6.6]) (/home/makar/git/guarded/myreport/my_folder/chapter1.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[7.7]
+[8.8]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T2A).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:33: LaTeX Error: Unknown float option `H'.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:34: LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 	\begin{figure}[H]
+l.34 	\begin{figure}[H]
                        
 Option `H' ignored and `p' used.
 
-<my_folder/images/virth/number.jpg, id=50, 617.01483pt x 293.74258pt>
+<my_folder/images/virth/number.jpg, id=72, 617.01483pt x 293.74258pt>
 File: my_folder/images/virth/number.jpg Graphic file (type jpg)
 <use my_folder/images/virth/number.jpg>
-Package pdftex.def Info: my_folder/images/virth/number.jpg  used on input line 35.
+Package pdftex.def Info: my_folder/images/virth/number.jpg  used on input line 36.
 (pdftex.def)             Requested size: 308.50665pt x 146.87093pt.
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 37.
+(nag)                Maybe you want \centering instead on input line 38.
 
-<my_folder/images/virth/expr.jpg, id=51, 617.01483pt x 293.74258pt>
+<my_folder/images/virth/expr.jpg, id=73, 617.01483pt x 293.74258pt>
 File: my_folder/images/virth/expr.jpg Graphic file (type jpg)
 <use my_folder/images/virth/expr.jpg>
-Package pdftex.def Info: my_folder/images/virth/expr.jpg  used on input line 42.
+Package pdftex.def Info: my_folder/images/virth/expr.jpg  used on input line 43.
 (pdftex.def)             Requested size: 555.30821pt x 264.36588pt.
 
-Overfull \hbox (71.61134pt too wide) in paragraph at lines 42--43
+Overfull \hbox (71.61134pt too wide) in paragraph at lines 43--44
  [] 
  []
 
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 44.
+(nag)                Maybe you want \centering instead on input line 45.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:47: LaTeX Error: Unknown float option `H'.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:48: LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47     \begin{figure}[H]
+l.48     \begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
-<my_folder/images/virth/var.jpg, id=52, 617.01483pt x 293.74258pt>
+<my_folder/images/virth/var.jpg, id=74, 617.01483pt x 293.74258pt>
 File: my_folder/images/virth/var.jpg Graphic file (type jpg)
 <use my_folder/images/virth/var.jpg>
-Package pdftex.def Info: my_folder/images/virth/var.jpg  used on input line 49.
+Package pdftex.def Info: my_folder/images/virth/var.jpg  used on input line 50.
 (pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 51.
+(nag)                Maybe you want \centering instead on input line 52.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:54: LaTeX Error: Unknown float option `H'.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:55: LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54     \begin{figure}[H]
+l.55     \begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
-<my_folder/images/virth/op.jpg, id=53, 617.01483pt x 293.74258pt>
+<my_folder/images/virth/op.jpg, id=75, 617.01483pt x 293.74258pt>
 File: my_folder/images/virth/op.jpg Graphic file (type jpg)
 <use my_folder/images/virth/op.jpg>
-Package pdftex.def Info: my_folder/images/virth/op.jpg  used on input line 56.
+Package pdftex.def Info: my_folder/images/virth/op.jpg  used on input line 57.
 (pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 58.
+(nag)                Maybe you want \centering instead on input line 59.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:61: LaTeX Error: Unknown float option `H'.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:62: LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61     \begin{figure}[H]
+l.62     \begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
-<my_folder/images/virth/op_list.jpg, id=54, 617.01483pt x 293.74258pt>
+<my_folder/images/virth/op_list.jpg, id=76, 617.01483pt x 293.74258pt>
 File: my_folder/images/virth/op_list.jpg Graphic file (type jpg)
 <use my_folder/images/virth/op_list.jpg>
-Package pdftex.def Info: my_folder/images/virth/op_list.jpg  used on input line 63.
+Package pdftex.def Info: my_folder/images/virth/op_list.jpg  used on input line 64.
 (pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 65.
+(nag)                Maybe you want \centering instead on input line 66.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:68: LaTeX Error: Unknown float option `H'.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:69: LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68     \begin{figure}[H]
+l.69     \begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
-<my_folder/images/virth/ass_op.jpg, id=55, 617.01483pt x 293.74258pt>
+<my_folder/images/virth/ass_op.jpg, id=77, 617.01483pt x 293.74258pt>
 File: my_folder/images/virth/ass_op.jpg Graphic file (type jpg)
 <use my_folder/images/virth/ass_op.jpg>
-Package pdftex.def Info: my_folder/images/virth/ass_op.jpg  used on input line 70.
+Package pdftex.def Info: my_folder/images/virth/ass_op.jpg  used on input line 71.
 (pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 72.
+(nag)                Maybe you want \centering instead on input line 73.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:75: LaTeX Error: Unknown float option `H'.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:76: LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.75     \begin{figure}[H]
+l.76     \begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
-<my_folder/images/virth/guarded_command.jpg, id=56, 617.01483pt x 293.74258pt>
+<my_folder/images/virth/guarded_command.jpg, id=78, 617.01483pt x 293.74258pt>
 File: my_folder/images/virth/guarded_command.jpg Graphic file (type jpg)
 <use my_folder/images/virth/guarded_command.jpg>
-Package pdftex.def Info: my_folder/images/virth/guarded_command.jpg  used on input line 77.
+Package pdftex.def Info: my_folder/images/virth/guarded_command.jpg  used on input line 78.
 (pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 79.
+(nag)                Maybe you want \centering instead on input line 80.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:82: LaTeX Error: Unknown float option `H'.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:83: LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82     \begin{figure}[H]
+l.83     \begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
-<my_folder/images/virth/command_list.jpg, id=57, 617.01483pt x 293.74258pt>
+<my_folder/images/virth/command_list.jpg, id=79, 617.01483pt x 293.74258pt>
 File: my_folder/images/virth/command_list.jpg Graphic file (type jpg)
 <use my_folder/images/virth/command_list.jpg>
-Package pdftex.def Info: my_folder/images/virth/command_list.jpg  used on input line 84.
+Package pdftex.def Info: my_folder/images/virth/command_list.jpg  used on input line 85.
 (pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 86.
+(nag)                Maybe you want \centering instead on input line 87.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:89: LaTeX Error: Unknown float option `H'.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:90: LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89     \begin{figure}[H]
+l.90     \begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
-<my_folder/images/virth/if.jpg, id=58, 617.01483pt x 293.74258pt>
+<my_folder/images/virth/if.jpg, id=80, 617.01483pt x 293.74258pt>
 File: my_folder/images/virth/if.jpg Graphic file (type jpg)
 <use my_folder/images/virth/if.jpg>
-Package pdftex.def Info: my_folder/images/virth/if.jpg  used on input line 91.
+Package pdftex.def Info: my_folder/images/virth/if.jpg  used on input line 92.
 (pdftex.def)             Requested size: 431.90744pt x 205.61841pt.
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 93.
+(nag)                Maybe you want \centering instead on input line 94.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:96: LaTeX Error: Unknown float option `H'.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:97: LaTeX Error: Unknown float option `H'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96     \begin{figure}[H]
+l.97     \begin{figure}[H]
                           
 Option `H' ignored and `p' used.
 
 
-/home/makar/git/guarded/myreport/my_folder/chapter1.tex:98: LaTeX Error: File `images/virth/do' not found.
+/home/makar/git/guarded/myreport/my_folder/chapter1.tex:99: LaTeX Error: File `images/virth/do' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 ...ncludegraphics[scale=0.7]{images/virth/do}
+l.99 ...ncludegraphics[scale=0.7]{images/virth/do}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -3493,86 +3678,88 @@ If that doesn't work, type  X <return>  to quit.
 
 
 Package nag Warning: `center' environment in figure.
-(nag)                Maybe you want \centering instead on input line 100.
+(nag)                Maybe you want \centering instead on input line 101.
+
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 14.05249pt on input line 107.
+
+LaTeX Warning: Reference `ch1:sec1' on page 9 undefined on input line 107.
 
 
-LaTeX Warning: Reference `ch1:sec1' on page 8 undefined on input line 106.
-
-
-LaTeX Warning: Reference `ch1:sec2' on page 8 undefined on input line 106.
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
+LaTeX Warning: Reference `ch1:sec2' on page 9 undefined on input line 107.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[8.8
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[9.9
 
 ]
 
-LaTeX Warning: Citation 'spbpu-student-thesis-template-author-guide' on page 9 undefined on input line 108.
+LaTeX Warning: Citation 'spbpu-student-thesis-template-author-guide' on page 10 undefined on input line 109.
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 108--109
+Underfull \hbox (badness 2626) in paragraph at lines 109--110
 []\T2A/Tempora-TLF/m/n/14.05249 (+20) Текст дан^^?ной гла^^?вы при^^?зван при^^?ве^^?сти \T2A/Tempora-TLF/m/it/14.05249 (+20) крат^^?кие \T2A/Tempora-TLF/m/n/14.05249 (+20) при^^?ме^^?ры оформ^^?
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 108--109
+Underfull \hbox (badness 2302) in paragraph at lines 109--110
 \T2A/Tempora-TLF/m/n/14.05249 (+20) ле^^?ния тек^^?стово-^^?гра^^?фи^^?че^^?ских объ^^?ек^^?тов. Бо^^?лее по^^?дроб^^?ные при^^?ме^^?ры мож^^?
  []
 
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/it' will be
-(Font)              scaled to size 14.05249pt on input line 114.
-<my_folder/images//spbpu_hydrotower.jpg, id=66, 1284.8pt x 856.19875pt>
+(Font)              scaled to size 14.05249pt on input line 115.
+<my_folder/images//spbpu_hydrotower.jpg, id=88, 1284.8pt x 856.19875pt>
 File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input line 131.
+Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input line 132.
 (pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 9 undefined on input line 132.
+LaTeX Warning: Citation 'spbpu-gallery' on page 10 undefined on input line 133.
 
 
-LaTeX Warning: Reference `fig:spbpu_hydrotower' on page 9 undefined on input line 160.
+LaTeX Warning: Reference `fig:spbpu_hydrotower' on page 10 undefined on input line 161.
 
 
-LaTeX Warning: Reference `tab:ToyCompare' on page 9 undefined on input line 160.
+LaTeX Warning: Reference `tab:ToyCompare' on page 10 undefined on input line 161.
 
 
-LaTeX Warning: Citation 'Ganter1999' on page 9 undefined on input line 167.
+LaTeX Warning: Citation 'Ganter1999' on page 10 undefined on input line 168.
 
 
-LaTeX Warning: Reference `eq:fConcept-order-ch1' on page 1 undefined on input line 178.
+LaTeX Warning: Reference `eq:fConcept-order-ch1' on page 1 undefined on input line 179.
 
 
-LaTeX Warning: Reference `eq:Pi-ch1' on page 1 undefined on input line 178.
+LaTeX Warning: Reference `eq:Pi-ch1' on page 1 undefined on input line 179.
 
 (/home/makar/git/guarded/myreport/my_folder/tex/fig-spbpu-whitehall-three-in-one.tex
 
-LaTeX Warning: Reference `fig:spbpu_whitehall-three-photos' on page 9 undefined on input line 1.
+LaTeX Warning: Reference `fig:spbpu_whitehall-three-photos' on page 10 undefined on input line 1.
 
-<my_folder/images//spbpu_whitehall.jpg, id=67, 606.265pt x 404.51125pt>
+<my_folder/images//spbpu_whitehall.jpg, id=89, 606.265pt x 404.51125pt>
 File: my_folder/images//spbpu_whitehall.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_whitehall.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_whitehall.jpg  used on input line 7.
 (pdftex.def)             Requested size: 120.49974pt x 80.39468pt.
-<my_folder/images//spbpu_whitehall_ligh.jpg, id=68, 770.88pt x 514.17094pt>
+<my_folder/images//spbpu_whitehall_ligh.jpg, id=90, 770.88pt x 514.17094pt>
 File: my_folder/images//spbpu_whitehall_ligh.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_whitehall_ligh.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_whitehall_ligh.jpg  used on input line 13.
 (pdftex.def)             Requested size: 120.49974pt x 80.37039pt.
-<my_folder/images//spbpu_whitehall_sculpture.jpg, id=69, 606.265pt x 404.51125pt>
+<my_folder/images//spbpu_whitehall_sculpture.jpg, id=91, 606.265pt x 404.51125pt>
 File: my_folder/images//spbpu_whitehall_sculpture.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_whitehall_sculpture.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_whitehall_sculpture.jpg  used on input line 19.
 (pdftex.def)             Requested size: 120.49974pt x 80.39468pt.
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 9 undefined on input line 22.
+LaTeX Warning: Citation 'spbpu-gallery' on page 10 undefined on input line 22.
 
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 22.
@@ -3586,67 +3773,67 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[9.9]
+[10.10]
 
-LaTeX Warning: Reference `fig:spbpu_whitehall-a' on page 10 undefined on input line 25.
-
-
-LaTeX Warning: Reference `fig:spbpu_whitehall-b' on page 10 undefined on input line 25.
+LaTeX Warning: Reference `fig:spbpu_whitehall-a' on page 11 undefined on input line 25.
 
 
-LaTeX Warning: Reference `fig:spbpu_whitehall-c' on page 10 undefined on input line 25.
+LaTeX Warning: Reference `fig:spbpu_whitehall-b' on page 11 undefined on input line 25.
+
+
+LaTeX Warning: Reference `fig:spbpu_whitehall-c' on page 11 undefined on input line 25.
 
 )
 
-LaTeX Warning: Citation 'Article' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Article' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Book' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Book' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Booklet' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Booklet' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Conference' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Conference' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Inbook' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Inbook' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Incollection' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Incollection' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Manual' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Manual' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Mastersthesis' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Mastersthesis' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Misc' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Misc' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Phdthesis' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Phdthesis' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Proceedings' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Proceedings' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Techreport' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Techreport' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Unpublished' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Unpublished' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'badiou:briefings' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'badiou:briefings' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Naidenova2017' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Naidenova2017' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Naidenova2017' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Naidenova2017' on page 11 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'Ganter1999' on page 10 undefined on input line 183.
+LaTeX Warning: Citation 'Ganter1999' on page 11 undefined on input line 184.
 
 ) (/home/makar/git/guarded/myreport/my_folder/chapter2.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3658,37 +3845,37 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[10.10]
+[11.11]
 
-LaTeX Warning: Reference `ch2:title-abbr' on page 11 undefined on input line 8.
-
-
-LaTeX Warning: Reference `ch2:sec-abbr' on page 11 undefined on input line 8.
+LaTeX Warning: Reference `ch2:title-abbr' on page 12 undefined on input line 8.
 
 
-LaTeX Warning: Reference `ch2:sec-very-short-title' on page 11 undefined on input line 8.
+LaTeX Warning: Reference `ch2:sec-abbr' on page 12 undefined on input line 8.
+
+
+LaTeX Warning: Reference `ch2:sec-very-short-title' on page 12 undefined on input line 8.
 
 (/home/makar/git/guarded/myreport/my_folder/tex/eq-Galois.tex
 
-LaTeX Warning: Reference `eq:UpArrow-G' on page 11 undefined on input line 2.
+LaTeX Warning: Reference `eq:UpArrow-G' on page 12 undefined on input line 2.
 
 
-LaTeX Warning: Reference `eq:DownArrow-G' on page 11 undefined on input line 2.
+LaTeX Warning: Reference `eq:DownArrow-G' on page 12 undefined on input line 2.
 
 
-LaTeX Warning: Citation 'Ganter1999' on page 11 undefined on input line 2.
+LaTeX Warning: Citation 'Ganter1999' on page 12 undefined on input line 2.
 
 )
 
-LaTeX Warning: Reference `fig:spbpu-new-bld-autumn-ch2' on page 11 undefined on input line 23.
+LaTeX Warning: Reference `fig:spbpu-new-bld-autumn-ch2' on page 12 undefined on input line 23.
 
-<my_folder/images/spbpu_new_bld_autumn.jpg, id=92, 722.7pt x 481.8pt>
+<my_folder/images/spbpu_new_bld_autumn.jpg, id=113, 722.7pt x 481.8pt>
 File: my_folder/images/spbpu_new_bld_autumn.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_new_bld_autumn.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_new_bld_autumn.jpg  used on input line 27.
 (pdftex.def)             Requested size: 195.1316pt x 130.08772pt.
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 11 undefined on input line 28.
+LaTeX Warning: Citation 'spbpu-gallery' on page 12 undefined on input line 28.
 
 
 Overfull \hbox (4.97789pt too wide) in paragraph at lines 43--44
@@ -3705,13 +3892,13 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[11.11]
+[12.12]
 
-LaTeX Warning: Citation 'gost-russian-text-documents' on page 12 undefined on input line 27.
+LaTeX Warning: Citation 'gost-russian-text-documents' on page 13 undefined on input line 27.
 
 )
 
-LaTeX Warning: Reference `alg:AlgoFDSCALING' on page 12 undefined on input line 56.
+LaTeX Warning: Reference `alg:AlgoFDSCALING' on page 13 undefined on input line 56.
 
 (/home/makar/git/guarded/myreport/my_folder/tex/pseudocode-agl-DTestsFDScaling.tex
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 32.
@@ -3740,110 +3927,18 @@ Package nag Warning: \label in float, but not after \caption on input line 32.
 Package nag Warning: \label in float, but not after \caption on input line 32.
 
 
-LaTeX Warning: Citation 'Naidenova2017' on page 12 undefined on input line 32.
+LaTeX Warning: Citation 'Naidenova2017' on page 13 undefined on input line 32.
 
 
-LaTeX Warning: Reference `step:FD-scaling-first-step' on page 12 undefined on input line 53.
+LaTeX Warning: Reference `step:FD-scaling-first-step' on page 13 undefined on input line 53.
 
 
-LaTeX Warning: Reference `alg:AlgoFDSCALING' on page 12 undefined on input line 53.
+LaTeX Warning: Reference `alg:AlgoFDSCALING' on page 13 undefined on input line 53.
 
 ) (/home/makar/git/guarded/myreport/my_folder/tex/eq-equation-multilined.tex
 
-LaTeX Warning: Citation 'Ganter1999' on page 12 undefined on input line 2.
+LaTeX Warning: Citation 'Ganter1999' on page 13 undefined on input line 2.
 
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[12.12]
-
-LaTeX Warning: Reference `eq:fConcept-order-G' on page 1 undefined on input line 11.
-
-
-LaTeX Warning: Reference `eq:DownArrow-G' on page 1 undefined on input line 11.
-
-
-LaTeX Warning: Reference `eq:UpArrow-G' on page 1 undefined on input line 11.
-
-) (/home/makar/git/guarded/myreport/my_folder/tex/fig-spbpu-sc-four-in-one.tex
-
-LaTeX Warning: Reference `fig:spbpu_sc-four-photos' on page 13 undefined on input line 1.
-
-<my_folder/images/spbpu_sc_system.jpg, id=121, 722.7pt x 480.29437pt>
-File: my_folder/images/spbpu_sc_system.jpg Graphic file (type jpg)
-<use my_folder/images/spbpu_sc_system.jpg>
-Package pdftex.def Info: my_folder/images/spbpu_sc_system.jpg  used on input line 7.
-(pdftex.def)             Requested size: 212.40045pt x 141.15793pt.
-<my_folder/images/spbpu_sc_refr.jpg, id=122, 722.7pt x 316.18124pt>
-File: my_folder/images/spbpu_sc_refr.jpg Graphic file (type jpg)
-<use my_folder/images/spbpu_sc_refr.jpg>
-Package pdftex.def Info: my_folder/images/spbpu_sc_refr.jpg  used on input line 13.
-(pdftex.def)             Requested size: 212.40045pt x 92.92528pt.
-<my_folder/images/spbpu_sc_hall.jpg, id=123, 722.7pt x 480.29437pt>
-File: my_folder/images/spbpu_sc_hall.jpg Graphic file (type jpg)
-<use my_folder/images/spbpu_sc_hall.jpg>
-Package pdftex.def Info: my_folder/images/spbpu_sc_hall.jpg  used on input line 19.
-(pdftex.def)             Requested size: 212.40045pt x 141.15793pt.
-<my_folder/images/spbpu_sc_box.jpg, id=124, 722.7pt x 423.08063pt>
-File: my_folder/images/spbpu_sc_box.jpg Graphic file (type jpg)
-<use my_folder/images/spbpu_sc_box.jpg>
-Package pdftex.def Info: my_folder/images/spbpu_sc_box.jpg  used on input line 25.
-(pdftex.def)             Requested size: 212.40045pt x 124.34288pt.
-
-Overfull \hbox (2.10788pt too wide) in paragraph at lines 4--28
-[][][]  [][] 
- []
-
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 13 undefined on input line 28.
-
-
-LaTeX Warning: Reference `fig:spbpu_sc-a' on page 13 undefined on input line 32.
-
-
-LaTeX Warning: Reference `fig:spbpu_sc-b' on page 13 undefined on input line 32.
-
-
-LaTeX Warning: Reference `fig:spbpu_sc-c' on page 13 undefined on input line 32.
-
-
-LaTeX Warning: Reference `fig:spbpu_sc-d' on page 13 undefined on input line 32.
-
-
-LaTeX Warning: Reference `fig:spbpu_sc-c' on page 1 undefined on input line 32.
-
-
-LaTeX Warning: Reference `fig:spbpu_sc-b' on page 1 undefined on input line 32.
-
-
-LaTeX Warning: Reference `fig:spbpu_sc-a' on page 1 undefined on input line 32.
-
-) (/home/makar/git/guarded/myreport/my_folder/tex/tab-more-than-one-page.tex
-
-LaTeX Warning: Reference `tab:long' on page 13 undefined on input line 1.
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 13 undefined on input line 13.
-
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 17.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 17.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 17.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 17.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 8.8pt on input line 17.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 6.6pt on input line 17.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -3856,12 +3951,92 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 [13.13]
 
+LaTeX Warning: Reference `eq:fConcept-order-G' on page 1 undefined on input line 11.
+
+
+LaTeX Warning: Reference `eq:DownArrow-G' on page 1 undefined on input line 11.
+
+
+LaTeX Warning: Reference `eq:UpArrow-G' on page 1 undefined on input line 11.
+
+) (/home/makar/git/guarded/myreport/my_folder/tex/fig-spbpu-sc-four-in-one.tex
+
+LaTeX Warning: Reference `fig:spbpu_sc-four-photos' on page 14 undefined on input line 1.
+
+<my_folder/images/spbpu_sc_system.jpg, id=143, 722.7pt x 480.29437pt>
+File: my_folder/images/spbpu_sc_system.jpg Graphic file (type jpg)
+<use my_folder/images/spbpu_sc_system.jpg>
+Package pdftex.def Info: my_folder/images/spbpu_sc_system.jpg  used on input line 7.
+(pdftex.def)             Requested size: 212.40045pt x 141.15793pt.
+<my_folder/images/spbpu_sc_refr.jpg, id=144, 722.7pt x 316.18124pt>
+File: my_folder/images/spbpu_sc_refr.jpg Graphic file (type jpg)
+<use my_folder/images/spbpu_sc_refr.jpg>
+Package pdftex.def Info: my_folder/images/spbpu_sc_refr.jpg  used on input line 13.
+(pdftex.def)             Requested size: 212.40045pt x 92.92528pt.
+<my_folder/images/spbpu_sc_hall.jpg, id=145, 722.7pt x 480.29437pt>
+File: my_folder/images/spbpu_sc_hall.jpg Graphic file (type jpg)
+<use my_folder/images/spbpu_sc_hall.jpg>
+Package pdftex.def Info: my_folder/images/spbpu_sc_hall.jpg  used on input line 19.
+(pdftex.def)             Requested size: 212.40045pt x 141.15793pt.
+<my_folder/images/spbpu_sc_box.jpg, id=146, 722.7pt x 423.08063pt>
+File: my_folder/images/spbpu_sc_box.jpg Graphic file (type jpg)
+<use my_folder/images/spbpu_sc_box.jpg>
+Package pdftex.def Info: my_folder/images/spbpu_sc_box.jpg  used on input line 25.
+(pdftex.def)             Requested size: 212.40045pt x 124.34288pt.
+
+Overfull \hbox (2.10788pt too wide) in paragraph at lines 4--28
+[][][]  [][] 
+ []
+
+
+LaTeX Warning: Citation 'spbpu-gallery' on page 14 undefined on input line 28.
+
+
+LaTeX Warning: Reference `fig:spbpu_sc-a' on page 14 undefined on input line 32.
+
+
+LaTeX Warning: Reference `fig:spbpu_sc-b' on page 14 undefined on input line 32.
+
+
+LaTeX Warning: Reference `fig:spbpu_sc-c' on page 14 undefined on input line 32.
+
+
+LaTeX Warning: Reference `fig:spbpu_sc-d' on page 14 undefined on input line 32.
+
+
+LaTeX Warning: Reference `fig:spbpu_sc-c' on page 1 undefined on input line 32.
+
+
+LaTeX Warning: Reference `fig:spbpu_sc-b' on page 1 undefined on input line 32.
+
+
+LaTeX Warning: Reference `fig:spbpu_sc-a' on page 1 undefined on input line 32.
+
+) (/home/makar/git/guarded/myreport/my_folder/tex/tab-more-than-one-page.tex
+
+LaTeX Warning: Reference `tab:long' on page 14 undefined on input line 1.
+
+
+LaTeX Warning: Citation 'Peskov2004' on page 14 undefined on input line 13.
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[14.14]
+
 Package longtable Warning: Column widths have changed
 (longtable)                in table 2.1 on input line 77.
 
 )
 
-LaTeX Warning: Citation 'Peskov2004' on page 14 undefined on input line 79.
+LaTeX Warning: Citation 'Peskov2004' on page 15 undefined on input line 79.
 
 (/home/makar/git/guarded/myreport/my_folder/tex/tab-toy-context-minipage.tex
 
@@ -3870,7 +4045,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Citation 'Peskov2004' on page 14 undefined on input line 5.
+LaTeX Warning: Citation 'Peskov2004' on page 15 undefined on input line 5.
 
 )
 Underfull \hbox (badness 10000) in paragraph at lines 1--101
@@ -3887,7 +4062,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[14.14]
+[15.15]
 File: my_folder/images/spbpu_new_bld_autumn.jpg Graphic file (type jpg)
 <use my_folder/images/spbpu_new_bld_autumn.jpg>
 Package pdftex.def Info: my_folder/images/spbpu_new_bld_autumn.jpg  used on input line 5.
@@ -3899,7 +4074,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 15 undefined on input line 6.
+LaTeX Warning: Citation 'spbpu-gallery' on page 16 undefined on input line 6.
 
 )
 Underfull \hbox (badness 10000) in paragraph at lines 1--103
@@ -3908,7 +4083,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--103
 
 (/home/makar/git/guarded/myreport/my_folder/tex/rules-theorem-like-expressions.tex)
 
-LaTeX Warning: Citation 'spbpu-bci-template-author-guide' on page 15 undefined on input line 109.
+LaTeX Warning: Citation 'spbpu-bci-template-author-guide' on page 16 undefined on input line 109.
 
 (/home/makar/git/guarded/myreport/my_folder/tex/rules-list-of-environments.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3920,43 +4095,43 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[15.15 </home/makar/git/guarded/myreport/my_folder/images/spbpu_new_bld_autumn.jpg>]
+[16.16 </home/makar/git/guarded/myreport/my_folder/images/spbpu_new_bld_autumn.jpg>]
 
-LaTeX Warning: Reference `tab:enum-std' on page 16 undefined on input line 1.
-
-
-LaTeX Warning: Reference `tab:enum-spbpu' on page 16 undefined on input line 1.
+LaTeX Warning: Reference `tab:enum-std' on page 17 undefined on input line 1.
 
 
-LaTeX Warning: Citation 'ctan-tikz' on page 16 undefined on input line 26.
+LaTeX Warning: Reference `tab:enum-spbpu' on page 17 undefined on input line 1.
 
 
-LaTeX Warning: Citation 'ctan-algorithm2e' on page 16 undefined on input line 29.
+LaTeX Warning: Citation 'ctan-tikz' on page 17 undefined on input line 26.
 
 
-LaTeX Warning: Citation 'ctan-tikz' on page 16 undefined on input line 39.
+LaTeX Warning: Citation 'ctan-algorithm2e' on page 17 undefined on input line 29.
 
 
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
+LaTeX Warning: Citation 'ctan-tikz' on page 17 undefined on input line 39.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[16.16]
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[17.17]
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 []\T2A/cmtt/m/n/14.05249 \newtheorem{m-new-env-second}{Название_окруже^^?ния}^^?
  []
 
 ) (/home/makar/git/guarded/myreport/my_folder/tex/theorem-example.tex
 
-LaTeX Warning: Reference `th:ex' on page 17 undefined on input line 15.
+LaTeX Warning: Reference `th:ex' on page 18 undefined on input line 15.
 
 
-LaTeX Warning: Reference `th:ex' on page 17 undefined on input line 15.
+LaTeX Warning: Reference `th:ex' on page 18 undefined on input line 15.
 
 ) (/home/makar/git/guarded/myreport/my_folder/tex/definition-example.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3968,92 +4143,75 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[17.17])
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 121.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 121.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 121.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 6.1pt on input line 121.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 121.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 121.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 6.1pt on input line 121.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 121.
+[18.18])
+
+LaTeX Warning: Citation 'Article' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Article' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Book' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Book' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Booklet' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Booklet' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Conference' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Conference' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Inbook' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Inbook' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Incollection' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Incollection' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Manual' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Manual' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Mastersthesis' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Mastersthesis' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Misc' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Misc' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Phdthesis' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Phdthesis' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Proceedings' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Proceedings' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Techreport' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Techreport' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Unpublished' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Unpublished' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'badiou:briefings' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'badiou:briefings' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Naidenova2017' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Naidenova2017' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Naidenova2017' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Naidenova2017' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'Ganter1999' on page 19 undefined on input line 131.
 
 
-LaTeX Warning: Citation 'Ganter1999' on page 18 undefined on input line 131.
+LaTeX Warning: Citation 'ctan-biblatex-gost' on page 19 undefined on input line 133.
 
 
-LaTeX Warning: Citation 'ctan-biblatex-gost' on page 18 undefined on input line 133.
+LaTeX Warning: Citation 'ctan-biblatex-gost-examples' on page 19 undefined on input line 134.
 
 
-LaTeX Warning: Citation 'ctan-biblatex-gost-examples' on page 18 undefined on input line 134.
+LaTeX Warning: Reference `appendix-MikTeX-TexStudio' on page 19 undefined on input line 136.
 
 
-LaTeX Warning: Reference `appendix-MikTeX-TexStudio' on page 18 undefined on input line 136.
+LaTeX Warning: Citation 'latex-miktex' on page 19 undefined on input line 136.
 
 
-LaTeX Warning: Citation 'latex-miktex' on page 18 undefined on input line 136.
+LaTeX Warning: Citation 'latex-texstudio' on page 19 undefined on input line 136.
 
 
-LaTeX Warning: Citation 'latex-texstudio' on page 18 undefined on input line 136.
-
-
-LaTeX Warning: Reference `appendix-extra-examples' on page 18 undefined on input line 138.
+LaTeX Warning: Reference `appendix-extra-examples' on page 19 undefined on input line 138.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4065,7 +4223,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[18.18]) (/home/makar/git/guarded/myreport/my_folder/chapter3.tex
+[19.19]) (/home/makar/git/guarded/myreport/my_folder/chapter3.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4075,7 +4233,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[19.19]) (/home/makar/git/guarded/myreport/my_folder/chapter4.tex
+[20.20]) (/home/makar/git/guarded/myreport/my_folder/chapter4.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4085,18 +4243,18 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[20.20]
+[21.21]
 
-LaTeX Warning: Citation 'avtonomova:fya' on page 21 undefined on input line 12.
-
-
-LaTeX Warning: Citation 'Peskov2004-ru' on page 21 undefined on input line 12.
+LaTeX Warning: Citation 'avtonomova:fya' on page 22 undefined on input line 12.
 
 
-LaTeX Warning: Citation 'Kotelnikov2004-ru' on page 21 undefined on input line 12.
+LaTeX Warning: Citation 'Peskov2004-ru' on page 22 undefined on input line 12.
 
 
-LaTeX Warning: Citation 'Kotelnikov2004' on page 21 undefined on input line 12.
+LaTeX Warning: Citation 'Kotelnikov2004-ru' on page 22 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'Kotelnikov2004' on page 22 undefined on input line 12.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
@@ -4113,7 +4271,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[21.21]) (/home/makar/git/guarded/myreport/my_folder/references.tex
+[22.22]) (/home/makar/git/guarded/myreport/my_folder/acronyms.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4123,22 +4281,213 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[22.22]
+[23.23]) (/home/makar/git/guarded/myreport/my_folder/dictionary.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[24.24]) (/home/makar/git/guarded/myreport/my_folder/references.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[25.25]
 
 LaTeX Warning: Empty bibliography on input line 16.
 
 )
 
+Package xassoccnt Warning: Warning: An accidental(?) addition of associated
+(xassoccnt)                counter(s) without DeclareAssociatedCounters was
+(xassoccnt)                detected for
+(xassoccnt)                the driver counter "chapter" and following driven
+(xassoccnt)                counters:
+(xassoccnt)                --- myappendices ---
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[26.26] (/home/makar/git/guarded/myreport/my_folder/appendix1.tex
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
+(Font)              scaled to size 10.25826pt on input line 1.
+
+
+LaTeX Warning: Citation 'latex-miktex' on page 27 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'latex-texstudio' on page 27 undefined on input line 9.
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 36--37
+\T2A/Tempora-TLF/m/n/14.05249 (+20) го): \T2A/cmtt/m/n/14.05249 txs:///pdflatex | txs:///biber | txs:///pdflatex
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[27.27]
+
+LaTeX Warning: Reference `eq:Pi-app2' on page 28 undefined on input line 61.
+
+
+LaTeX Warning: Reference `eq:Pi-app2-' on page 28 undefined on input line 61.
+
+
+LaTeX Warning: Reference `fig:spbpu_hydrotower-app2' on page 28 undefined on input line 61.
+
+
+LaTeX Warning: Reference `fig:spbpu_hydrotower-app2-' on page 28 undefined on input line 61.
+
+
+LaTeX Warning: Reference `tab:ToyCompare-app2' on page 28 undefined on input line 61.
+
+
+LaTeX Warning: Reference `tab:ToyCompare-app2-' on page 28 undefined on input line 61.
+
+File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
+<use my_folder/images//spbpu_hydrotower.jpg>
+Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input line 72.
+(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
+
+LaTeX Warning: Citation 'spbpu-gallery' on page 28 undefined on input line 73.
+
+
+LaTeX Warning: Citation 'Peskov2004' on page 28 undefined on input line 79.
+
+
+Overfull \hbox (7.43707pt too wide) in paragraph at lines 104--105
+[]\T2A/Tempora-TLF/m/n/14.05249 (-20) Название под^^?па^^?ра^^?гра^^?фа оформ^^?ля^^?ет^^?ся с по^^?мо^^?щью ко^^?ман^^?ды \T2A/cmtt/m/n/14.05249 \subsection{...}\T2A/Tempora-TLF/m/n/14.05249 (-20) . 
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[28.28]
+File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
+<use my_folder/images//spbpu_hydrotower.jpg>
+Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input line 117.
+(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
+
+
+LaTeX Warning: Citation 'spbpu-gallery' on page 29 undefined on input line 118.
+
+
+LaTeX Warning: Citation 'Peskov2004' on page 29 undefined on input line 128.
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[29.29]
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[30.30]) (/home/makar/git/guarded/myreport/my_folder/appendix2.tex
+
+LaTeX Warning: Reference `eq:Pi-app' on page 31 undefined on input line 3.
+
+
+LaTeX Warning: Reference `eq:Pi-app-' on page 31 undefined on input line 3.
+
+
+LaTeX Warning: Reference `fig:spbpu_hydrotower-app' on page 31 undefined on input line 3.
+
+
+LaTeX Warning: Reference `fig:spbpu_hydrotower-app-' on page 31 undefined on input line 3.
+
+
+LaTeX Warning: Reference `tab:ToyCompare-app' on page 31 undefined on input line 3.
+
+
+LaTeX Warning: Reference `tab:ToyCompare-app-' on page 31 undefined on input line 3.
+
+File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
+<use my_folder/images//spbpu_hydrotower.jpg>
+Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input line 14.
+(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
+
+LaTeX Warning: Citation 'spbpu-gallery' on page 31 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Peskov2004' on page 31 undefined on input line 21.
+
+File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
+<use my_folder/images//spbpu_hydrotower.jpg>
+Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input line 51.
+(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
+
+LaTeX Warning: Citation 'spbpu-gallery' on page 31 undefined on input line 52.
+
+
+LaTeX Warning: Citation 'Peskov2004' on page 31 undefined on input line 58.
+
+)
+
+Package nag Warning: Unmatched ``\center'' command on line 50.
+
+
+Package nag Warning: Unmatched ``\center'' command on line 13.
+
+
+Package nag Warning: Unmatched ``\center'' command on line 116.
+
+
+Package nag Warning: Unmatched ``\center'' command on line 71.
+
+
 Package nag Warning: Unmatched ``\center'' command on line 26.
 
 
-Package nag Warning: Unmatched ``\center'' command on line 130.
+Package nag Warning: Unmatched ``\center'' command on line 131.
 
 
 Class memoir Warning: The material used in the footer is too large
 (12.64719pt) for the given foot skip (0.0pt), it is recommended to
 either increase the foot skip or redesign the footer
-(in both cases you will find help in the memoir manual). on input line 80.
+(in both cases you will find help in the memoir manual). on input line 86.
 
 
 Package caption Warning: Unused \captionsetup[ListingEnv] on input line 238.
@@ -4149,7 +4498,7 @@ Package caption Warning: Unused \captionsetup[lstlisting] on input line 245.
 See the caption package documentation for explanation.
 
 
-Package nag Warning: 18 complaints in total.
+Package nag Warning: 22 complaints in total.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4161,23 +4510,23 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[23.23]
+[31.31]
 \tf@toc=\write9
 
 
 Package longtable Warning: Table widths have changed. Rerun LaTeX.
 
-(/home/makar/git/guarded/myreport/My_practice.aux
+(/home/makar/git/guarded/myreport/My_thesis.aux
 Package cleveref Info: loaded `russian' language definitions on input line 29.
 )
 
-Package rerunfilecheck Warning: File `My_practice.out' has changed.
+Package rerunfilecheck Warning: File `My_thesis.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `My_practice.out':
+Package rerunfilecheck Info: Checksums for `My_thesis.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  9537C2A62E2E9F076F5D80832EB54261;2781.
+(rerunfilecheck)             After:  19BB14AFB414A38510D5D8AFC12A151B;4595.
 
 LaTeX Warning: There were undefined references.
 
@@ -4186,28 +4535,24 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                My_practice
+(biblatex)                My_thesis
 (biblatex)                and rerun LaTeX afterwards.
 
-Package logreq Info: Writing requests to 'My_practice.run.xml'.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 84 ({)
-### bottom level 
+Package logreq Info: Writing requests to 'My_thesis.run.xml'.
+ ) 
 Here is how much of TeX's memory you used:
- 43784 strings out of 479383
- 736843 string characters out of 5875831
- 1866097 words of memory out of 5000000
- 59696 multiletter control sequences out of 15000+600000
- 536038 words of font info for 285 fonts, out of 8000000 for 9000
+ 43936 strings out of 479383
+ 739906 string characters out of 5875831
+ 1866087 words of memory out of 5000000
+ 59764 multiletter control sequences out of 15000+600000
+ 543010 words of font info for 291 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,20n,119p,1606b,3053s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txbsys.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on /home/makar/git/guarded/myreport/My_practice.pdf (23 pages, 447063 bytes).
+ 88i,20n,119p,1602b,3053s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txbsys.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on /home/makar/git/guarded/myreport/My_thesis.pdf (31 pages, 464759 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
- 84 named destinations out of 1000 (max. 500000)
- 32363 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 366 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 35435 words of extra memory for PDF output out of 35830 (max. 10000000)
 
