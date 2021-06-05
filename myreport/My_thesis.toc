@@ -24,27 +24,27 @@
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {2.3}Оператор присваивания}{11}{section.2.3}%
 \defcounter {refsection}{1}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Множественное присваивание}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Множественное присваивание}{12}{subsection.2.3.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Литералы и типы выражений}{11}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Литералы и типы выражений}{12}{subsection.2.3.2}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.4}Охраняемая команда}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Охраняемая команда}{12}{section.2.4}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.5}Условный оператор}{11}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Условный оператор}{12}{section.2.5}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.6}Оператор цикла}{11}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Оператор цикла}{12}{section.2.6}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.7}Макроподстановки}{11}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Макроподстановки}{12}{section.2.7}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.8}Выводы}{11}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Выводы}{12}{section.2.8}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{\chapternumberline {3}Разработка интерпретатора и анализатора}{12}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}Разработка интерпретатора и анализатора}{13}{chapter.3}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {3.1}Название параграфа}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Название параграфа}{13}{section.3.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {3.2}Название параграфа}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Название параграфа}{13}{section.3.2}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {3.3}Выводы}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Выводы}{13}{section.3.3}%
 \defcounter {refsection}{1}\relax 
 \contentsline {chapter}{\chapternumberline {4}Эксперименты с языком охраняемых команд}{13}{chapter.4}%
 \defcounter {refsection}{1}\relax 
