@@ -14,62 +14,68 @@
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {1.4}Предусловие и постусловие}{10}{section.1.4}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {1.5}Выводы}{10}{section.1.5}%
+\contentsline {subsection}{\numberline {1.4.1}Закон исключенного чуда}{10}{subsection.1.4.1}%
+\defcounter {refsection}{1}\relax 
+\contentsline {section}{\numberline {1.5}Выводы}{11}{section.1.5}%
 \defcounter {refsection}{1}\relax 
 \contentsline {chapter}{\chapternumberline {2}Описание языка}{11}{chapter.2}%
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {2.1}Оператор <<skip>>}{11}{section.2.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.2}Оператор <<reject>>}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Оператор <<reject>>}{12}{section.2.2}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.3}Оператор присваивания}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Оператор присваивания}{12}{section.2.3}%
 \defcounter {refsection}{1}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Множественное присваивание}{12}{subsection.2.3.1}%
 \defcounter {refsection}{1}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Литералы и типы выражений}{12}{subsection.2.3.2}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.4}Охраняемая команда}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Композиция операторов}{13}{section.2.4}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.5}Условный оператор}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Охраняемая команда}{14}{section.2.5}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.6}Оператор цикла}{12}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Условный оператор}{14}{section.2.6}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.7}Макроподстановки}{12}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Оператор цикла}{15}{section.2.7}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {2.8}Выводы}{12}{section.2.8}%
+\contentsline {subsection}{\numberline {2.7.1}Инвариант цикла}{17}{subsection.2.7.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{\chapternumberline {3}Разработка интерпретатора и анализатора}{13}{chapter.3}%
+\contentsline {section}{\numberline {2.8}Макроподстановки}{17}{section.2.8}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {3.1}Название параграфа}{13}{section.3.1}%
+\contentsline {section}{\numberline {2.9}Выводы}{17}{section.2.9}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {3.2}Название параграфа}{13}{section.3.2}%
+\contentsline {chapter}{\chapternumberline {3}Разработка интерпретатора и анализатора}{18}{chapter.3}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {3.3}Выводы}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.1}Название параграфа}{18}{section.3.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{\chapternumberline {4}Эксперименты с языком охраняемых команд}{13}{chapter.4}%
+\contentsline {section}{\numberline {3.2}Название параграфа}{18}{section.3.2}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {4.1}Выводы}{13}{section.4.1}%
+\contentsline {section}{\numberline {3.3}Выводы}{18}{section.3.3}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Заключение}{14}{chapter*.5}%
+\contentsline {chapter}{\chapternumberline {4}Эксперименты с языком охраняемых команд}{18}{chapter.4}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Список сокращений и условных обозначений}{15}{chapter*.6}%
+\contentsline {section}{\numberline {4.1}Выводы}{18}{section.4.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Словарь терминов}{16}{chapter*.7}%
+\contentsline {chapter}{Заключение}{19}{chapter*.5}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Список использованных источников}{17}{chapter*.8}%
+\contentsline {chapter}{Список сокращений и условных обозначений}{20}{chapter*.6}%
 \defcounter {refsection}{1}\relax 
-\changetocdepth {0}
+\contentsline {chapter}{Словарь терминов}{21}{chapter*.7}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Приложение{} 1. Краткие инструкции по настройке издательской системы \LaTeX }{18}{appendix*.9}%
-\defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {П1.1}Параграф приложения}{20}{section.A.1}%
-\defcounter {refsection}{1}\relax 
-\contentsline {subsection}{\numberline {П1.1.1}Название подпараграфа}{20}{subsection.A.1.1}%
-\defcounter {refsection}{1}\relax 
-\contentsline {subsubsection}{\numberline {П1.1.1.1}Название подподпараграфа}{20}{subsubsection.A.1.1.1}%
+\contentsline {chapter}{Список использованных источников}{22}{chapter*.8}%
 \defcounter {refsection}{1}\relax 
 \changetocdepth {0}
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Приложение{} 2. Некоторые дополнительные примеры}{22}{appendix*.14}%
+\contentsline {chapter}{Приложение{} 1. Краткие инструкции по настройке издательской системы \LaTeX }{23}{appendix*.9}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {П2.1}Подраздел приложения}{23}{section.B.1}%
+\contentsline {section}{\numberline {П1.1}Параграф приложения}{25}{section.A.1}%
+\defcounter {refsection}{1}\relax 
+\contentsline {subsection}{\numberline {П1.1.1}Название подпараграфа}{25}{subsection.A.1.1}%
+\defcounter {refsection}{1}\relax 
+\contentsline {subsubsection}{\numberline {П1.1.1.1}Название подподпараграфа}{25}{subsubsection.A.1.1.1}%
+\defcounter {refsection}{1}\relax 
+\changetocdepth {0}
+\defcounter {refsection}{1}\relax 
+\contentsline {chapter}{Приложение{} 2. Некоторые дополнительные примеры}{27}{appendix*.14}%
+\defcounter {refsection}{1}\relax 
+\contentsline {section}{\numberline {П2.1}Подраздел приложения}{28}{section.B.1}%
