@@ -3535,37 +3535,16 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">my_folder/my_biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="1">
-    <bcf:citekey order="1">Article</bcf:citekey>
-    <bcf:citekey order="1">Book</bcf:citekey>
-    <bcf:citekey order="1">Booklet</bcf:citekey>
-    <bcf:citekey order="1">Conference</bcf:citekey>
-    <bcf:citekey order="1">Inbook</bcf:citekey>
-    <bcf:citekey order="1">Incollection</bcf:citekey>
-    <bcf:citekey order="1">Manual</bcf:citekey>
-    <bcf:citekey order="1">Mastersthesis</bcf:citekey>
-    <bcf:citekey order="1">Misc</bcf:citekey>
-    <bcf:citekey order="1">Phdthesis</bcf:citekey>
-    <bcf:citekey order="1">Proceedings</bcf:citekey>
-    <bcf:citekey order="1">Techreport</bcf:citekey>
-    <bcf:citekey order="1">Unpublished</bcf:citekey>
-    <bcf:citekey order="1">badiou:briefings</bcf:citekey>
-    <bcf:citekey order="2">Naidenova2017</bcf:citekey>
-    <bcf:citekey order="3">Naidenova2017</bcf:citekey>
-    <bcf:citekey order="4">Ganter1999</bcf:citekey>
-    <bcf:citekey order="5">ctan-biblatex-gost</bcf:citekey>
-    <bcf:citekey order="6">ctan-biblatex-gost-examples</bcf:citekey>
-    <bcf:citekey order="7">latex-miktex</bcf:citekey>
-    <bcf:citekey order="7">latex-texstudio</bcf:citekey>
-    <bcf:citekey order="8">latex-miktex</bcf:citekey>
-    <bcf:citekey order="9">latex-texstudio</bcf:citekey>
-    <bcf:citekey order="10">spbpu-gallery</bcf:citekey>
-    <bcf:citekey order="11">Peskov2004</bcf:citekey>
-    <bcf:citekey order="12">spbpu-gallery</bcf:citekey>
-    <bcf:citekey order="13">Peskov2004</bcf:citekey>
-    <bcf:citekey order="14">spbpu-gallery</bcf:citekey>
-    <bcf:citekey order="15">Peskov2004</bcf:citekey>
-    <bcf:citekey order="16">spbpu-gallery</bcf:citekey>
-    <bcf:citekey order="17">Peskov2004</bcf:citekey>
+    <bcf:citekey order="1">latex-miktex</bcf:citekey>
+    <bcf:citekey order="2">latex-texstudio</bcf:citekey>
+    <bcf:citekey order="3">spbpu-gallery</bcf:citekey>
+    <bcf:citekey order="4">Peskov2004</bcf:citekey>
+    <bcf:citekey order="5">spbpu-gallery</bcf:citekey>
+    <bcf:citekey order="6">Peskov2004</bcf:citekey>
+    <bcf:citekey order="7">spbpu-gallery</bcf:citekey>
+    <bcf:citekey order="8">Peskov2004</bcf:citekey>
+    <bcf:citekey order="9">spbpu-gallery</bcf:citekey>
+    <bcf:citekey order="10">Peskov2004</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
