@@ -5,4 +5,5 @@ x, y := X, Y;
 do x > y -> x := x - y
 |  x < y -> y := y - x
 od
+
 {x == gcd(X, Y)}
