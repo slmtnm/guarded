@@ -48,40 +48,56 @@
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {2.10}Выводы}{19}{section.2.10}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{\chapternumberline {3}Разработка интерпретатора и анализатора}{20}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}Разработка интерпретатора и анализатора}{19}{chapter.3}%
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {3.1}Генерация лексического и синтаксического анализатора}{20}{section.3.1}%
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {3.2}Интерпретация программы}{20}{section.3.2}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {3.3}Вывод предусловия}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.1}Оператор присваивания}{20}{subsection.3.2.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {3.4}Выводы}{20}{section.3.4}%
+\contentsline {subsection}{\numberline {3.2.2}Условный оператор}{21}{subsection.3.2.2}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{\chapternumberline {4}Эксперименты с языком охраняемых команд}{20}{chapter.4}%
+\contentsline {subsection}{\numberline {3.2.3}Оператор цикла}{21}{subsection.3.2.3}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {4.1}Выводы}{20}{section.4.1}%
+\contentsline {subsection}{\numberline {3.2.4}Оператор вызова макроса}{22}{subsection.3.2.4}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Заключение}{21}{chapter*.5}%
+\contentsline {section}{\numberline {3.3}Вывод предусловия}{22}{section.3.3}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Список сокращений и условных обозначений}{22}{chapter*.6}%
+\contentsline {subsection}{\numberline {3.3.1}Оператор присваивания}{23}{subsection.3.3.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Словарь терминов}{23}{chapter*.7}%
+\contentsline {subsection}{\numberline {3.3.2}Условный оператор}{23}{subsection.3.3.2}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Список использованных источников}{24}{chapter*.8}%
+\contentsline {subsection}{\numberline {3.3.3}Оператор цикла}{23}{subsection.3.3.3}%
+\defcounter {refsection}{1}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Оператор вызова макроса}{23}{subsection.3.3.4}%
+\defcounter {refsection}{1}\relax 
+\contentsline {section}{\numberline {3.4}Выводы}{23}{section.3.4}%
+\defcounter {refsection}{1}\relax 
+\contentsline {chapter}{\chapternumberline {4}Эксперименты с языком охраняемых команд}{23}{chapter.4}%
+\defcounter {refsection}{1}\relax 
+\contentsline {section}{\numberline {4.1}Выводы}{23}{section.4.1}%
+\defcounter {refsection}{1}\relax 
+\contentsline {chapter}{Заключение}{24}{chapter*.5}%
+\defcounter {refsection}{1}\relax 
+\contentsline {chapter}{Список сокращений и условных обозначений}{25}{chapter*.6}%
+\defcounter {refsection}{1}\relax 
+\contentsline {chapter}{Словарь терминов}{26}{chapter*.7}%
+\defcounter {refsection}{1}\relax 
+\contentsline {chapter}{Список использованных источников}{27}{chapter*.8}%
 \defcounter {refsection}{1}\relax 
 \changetocdepth {0}
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Приложение{} 1. Краткие инструкции по настройке издательской системы \LaTeX }{25}{appendix*.9}%
+\contentsline {chapter}{Приложение{} 1. Краткие инструкции по настройке издательской системы \LaTeX }{28}{appendix*.9}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {П1.1}Параграф приложения}{27}{section.A.1}%
+\contentsline {section}{\numberline {П1.1}Параграф приложения}{30}{section.A.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {subsection}{\numberline {П1.1.1}Название подпараграфа}{27}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {П1.1.1}Название подпараграфа}{30}{subsection.A.1.1}%
 \defcounter {refsection}{1}\relax 
-\contentsline {subsubsection}{\numberline {П1.1.1.1}Название подподпараграфа}{27}{subsubsection.A.1.1.1}%
+\contentsline {subsubsection}{\numberline {П1.1.1.1}Название подподпараграфа}{30}{subsubsection.A.1.1.1}%
 \defcounter {refsection}{1}\relax 
 \changetocdepth {0}
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Приложение{} 2. Некоторые дополнительные примеры}{29}{appendix*.14}%
+\contentsline {chapter}{Приложение{} 2. Некоторые дополнительные примеры}{32}{appendix*.14}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {П2.1}Подраздел приложения}{30}{section.B.1}%
+\contentsline {section}{\numberline {П2.1}Подраздел приложения}{33}{section.B.1}%

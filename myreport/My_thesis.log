@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.30)  5 JUN 2021 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.6.3)  5 JUN 2021 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3687,7 +3687,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 Class memoir Warning: The material used in the footer is too large
 (12.64719pt) for the given foot skip (0.0pt), it is recommended to
 either increase the foot skip or redesign the footer
-(in both cases you will find help in the memoir manual). on input line 85.
+(in both cases you will find help in the memoir manual). on input line 75.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3864,7 +3864,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[18.18]) (./my_folder/chapter3.tex) (./my_folder/chapter4.tex
+[18.18]) (./my_folder/chapter3.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3874,7 +3874,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[19.19]) (./my_folder/conclusion.tex
+[19.19]
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3884,7 +3884,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[20.20]) (./my_folder/acronyms.tex
+[20.20]
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3894,7 +3894,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[21.21]) (./my_folder/dictionary.tex
+[21.21]) (./my_folder/chapter4.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3904,7 +3904,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[22.22]) (./my_folder/references.tex
+[22.22]) (./my_folder/conclusion.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3914,7 +3914,37 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[23.23]
+[23.23]) (./my_folder/acronyms.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[24.24]) (./my_folder/dictionary.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[25.25]) (./my_folder/references.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[26.26]
 
 LaTeX Warning: Empty bibliography on input line 16.
 
@@ -3937,12 +3967,12 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[24.24] (./my_folder/appendix1.tex
+[27.27] (./my_folder/appendix1.tex
 
-LaTeX Warning: Citation 'latex-miktex' on page 25 undefined on input line 7.
+LaTeX Warning: Citation 'latex-miktex' on page 28 undefined on input line 7.
 
 
-LaTeX Warning: Citation 'latex-texstudio' on page 25 undefined on input line 9.
+LaTeX Warning: Citation 'latex-texstudio' on page 28 undefined on input line 9.
 
 
 
@@ -3961,8 +3991,8 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[25.25]
-<my_folder/images//spbpu_hydrotower.jpg, id=307, 1284.8pt x 856.19875pt>
+[28.28]
+<my_folder/images//spbpu_hydrotower.jpg, id=350, 1284.8pt x 856.19875pt>
 File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_hydrotower.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
@@ -3970,22 +4000,22 @@ line 72.
 (pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
 
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 26 undefined on input line 73.
+LaTeX Warning: Citation 'spbpu-gallery' on page 29 undefined on input line 73.
 
 
-LaTeX Warning: Citation 'Peskov2004' on page 26 undefined on input line 79.
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
+LaTeX Warning: Citation 'Peskov2004' on page 29 undefined on input line 79.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[26.26 <./my_folder/images//spbpu_hydrotower.jpg>]
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[29.29 <./my_folder/images//spbpu_hydrotower.jpg>]
 Overfull \hbox (7.43707pt too wide) in paragraph at lines 104--105
 []\T2A/Tempora-TLF/m/n/14.05249 (-20) Название под^^?па^^?ра^^?гра^^?фа оформ^^
 ?ля^^?ет^^?ся с по^^?мо^^?щью ко^^?ман^^?ды \T2A/cmtt/m/n/14.05249 \subsection{
@@ -3998,23 +4028,13 @@ Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input
 line 117.
 (pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 27 undefined on input line 118.
+LaTeX Warning: Citation 'spbpu-gallery' on page 30 undefined on input line 118.
 
 
 
-LaTeX Warning: Citation 'Peskov2004' on page 27 undefined on input line 128.
+LaTeX Warning: Citation 'Peskov2004' on page 30 undefined on input line 128.
 
 
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[27.27]
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4024,7 +4044,17 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[28.28]) (./my_folder/appendix2.tex
+[30.30]
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[31.31]) (./my_folder/appendix2.tex
 File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_hydrotower.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
@@ -4032,22 +4062,22 @@ line 14.
 (pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
 
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 29 undefined on input line 15.
+LaTeX Warning: Citation 'spbpu-gallery' on page 32 undefined on input line 15.
 
 
-LaTeX Warning: Citation 'Peskov2004' on page 29 undefined on input line 21.
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
+LaTeX Warning: Citation 'Peskov2004' on page 32 undefined on input line 21.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[29.29]
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[32.32]
 File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_hydrotower.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
@@ -4055,10 +4085,10 @@ line 51.
 (pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
 
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 30 undefined on input line 52.
+LaTeX Warning: Citation 'spbpu-gallery' on page 33 undefined on input line 52.
 
 
-LaTeX Warning: Citation 'Peskov2004' on page 30 undefined on input line 58.
+LaTeX Warning: Citation 'Peskov2004' on page 33 undefined on input line 58.
 
 )
 
@@ -4104,7 +4134,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[30.30]
+[33.33]
 \tf@toc=\write9
  (./My_thesis.aux
 Package cleveref Info: loaded `russian' language definitions on input line 29.
@@ -4126,11 +4156,11 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'My_thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 43561 strings out of 479383
- 725631 string characters out of 5875830
+ 43595 strings out of 479383
+ 726015 string characters out of 5875831
  1827125 words of memory out of 5000000
- 59460 multiletter control sequences out of 15000+600000
- 541646 words of font info for 275 fonts, out of 8000000 for 9000
+ 59466 multiletter control sequences out of 15000+600000
+ 541895 words of font info for 276 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,13n,119p,1188b,3053s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/
@@ -4145,10 +4175,10 @@ c/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
 sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fon
 ts/type1/public/newtx/txsys.pfb>
-Output written on My_thesis.pdf (30 pages, 778726 bytes).
+Output written on My_thesis.pdf (33 pages, 787475 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 382 compressed objects within 4 object streams
- 153 named destinations out of 1000 (max. 500000)
+ 495 PDF objects out of 1000 (max. 8388607)
+ 427 compressed objects within 5 object streams
+ 179 named destinations out of 1000 (max. 500000)
  34422 words of extra memory for PDF output out of 35830 (max. 10000000)
 
