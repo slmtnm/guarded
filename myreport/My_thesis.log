@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.26)  7 JUN 2021 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.6.3)  7 JUN 2021 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2090,8 +2090,8 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 Writing index file ru.idx
 \en@idxfile=\write5
 Writing index file en.idx
-(/usr/local/share/texmf/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
@@ -2128,44 +2128,36 @@ Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 \Hy@linkcounter=\count361
 \Hy@pagecounter=\count362
 
-(/usr/local/share/texmf/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(/usr/local/share/texmf/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
-nguages
 )
 (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count363
+Package hyperref Info: Option `unicode' set `true' on input line 3427.
 
-(/usr/local/share/texmf/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
-
-(/usr/local/share/texmf/tex/latex/hyperref/puenc-greekbasic.def
-File: puenc-greekbasic.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (
-greek block) (HO)
-))
-Package hyperref Info: Option `unicode' set `true' on input line 3167.
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+)
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
+Package hyperref Info: Bookmarks ON on input line 4717.
 \c@Hy@tempcnt=\count364
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
+LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen286
 
 (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
@@ -2178,15 +2170,15 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 \Fld@menulength=\count365
 \Field@Width=\dimen287
 \Fld@charsize=\dimen288
-Package hyperref Info: Hyper figures OFF on input line 6075.
-Package hyperref Info: Link nesting OFF on input line 6080.
-Package hyperref Info: Hyper index ON on input line 6083.
-Package hyperref Info: backreferencing OFF on input line 6090.
-Package hyperref Info: Link coloring OFF on input line 6095.
-Package hyperref Info: Link coloring with OCG OFF on input line 6100.
-Package hyperref Info: PDF/A mode OFF on input line 6105.
-LaTeX Info: Redefining \ref on input line 6145.
-LaTeX Info: Redefining \pageref on input line 6149.
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
 
 (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
@@ -2205,8 +2197,8 @@ ass
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/local/share/texmf/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 
 (/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
@@ -3289,8 +3281,8 @@ LaTeX Info: Redefining \th on input line 34.
 \c@mv@tabular=\count682
 \c@mv@boldtabular=\count683
 Package hyperref Info: Link coloring OFF on input line 34.
-(/usr/local/share/texmf/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
@@ -3923,11 +3915,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [23.23]
-
-Package nag Warning: $$...$$ is obsolete.
-(nag)                Use \[...\] et al. instead on input line 26.
-
-) (./my_folder/conclusion.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3937,7 +3924,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[24.24]
+[24.24]) (./my_folder/conclusion.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4025,7 +4012,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [30.30]
-<my_folder/images//spbpu_hydrotower.jpg, id=370, 1284.8pt x 856.19875pt>
+<my_folder/images//spbpu_hydrotower.jpg, id=373, 1284.8pt x 856.19875pt>
 File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_hydrotower.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
@@ -4155,7 +4142,7 @@ Package caption Warning: Unused \captionsetup[lstlisting] on input line 245.
 See the caption package documentation for explanation.
 
 
-Package nag Warning: 6 complaints in total.
+Package nag Warning: 5 complaints in total.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4189,10 +4176,10 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'My_thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 43515 strings out of 479383
- 725392 string characters out of 5875830
- 1826957 words of memory out of 5000000
- 59371 multiletter control sequences out of 15000+600000
+ 43607 strings out of 479383
+ 726159 string characters out of 5875831
+ 1827125 words of memory out of 5000000
+ 59466 multiletter control sequences out of 15000+600000
  541895 words of font info for 276 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,13n,119p,1188b,3053s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4208,10 +4195,10 @@ c/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
 sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fon
 ts/type1/public/newtx/txsys.pfb>
-Output written on My_thesis.pdf (35 pages, 793527 bytes).
+Output written on My_thesis.pdf (35 pages, 794627 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 448 compressed objects within 5 object streams
- 188 named destinations out of 1000 (max. 500000)
+ 521 PDF objects out of 1000 (max. 8388607)
+ 451 compressed objects within 5 object streams
+ 191 named destinations out of 1000 (max. 500000)
  34422 words of extra memory for PDF output out of 35830 (max. 10000000)
 
