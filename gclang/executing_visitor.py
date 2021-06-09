@@ -81,6 +81,28 @@ class ExecutingVisitor(MacroVisitor):
             self._stack.append(left - right)
         else:
             raise Exception(f"Unexpected operation: {ctx.op}")
+    
+    def visitExprArrayLiteral(self, ctx: GuardedParser.ExprArrayLiteralContext):
+        self._stack.append(None)
+        self.visitChildren(ctx)
+        terminals = '[,]'
+
+        result = []
+        while True:
+            next_element = self._stack.pop()
+            if next_element == None:
+                break
+            result.append(next_element)
+        
+        result.reverse()
+        self._stack.append(result)
+
+    def visitExprArrayElement(self, ctx: GuardedParser.ExprArrayElementContext):
+        self.visitChildren(ctx)
+        index = int(self._stack.pop())
+        var_name = next(next(ctx.getChildren()).getChildren()).getText()
+
+        self._stack.append(self.vars[var_name][index])
 
     def visitMulDiv(self, ctx: GuardedParser.MulDivContext):
         self.visitChildren(ctx)
@@ -220,3 +242,33 @@ class ExecutingVisitor(MacroVisitor):
         self.visitOperatorList(function.body)
         self.vars = old_vars | self.vars
         self.replacementStack.pop()
+
+    def visitArrayUp(self, ctx: GuardedParser.ArrayUpContext):
+        children = list(ctx.getChildren())
+        var_name = children[0].getText()
+
+        self.visitChildren()
+        value = self._stack.pop()
+
+        self.vars[var_name].append(value)
+
+    def visitArrayDown(self, ctx: GuardedParser.ArrayDownContext):
+        children = list(ctx.getChildren())
+        var_name = children[0].getText()
+
+        self.visitChildren()
+        value = self._stack.pop()
+
+        self.vars[var_name].insert(0, value)
+
+    def visitArrayUpper(self, ctx: GuardedParser.ArrayUpperContext):
+        children = list(ctx.getChildren())
+        var_name = children[0].getText()
+
+        del self.vars[var_name][-1]
+
+    def visitArrayLower(self, ctx: GuardedParser.ArrayLowerContext):
+        children = list(ctx.getChildren())
+        var_name = children[0].getText()
+
+        del self.vars[var_name][0]

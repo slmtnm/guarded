@@ -44,8 +44,18 @@ class GuardedVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by GuardedParser#ExprArrayLiteral.
+    def visitExprArrayLiteral(self, ctx:GuardedParser.ExprArrayLiteralContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by GuardedParser#ExprFnCall.
     def visitExprFnCall(self, ctx:GuardedParser.ExprFnCallContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#ExprArrayElement.
+    def visitExprArrayElement(self, ctx:GuardedParser.ExprArrayElementContext):
         return self.visitChildren(ctx)
 
 
@@ -151,6 +161,41 @@ class GuardedVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by GuardedParser#initialAssignments.
     def visitInitialAssignments(self, ctx:GuardedParser.InitialAssignmentsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#arrayLiteral.
+    def visitArrayLiteral(self, ctx:GuardedParser.ArrayLiteralContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#arrayElement.
+    def visitArrayElement(self, ctx:GuardedParser.ArrayElementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#arrayUp.
+    def visitArrayUp(self, ctx:GuardedParser.ArrayUpContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#arrayDown.
+    def visitArrayDown(self, ctx:GuardedParser.ArrayDownContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#arrayUpper.
+    def visitArrayUpper(self, ctx:GuardedParser.ArrayUpperContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#arrayLower.
+    def visitArrayLower(self, ctx:GuardedParser.ArrayLowerContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#arraySize.
+    def visitArraySize(self, ctx:GuardedParser.ArraySizeContext):
         return self.visitChildren(ctx)
 
 

@@ -1,0 +1,15 @@
+[Q1, Q2, Q3, Q4 := 3, 2, 4, 10]
+q1, q2, q3, q4 := Q1, Q2, Q3, Q4;
+
+{isPermutation(q1, q2, q3, q4, Q1, Q2, Q3, Q4) == true}
+do q1 > q2 -> q1, q2 := q2, q1
+|  q2 > q3 -> q2, q3 := q3, q2
+|  q3 > q4 -> q3, q4 := q4, q3
+od
+
+{
+  isPermutation(q1, q2, q3, q4, Q1, Q2, Q3, Q4) == true &
+  q1 <= q2 &
+  q2 <= q3 &
+  q3 <= q4
+}

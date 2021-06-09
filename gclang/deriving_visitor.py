@@ -217,7 +217,8 @@ class DerivingVisitor(GuardedVisitor):
             fuse_predicate = self._expr_stack.pop()
             invariant_and_non_bb = sp.And(invariant_and_non_bb, sp.Not(fuse_predicate))
         
-        self._claims.append(f"{invariant_and_non_bb.simplify()} >> {old_predicate}")
+        claim_predicate = sp.Implies(invariant_and_non_bb.simplify(), old_predicate).simplify()
+        self._claims.append(str(claim_predicate))
         self._predicate_stack.append(invariant)
 
     def visitOperatorList(self, ctx: GuardedParser.OperatorListContext):
