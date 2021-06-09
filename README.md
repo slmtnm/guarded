@@ -18,20 +18,13 @@ od
 ## Quick start:
 To start using interpreter, follow these steps:
 
-### With python
-
-* Install all python requirements:
+* Install gclang:
 ```console
-  $ pip install -r requirements.txt
+  $ pip install gclang
 ```
 
 * Launch program of your choice with:
 ```console
-  $ python -m guarded ./examples/euqclid.gua run
-```
-
-### Installing package
-```console
-  $ pip install --editable .
-  $ guarded --help
+  $ gclang ./examples/euqclid.gua run
+  $ gclang ./examples/euqclid.gua derive
 ```

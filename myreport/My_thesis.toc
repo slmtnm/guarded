@@ -50,7 +50,7 @@
 \defcounter {refsection}{1}\relax 
 \contentsline {chapter}{\chapternumberline {3}Разработка интерпретатора и анализатора}{19}{chapter.3}%
 \defcounter {refsection}{1}\relax 
-\contentsline {section}{\numberline {3.1}Генерация лексического и синтаксического анализатора}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Генерация лексического и синтаксического анализатора}{19}{section.3.1}%
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {3.2}Интерпретация программы}{20}{section.3.2}%
 \defcounter {refsection}{1}\relax 
@@ -88,17 +88,17 @@
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {4.4}Выводы}{25}{section.4.4}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Заключение}{26}{chapter*.5}%
+\contentsline {chapter}{Заключение}{26}{chapter*.6}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Список сокращений и условных обозначений}{27}{chapter*.6}%
+\contentsline {chapter}{Список сокращений и условных обозначений}{27}{chapter*.7}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Словарь терминов}{28}{chapter*.7}%
+\contentsline {chapter}{Словарь терминов}{28}{chapter*.8}%
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Список использованных источников}{29}{chapter*.8}%
+\contentsline {chapter}{Список использованных источников}{29}{chapter*.9}%
 \defcounter {refsection}{1}\relax 
 \changetocdepth {0}
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Приложение{} 1. Краткие инструкции по настройке издательской системы \LaTeX }{30}{appendix*.9}%
+\contentsline {chapter}{Приложение{} 1. Краткие инструкции по настройке издательской системы \LaTeX }{30}{appendix*.10}%
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {П1.1}Параграф приложения}{32}{section.A.1}%
 \defcounter {refsection}{1}\relax 
@@ -108,6 +108,6 @@
 \defcounter {refsection}{1}\relax 
 \changetocdepth {0}
 \defcounter {refsection}{1}\relax 
-\contentsline {chapter}{Приложение{} 2. Некоторые дополнительные примеры}{34}{appendix*.14}%
+\contentsline {chapter}{Приложение{} 2. Некоторые дополнительные примеры}{34}{appendix*.15}%
 \defcounter {refsection}{1}\relax 
 \contentsline {section}{\numberline {П2.1}Подраздел приложения}{35}{section.B.1}%
