@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.7)  8 JUN 2021 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.9)  10 JUN 2021 02:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3657,7 +3657,7 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 29.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 29.
-
+) (./my_folder/contents.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3670,17 +3670,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 [4.4
 
 
-]) (./my_folder/contents.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[5.5] (./My_thesis.toc
+] (./My_thesis.toc
 Package cleveref Info: loaded `russian' language definitions on input line 3.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3698,7 +3688,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[6.6
+[5.5
 
 ])
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3710,7 +3700,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[7.7]) (./my_folder/introduction.tex
+[6.6]) (./my_folder/introduction.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3720,7 +3710,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[8.8
+[7.7
 
 ]) (./my_folder/chapter1.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3732,7 +3722,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[9.9]
+[8.8]
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 (Font)              scaled to size 14.05249pt on input line 24.
 
@@ -3745,7 +3735,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[10.10
+[9.9
 
 ]
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/it' will be
@@ -3760,7 +3750,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[11.11]) (./my_folder/chapter2.tex
+[10.10]) (./my_folder/chapter2.tex
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 7.72891pt on input line 8.
 
@@ -3773,12 +3763,22 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[12.12]
+[11.11]
 
 Package nag Warning: $$...$$ is obsolete.
 (nag)                Use \[...\] et al. instead on input line 53.
 
 
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[12.12]
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3809,16 +3809,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [15.15]
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[16.16]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -3844,7 +3834,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[17.17]
+[16.16]
 ! Undefined control sequence.
 l.215 ...htarrow wp(S_{do}, P \wedge \neg (\exsits
                                                    i: 1 \leq i \leq n: B_j))
@@ -3868,7 +3858,17 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[18.18]) (./my_folder/chapter3.tex
+[17.17]) (./my_folder/chapter3.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[18.18]
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3899,6 +3899,58 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [21.21]
+
+! LaTeX Error: Command \IF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 ...xt{ | } B_n \rightarrow S_n \textbf{ if}}
+                                                  
+? 
+! Display math should end with $$.
+<to be read again> 
+                   P
+l.127     $P
+             \wedge \neg B_1 \neg B_2 \neg \ldots \neg B_n \Rightarrow R$
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.127     $P \wedge
+                    \neg B_1 \neg B_2 \neg \ldots \neg B_n \Rightarrow R$
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \end{equation}
+                    
+? 
+! You can't use `\eqno' in horizontal mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.128 \end{equation}
+                    
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.128 \end{equation}
+                    
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.128 \end{equation}
+                    
+? 
+
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3929,8 +3981,42 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [24.24]
+Underfull \hbox (badness 1460) in paragraph at lines 44--52
+[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Следующий ал^^?го^^?ритм вы^^?чис^^?ля^^?
+ет мак^^?си^^?мум из двух чи^^?сел $\OML/ntxmi/m/it/14.05249 a$ \T2A/Tempora-TL
+F/m/n/14.05249 (+20) и $\OML/ntxmi/m/it/14.05249 b$\T2A/Tempora-TLF/m/n/14.0524
+9 (+20) :
+ []
 
-Package nag Warning: figure with no \caption on input line 55.
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[25.25]
+
+LaTeX Warning: Command \CYRN invalid in math mode on input line 76.
+
+
+LaTeX Warning: Command \CYRO invalid in math mode on input line 76.
+
+
+LaTeX Warning: Command \CYRD invalid in math mode on input line 76.
+
+Missing character: There is no Н in font Tempora-Regular-tlf-ot1!
+Missing character: There is no О in font Tempora-Regular-tlf-ot1!
+Missing character: There is no Д in font Tempora-Regular-tlf-ot1!
+
+Overfull \hbox (108.97949pt too wide) in paragraph at lines 83--92
+[]\T2A/Tempora-TLF/m/n/14.05249 (-20) Следующий ал^^?го^^?ритм воз^^?во^^?дит ч
+ис^^?ло $\OML/ntxmi/m/it/14.05249 X$ \T2A/Tempora-TLF/m/n/14.05249 (-20) в сте^
+^?пень $\OML/ntxmi/m/it/14.05249 Y$\T2A/Tempora-TLF/m/n/14.05249 (-20) : [] 
+ []
 
 ) (./my_folder/conclusion.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3942,7 +4028,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[25.25]) (./my_folder/acronyms.tex
+[26.26]
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3952,7 +4038,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[26.26]) (./my_folder/dictionary.tex
+[27.27]) (./my_folder/acronyms.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3962,7 +4048,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[27.27]) (./my_folder/references.tex
+[28.28]) (./my_folder/dictionary.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3972,7 +4058,17 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[28.28]
+[29.29]) (./my_folder/references.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[30.30]
 
 LaTeX Warning: Empty bibliography on input line 16.
 
@@ -3995,12 +4091,12 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[29.29] (./my_folder/appendix1.tex
+[31.31] (./my_folder/appendix1.tex
 
-LaTeX Warning: Citation 'latex-miktex' on page 30 undefined on input line 7.
+LaTeX Warning: Citation 'latex-miktex' on page 32 undefined on input line 7.
 
 
-LaTeX Warning: Citation 'latex-texstudio' on page 30 undefined on input line 9.
+LaTeX Warning: Citation 'latex-texstudio' on page 32 undefined on input line 9.
 
 
 
@@ -4019,8 +4115,8 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[30.30]
-<my_folder/images//spbpu_hydrotower.jpg, id=378, 1284.8pt x 856.19875pt>
+[32.32]
+<my_folder/images//spbpu_hydrotower.jpg, id=397, 1284.8pt x 856.19875pt>
 File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_hydrotower.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
@@ -4028,22 +4124,22 @@ line 72.
 (pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
 
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 31 undefined on input line 73.
+LaTeX Warning: Citation 'spbpu-gallery' on page 33 undefined on input line 73.
 
 
-LaTeX Warning: Citation 'Peskov2004' on page 31 undefined on input line 79.
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
+LaTeX Warning: Citation 'Peskov2004' on page 33 undefined on input line 79.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[31.31 <./my_folder/images//spbpu_hydrotower.jpg>]
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[33.33 <./my_folder/images//spbpu_hydrotower.jpg>]
 Overfull \hbox (7.43707pt too wide) in paragraph at lines 104--105
 []\T2A/Tempora-TLF/m/n/14.05249 (-20) Название под^^?па^^?ра^^?гра^^?фа оформ^^
 ?ля^^?ет^^?ся с по^^?мо^^?щью ко^^?ман^^?ды \T2A/cmtt/m/n/14.05249 \subsection{
@@ -4056,44 +4152,11 @@ Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input
 line 117.
 (pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 32 undefined on input line 118.
+LaTeX Warning: Citation 'spbpu-gallery' on page 34 undefined on input line 118.
 
 
 
-LaTeX Warning: Citation 'Peskov2004' on page 32 undefined on input line 128.
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[32.32]
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[33.33]) (./my_folder/appendix2.tex
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 14.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 34 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 34 undefined on input line 21.
+LaTeX Warning: Citation 'Peskov2004' on page 34 undefined on input line 128.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4106,6 +4169,39 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [34.34]
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[35.35]) (./my_folder/appendix2.tex
+File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
+<use my_folder/images//spbpu_hydrotower.jpg>
+Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
+line 14.
+(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
+
+
+LaTeX Warning: Citation 'spbpu-gallery' on page 36 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Peskov2004' on page 36 undefined on input line 21.
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[36.36]
 File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
 <use my_folder/images//spbpu_hydrotower.jpg>
 Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
@@ -4113,10 +4209,10 @@ line 51.
 (pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
 
 
-LaTeX Warning: Citation 'spbpu-gallery' on page 35 undefined on input line 52.
+LaTeX Warning: Citation 'spbpu-gallery' on page 37 undefined on input line 52.
 
 
-LaTeX Warning: Citation 'Peskov2004' on page 35 undefined on input line 58.
+LaTeX Warning: Citation 'Peskov2004' on page 37 undefined on input line 58.
 
 )
 
@@ -4150,7 +4246,7 @@ Package caption Warning: Unused \captionsetup[lstlisting] on input line 245.
 See the caption package documentation for explanation.
 
 
-Package nag Warning: 6 complaints in total.
+Package nag Warning: 5 complaints in total.
 
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4162,7 +4258,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[35.35]
+[37.37]
 \tf@toc=\write9
 \openout9 = `My_thesis.toc'.
 
@@ -4176,7 +4272,7 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `My_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2D7C253783AB82CEE1A62604609B9694;3822.
+(rerunfilecheck)             Checksum: 2047DD0F0A9C6306C249BF970CFA12EC;3637.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                My_thesis
@@ -4187,11 +4283,11 @@ Package logreq Info: Writing requests to 'My_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44268 strings out of 478994
- 736320 string characters out of 5864752
- 1817615 words of memory out of 5000000
- 60362 multiletter control sequences out of 15000+600000
- 553334 words of font info for 337 fonts, out of 8000000 for 9000
+ 44275 strings out of 478994
+ 736371 string characters out of 5864752
+ 1817527 words of memory out of 5000000
+ 60358 multiletter control sequences out of 15000+600000
+ 553067 words of font info for 337 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  97i,13n,123p,1188b,3065s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/
@@ -4206,10 +4302,10 @@ c/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
 sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fon
 ts/type1/public/newtx/txsys.pfb>
-Output written on My_thesis.pdf (35 pages, 792529 bytes).
+Output written on My_thesis.pdf (37 pages, 799447 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
- 456 compressed objects within 5 object streams
- 195 named destinations out of 1000 (max. 500000)
+ 544 PDF objects out of 1000 (max. 8388607)
+ 477 compressed objects within 5 object streams
+ 207 named destinations out of 1000 (max. 500000)
  80502 words of extra memory for PDF output out of 89155 (max. 10000000)
 
