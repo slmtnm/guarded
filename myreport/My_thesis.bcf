@@ -3529,15 +3529,17 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">my_folder/my_biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="1">
-    <bcf:citekey order="1">Dijkstra</bcf:citekey>
-    <bcf:citekey order="2">Wirth</bcf:citekey>
-    <bcf:citekey order="3">Dijkstra</bcf:citekey>
-    <bcf:citekey order="4">Lavrov</bcf:citekey>
-    <bcf:citekey order="5">Wirth</bcf:citekey>
-    <bcf:citekey order="6">Antlr</bcf:citekey>
-    <bcf:citekey order="7">AntlrPython</bcf:citekey>
-    <bcf:citekey order="8">Dijkstra</bcf:citekey>
-    <bcf:citekey order="9">Lavrov</bcf:citekey>
+    <bcf:citekey order="1">Karpov</bcf:citekey>
+    <bcf:citekey order="2">Dijkstra</bcf:citekey>
+    <bcf:citekey order="3">Wirth</bcf:citekey>
+    <bcf:citekey order="4">Dijkstra</bcf:citekey>
+    <bcf:citekey order="5">Lavrov</bcf:citekey>
+    <bcf:citekey order="6">Wirth</bcf:citekey>
+    <bcf:citekey order="7">Antlr</bcf:citekey>
+    <bcf:citekey order="8">AntlrPython</bcf:citekey>
+    <bcf:citekey order="9">Sympy</bcf:citekey>
+    <bcf:citekey order="10">Dijkstra</bcf:citekey>
+    <bcf:citekey order="11">Lavrov</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
