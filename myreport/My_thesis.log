@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.9)  10 JUN 2021 02:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.7)  17 JUN 2021 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3106,12 +3106,6 @@ File: t2atempora-tlf.fd 2015/09/13 Font definitions for T2A/Tempora-TLF.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 14.05249pt on input line 29.
 <<t2a.cmap>>
-
-LaTeX Warning: Label `app-2-1' multiply defined.
-
-
-LaTeX Warning: Label `app-2-1@cref' multiply defined.
-
 \c@mypages@totc=\count665
 \c@TotPages@totc=\count666
 \c@myfigures@totc=\count667
@@ -3365,25 +3359,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 \openout7 = `My_thesis.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'My_thesis.bbl' not found.
-
-No file My_thesis.bbl.
-
-Package biblatex Warning: citation 'latex-miktex' was not found at all in the .
-bbl, bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'latex-texstudio' was not found at all in th
-e .bbl, bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'spbpu-gallery' was not found at all in the 
-.bbl, bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'Peskov2004' was not found at all in the .bb
-l, bibliography labels cannot be generated, please correct the citation.
-
+Package biblatex Info: ... file 'My_thesis.bbl' found.
+ (./My_thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 34.
 Package biblatex Info: Reference segment=0 on input line 34.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
@@ -3427,123 +3404,18 @@ line 34.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 25
-.
-LaTeX Font Info:    Trying to load font information for OT1+Tempora-TLF on inpu
-t line 25.
 
-(/usr/share/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd
-File: OT1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for OT1/Tempora-
-TLF.
-)
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 14.05249pt on input line 25.
-<<ot1.cmap>>
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.25826pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 7.72891pt on input line 25.
-<<oml.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
-
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
-
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-25.
-
-(/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd
-File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
-)
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-25.
-
-(/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd
-File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
-)
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-25.
-
-(/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd
-File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-)
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 10.25826pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 7.72891pt on input line 25.
-
-(/usr/share/texmf-dist/tex/latex/microtype/mt-eur.cfg
-File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-)
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 25.
-
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 8.8pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 6.6pt on input line 25.
+(/usr/share/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd)<<ot1.cmap>><<oml.cm
+ap>> (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd)
+(/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd)
+(/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-eur.cfg)
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 25.
-
-Package tabularx Warning: X Columns too narrow (table too wide)
-(tabularx)                 on input line 49.
-
-
-Overfull \hbox (66.82176pt too wide) in alignment at lines 49--49
-[][] 
- []
-
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.05249pt on input line 59.
-
-Package tabularx Warning: X Columns too narrow (table too wide)
-(tabularx)                 on input line 97.
-
-
-Overfull \hbox (131.31761pt too wide) in alignment at lines 97--97
-[][][] 
- []
-
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 97.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 97.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 97.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 6.1pt on input line 97.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 97.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 97.
-LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 6.1pt on input line 97.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 97.
+(Font)              scaled to size 14.05249pt on input line 60.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -3653,11 +3525,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 \@c=\count690
 \@last=\count691
 \@pnul=\count692
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 29.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 29.
-) (./my_folder/contents.tex
+
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3670,7 +3538,17 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 [4.4
 
 
-] (./My_thesis.toc
+]) (./my_folder/contents.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[5.5] (./My_thesis.toc
 Package cleveref Info: loaded `russian' language definitions on input line 3.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3688,9 +3566,18 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[5.5
+[6.6
 
-])
+]
+Package cleveref Info: loaded `russian' language definitions on input line 92.
+Package cleveref Info: loaded `russian' language definitions on input line 93.
+Package cleveref Info: loaded `russian' language definitions on input line 94.
+Package cleveref Info: loaded `russian' language definitions on input line 95.
+Package cleveref Info: loaded `russian' language definitions on input line 97.
+Package cleveref Info: loaded `russian' language definitions on input line 99.
+Package cleveref Info: loaded `russian' language definitions on input line 101.
+
+)
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3700,17 +3587,20 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[6.6]) (./my_folder/introduction.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
+[7.7]) (./my_folder/introduction.tex
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 14.05249pt on input line 10.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[7.7
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[8.8
 
 ]) (./my_folder/chapter1.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3722,10 +3612,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[8.8]
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 14.05249pt on input line 24.
-
+[9.9]
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3735,12 +3622,9 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[9.9
+[10.10
 
 ]
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/it' will be
-(Font)              scaled to size 14.05249pt on input line 67.
-
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3750,24 +3634,11 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[10.10]) (./my_folder/chapter2.tex
+[11.11]) (./my_folder/chapter2.tex
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 7.72891pt on input line 8.
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[11.11]
-
-Package nag Warning: $$...$$ is obsolete.
-(nag)                Use \[...\] et al. instead on input line 53.
-
+(Font)              scaled to size 10.25826pt on input line 10.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 7.72891pt on input line 10.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -3779,6 +3650,9 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [12.12]
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/it' will be
+(Font)              scaled to size 14.05249pt on input line 43.
+
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3789,6 +3663,11 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [13.13]
+
+Package nag Warning: $$...$$ is obsolete.
+(nag)                Use \[...\] et al. instead on input line 81.
+
+
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3809,6 +3688,16 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [15.15]
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[16.16]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -3816,11 +3705,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.179 \item Р
+l.208 \item Р
              ”Р»СЏ Р»СЋР±РѕРіРѕ $k > 0$:
 ? 
 
-Underfull \hbox (badness 10000) detected at line 179
+Underfull \hbox (badness 10000) detected at line 208
 [][]
  []
 
@@ -3834,16 +3723,27 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[16.16]
+[17.17]
 ! Undefined control sequence.
-l.215 ...htarrow wp(S_{do}, P \wedge \neg (\exsits
+l.245 ...htarrow wp(S_{do}, P \wedge \neg (\exsits
                                                    i: 1 \leq i \leq n: B_j))
 ? 
 ! Undefined control sequence.
-l.223 ... РџСЂРµРґРёРєР°С‚ $P \wedge \neg (\exsits
+l.253 ... РџСЂРµРґРёРєР°С‚ $P \wedge \neg (\exsits
                                                    i: 1 \leq i \leq n: B_j)$...
 
 ? 
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[18.18]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T2A).
 (microtype)             For optimal results, create family-specific settings.
@@ -3858,27 +3758,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[17.17]) (./my_folder/chapter3.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[18.18]
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[19.19]
+[19.19]) (./my_folder/chapter3.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3899,58 +3779,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [21.21]
-
-! LaTeX Error: Command \IF already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 ...xt{ | } B_n \rightarrow S_n \textbf{ if}}
-                                                  
-? 
-! Display math should end with $$.
-<to be read again> 
-                   P
-l.127     $P
-             \wedge \neg B_1 \neg B_2 \neg \ldots \neg B_n \Rightarrow R$
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.127     $P \wedge
-                    \neg B_1 \neg B_2 \neg \ldots \neg B_n \Rightarrow R$
-? 
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 \end{equation}
-                    
-? 
-! You can't use `\eqno' in horizontal mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.128 \end{equation}
-                    
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.128 \end{equation}
-                    
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.128 \end{equation}
-                    
-? 
-
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3961,6 +3789,18 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [22.22]
+
+! LaTeX Error: Command \IF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 ...xt{ | } B_n \rightarrow S_n \textbf{ if}}
+                                                  
+? 
+
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3970,7 +3810,48 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[23.23]) (./my_folder/chapter4.tex
+[23.23]
+! Display math should end with $$.
+<to be read again> 
+                   P
+l.130     $P
+             \wedge \neg B_1 \neg B_2 \neg \ldots \neg B_n \Rightarrow R$
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.130     $P \wedge
+                    \neg B_1 \neg B_2 \neg \ldots \neg B_n \Rightarrow R$
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 \end{equation}
+                    
+? 
+! You can't use `\eqno' in horizontal mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.131 \end{equation}
+                    
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.131 \end{equation}
+                    
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.131 \end{equation}
+                    
+? 
+
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -3981,6 +3862,26 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [24.24]
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[25.25]) (./my_folder/chapter4.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[26.26]
 Underfull \hbox (badness 1460) in paragraph at lines 44--52
 []\T2A/Tempora-TLF/m/n/14.05249 (+20) Следующий ал^^?го^^?ритм вы^^?чис^^?ля^^?
 ет мак^^?си^^?мум из двух чи^^?сел $\OML/ntxmi/m/it/14.05249 a$ \T2A/Tempora-TL
@@ -3988,17 +3889,6 @@ F/m/n/14.05249 (+20) и $\OML/ntxmi/m/it/14.05249 b$\T2A/Tempora-TLF/m/n/14.0524
 9 (+20) :
  []
 
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[25.25]
 
 LaTeX Warning: Command \CYRN invalid in math mode on input line 76.
 
@@ -4012,13 +3902,6 @@ Missing character: There is no Н in font Tempora-Regular-tlf-ot1!
 Missing character: There is no О in font Tempora-Regular-tlf-ot1!
 Missing character: There is no Д in font Tempora-Regular-tlf-ot1!
 
-Overfull \hbox (108.97949pt too wide) in paragraph at lines 83--92
-[]\T2A/Tempora-TLF/m/n/14.05249 (-20) Следующий ал^^?го^^?ритм воз^^?во^^?дит ч
-ис^^?ло $\OML/ntxmi/m/it/14.05249 X$ \T2A/Tempora-TLF/m/n/14.05249 (-20) в сте^
-^?пень $\OML/ntxmi/m/it/14.05249 Y$\T2A/Tempora-TLF/m/n/14.05249 (-20) : [] 
- []
-
-) (./my_folder/conclusion.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4028,19 +3911,10 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[26.26]
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[27.27]) (./my_folder/acronyms.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
+[27.27]
+Underfull \hbox (badness 6063) in paragraph at lines 96--98
+[]\T2A/Tempora-TLF/m/n/14.05249 (+20) Необходимо по^^?стро^^?ить ал^^?го^^?ритм
+, ко^^?то^^?рый для за^^?дан^^?ных чи^^?сел
  []
 
 
@@ -4048,7 +3922,12 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[28.28]) (./my_folder/dictionary.tex
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[28.28]) (./my_folder/conclusion.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4069,9 +3948,15 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [30.30]
-
-LaTeX Warning: Empty bibliography on input line 16.
-
+Package cleveref Info: loaded `russian' language definitions on input line 16.
+Package cleveref Info: loaded `russian' language definitions on input line 16.
+Package cleveref Info: loaded `russian' language definitions on input line 16.
+Package cleveref Info: loaded `russian' language definitions on input line 16.
+Package cleveref Info: loaded `russian' language definitions on input line 16.
+Package cleveref Info: loaded `russian' language definitions on input line 16.
+LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/it' will be
+(Font)              scaled to size 14.05249pt on input line 16.
+Package cleveref Info: loaded `russian' language definitions on input line 16.
 )
 
 Package xassoccnt Warning: Warning: An accidental(?) addition of associated
@@ -4092,20 +3977,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [31.31] (./my_folder/appendix1.tex
-
-LaTeX Warning: Citation 'latex-miktex' on page 32 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'latex-texstudio' on page 32 undefined on input line 9.
-
-
-
-Underfull \hbox (badness 3557) in paragraph at lines 36--37
-\T2A/Tempora-TLF/m/n/14.05249 (+20) го): \T2A/cmtt/m/n/14.05249 txs:///pdflatex
- | txs:///biber | txs:///pdflatex
- []
-
-
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4116,20 +3987,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [32.32]
-<my_folder/images//spbpu_hydrotower.jpg, id=397, 1284.8pt x 856.19875pt>
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 72.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 33 undefined on input line 73.
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 33 undefined on input line 79.
-
-
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4139,26 +3996,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[33.33 <./my_folder/images//spbpu_hydrotower.jpg>]
-Overfull \hbox (7.43707pt too wide) in paragraph at lines 104--105
-[]\T2A/Tempora-TLF/m/n/14.05249 (-20) Название под^^?па^^?ра^^?гра^^?фа оформ^^
-?ля^^?ет^^?ся с по^^?мо^^?щью ко^^?ман^^?ды \T2A/cmtt/m/n/14.05249 \subsection{
-...}\T2A/Tempora-TLF/m/n/14.05249 (-20) . 
- []
-
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 117.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 34 undefined on input line 118.
-
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 34 undefined on input line 128.
-
-
+[33.33]
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4168,70 +4006,20 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[34.34]
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[35.35]) (./my_folder/appendix2.tex
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 14.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 36 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 36 undefined on input line 21.
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[36.36]
-File: my_folder/images//spbpu_hydrotower.jpg Graphic file (type jpg)
-<use my_folder/images//spbpu_hydrotower.jpg>
-Package pdftex.def Info: my_folder/images//spbpu_hydrotower.jpg  used on input 
-line 51.
-(pdftex.def)             Requested size: 346.90063pt x 231.17674pt.
-
-
-LaTeX Warning: Citation 'spbpu-gallery' on page 37 undefined on input line 52.
-
-
-LaTeX Warning: Citation 'Peskov2004' on page 37 undefined on input line 58.
-
-)
-
-Package nag Warning: Unmatched ``\center'' command on line 50.
-
-
-Package nag Warning: Unmatched ``\center'' command on line 13.
-
-
-Package nag Warning: Unmatched ``\center'' command on line 116.
-
-
-Package nag Warning: Unmatched ``\center'' command on line 71.
-
+[34.34])
 
 Class memoir Warning: The material used in the footer is too large
 (12.64719pt) for the given foot skip (0.0pt), it is recommended to
 either increase the foot skip or redesign the footer
-(in both cases you will find help in the memoir manual). on input line 86.
+(in both cases you will find help in the memoir manual). on input line 77.
+
+
+Package caption Warning: Unused \captionsetup[figure] on input line 71.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 119.
+See the caption package documentation for explanation.
 
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 138.
@@ -4246,66 +4034,59 @@ Package caption Warning: Unused \captionsetup[lstlisting] on input line 245.
 See the caption package documentation for explanation.
 
 
-Package nag Warning: 5 complaints in total.
+Package nag Warning: 1 complaints in total.
 
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[37.37]
 \tf@toc=\write9
 \openout9 = `My_thesis.toc'.
 
- (./My_thesis.aux
+(./My_thesis.aux
 Package cleveref Info: loaded `russian' language definitions on input line 29.
+Package cleveref Info: loaded `russian' language definitions on input line 129.
+
+Package cleveref Info: loaded `russian' language definitions on input line 130.
+
+Package cleveref Info: loaded `russian' language definitions on input line 131.
+
+Package cleveref Info: loaded `russian' language definitions on input line 132.
+
+Package cleveref Info: loaded `russian' language definitions on input line 134.
+
+Package cleveref Info: loaded `russian' language definitions on input line 136.
+
+Package cleveref Info: loaded `russian' language definitions on input line 138.
+
 )
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `My_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2047DD0F0A9C6306C249BF970CFA12EC;3637.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                My_thesis
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: F88CCBAE42E8044441FF307C5A453750;2455.
 Package logreq Info: Writing requests to 'My_thesis.run.xml'.
 \openout1 = `My_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44275 strings out of 478994
- 736371 string characters out of 5864752
- 1817527 words of memory out of 5000000
- 60358 multiletter control sequences out of 15000+600000
- 553067 words of font info for 337 fonts, out of 8000000 for 9000
+ 43955 strings out of 478994
+ 730174 string characters out of 5864752
+ 1813911 words of memory out of 5000000
+ 60151 multiletter control sequences out of 15000+600000
+ 496296 words of font info for 221 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,13n,123p,1188b,3065s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/
-texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}{/usr/share/texmf-dist/fonts/
-enc/dvips/tempora/t2a-tempora.enc}</usr/share/texmf-dist/fonts/type1/public/new
-tx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></u
-sr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/tex
-mf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb></usr/share/texmf-dis
-t/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/euler/eurm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fon
-ts/type1/public/newtx/txsys.pfb>
-Output written on My_thesis.pdf (37 pages, 799447 bytes).
+ 97i,12n,123p,1188b,4298s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_aq2g6w.enc}{/usr/share/tex
+mf-dist/fonts/enc/dvips/tempora/tmp_jglahm.enc}{/usr/share/texmf-dist/fonts/enc
+/dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf-dist/fonts/enc/dvips/tempora
+/t2a-tempora.enc}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}
+</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-d
+ist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora
+/Tempora-BoldItalic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempo
+ra-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular
+.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/t
+xsys.pfb>
+Output written on My_thesis.pdf (34 pages, 279206 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 477 compressed objects within 5 object streams
- 207 named destinations out of 1000 (max. 500000)
- 80502 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 489 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 47705 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -1,245 +1,176 @@
+from dataclasses import dataclass
+from functools import reduce
+from os import replace
 from .gen.GuardedVisitor import GuardedVisitor
 from .gen.GuardedParser import GuardedParser
-from pprint import pprint
 import sympy as sp
-import itertools
-sp.Eq
 
-# todo: assert using fucntion call in expressions not in condition
+
+def compose(*fns):
+    return reduce(lambda f, g: lambda x: f(g(x)), fns, lambda x: x)
+
 
 class DerivingVisitor(GuardedVisitor):
     def __init__(self):
-        self._expr_stack = []
         self._predicate_stack = []
 
         self._depth = 1
         self._claims = []
 
-    def visitExpression(self, ctx):
-        if isinstance(ctx, GuardedParser.TrueContext):
-            self.visitTrue(ctx)
-        elif isinstance(ctx, GuardedParser.FalseContext):
-            self.visitFalse(ctx)
-        elif isinstance(ctx, GuardedParser.AndContext):
-            self.visitAnd(ctx)
-        elif isinstance(ctx, GuardedParser.OrContext):
-            self.visitOr(ctx)
-        elif isinstance(ctx, GuardedParser.ImplContext):
-            self.visitImpl(ctx)
-        elif isinstance(ctx, GuardedParser.IdentifierContext):
-            self.visitIdentifier(ctx)
-        elif isinstance(ctx, GuardedParser.LogicContext):
-            self.visitLogic(ctx)
-        elif isinstance(ctx, GuardedParser.MulDivContext):
-            self.visitMulDiv(ctx)
-        elif isinstance(ctx, GuardedParser.AddSubContext):
-            self.visitAddSub(ctx)
-        elif isinstance(ctx, GuardedParser.BracketsContext):
-            self.visitBrackets(ctx)
-        elif isinstance(ctx, GuardedParser.NegateContext):
-            self.visitNegate(ctx)
-        elif isinstance(ctx, GuardedParser.NumberContext):
-            self.visitNumber(ctx)
-        elif isinstance(ctx, GuardedParser.UnarySubContext):
-            self.visitUnarySub(ctx)
-        elif isinstance(ctx, GuardedParser.ExprFnCallContext):
-            self.visitExprFnCall(ctx)
-    
     def visitTrue(self, ctx):
-        self._expr_stack.append(sp.true)
+        return sp.true
 
     def visitFalse(self, ctx):
-        self._expr_stack.append(sp.false)
+        return sp.false
 
     def visitIdentifier(self, ctx: GuardedParser.IdentifierContext):
-        var_name = ctx.getText()
-        self._expr_stack.append(sp.Symbol(var_name))
+        return sp.Symbol(ctx.getText())
 
     def visitNumber(self, ctx: GuardedParser.NumberContext):
-        num = float(ctx.getText())
-        self._expr_stack.append(num)
+        return sp.Number(ctx.getText())
 
     def visitUnarySub(self, ctx: GuardedParser.UnarySubContext):
-        self.visitChildren(ctx)
-        value = self._expr_stack.pop()
-        self._expr_stack.append(-value)
+        return -self.visit(ctx.getChild(0, GuardedParser.ExpressionContext))
 
     def visitNegate(self, ctx: GuardedParser.NegateContext):
-        self.visitChildren(ctx)
-        value = self._expr_stack.pop()
-        self._expr_stack.append(sp.Not(value))
+        return sp.Not(self.visit(ctx.getChild(0, GuardedParser.ExpressionContext)))
 
     def visitAnd(self, ctx: GuardedParser.AndContext):
-        self.visitChildren(ctx)
-        right, left = self._expr_stack.pop(), self._expr_stack.pop()
-        self._expr_stack.append(sp.And(left, right))
+        left, right = [self.visit(node) for node in ctx.getTypedRuleContexts(
+            GuardedParser.ExpressionContext)]
+        return sp.And(left, right)
 
     def visitOr(self, ctx: GuardedParser.OrContext):
-        self.visitChildren(ctx)
-        right, left = self._expr_stack.pop(), self._expr_stack.pop()
-        self._expr_stack.append(sp.Or(left, right))
+        left, right = [self.visit(node) for node in ctx.getTypedRuleContexts(
+            GuardedParser.ExpressionContext)]
+        return sp.Or(left, right)
 
     def visitImpl(self, ctx: GuardedParser.ImplContext):
-        self.visitChildren(ctx)
-        right, left = self._expr_stack.pop(), self._expr_stack.pop()
-        self._expr_stack.append(sp.Implies(left, right))
+        left, right = [self.visit(node) for node in ctx.getTypedRuleContexts(
+            GuardedParser.ExpressionContext)]
+        return sp.Or(sp.Not(left), right)
 
     def visitExprFnCall(self, ctx: GuardedParser.ExprFnCallContext):
-        children = list(next(ctx.getChildren()).getChildren())
-        function_name = children[0].getText()
-        parameters_ctx = children[2]
+        fncall_ctx = ctx.getChild(0)
+        function_name = fncall_ctx.getToken(GuardedParser.ID, 0).getText()
 
-        parameters = []
-        for parameter in parameters_ctx.getChildren():
-            if parameter.getText() == ',':
-                continue
-            self.visitExpression(parameter)
-            parameters.append(self._expr_stack.pop())
+        parameters_ctx = fncall_ctx.getChild(
+            0, GuardedParser.ActualParametersContext)
+        parameters = [self.visit(node) for node in parameters_ctx.getTypedRuleContexts(
+            GuardedParser.ExpressionContext
+        )]
 
-        function = sp.Function(function_name)
-
-        self._expr_stack.append(function(*parameters))
+        return sp.Function(function_name)(*parameters)
 
     def visitLogic(self, ctx: GuardedParser.LogicContext):
-        self.visitChildren(ctx)
-        children = list(ctx.getChildren())
+        left, right = [self.visit(node) for node in ctx.getTypedRuleContexts(
+            GuardedParser.ExpressionContext)]
 
-        right, left = self._expr_stack.pop(), self._expr_stack.pop()
-        op = children[1]
-        if op == ctx.LT():
-            self._expr_stack.append(sp.Lt(left, right))
-        elif op == ctx.LE():
-            self._expr_stack.append(sp.Le(left, right))
-        elif op == ctx.GT():
-            self._expr_stack.append(sp.Gt(left, right))
-        elif op == ctx.GE():
-            self._expr_stack.append(sp.Ge(left, right))
-        elif op == ctx.EQ():
-            self._expr_stack.append(sp.Eq(left, right))
-        elif op == ctx.NEQ():
-            self._expr_stack.append(sp.Not(sp.Eq(left, right)))
-        else:
-            raise Exception(f"Unexpected logical operation: {op}")
+        return {
+            ctx.LT(): lambda x, y: sp.Lt(x, y),
+            ctx.LE(): lambda x, y: sp.Le(x, y),
+            ctx.GT(): lambda x, y: sp.Gt(x, y),
+            ctx.GE(): lambda x, y: sp.Ge(x, y),
+            ctx.EQ(): lambda x, y: sp.Eq(x, y),
+            ctx.NEQ(): lambda x, y: sp.Not(sp.Eq(x, y)),
+        }[ctx.getChild(1)](left, right)
+
     def visitAddSub(self, ctx: GuardedParser.AddSubContext):
-        self.visitChildren(ctx)
-        children = list(ctx.getChildren())
+        left, right = [self.visit(node) for node in ctx.getTypedRuleContexts(
+            GuardedParser.ExpressionContext)]
 
-        right, left = self._expr_stack.pop(), self._expr_stack.pop()
-        op = children[1]
-        if op == ctx.ADD():
-            self._expr_stack.append(sp.Add(left, right))
-        elif op == ctx.SUB():
-            self._expr_stack.append(sp.Add(left, sp.Mul(-1, right)))
-        else:
-            raise Exception(f"Unexpected operation: {ctx.op}")
+        return {
+            ctx.ADD(): lambda x, y: sp.Add(x, y),
+            ctx.SUB(): lambda x, y: sp.Add(left, sp.Mul(-1, right)),
+        }[ctx.getChild(1)](left, right)
+
     def visitMulDiv(self, ctx: GuardedParser.MulDivContext):
-        self.visitChildren(ctx)
-        children = list(ctx.getChildren())
+        left, right = [self.visit(node) for node in ctx.getTypedRuleContexts(
+            GuardedParser.ExpressionContext)]
 
-        right, left = self._expr_stack.pop(), self._expr_stack.pop()
-        op = children[1]
-        if op == ctx.MUL():
-            self._expr_stack.append(sp.Mul(left, right))
-        elif op == ctx.DIV():
-            self._expr_stack.append(sp.Mul(left, sp.Pow(right, -1)))
-        else:
-            raise Exception(f"Unexpected operation: {ctx.getText()}")
+        return {
+            ctx.ADD(): lambda x, y: sp.Add(x, y),
+            ctx.SUB(): lambda x, y: sp.Mul(left, sp.Pow(right, -1)),
+        }[ctx.getChild(1)](left, right)
 
     def visitAssignOperator(self, ctx: GuardedParser.AssignOperatorContext):
-        children_iter = ctx.getChildren()
-        var_names = list(map(
-            lambda c: sp.Symbol(c.getText()),
-            filter(lambda c: c.getText() != ',',
-                itertools.takewhile(lambda c: c.getText() != ':=', children_iter))
-            ) 
-        )
-        expressions = list(filter(lambda c: c.getText() != ',', children_iter))
-        assert len(var_names) == len(expressions), "Multi assignment with different number of variables and values"
-
-        self.visitChildren(ctx)
-        values = list(reversed(
-            list(self._expr_stack.pop() for i in range(len(expressions)))
-        ))
-
+        var_names = list(map(compose(sp.Symbol, str), ctx.getTokens(GuardedParser.ID)))
+        var_values = [self.visit(node) for node in ctx.getTypedRuleContexts(
+            GuardedParser.ExpressionContext)]
         old_condition = self._predicate_stack.pop()
-        new_condition = old_condition.xreplace(dict(zip(var_names, values)))
 
-        print('    ' * self._depth + f'{old_condition} --[assign {var_names}:={values}]--> {new_condition}')
-        
+        new_condition = old_condition.xreplace(dict(zip(var_names, var_values)))
+
+        print('    ' * self._depth +
+              f'{old_condition} --[assign {list(var_names)}:={var_values}]--> {new_condition}')
+
         self._predicate_stack.append(new_condition)
 
     def visitIfOperator(self, ctx: GuardedParser.AssignOperatorContext):
-        children = list(ctx.getChildren())
-        commandList = filter(lambda c: isinstance(c, GuardedParser.CommandContext),
-            children[1].getChildren())
-        current_predicate = self._predicate_stack.pop()
+        command_list_ctx = ctx.getChild(0, GuardedParser.CommandListContext)
+        commands = command_list_ctx.getTypedRuleContexts(
+            GuardedParser.CommandContext)
+        predicate = self._predicate_stack.pop()
 
-        operator_list_predicates = []
-        for command in commandList:
-            command_children = list(command.getChildren())
-            self.visitExpression(command_children[0])
-            fuse = self._expr_stack.pop() # take fuse predicate
+        @dataclass
+        class Command:
+            fuse:      sp.Basic
+            predicate: sp.Basic
 
-            operator_list: GuardedParser.OperatorListContext = command_children[2]
-            self._predicate_stack.append(current_predicate)
-            self._depth += 1
-            self.visitOperatorList(operator_list)
-            self._depth -= 1
-            predicate = self._predicate_stack.pop()
+        command_predicates: list[Command] = []
+        for command in commands:
+            fuse = self.visit(command.getChild(
+                0, GuardedParser.ExpressionContext))
+            body = command.getChild(0, GuardedParser.OperatorListContext)
 
-            operator_list_predicates.append((fuse, predicate))
-        
-        fuse_predicate = sp.false
-        operator_list_predicate = sp.true
-        for fuse, operator_list in operator_list_predicates:
-            fuse_predicate = sp.Or(fuse_predicate, fuse)
-            operator_list_predicate = sp.And(operator_list_predicate, sp.Implies(fuse, operator_list))
-        
-        new_predicate = sp.And(fuse_predicate, operator_list_predicate)
-        print('    ' * self._depth + f'{str(current_predicate)} --[if]--> {str(new_predicate)}')
+            self._predicate_stack.append(predicate)
+            self.visitOperatorList(body)
+            new_predicate = self._predicate_stack.pop()
+            command_predicates.append(
+                Command(fuse=fuse, predicate=new_predicate))
+
+        BB = reduce(
+            sp.Or, [c.fuse for c in command_predicates], sp.false)
+        R = reduce(
+            sp.And, [sp.Implies(c.fuse, c.predicate) for c in command_predicates], sp.true)
+        new_predicate = sp.And(BB, R)
+
+        print('    ' * self._depth +
+              f'{str(predicate)} --[if]--> {str(new_predicate)}')
         self._predicate_stack.append(new_predicate)
 
     def visitDoOperator(self, ctx: GuardedParser.DoOperatorContext):
-        children = list(ctx.getChildren())
-        assert isinstance(children[0], GuardedParser.ConditionContext), "do..od operator without invariant in deriving mode"
+        condition = ctx.getChild(0, GuardedParser.ConditionContext)
+        assert condition != None, "do..od operator without invariant in deriving mode"
 
-        self.visitCondition(children[0])
-        invariant = self._expr_stack.pop()
+        invariant = self.visitCondition(condition)
         old_predicate = self._predicate_stack.pop()
-
-        # check if (invariant and non bb => old_predicate)
-        invariant_and_non_bb = invariant
-        for command in children[2].getChildren():
-            if not isinstance(command, GuardedParser.CommandContext):
-                continue
-            fuse = next(command.getChildren())
-            self.visitExpression(fuse)
-            fuse_predicate = self._expr_stack.pop()
-            invariant_and_non_bb = sp.And(invariant_and_non_bb, sp.Not(fuse_predicate))
-        
-        claim_predicate = sp.Implies(invariant_and_non_bb.simplify(), old_predicate).simplify()
-        self._claims.append(str(claim_predicate))
         self._predicate_stack.append(invariant)
+
+        command_list_ctx = ctx.getChild(0, GuardedParser.CommandListContext)
+        commands = command_list_ctx.getTypedRuleContexts(
+            GuardedParser.CommandContext)
+
+        R = reduce(
+            sp.And,
+            map(compose(sp.Not, self.visit), [c.getChild(
+                0, GuardedParser.ExpressionContext) for c in commands]),
+            invariant
+        )
+
+        claim_predicate = sp.Implies(
+            R.simplify(), old_predicate).simplify()
+        self._claims.append(str(claim_predicate))
 
     def visitOperatorList(self, ctx: GuardedParser.OperatorListContext):
         for operator in reversed(list(ctx.getChildren())):
             self.visitOperator(operator)
-    
-    def visitInitialAssignments(self, ctx: GuardedParser.InitialAssignmentsContext):
-        pass
 
     def visitStart(self, ctx: GuardedParser.StartContext):
-        try:
-            post_condition_ctx: GuardedParser.ConditionContext = next(c for c in ctx.getChildren()
-                if isinstance(c, GuardedParser.ConditionContext))
-        except StopIteration:
-            raise Exception('Post-condition not found')
+        post_condition_ctx = ctx.getChild(0, GuardedParser.ConditionContext)
+        assert post_condition_ctx != None, 'Post-condition not found'
 
-        self.visitCondition(post_condition_ctx)
-        post_condition = self._expr_stack.pop()
-
-        # post_condition_str = list(post_condition_ctx.getChildren())[1].getText()
-        # post_condition = sp.parse_expr(post_condition_str)
+        post_condition = self.visitCondition(post_condition_ctx)
         self._predicate_stack.append(post_condition)
 
         print('Post-condition:', str(post_condition))
@@ -247,6 +178,13 @@ class DerivingVisitor(GuardedVisitor):
         pre_condition = sp.simplify(self._predicate_stack.pop())
         print('Pre-condition:', str(pre_condition.simplify()))
 
-        self._claims and print('\nPROVE manually, that following formulas are tauthologies:')        
+        self._claims and print(
+            '\nPROVE manually, that following formulas are tauthologies:')
         for i in range(len(self._claims)):
             print(f'{i + 1}. {self._claims[i]}')
+
+    def visitCondition(self, ctx: GuardedParser.ConditionContext):
+        return self.visit(ctx.getChild(0, GuardedParser.ExpressionContext))
+
+    def visitInitialAssignments(self, ctx: GuardedParser.InitialAssignmentsContext):
+        pass

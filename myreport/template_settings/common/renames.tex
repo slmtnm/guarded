@@ -10,10 +10,10 @@
 \newcommand{\Supervisor}{Ф.А.\,Новиков} % И. О. Фамилия научного руководителя
 \newcommand{\SupervisorFull}{Новиков Федор Александрович} % Фамилия Имя Отчество научного руководителя
 \newcommand{\SupervisorVin}{Ф.А.\,Новикова} % И. О. Фамилия научного руководителя  в винительном падеже (Кого? что? Руководителя ...)
-\newcommand{\SupervisorJob}{профессор высшей школы прикладной математики и вычислительной физики} %
+\newcommand{\SupervisorJob}{проф.} %
 \newcommand{\SupervisorJobVin}{профессора высшей школы прикладной математики и вычислительной физики} % в винительном падеже (Кого? что?  Програмиста ...)
-\newcommand{\SupervisorDegree}{доктор технических наук} %
-\newcommand{\SupervisorTitle}{старший научный сотрудник} % 
+\newcommand{\SupervisorDegree}{д-р. техн. наук} %
+\newcommand{\SupervisorTitle}{ст. науч. сотр.} % 
 
 %%
 %%
@@ -34,7 +34,7 @@
 %Директор Высшей школы
 \newcommand{\HeadApDep}{O} % заменить на краткую аббревиатуру подразделения или оставить пустым, если утверждает руководитель ОП
 %%% Консультант по нормоконтролю
-\newcommand{\ConsultantNorm}{И.О.\,Фамилия} % И. О. Фамилия консультанта по нормоконтролю. ТОЛЬКО из числа ППС!
+\newcommand{\ConsultantNorm}{Л.А.\,Арефьева} % И. О. Фамилия консультанта по нормоконтролю. ТОЛЬКО из числа ППС!
 \newcommand{\ConsultantNormDegree}{должность, степень} %   
 %%% Первый консультант
 \newcommand{\ConsultantExtraFull}{Новиков Федор Александрович} % Фамилия Имя Отчетство дополнительного консультанта 
@@ -90,10 +90,18 @@
 %- область применения результатов ВКР;
 %- выводы.
 
-\newcommand{\abstractRu}{В данной работе изложена сущность подхода к созданию динамического информационного портала на основе использования открытых технологий Apache, MySQL и PHP. Даны общие понятия и классификация IT-систем такого класса. Проведен анализ систем-прототипов. Изучена технология создания указанного класса информационных систем. Разработана конкретная программная реализация динамического информационного портала на примере портала выбранной тематики...} % ВВЕДИТЕ текст аннотации по-русски
-%%
-%%
-\newcommand{\abstractEn}{In the given work the essence of the approach to creation of a dynamic information portal on the basis of use of open technologies Apache, MySQL and PHP is stated. The general concepts and classification of IT-systems of such class are given. The analysis of systems-prototypes is lead. The technology of creation of the specified class of information systems is investigated. Concrete program realization of a dynamic information portal on an example of a portal of the chosen subjects is developed...} % ВВЕДИТЕ текст аннотации по-английски
+\newcommand{\abstractRu}{В данной работе изложен подход к доказательству корректности программ с помощью построения их денотационной семантики на основе определенной семантики операторов языка. Для этого рассмотрен 
+	и реализован язык охраняемых команд, предложенный Э. Дейкстрой в своем труде <<Дисциплина программирования>>. Реализация языка состоит из интерпретатора программ и программного инструмента, выводящего предусловие программы по заданному постусловию. Рассмотрены примеры доказательства корректности некоторых алгоритмов с помощью этого инструмента. Язык охраняемых команд вместе с разработанными инструментами подходит как для построения
+	корректных алгоритмов, так и для их публикации вместе с доказательством их корректности. Язык охраняемых команд хоть и является удобным для проведения формальных рассуждений, он не снимает 
+	с плеч программиста необходимости проектировать программный код, спецификацию программы и ее инварианты. Поэтому разработанный язык носит вспомогательный характер и требует
+	творческих усилий при проектировании корректных программ.
+}
+\newcommand{\abstractEn}{This work presents an approach to proving the correctness of programs by constructing ther denotational semantics based on defined semantics of language operators. To do this,
+there was considered and implemented the guarded command language, proposed by E. Dijkstra in his work <<A discipline of programming>>. The implementation of the language consists of a interpreter and
+a software tool that derives program precondition for a given postcondition and invariants. Some examples of proving the correctness of algorithms are considered. The guarded command language, alongside
+with the developed tools, is suitable both for building correct algorithms and for publishing them alongside with their correctness proof. Although the guarded command language is convenient for 
+conducting formal reasoning, it does not remove the need to designb the program specification, program code and it's invariants from the programmer shoulders. The developed language
+is auxiliary and requires creative efforts when designing correct programs.} % ВВЕДИТЕ текст аннотации по-английски
 
 
 %%% РАЗДЕЛ ДЛЯ ОФОРМЛЕНИЯ ПРАКТИКИ

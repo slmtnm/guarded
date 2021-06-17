@@ -3,7 +3,6 @@ import dataclasses
 from .gen.GuardedVisitor import GuardedVisitor
 from .gen.GuardedParser import GuardedParser
 
-
 @dataclasses.dataclass
 class Function:
     parameters: list[str]
@@ -17,12 +16,10 @@ class MacroVisitor(GuardedVisitor):
         self.replacementStack = []
 
     def visitFunctionDefinition(self, ctx: GuardedParser.FunctionDefinitionContext):
-        children = list(ctx.getChildren())
-
-        function_name = children[0].getText()
-        function_params = children[2]
+        function_name = ctx.getChild(0).getText()
+        function_params = ctx.getChild(0, GuardedParser.FormalParametersContext)
         
-        params = list(filter(lambda t: t != ',', map(lambda c: c.getText(), function_params.getChildren())))
-        body = children[5]
+        params = map(str, function_params.getTokens(GuardedParser.ID))
+        body  = ctx.getChild(0, GuardedParser.OperatorListContext)
 
-        self.functions[function_name] = Function(params, body)
+        self.functions[function_name] = Function(list(params), body)

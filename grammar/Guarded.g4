@@ -25,8 +25,6 @@ EQUIV: '<=>';
 
 expression
    : functionCall                                           # ExprFnCall
-   | arrayLiteral                                           # ExprArrayLiteral
-   | arrayElement                                           # ExprArrayElement
    | SUB expression                                         # UnarySub
    | NEG expression                                         # Negate
    | '(' expression ')'                                     # Brackets
@@ -69,15 +67,6 @@ formalParameters: (ID (',' ID)* )?;
 actualParameters: (expression (',' expression)* )?;
 
 initialAssignments: '[' assignOperator (';' assignOperator)* ']';
-
-arrayLiteral: '[' (expression (';' expression)* )? ']';
-arrayElement: ID '[' expression ']';
-
-arrayUp: ID ':' 'up' expression;
-arrayDown: ID ':' 'down' expression;
-arrayUpper: ID ':' 'upper';
-arrayLower: ID ':' 'lower';
-arraySize: ID ':' 'size';
 
 // comments
 LINE_COMMENT

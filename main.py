@@ -1,8 +1,9 @@
 # debug purpose
-from guarded.executing_visitor import ExecutingVisitor
-from guarded.gen.GuardedLexer import GuardedLexer
-from guarded.gen.GuardedParser import GuardedParser
+from gclang.executing_visitor import ExecutingVisitor
+from gclang.deriving_visitor import DerivingVisitor
+from gclang.gen.GuardedLexer import GuardedLexer
+from gclang.gen.GuardedParser import GuardedParser
 from antlr4 import CommonTokenStream, FileStream
 
-tree = GuardedParser(CommonTokenStream(GuardedLexer(FileStream('examples/macro.gua')))).start()
-ExecutingVisitor().visit(tree)
+tree = GuardedParser(CommonTokenStream(GuardedLexer(FileStream('examples/euqclid.gua')))).start()
+DerivingVisitor().visit(tree)

@@ -1,7 +1,7 @@
 [X, Y := 2, 8]
 x, y, z := X, Y, 1;
 
-{z * po(x, y) == po(X, Y)}
+{z * pow(x, y) == pow(X, Y)}
 do y != 0 -> y, z := y - 1, z * x od
 
-{z == po(X, Y)}
+{z == pow(X, Y)}

@@ -71,30 +71,12 @@ class GuardedListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GuardedParser#ExprArrayLiteral.
-    def enterExprArrayLiteral(self, ctx:GuardedParser.ExprArrayLiteralContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#ExprArrayLiteral.
-    def exitExprArrayLiteral(self, ctx:GuardedParser.ExprArrayLiteralContext):
-        pass
-
-
     # Enter a parse tree produced by GuardedParser#ExprFnCall.
     def enterExprFnCall(self, ctx:GuardedParser.ExprFnCallContext):
         pass
 
     # Exit a parse tree produced by GuardedParser#ExprFnCall.
     def exitExprFnCall(self, ctx:GuardedParser.ExprFnCallContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#ExprArrayElement.
-    def enterExprArrayElement(self, ctx:GuardedParser.ExprArrayElementContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#ExprArrayElement.
-    def exitExprArrayElement(self, ctx:GuardedParser.ExprArrayElementContext):
         pass
 
 
@@ -284,69 +266,6 @@ class GuardedListener(ParseTreeListener):
 
     # Exit a parse tree produced by GuardedParser#initialAssignments.
     def exitInitialAssignments(self, ctx:GuardedParser.InitialAssignmentsContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#arrayLiteral.
-    def enterArrayLiteral(self, ctx:GuardedParser.ArrayLiteralContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#arrayLiteral.
-    def exitArrayLiteral(self, ctx:GuardedParser.ArrayLiteralContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#arrayElement.
-    def enterArrayElement(self, ctx:GuardedParser.ArrayElementContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#arrayElement.
-    def exitArrayElement(self, ctx:GuardedParser.ArrayElementContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#arrayUp.
-    def enterArrayUp(self, ctx:GuardedParser.ArrayUpContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#arrayUp.
-    def exitArrayUp(self, ctx:GuardedParser.ArrayUpContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#arrayDown.
-    def enterArrayDown(self, ctx:GuardedParser.ArrayDownContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#arrayDown.
-    def exitArrayDown(self, ctx:GuardedParser.ArrayDownContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#arrayUpper.
-    def enterArrayUpper(self, ctx:GuardedParser.ArrayUpperContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#arrayUpper.
-    def exitArrayUpper(self, ctx:GuardedParser.ArrayUpperContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#arrayLower.
-    def enterArrayLower(self, ctx:GuardedParser.ArrayLowerContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#arrayLower.
-    def exitArrayLower(self, ctx:GuardedParser.ArrayLowerContext):
-        pass
-
-
-    # Enter a parse tree produced by GuardedParser#arraySize.
-    def enterArraySize(self, ctx:GuardedParser.ArraySizeContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#arraySize.
-    def exitArraySize(self, ctx:GuardedParser.ArraySizeContext):
         pass
 
 
