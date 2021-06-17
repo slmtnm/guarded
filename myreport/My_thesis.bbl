@@ -1,0 +1,291 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{1}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Compilers}{book}{}
+      \name{author}{1}{}{%
+        {{hash=165dbc5116eab7f22f7e32e45858c9af}{%
+           family={Ахо},
+           familyi={А\bibinitperiod},
+           given={Альфред\bibnamedelima В.},
+           giveni={А\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Москва}%
+      }
+      \list{publisher}{1}{%
+        {Вильямс}%
+      }
+      \strng{namehash}{165dbc5116eab7f22f7e32e45858c9af}
+      \strng{fullhash}{165dbc5116eab7f22f7e32e45858c9af}
+      \strng{bibnamehash}{165dbc5116eab7f22f7e32e45858c9af}
+      \strng{authorbibnamehash}{165dbc5116eab7f22f7e32e45858c9af}
+      \strng{authornamehash}{165dbc5116eab7f22f7e32e45858c9af}
+      \strng{authorfullhash}{165dbc5116eab7f22f7e32e45858c9af}
+      \field{sortinit}{А}
+      \field{sortinithash}{9db8541854f3671fde760253476fbbdb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{3257227892}
+      \field{langid}{russian}
+      \field{pagetotal}{1184}
+      \field{title}{Компиляторы. Принципы, технологии и инструментарий}
+      \field{year}{2008}
+    \endentry
+    \entry{Dijkstra}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4f87968d9beeac784c7d89d8be21f118}{%
+           family={Дейкстра},
+           familyi={Д\bibinitperiod},
+           given={Э.},
+           giveni={Э\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Москва}%
+      }
+      \list{publisher}{1}{%
+        {МИР}%
+      }
+      \strng{namehash}{4f87968d9beeac784c7d89d8be21f118}
+      \strng{fullhash}{4f87968d9beeac784c7d89d8be21f118}
+      \strng{bibnamehash}{4f87968d9beeac784c7d89d8be21f118}
+      \strng{authorbibnamehash}{4f87968d9beeac784c7d89d8be21f118}
+      \strng{authornamehash}{4f87968d9beeac784c7d89d8be21f118}
+      \strng{authorfullhash}{4f87968d9beeac784c7d89d8be21f118}
+      \field{sortinit}{Д}
+      \field{sortinithash}{1acf1490327dfefb00e074ab043a2e03}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{3257227892}
+      \field{langid}{russian}
+      \field{pagetotal}{265}
+      \field{title}{Дисциплина программирования}
+      \field{year}{1978}
+    \endentry
+    \entry{Karpov}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f639629e63c158c5cfef1cc7f7937a26}{%
+           family={Карпов},
+           familyi={К\bibinitperiod},
+           given={Ю.\bibnamedelimi Г.},
+           giveni={Ю\bibinitperiod\bibinitdelim Г\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {СПб}%
+      }
+      \list{publisher}{1}{%
+        {БХВ-Петербург}%
+      }
+      \strng{namehash}{f639629e63c158c5cfef1cc7f7937a26}
+      \strng{fullhash}{f639629e63c158c5cfef1cc7f7937a26}
+      \strng{bibnamehash}{f639629e63c158c5cfef1cc7f7937a26}
+      \strng{authorbibnamehash}{f639629e63c158c5cfef1cc7f7937a26}
+      \strng{authornamehash}{f639629e63c158c5cfef1cc7f7937a26}
+      \strng{authorfullhash}{f639629e63c158c5cfef1cc7f7937a26}
+      \field{sortinit}{К}
+      \field{sortinithash}{007824ff2af181c6f6762379475efd5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{3257227892}
+      \field{langid}{russian}
+      \field{pagetotal}{560}
+      \field{title}{Model checking. Верификация параллельных и распределенных программных систем}
+      \field{year}{2010}
+    \endentry
+    \entry{Lavrov}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f9fc8cb5a57e6b1a05537b035fe2ddab}{%
+           family={Лавров},
+           familyi={Л\bibinitperiod},
+           given={С.\bibnamedelimi С.},
+           giveni={С\bibinitperiod\bibinitdelim С\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {СПб}%
+      }
+      \list{publisher}{1}{%
+        {БХВ-Петербург}%
+      }
+      \strng{namehash}{f9fc8cb5a57e6b1a05537b035fe2ddab}
+      \strng{fullhash}{f9fc8cb5a57e6b1a05537b035fe2ddab}
+      \strng{bibnamehash}{f9fc8cb5a57e6b1a05537b035fe2ddab}
+      \strng{authorbibnamehash}{f9fc8cb5a57e6b1a05537b035fe2ddab}
+      \strng{authornamehash}{f9fc8cb5a57e6b1a05537b035fe2ddab}
+      \strng{authorfullhash}{f9fc8cb5a57e6b1a05537b035fe2ddab}
+      \field{sortinit}{Л}
+      \field{sortinithash}{408c91708504c4d55e9c1a703c852f82}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3257227892}
+      \field{langid}{russian}
+      \field{pagetotal}{320}
+      \field{title}{Программирование. Математические основы, средства, теория}
+      \field{year}{2002}
+    \endentry
+    \entry{NovikovBook}{book}{}
+      \name{author}{1}{}{%
+        {{hash=20869f4623027943f0a50f4cafb78c59}{%
+           family={Новиков},
+           familyi={Н\bibinitperiod},
+           given={Ф.А.},
+           giveni={Ф\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {СПб}%
+      }
+      \list{publisher}{1}{%
+        {Питер}%
+      }
+      \strng{namehash}{20869f4623027943f0a50f4cafb78c59}
+      \strng{fullhash}{20869f4623027943f0a50f4cafb78c59}
+      \strng{bibnamehash}{20869f4623027943f0a50f4cafb78c59}
+      \strng{authorbibnamehash}{20869f4623027943f0a50f4cafb78c59}
+      \strng{authornamehash}{20869f4623027943f0a50f4cafb78c59}
+      \strng{authorfullhash}{20869f4623027943f0a50f4cafb78c59}
+      \field{sortinit}{Н}
+      \field{sortinithash}{38afed4b2dd7a2a56c8bd22996f23af0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{isbn}{3257227892}
+      \field{langid}{russian}
+      \field{pagetotal}{384}
+      \field{title}{Дискретная математика для программистов}
+      \field{year}{2009}
+    \endentry
+    \entry{Chen}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e91afa8769f8906eb89a83706ebffd52}{%
+           family={Чень},
+           familyi={Ч\bibinitperiod},
+           given={Ч.},
+           giveni={Ч\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Москва}%
+      }
+      \list{publisher}{1}{%
+        {Наука}%
+      }
+      \strng{namehash}{e91afa8769f8906eb89a83706ebffd52}
+      \strng{fullhash}{e91afa8769f8906eb89a83706ebffd52}
+      \strng{bibnamehash}{e91afa8769f8906eb89a83706ebffd52}
+      \strng{authorbibnamehash}{e91afa8769f8906eb89a83706ebffd52}
+      \strng{authornamehash}{e91afa8769f8906eb89a83706ebffd52}
+      \strng{authorfullhash}{e91afa8769f8906eb89a83706ebffd52}
+      \field{sortinit}{Ч}
+      \field{sortinithash}{6938aa9a16694a508738b73afded611d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3257227892}
+      \field{langid}{russian}
+      \field{pagetotal}{360}
+      \field{title}{Математическая логика и автоматическое доказательство теорем}
+      \field{year}{1983}
+    \endentry
+    \entry{Antlr}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{ANTLR}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.antlr.org/
+      \endverb
+      \verb{url}
+      \verb https://www.antlr.org/
+      \endverb
+    \endentry
+    \entry{AntlrPython}{online}{}
+      \field{sortinit}{p}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{python-antlr4}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/antlr/antlr4/blob/master/doc/python-target.md
+      \endverb
+      \verb{url}
+      \verb https://github.com/antlr/antlr4/blob/master/doc/python-target.md
+      \endverb
+    \endentry
+    \entry{Sympy}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{SymPy computer algebra system}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.sympy.org/
+      \endverb
+      \verb{url}
+      \verb https://www.sympy.org/
+      \endverb
+    \endentry
+    \entry{Wirth}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7f7aa633cbf63c5b9fb436e4c03d4ec2}{%
+           family={Wirth},
+           familyi={W\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc.}%
+      }
+      \strng{namehash}{7f7aa633cbf63c5b9fb436e4c03d4ec2}
+      \strng{fullhash}{7f7aa633cbf63c5b9fb436e4c03d4ec2}
+      \strng{bibnamehash}{7f7aa633cbf63c5b9fb436e4c03d4ec2}
+      \strng{authorbibnamehash}{7f7aa633cbf63c5b9fb436e4c03d4ec2}
+      \strng{authornamehash}{7f7aa633cbf63c5b9fb436e4c03d4ec2}
+      \strng{authorfullhash}{7f7aa633cbf63c5b9fb436e4c03d4ec2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{isbn}{3257227892}
+      \field{langid}{english}
+      \field{title}{Program Development by Stepwise Refinement}
+      \field{year}{1971}
+      \field{pages}{221\bibrangedash 227}
+      \range{pages}{7}
+      \field{volume}{14}
+      \range{volume}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

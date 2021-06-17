@@ -3530,16 +3530,19 @@
   </bcf:bibdata>
   <bcf:section number="1">
     <bcf:citekey order="1">Karpov</bcf:citekey>
-    <bcf:citekey order="2">Dijkstra</bcf:citekey>
-    <bcf:citekey order="3">Wirth</bcf:citekey>
-    <bcf:citekey order="4">Dijkstra</bcf:citekey>
-    <bcf:citekey order="5">Lavrov</bcf:citekey>
-    <bcf:citekey order="6">Wirth</bcf:citekey>
-    <bcf:citekey order="7">Antlr</bcf:citekey>
-    <bcf:citekey order="8">AntlrPython</bcf:citekey>
-    <bcf:citekey order="9">Sympy</bcf:citekey>
-    <bcf:citekey order="10">Dijkstra</bcf:citekey>
-    <bcf:citekey order="11">Lavrov</bcf:citekey>
+    <bcf:citekey order="2">Chen</bcf:citekey>
+    <bcf:citekey order="3">Dijkstra</bcf:citekey>
+    <bcf:citekey order="4">Wirth</bcf:citekey>
+    <bcf:citekey order="5">Dijkstra</bcf:citekey>
+    <bcf:citekey order="6">Lavrov</bcf:citekey>
+    <bcf:citekey order="7">Wirth</bcf:citekey>
+    <bcf:citekey order="8">NovikovBook</bcf:citekey>
+    <bcf:citekey order="9">Compilers</bcf:citekey>
+    <bcf:citekey order="10">Antlr</bcf:citekey>
+    <bcf:citekey order="11">AntlrPython</bcf:citekey>
+    <bcf:citekey order="12">Sympy</bcf:citekey>
+    <bcf:citekey order="13">Dijkstra</bcf:citekey>
+    <bcf:citekey order="14">Lavrov</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">

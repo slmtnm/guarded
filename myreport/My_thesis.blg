@@ -1,0 +1,58 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'My_thesis.blg'
+[47] biber:330> INFO - === Чт июн 17, 2021, 22:02:23
+[56] Biber.pm:415> INFO - Reading 'My_thesis.bcf'
+[120] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[120] Biber.pm:952> INFO - Found 10 citekeys in bib section 1
+[120] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[137] Biber.pm:4334> INFO - Processing section 1
+[144] Biber.pm:4523> INFO - Looking for bibtex format file 'my_folder/my_biblio.bib' for section 1
+[144] bibtex.pm:1682> INFO - LaTeX decoding ...
+[153] bibtex.pm:1494> INFO - Found BibTeX data source 'my_folder/my_biblio.bib'
+[203] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[203] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[203] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[203] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[204] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[204] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[204] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[204] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[204] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[204] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[204] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[204] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[205] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[205] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[205] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[205] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[205] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[205] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[205] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[205] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[206] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[206] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[206] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[206] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[206] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[206] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[206] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[206] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[206] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[207] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[207] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[207] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[207] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[207] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[207] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[207] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[207] Utils.pm:395> WARN - Unknown field 'volume' found in sorting template
+[207] Utils.pm:395> WARN - Unknown field 'book' found in sorting template
+[208] Utils.pm:395> WARN - Unknown field 'part' found in sorting template
+[208] Utils.pm:395> WARN - Unknown field 'issue' found in sorting template
+[211] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[211] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[211] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'ru-RU'
+[211] Biber.pm:4168> INFO - No sort tailoring available for locale 'ru-RU'
+[219] bbl.pm:651> INFO - Writing 'My_thesis.bbl' with encoding 'UTF-8'
+[222] bbl.pm:754> INFO - Output to My_thesis.bbl
+[222] Biber.pm:128> INFO - WARNINGS: 40
