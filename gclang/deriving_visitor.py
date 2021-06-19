@@ -96,7 +96,7 @@ class DerivingVisitor(GuardedVisitor):
 
         return {
             ctx.ADD(): lambda x, y: sp.Add(x, y),
-            ctx.SUB(): lambda x, y: sp.Add(left, sp.Mul(-1, right)),
+            ctx.SUB(): lambda x, y: sp.Add(x, sp.Mul(-1, y)),
         }[ctx.getChild(1)](left, right)
 
     def visitMulDiv(self, ctx: GuardedParser.MulDivContext):
@@ -104,8 +104,8 @@ class DerivingVisitor(GuardedVisitor):
             GuardedParser.ExpressionContext)]
 
         return {
-            ctx.ADD(): lambda x, y: sp.Add(x, y),
-            ctx.SUB(): lambda x, y: sp.Mul(left, sp.Pow(right, -1)),
+            ctx.MUL(): lambda x, y: sp.Mul(x, y),
+            ctx.DIV(): lambda x, y: sp.Mul(x, sp.Pow(y, -1)),
         }[ctx.getChild(1)](left, right)
 
     def visitAssignOperator(self, ctx: GuardedParser.AssignOperatorContext):
