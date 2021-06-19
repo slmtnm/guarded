@@ -1,19 +1,29 @@
 from dataclasses import dataclass
+import dataclasses
 from functools import reduce
-from gclang.guarded_exception import GuardedException
-from gclang.macro_visitor import MacroVisitor
-from os import replace
-from .gen.GuardedVisitor import GuardedVisitor
-from .gen.GuardedParser import GuardedParser
+from gclang.gen.GuardedVisitor import GuardedVisitor
+
 import sympy as sp
+
+from gclang.guarded_exception import GuardedException
+
+from .gen.GuardedParser import GuardedParser
 
 
 def compose(*fns):
     return reduce(lambda f, g: lambda x: f(g(x)), fns, lambda x: x)
 
 
-class DerivingVisitor(MacroVisitor):
+@dataclasses.dataclass
+class Function:
+    parameters: list[str]
+    body: GuardedParser.OperatorListContext
+
+
+class DerivingVisitor(GuardedVisitor):
     def __init__(self):
+        self._functions = {}
+        self._replacement_stack = []
         self._predicate_stack = []
 
         self._depth = 1
@@ -26,7 +36,10 @@ class DerivingVisitor(MacroVisitor):
         return sp.false
 
     def visitIdentifier(self, ctx: GuardedParser.IdentifierContext):
-        return sp.Symbol(ctx.getText())
+        identifier = sp.Symbol(ctx.getText())
+        if self._replacement_stack and identifier in self._replacement_stack[-1]:
+            return self._replacement_stack[-1][identifier]
+        return identifier
 
     def visitNumber(self, ctx: GuardedParser.NumberContext):
         return sp.Number(ctx.getText())
@@ -170,6 +183,9 @@ class DerivingVisitor(MacroVisitor):
             self.visitOperator(operator)
 
     def visitStart(self, ctx: GuardedParser.StartContext):
+        for function_definition in ctx.getTypedRuleContexts(GuardedParser.FunctionDefinitionContext):
+            self.visit(function_definition)
+
         post_condition_ctx = ctx.getChild(0, GuardedParser.ConditionContext)
         if post_condition_ctx == None:
             raise GuardedException(ctx.start.line, 'Post-condition not found')
@@ -192,3 +208,23 @@ class DerivingVisitor(MacroVisitor):
 
     def visitInitialAssignments(self, ctx: GuardedParser.InitialAssignmentsContext):
         pass
+
+    def visitFunctionDefinition(self, ctx: GuardedParser.FunctionDefinitionContext):
+        function_name = ctx.getChild(0).getText()
+        function_params = ctx.getChild(0, GuardedParser.FormalParametersContext)
+
+        params = map(compose(sp.Symbol, str), function_params.getTokens(GuardedParser.ID))
+        body  = ctx.getChild(0, GuardedParser.OperatorListContext)
+
+        self._functions[function_name] = Function(list(params), body)
+
+    def visitFunctionCall(self, ctx: GuardedParser.FunctionCallContext):
+        function_name = ctx.getToken(GuardedParser.ID, 0).getText()
+        params_ctx = ctx.getChild(0, GuardedParser.ActualParametersContext)
+        function = self._functions[function_name]
+        params = [self.visit(node) for node in params_ctx.getTypedRuleContexts(
+            GuardedParser.ExpressionContext)]
+
+        self._replacement_stack.append(dict(zip(function.parameters, params)))
+        self.visitOperatorList(function.body)
+        self._replacement_stack.pop()

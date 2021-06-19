@@ -1,14 +1,21 @@
-from gclang.guarded_exception import GuardedException
+import dataclasses
+from gclang.gen.GuardedVisitor import GuardedVisitor
 from random import choice
 
+from gclang.guarded_exception import GuardedException
+
 from .gen.GuardedParser import GuardedParser
-from .macro_visitor import MacroVisitor
 
+@dataclasses.dataclass
+class Function:
+    parameters: list[str]
+    body: GuardedParser.OperatorListContext
 
-class ExecutingVisitor(MacroVisitor):
+class ExecutingVisitor(GuardedVisitor):
     def __init__(self):
-        super(ExecutingVisitor, self).__init__()
-        self.vars = {}  # name -> value mapping of all variables
+        self._functions = {}
+        self._replacement_stack = []
+        self._vars = {}
 
     def visitNumber(self, ctx: GuardedParser.NumberContext):
         return float(ctx.getText())
@@ -16,11 +23,11 @@ class ExecutingVisitor(MacroVisitor):
     def visitIdentifier(self, ctx: GuardedParser.IdentifierContext):
         identifier = ctx.getText()
 
-        if identifier in self.vars:
-            return self.vars[identifier]
+        if identifier in self._vars:
+            return self._vars[identifier]
 
-        if self.replacementStack:
-            replacement = self.replacementStack[-1]
+        if self._replacement_stack:
+            replacement = self._replacement_stack[-1]
             if identifier in replacement:
                 return replacement[identifier]
 
@@ -93,7 +100,7 @@ class ExecutingVisitor(MacroVisitor):
         var_names = map(str, ctx.getTokens(GuardedParser.ID))
         var_values = [self.visit(node) for node in ctx.getTypedRuleContexts(
             GuardedParser.ExpressionContext)]
-        self.vars |= dict(zip(var_names, var_values))
+        self._vars |= dict(zip(var_names, var_values))
 
     def visitExprFnCall(self, ctx: GuardedParser.ExprFnCallContext):
         raise GuardedException(ctx.start.line, "Macro function call in expression")
@@ -135,23 +142,32 @@ class ExecutingVisitor(MacroVisitor):
         for function_definition in ctx.getTypedRuleContexts(GuardedParser.FunctionDefinitionContext):
             self.visit(function_definition)
         self.visitChildren(ctx)
-        return self.vars
+        return self._vars
 
     def visitFunctionCall(self, ctx: GuardedParser.FunctionCallContext):
         function_name = ctx.getToken(GuardedParser.ID, 0).getText()
         params_ctx = ctx.getChild(0, GuardedParser.ActualParametersContext)
-        function = self.functions[function_name]
+        function = self._functions[function_name]
 
         params = [self.visit(node) for node in params_ctx.getTypedRuleContexts(
             GuardedParser.ExpressionContext)]
 
         replacement = dict(zip(function.parameters, params))
-        self.replacementStack.append(replacement)
-        old_vars = self.vars
-        self.vars = {}
+        self._replacement_stack.append(replacement)
+        old_vars = self._vars
+        self._vars = {}
         self.visitOperatorList(function.body)
-        self.vars = old_vars | self.vars
-        self.replacementStack.pop()
+        self._vars = old_vars | self._vars
+        self._replacement_stack.pop()
 
     def visitCondition(self, ctx: GuardedParser.ConditionContext):
         pass
+
+    def visitFunctionDefinition(self, ctx: GuardedParser.FunctionDefinitionContext):
+        function_name = ctx.getChild(0).getText()
+        function_params = ctx.getChild(0, GuardedParser.FormalParametersContext)
+
+        params = map(str, function_params.getTokens(GuardedParser.ID))
+        body  = ctx.getChild(0, GuardedParser.OperatorListContext)
+
+        self._functions[function_name] = Function(list(params), body)
