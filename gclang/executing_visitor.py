@@ -1,3 +1,4 @@
+from gclang.guarded_exception import GuardedException
 from random import choice
 
 from .gen.GuardedParser import GuardedParser
@@ -23,7 +24,7 @@ class ExecutingVisitor(MacroVisitor):
             if identifier in replacement:
                 return replacement[identifier]
 
-        raise AssertionError("Undefined identifier " + identifier)
+        raise GuardedException(ctx.start.line, "Undefined identifier " + identifier)
 
     def visitTrue(self, ctx: GuardedParser.TrueContext):
         return True
@@ -95,7 +96,7 @@ class ExecutingVisitor(MacroVisitor):
         self.vars |= dict(zip(var_names, var_values))
 
     def visitExprFnCall(self, ctx: GuardedParser.ExprFnCallContext):
-        raise Exception("Macro function call in expression")
+        raise GuardedException(ctx.start.line, "Macro function call in expression")
 
     def visitCommand(self, ctx: GuardedParser.CommandContext):
         fuse = self.visit(ctx.getChild(0, GuardedParser.ExpressionContext))
@@ -118,7 +119,7 @@ class ExecutingVisitor(MacroVisitor):
     def visitIfOperator(self, ctx: GuardedParser.IfOperatorContext):
         body = self.visit(ctx.getChild(0, GuardedParser.CommandListContext))
         if not body:
-            raise Exception("No truthy guarded command in if..fi operator")
+            raise GuardedException(ctx.start.line, "No truthy guarded command in if..fi operator")
         else:
             self.visitOperatorList(body)
 

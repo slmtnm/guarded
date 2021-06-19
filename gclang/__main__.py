@@ -22,8 +22,11 @@ def cli(ctx, file):
 @cli.command(help='Run program and print final state')
 @click.pass_context
 def run(ctx):
-    for k, v in ExecutingVisitor().visit(ctx.obj).items():
-        print(f'{k} = {v}')
+    try:
+        for k, v in ExecutingVisitor().visit(ctx.obj).items():
+            print(f'{k} = {v}')
+    except Exception as e:
+        print(e)
 
 
 @cli.command(help='Derive initial state from specified final state')

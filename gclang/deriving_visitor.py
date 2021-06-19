@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 from functools import reduce
+from gclang.guarded_exception import GuardedException
+from gclang.macro_visitor import MacroVisitor
 from os import replace
 from .gen.GuardedVisitor import GuardedVisitor
 from .gen.GuardedParser import GuardedParser
@@ -10,7 +12,7 @@ def compose(*fns):
     return reduce(lambda f, g: lambda x: f(g(x)), fns, lambda x: x)
 
 
-class DerivingVisitor(GuardedVisitor):
+class DerivingVisitor(MacroVisitor):
     def __init__(self):
         self._predicate_stack = []
 
@@ -141,7 +143,8 @@ class DerivingVisitor(GuardedVisitor):
 
     def visitDoOperator(self, ctx: GuardedParser.DoOperatorContext):
         condition = ctx.getChild(0, GuardedParser.ConditionContext)
-        assert condition != None, "do..od operator without invariant in deriving mode"
+        if condition == None:
+            raise GuardedException(ctx.start.line, "do..od operator without invariant in deriving mode")
 
         invariant = self.visitCondition(condition)
         old_predicate = self._predicate_stack.pop()
@@ -168,7 +171,8 @@ class DerivingVisitor(GuardedVisitor):
 
     def visitStart(self, ctx: GuardedParser.StartContext):
         post_condition_ctx = ctx.getChild(0, GuardedParser.ConditionContext)
-        assert post_condition_ctx != None, 'Post-condition not found'
+        if post_condition_ctx == None:
+            raise GuardedException(ctx.start.line, 'Post-condition not found')
 
         post_condition = self.visitCondition(post_condition_ctx)
         self._predicate_stack.append(post_condition)
