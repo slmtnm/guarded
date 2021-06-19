@@ -6,6 +6,7 @@ from .translate.latex_visitor import LatexVisitor
 from .translate.python_visitor import PythonVisitor
 from .gen.GuardedLexer import GuardedLexer
 from .gen.GuardedParser import GuardedParser
+import sys
 
 from antlr4 import CommonTokenStream, FileStream
 
@@ -26,7 +27,8 @@ def run(ctx):
         for k, v in ExecutingVisitor().visit(ctx.obj).items():
             print(f'{k} = {v}')
     except Exception as e:
-        print(e)
+        sys.stderr.write(str(e))
+        exit(1)
 
 
 @cli.command(help='Derive initial state from specified final state')

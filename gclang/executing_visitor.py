@@ -171,3 +171,6 @@ class ExecutingVisitor(GuardedVisitor):
         body  = ctx.getChild(0, GuardedParser.OperatorListContext)
 
         self._functions[function_name] = Function(list(params), body)
+
+    def visitBrackets(self, ctx: GuardedParser.BracketsContext):
+        return self.visit(ctx.getTypedRuleContext(GuardedParser.ExpressionContext, 0))

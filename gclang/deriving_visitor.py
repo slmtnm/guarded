@@ -13,7 +13,6 @@ from .gen.GuardedParser import GuardedParser
 def compose(*fns):
     return reduce(lambda f, g: lambda x: f(g(x)), fns, lambda x: x)
 
-
 @dataclasses.dataclass
 class Function:
     parameters: list[str]
@@ -228,3 +227,6 @@ class DerivingVisitor(GuardedVisitor):
         self._replacement_stack.append(dict(zip(function.parameters, params)))
         self.visitOperatorList(function.body)
         self._replacement_stack.pop()
+
+    def visitBrackets(self, ctx: GuardedParser.BracketsContext):
+        return self.visit(ctx.getTypedRuleContext(GuardedParser.ExpressionContext, 0))
