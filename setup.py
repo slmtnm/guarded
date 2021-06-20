@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setup(
     name="gclang",
-    version='0.0.2',
+    version='0.0.3',
     author="Makar Solomatin",
     description="Guarded command language interpreter",
     long_description=long_description,

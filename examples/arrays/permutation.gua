@@ -1,7 +1,7 @@
 [c := [1| 1, 4, 6, 2, 9, 5, 8, 7, 3]]
 nextpermutation(c); print c
 
-# This program find next permutation of input vector c
+# This program finds next permutation of input vector c
 # in lexicographical order
 nextpermutation(c) {
     local i := c.upb - 1; do c[i] >= c[i + 1] -> i := i - 1 od;
