@@ -8,8 +8,8 @@ do q1 > q2 -> q1, q2 := q2, q1
 od
 
 {
-  isPermutation(q1, q2, q3, q4, Q1, Q2, Q3, Q4) == true &
-  q1 <= q2 &
-  q2 <= q3 &
+  isPermutation(q1, q2, q3, q4, Q1, Q2, Q3, Q4) == true &&
+  q1 <= q2 &&
+  q2 <= q3 &&
   q3 <= q4
 }

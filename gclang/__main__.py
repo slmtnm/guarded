@@ -1,7 +1,7 @@
 import click
 
-from .deriving_visitor import DerivingVisitor
-from .executing_visitor import ExecutingVisitor
+from .deriving.visitor import Visitor as DerivingVisitor
+from .executing.visitor import Visitor as ExecutingVisitor
 from .translate.latex_visitor import LatexVisitor
 from .translate.python_visitor import PythonVisitor
 from .gen.GuardedLexer import GuardedLexer
@@ -23,12 +23,8 @@ def cli(ctx, file):
 @cli.command(help='Run program and print final state')
 @click.pass_context
 def run(ctx):
-    try:
-        for k, v in ExecutingVisitor().visit(ctx.obj).items():
-            print(f'{k} = {v}')
-    except Exception as e:
-        sys.stderr.write(str(e))
-        exit(1)
+    for k, v in ExecutingVisitor().visit(ctx.obj).items():
+        print(f'{k} = {v}')
 
 
 @cli.command(help='Derive initial state from specified final state')

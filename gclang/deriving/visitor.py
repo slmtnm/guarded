@@ -7,7 +7,7 @@ import sympy as sp
 
 from gclang.guarded_exception import GuardedException
 
-from .gen.GuardedParser import GuardedParser
+from ..gen.GuardedParser import GuardedParser
 
 
 def compose(*fns):
@@ -19,7 +19,7 @@ class Function:
     body: GuardedParser.OperatorListContext
 
 
-class DerivingVisitor(GuardedVisitor):
+class Visitor(GuardedVisitor):
     def __init__(self):
         self._functions = {}
         self._replacement_stack = []

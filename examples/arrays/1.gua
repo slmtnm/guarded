@@ -1,0 +1,5 @@
+macro(1, 2)
+
+macro(x, y) {
+    array := [x, y]
+}

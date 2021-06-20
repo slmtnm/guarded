@@ -1,21 +1,28 @@
 import dataclasses
+from gclang.executing.array import ArrayVisitor
 from gclang.gen.GuardedVisitor import GuardedVisitor
 from random import choice
 
 from gclang.guarded_exception import GuardedException
 
-from .gen.GuardedParser import GuardedParser
+from ..gen.GuardedParser import GuardedParser
 
 @dataclasses.dataclass
 class Function:
     parameters: list[str]
     body: GuardedParser.OperatorListContext
 
-class ExecutingVisitor(GuardedVisitor):
+class Visitor(ArrayVisitor):
     def __init__(self):
         self._functions = {}
         self._replacement_stack = []
         self._vars = {}
+
+    def _set_var(self, var_name: str, var_value: object):
+        self._vars[var_name] = var_value
+
+    def _get_var(self, var_name: str):
+        return self._vars[var_name]
 
     def visitNumber(self, ctx: GuardedParser.NumberContext):
         return float(ctx.getText())

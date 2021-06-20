@@ -29,20 +29,22 @@ if
         fi |
     a != 0 ->
         d := b * b - 4 * a * c;
-        
+
         root1re := b * -1 / 2 / a;
         root2re := b * -1 / 2 / a;
         root1im := 0;
         root2im := 0;
         rootNum := 2;
 
-        if 
+        if
             d >= 0 -> dSign := d |
             d < 0  -> dSign := -d
         fi;
 
         newtonCnt := 20;
         sqrtd := 10;
+
+        {True}
         do
             newtonCnt != 0 ->
                 sqrtd := 1 / 2 * sqrtd + dSign / 2 / sqrtd;
@@ -50,9 +52,9 @@ if
         od;
 
         sqrtdDiv2a := sqrtd / 2 / a;
-              
+
         if
-            d > 0 -> 
+            d > 0 ->
                 root1re := root1re - sqrtdDiv2a;
                 root2re := root2re + sqrtdDiv2a |
             d < 0 ->
@@ -63,3 +65,4 @@ if
         fi
 fi
 
+{True}
