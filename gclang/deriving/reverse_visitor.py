@@ -38,7 +38,7 @@ class ReverseVisitor(GuardedVisitor):
     def visitIdentifier(self, ctx: GuardedParser.IdentifierContext):
         identifier = sp.Symbol(ctx.getText())
         if self._replace and self._replacement_stack and identifier in self._replacement_stack[-1]:
-            return self._replacement_stack[-1][identifier]
+            return sp.Symbol('local ' + str(self._replacement_stack[-1][identifier]))
         return identifier
 
     def visitNumber(self, ctx: GuardedParser.NumberContext):
@@ -108,12 +108,19 @@ class ReverseVisitor(GuardedVisitor):
         }[ctx.getChild(1)](left, right)
 
     def visitAssignOperator(self, ctx: GuardedParser.AssignOperatorContext):
-        var_names = list(map(compose(sp.Symbol, str), ctx.getTokens(GuardedParser.ID)))
+        var_names = list(map(str, ctx.getTokens(GuardedParser.ID)))
         var_values = [self.visit(node) for node in ctx.getTypedRuleContexts(
             GuardedParser.ExpressionContext)]
         old_condition = self._predicate_stack.pop()
 
-        new_condition = old_condition.xreplace(dict(zip(var_names, var_values)))
+        if ctx.getTokens(GuardedParser.LOCAL_VARIABLE):
+            local_vars = map(compose(sp.Symbol, lambda v: 'local ' + v), var_names)
+            new_condition = old_condition.xreplace(dict(zip(local_vars, var_values)))
+        else:
+            vars, local_vars = map(sp.Symbol, var_names), map(compose(sp.Symbol, lambda v: 'local ' + v), var_names)
+            new_condition = old_condition.xreplace(
+                dict(zip(local_vars, var_values)) | dict(zip(vars, var_values))
+            )
 
         print('    ' * self._depth +
               f'{old_condition} --[assign {list(var_names)}:={var_values}]--> {new_condition}')
