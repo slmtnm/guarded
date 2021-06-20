@@ -5,5 +5,5 @@ from gclang.gen.GuardedLexer import GuardedLexer
 from gclang.gen.GuardedParser import GuardedParser
 from antlr4 import CommonTokenStream, FileStream
 
-tree = GuardedParser(CommonTokenStream(GuardedLexer(FileStream('examples/arrays/1.gua')))).start()
+tree = GuardedParser(CommonTokenStream(GuardedLexer(FileStream('examples/arrays/permutation.gua')))).start()
 ExecutingVisitor().visit(tree)

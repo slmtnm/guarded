@@ -1,0 +1,5 @@
+B(x) := x < 10;
+    
+i := 0;
+do B(i) -> i := i + 1 od;
+print i

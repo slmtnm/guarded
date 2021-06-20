@@ -1,0 +1,12 @@
+[
+    c := [1| 1, 4, 6, 2, 9, 5, 8, 7, 3]
+]
+
+# This program find next permutation of input vector c
+# in lexicographical order
+
+i := c.upb - 1; do c[i] >= c[i + 1] -> i := i - 1 od;
+j := c.upb; do c[j] <= c[i] -> j := j - 1 od;
+c:swap(i, j);
+i := i + 1; j := c.upb;
+do i < j -> c:swap(i, j); i, j := i + 1, j - 1 od

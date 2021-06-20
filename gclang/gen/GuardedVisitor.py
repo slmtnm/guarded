@@ -54,11 +54,6 @@ class GuardedVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GuardedParser#ExprFnCall.
-    def visitExprFnCall(self, ctx:GuardedParser.ExprFnCallContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by GuardedParser#ExprArrayElement.
     def visitExprArrayElement(self, ctx:GuardedParser.ExprArrayElementContext):
         return self.visitChildren(ctx)
@@ -91,6 +86,11 @@ class GuardedVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by GuardedParser#Equiv.
     def visitEquiv(self, ctx:GuardedParser.EquivContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#ExprMacroCall.
+    def visitExprMacroCall(self, ctx:GuardedParser.ExprMacroCallContext):
         return self.visitChildren(ctx)
 
 
@@ -134,6 +134,21 @@ class GuardedVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by GuardedParser#skipOperator.
+    def visitSkipOperator(self, ctx:GuardedParser.SkipOperatorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#abortOperator.
+    def visitAbortOperator(self, ctx:GuardedParser.AbortOperatorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#printOperator.
+    def visitPrintOperator(self, ctx:GuardedParser.PrintOperatorContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by GuardedParser#assignOperator.
     def visitAssignOperator(self, ctx:GuardedParser.AssignOperatorContext):
         return self.visitChildren(ctx)
@@ -164,13 +179,18 @@ class GuardedVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GuardedParser#functionCall.
-    def visitFunctionCall(self, ctx:GuardedParser.FunctionCallContext):
+    # Visit a parse tree produced by GuardedParser#macroCall.
+    def visitMacroCall(self, ctx:GuardedParser.MacroCallContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GuardedParser#functionDefinition.
-    def visitFunctionDefinition(self, ctx:GuardedParser.FunctionDefinitionContext):
+    # Visit a parse tree produced by GuardedParser#macroOperatorDefinition.
+    def visitMacroOperatorDefinition(self, ctx:GuardedParser.MacroOperatorDefinitionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GuardedParser#macroExpressionDefinition.
+    def visitMacroExpressionDefinition(self, ctx:GuardedParser.MacroExpressionDefinitionContext):
         return self.visitChildren(ctx)
 
 

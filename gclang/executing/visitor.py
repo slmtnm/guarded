@@ -1,4 +1,6 @@
 import dataclasses
+from gclang.gen.GuardedLexer import GuardedLexer
+from gclang.executing.macro import MacroVisitor
 from gclang.executing.array import ArrayVisitor
 from gclang.gen.GuardedVisitor import GuardedVisitor
 from random import choice
@@ -12,17 +14,36 @@ class Function:
     parameters: list[str]
     body: GuardedParser.OperatorListContext
 
-class Visitor(ArrayVisitor):
+class Visitor(ArrayVisitor, MacroVisitor):
     def __init__(self):
+        super(ArrayVisitor, self).__init__()
+        super(MacroVisitor, self).__init__()
+
         self._functions = {}
-        self._replacement_stack = []
         self._vars = {}
 
-    def _set_var(self, var_name: str, var_value: object):
-        self._vars[var_name] = var_value
+    def _get_var(self, var_name):
+        if var_name in self._vars:
+            return self._vars[var_name]
+        elif var_name in self._replacement_stack[-1]:
+            return self._replacement_stack[-1][var_name]
+        return None
 
-    def _get_var(self, var_name: str):
-        return self._vars[var_name]
+    def _get_vars(self):
+        return self._vars
+
+    def _set_vars(self, vars):
+        self._vars = vars
+
+    def visitSkipOperator(self, ctx: GuardedParser.SkipOperatorContext):
+        pass
+
+    def visitAbortOperator(self, ctx: GuardedParser.AbortOperatorContext):
+        raise GuardedException(ctx.start.line, 'Abort operator')
+
+    def visitPrintOperator(self, ctx: GuardedParser.PrintOperatorContext):
+        value = self.visit(ctx.getChild(0, GuardedParser.ExpressionContext))
+        print(value)
 
     def visitNumber(self, ctx: GuardedParser.NumberContext):
         return float(ctx.getText())
@@ -109,9 +130,6 @@ class Visitor(ArrayVisitor):
             GuardedParser.ExpressionContext)]
         self._vars |= dict(zip(var_names, var_values))
 
-    def visitExprFnCall(self, ctx: GuardedParser.ExprFnCallContext):
-        raise GuardedException(ctx.start.line, "Macro function call in expression")
-
     def visitCommand(self, ctx: GuardedParser.CommandContext):
         fuse = self.visit(ctx.getChild(0, GuardedParser.ExpressionContext))
         command = ctx.getChild(0, GuardedParser.OperatorListContext)
@@ -146,12 +164,15 @@ class Visitor(ArrayVisitor):
             self.visitOperatorList(body)
 
     def visitStart(self, ctx: GuardedParser.StartContext):
-        for function_definition in ctx.getTypedRuleContexts(GuardedParser.FunctionDefinitionContext):
+        if ctx.getChildCount() == 1 and isinstance(ctx.getChild(0), GuardedParser.ExpressionContext):
+            return {'ans': self.visit(ctx.getChild(0))}
+
+        for function_definition in ctx.getTypedRuleContexts(GuardedParser.MacroOperatorDefinitionContext):
             self.visit(function_definition)
         self.visitChildren(ctx)
         return self._vars
 
-    def visitFunctionCall(self, ctx: GuardedParser.FunctionCallContext):
+    def visitMacroCall(self, ctx: GuardedParser.MacroCallContext):
         function_name = ctx.getToken(GuardedParser.ID, 0).getText()
         params_ctx = ctx.getChild(0, GuardedParser.ActualParametersContext)
         function = self._functions[function_name]
@@ -170,7 +191,7 @@ class Visitor(ArrayVisitor):
     def visitCondition(self, ctx: GuardedParser.ConditionContext):
         pass
 
-    def visitFunctionDefinition(self, ctx: GuardedParser.FunctionDefinitionContext):
+    def visitMacroOperatorDefinition(self, ctx: GuardedParser.MacroOperatorDefinitionContext):
         function_name = ctx.getChild(0).getText()
         function_params = ctx.getChild(0, GuardedParser.FormalParametersContext)
 

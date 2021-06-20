@@ -64,11 +64,10 @@ class Visitor(GuardedVisitor):
             GuardedParser.ExpressionContext)]
         return sp.Or(sp.Not(left), right)
 
-    def visitExprFnCall(self, ctx: GuardedParser.ExprFnCallContext):
-        fncall_ctx = ctx.getChild(0)
-        function_name = fncall_ctx.getToken(GuardedParser.ID, 0).getText()
+    def visitExprMacroCall(self, ctx: GuardedParser.ExprMacroCallContext):
+        function_name = ctx.getToken(GuardedParser.ID, 0).getText()
 
-        parameters_ctx = fncall_ctx.getChild(
+        parameters_ctx = ctx.getChild(
             0, GuardedParser.ActualParametersContext)
         parameters = [self.visit(node) for node in parameters_ctx.getTypedRuleContexts(
             GuardedParser.ExpressionContext
@@ -182,7 +181,7 @@ class Visitor(GuardedVisitor):
             self.visitOperator(operator)
 
     def visitStart(self, ctx: GuardedParser.StartContext):
-        for function_definition in ctx.getTypedRuleContexts(GuardedParser.FunctionDefinitionContext):
+        for function_definition in ctx.getTypedRuleContexts(GuardedParser.MacroOperatorDefinitionContext):
             self.visit(function_definition)
 
         post_condition_ctx = ctx.getChild(0, GuardedParser.ConditionContext)
@@ -208,7 +207,7 @@ class Visitor(GuardedVisitor):
     def visitInitialAssignments(self, ctx: GuardedParser.InitialAssignmentsContext):
         pass
 
-    def visitFunctionDefinition(self, ctx: GuardedParser.FunctionDefinitionContext):
+    def visitMacroOperatorDefinition(self, ctx: GuardedParser.MacroOperatorDefinitionContext):
         function_name = ctx.getChild(0).getText()
         function_params = ctx.getChild(0, GuardedParser.FormalParametersContext)
 
@@ -217,7 +216,7 @@ class Visitor(GuardedVisitor):
 
         self._functions[function_name] = Function(list(params), body)
 
-    def visitFunctionCall(self, ctx: GuardedParser.FunctionCallContext):
+    def visitMacroCall(self, ctx: GuardedParser.MacroCallContext):
         function_name = ctx.getToken(GuardedParser.ID, 0).getText()
         params_ctx = ctx.getChild(0, GuardedParser.ActualParametersContext)
         function = self._functions[function_name]

@@ -89,15 +89,6 @@ class GuardedListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GuardedParser#ExprFnCall.
-    def enterExprFnCall(self, ctx:GuardedParser.ExprFnCallContext):
-        pass
-
-    # Exit a parse tree produced by GuardedParser#ExprFnCall.
-    def exitExprFnCall(self, ctx:GuardedParser.ExprFnCallContext):
-        pass
-
-
     # Enter a parse tree produced by GuardedParser#ExprArrayElement.
     def enterExprArrayElement(self, ctx:GuardedParser.ExprArrayElementContext):
         pass
@@ -158,6 +149,15 @@ class GuardedListener(ParseTreeListener):
 
     # Exit a parse tree produced by GuardedParser#Equiv.
     def exitEquiv(self, ctx:GuardedParser.EquivContext):
+        pass
+
+
+    # Enter a parse tree produced by GuardedParser#ExprMacroCall.
+    def enterExprMacroCall(self, ctx:GuardedParser.ExprMacroCallContext):
+        pass
+
+    # Exit a parse tree produced by GuardedParser#ExprMacroCall.
+    def exitExprMacroCall(self, ctx:GuardedParser.ExprMacroCallContext):
         pass
 
 
@@ -233,6 +233,33 @@ class GuardedListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GuardedParser#skipOperator.
+    def enterSkipOperator(self, ctx:GuardedParser.SkipOperatorContext):
+        pass
+
+    # Exit a parse tree produced by GuardedParser#skipOperator.
+    def exitSkipOperator(self, ctx:GuardedParser.SkipOperatorContext):
+        pass
+
+
+    # Enter a parse tree produced by GuardedParser#abortOperator.
+    def enterAbortOperator(self, ctx:GuardedParser.AbortOperatorContext):
+        pass
+
+    # Exit a parse tree produced by GuardedParser#abortOperator.
+    def exitAbortOperator(self, ctx:GuardedParser.AbortOperatorContext):
+        pass
+
+
+    # Enter a parse tree produced by GuardedParser#printOperator.
+    def enterPrintOperator(self, ctx:GuardedParser.PrintOperatorContext):
+        pass
+
+    # Exit a parse tree produced by GuardedParser#printOperator.
+    def exitPrintOperator(self, ctx:GuardedParser.PrintOperatorContext):
+        pass
+
+
     # Enter a parse tree produced by GuardedParser#assignOperator.
     def enterAssignOperator(self, ctx:GuardedParser.AssignOperatorContext):
         pass
@@ -287,21 +314,30 @@ class GuardedListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GuardedParser#functionCall.
-    def enterFunctionCall(self, ctx:GuardedParser.FunctionCallContext):
+    # Enter a parse tree produced by GuardedParser#macroCall.
+    def enterMacroCall(self, ctx:GuardedParser.MacroCallContext):
         pass
 
-    # Exit a parse tree produced by GuardedParser#functionCall.
-    def exitFunctionCall(self, ctx:GuardedParser.FunctionCallContext):
+    # Exit a parse tree produced by GuardedParser#macroCall.
+    def exitMacroCall(self, ctx:GuardedParser.MacroCallContext):
         pass
 
 
-    # Enter a parse tree produced by GuardedParser#functionDefinition.
-    def enterFunctionDefinition(self, ctx:GuardedParser.FunctionDefinitionContext):
+    # Enter a parse tree produced by GuardedParser#macroOperatorDefinition.
+    def enterMacroOperatorDefinition(self, ctx:GuardedParser.MacroOperatorDefinitionContext):
         pass
 
-    # Exit a parse tree produced by GuardedParser#functionDefinition.
-    def exitFunctionDefinition(self, ctx:GuardedParser.FunctionDefinitionContext):
+    # Exit a parse tree produced by GuardedParser#macroOperatorDefinition.
+    def exitMacroOperatorDefinition(self, ctx:GuardedParser.MacroOperatorDefinitionContext):
+        pass
+
+
+    # Enter a parse tree produced by GuardedParser#macroExpressionDefinition.
+    def enterMacroExpressionDefinition(self, ctx:GuardedParser.MacroExpressionDefinitionContext):
+        pass
+
+    # Exit a parse tree produced by GuardedParser#macroExpressionDefinition.
+    def exitMacroExpressionDefinition(self, ctx:GuardedParser.MacroExpressionDefinitionContext):
         pass
 
 

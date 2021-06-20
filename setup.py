@@ -17,7 +17,7 @@ setup(
         'Click',
         'sympy==1.7.1',
         'click==7.1.2',
-        'antlr4-python3-runtime==4.9.1'
+        'antlr4-python3-runtime==4.7.2'
     ],
     entry_points='''
         [console_scripts]

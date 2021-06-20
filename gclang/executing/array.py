@@ -6,7 +6,7 @@ from dataclasses import dataclass
 @dataclass
 class Array:
     lower_bound: int
-    data:        list[object]
+    data: list[object]
 
     def __len__(self):
         return len(self.data)
@@ -17,6 +17,18 @@ class Array:
     def __setitem__(self, i, v):
         self.data[i - self.lower_bound] = v
 
+    def __repr__(self) -> str:
+        result = f'[{self.lower_bound}| '
+        if len(self.data) == 0:
+            result += ']'
+        elif len(self.data) == 1:
+            result += f'{self.data[0]}]'
+        else:
+            for d in range(len(self.data) - 1):
+                result += f'{d}, '
+            result += f'{self.data[-1]}]'
+        return result
+
     @property
     def upper_bound(self) -> int:
         return self.lower_bound + len(self.data) - 1
@@ -25,10 +37,16 @@ class ArrayVisitor(GuardedVisitor):
     def __init__(self) -> None:
         super().__init__()
 
+    def _get_vars(self):
+        pass
+
+    def _get_var(self, var_name):
+        pass
+
     def visitArrayLiteral(self, ctx: GuardedParser.ArrayLiteralContext):
         all = [self.visit(node) for node in ctx.getTypedRuleContexts(GuardedParser.ExpressionContext)]
 
-        if ctx.getToken(0, GuardedParser.LOWER_BOUND_DELIMITER):
+        if ctx.getTokens(GuardedParser.LOWER_BOUND_DELIMITER):
             lower_bound, *data = all
         else:
             lower_bound = 0
@@ -111,22 +129,17 @@ class ArrayVisitor(GuardedVisitor):
         value = self.visit(ctx.getChild(0, GuardedParser.ExpressionContext))
         array.data.insert(0, value)
 
-    def _set_var(self, var_name: str, var_value: object):
-        pass
-    def _get_var(self, var_name: str):
-        pass
-
     def visitArrayPopUp(self, ctx: GuardedParser.ArrayPopUpContext):
         var_name, array_name = map(str, ctx.getTokens(GuardedParser.ID))
         array = self._get_var(array_name)
         assert isinstance(array, Array) and len(array) > 0
-        self._set_var(var_name, array.data.pop())
+        self._get_vars()[var_name] = array.data.pop()
 
     def visitArrayPopDown(self, ctx: GuardedParser.ArrayPopDownContext):
         var_name, array_name = map(str, ctx.getTokens(GuardedParser.ID))
         array = self._get_var(array_name)
         assert isinstance(array, Array) and len(array) > 0
-        self._set_var(var_name, array.data.pop(0))
+        self._get_vars()[var_name] = array.data.pop(0)
 
     def visitArraySwap(self, ctx: GuardedParser.ArraySwapContext):
         array = self._get_var(ctx.getToken(GuardedParser.ID, 0).getText())

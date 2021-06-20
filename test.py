@@ -9,7 +9,7 @@ def test_run():
     for root, dir, files in os.walk('./examples'):
         for example in files:
             path = root + '/' + example
-            process = subprocess.run(f'python -m gclang {path} run'.split(),
+            process = subprocess.run(f'python -m gclang run {path}'.split(),
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE)
             if process.stderr or process.returncode != 0:
@@ -20,7 +20,7 @@ def test_derive():
     for root, dir, files in os.walk('./examples'):
         for example in files:
             path = root + '/' + example
-            process = subprocess.run(f'python -m gclang {path} derive'.split(),
+            process = subprocess.run(f'python -m gclang derive {path}'.split(),
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE)
             if process.stderr or process.returncode != 0:

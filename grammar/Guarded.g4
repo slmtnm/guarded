@@ -25,7 +25,7 @@ EQUIV: '<=>';
 LOWER_BOUND_DELIMITER: '|';
 
 expression
-    : functionCall                                           # ExprFnCall
+    : ID '(' actualParameters ')'                            # ExprMacroCall
     | SUB expression                                         # UnarySub
     | NEG expression                                         # Negate
     | '(' expression ')'                                     # Brackets
@@ -49,16 +49,22 @@ expression
     | arrayUpperElement                                      # ExprArrayUpperElement
     ;
 
-// Program is an operator or multiple operators
-start : initialAssignments? operatorList condition? functionDefinition* EOF;
-operatorList: operator (SEP operator)*;
+// Program is an operator or multiple operators (or expression for repl)
+start
+    : expression
+    | initialAssignments? operatorList condition? macroOperatorDefinition* EOF
+    ;
+operatorList: (operator (SEP operator)*)?;
 
 // Operators
 operator
-    : assignOperator
+    : skipOperator
+    | abortOperator
+    | assignOperator
+    | macroExpressionDefinition
     | ifOperator
     | doOperator
-    | functionCall
+    | macroCall
     | arraySet
     | arraySwap
     | arrayPopUp
@@ -68,7 +74,12 @@ operator
     | arrayPushUp
     | arrayPushDown
     | arrayShift
+    | printOperator
     ;
+
+skipOperator: 'skip';
+abortOperator: 'abort';
+printOperator: 'print' expression;
 
 // assign operator
 assignOperator: ID (',' ID)* ':=' expression (',' expression)*;
@@ -81,9 +92,10 @@ ifOperator: 'if' commandList 'fi';
 doOperator: condition? 'do' commandList 'od';
 condition: '{' expression '}';
 
-// macro-functions
-functionCall: ID '(' actualParameters ')';
-functionDefinition: ID '(' formalParameters ')' '{' operatorList '}';
+// macro operators
+macroCall: ID '(' actualParameters ')';
+macroOperatorDefinition: ID '(' formalParameters ')' '{' operatorList '}';
+macroExpressionDefinition: ID '(' formalParameters ')' ':=' expression;
 
 formalParameters: (ID (',' ID)* )?;
 actualParameters: (expression (',' expression)* )?;
