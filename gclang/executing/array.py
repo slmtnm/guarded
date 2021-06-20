@@ -24,8 +24,8 @@ class Array:
         elif len(self.data) == 1:
             result += f'{self.data[0]}]'
         else:
-            for d in range(len(self.data) - 1):
-                result += f'{d}, '
+            for i in range(len(self.data) - 1):
+                result += f'{self.data[i]}, '
             result += f'{self.data[-1]}]'
         return result
 

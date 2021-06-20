@@ -128,7 +128,13 @@ class Visitor(ArrayVisitor, MacroVisitor):
         var_names = map(str, ctx.getTokens(GuardedParser.ID))
         var_values = [self.visit(node) for node in ctx.getTypedRuleContexts(
             GuardedParser.ExpressionContext)]
-        self._vars |= dict(zip(var_names, var_values))
+
+        if ctx.getTokens(GuardedParser.LOCAL_VARIABLE):
+            if not self._replacement_stack:
+                raise GuardedException(line=ctx.start.line, message='Private variable outside any function')
+            self._replacement_stack[-1] |= dict(zip(var_names, var_values))
+        else:
+            self._vars |= dict(zip(var_names, var_values))
 
     def visitCommand(self, ctx: GuardedParser.CommandContext):
         fuse = self.visit(ctx.getChild(0, GuardedParser.ExpressionContext))

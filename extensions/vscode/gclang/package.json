@@ -1,0 +1,26 @@
+{
+    "name": "gclang",
+    "publisher": "MakarSolomatin",
+    "displayName": "gclang",
+    "description": "Guarded Command Language support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "gclang",
+            "aliases": ["Guarded Command Language", "gclang"],
+            "extensions": [".gua",".gcl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gclang",
+            "scopeName": "source.gclang",
+            "path": "./syntaxes/gclang.tmLanguage.json"
+        }]
+    }
+}

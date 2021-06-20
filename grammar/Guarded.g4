@@ -6,6 +6,7 @@ WHITESPACE: [ \r\n\t]+ -> skip;
 NUMBER : [0-9]+('.'[0-9]*)?;
 TRUE: 'True';
 FALSE: 'False';
+LOCAL_VARIABLE: 'local';
 ID : [a-zA-Z_][0-9a-zA-Z_]*;
 MUL: '*';
 DIV: '/';
@@ -23,6 +24,7 @@ NEG: '~';
 IMPL: '>>';
 EQUIV: '<=>';
 LOWER_BOUND_DELIMITER: '|';
+
 
 expression
     : ID '(' actualParameters ')'                            # ExprMacroCall
@@ -82,7 +84,7 @@ abortOperator: 'abort';
 printOperator: 'print' expression;
 
 // assign operator
-assignOperator: ID (',' ID)* ':=' expression (',' expression)*;
+assignOperator: (LOCAL_VARIABLE)? ID (',' ID)* ':=' expression (',' expression)*;
 
 // Guarded comm ands
 commandList: command ('|' command)*;

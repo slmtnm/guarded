@@ -19,7 +19,7 @@ class Function:
     body: GuardedParser.OperatorListContext
 
 
-class Visitor(GuardedVisitor):
+class ReverseVisitor(GuardedVisitor):
     def __init__(self):
         self._functions = {}
         self._replacement_stack = []

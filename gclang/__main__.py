@@ -1,7 +1,7 @@
 from gclang.guarded_exception import GuardedException
 import click
 
-from .deriving.visitor import Visitor as DerivingVisitor
+from .deriving.reverse_visitor import ReverseVisitor as DerivingVisitor
 from .executing.visitor import Visitor as ExecutingVisitor
 from .translate.latex_visitor import LatexVisitor
 from .translate.python_visitor import PythonVisitor
