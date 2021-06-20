@@ -8,6 +8,6 @@ nextpermutation(c) {
     local j := c.upb; do c[j] <= c[i] -> j := j - 1 od;
 
     c:swap(i, j);
-    i := i + 1; j := c.upb;
+    i, j := i + 1, c.upb;
     do i < j -> c:swap(i, j); i, j := i + 1, j - 1 od
 }

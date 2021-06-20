@@ -27,6 +27,7 @@ class ReverseVisitor(GuardedVisitor):
 
         self._depth = 1
         self._claims = []
+        self._replace = True
 
     def visitTrue(self, ctx):
         return sp.true
@@ -36,7 +37,7 @@ class ReverseVisitor(GuardedVisitor):
 
     def visitIdentifier(self, ctx: GuardedParser.IdentifierContext):
         identifier = sp.Symbol(ctx.getText())
-        if self._replacement_stack and identifier in self._replacement_stack[-1]:
+        if self._replace and self._replacement_stack and identifier in self._replacement_stack[-1]:
             return self._replacement_stack[-1][identifier]
         return identifier
 
@@ -220,8 +221,11 @@ class ReverseVisitor(GuardedVisitor):
         function_name = ctx.getToken(GuardedParser.ID, 0).getText()
         params_ctx = ctx.getChild(0, GuardedParser.ActualParametersContext)
         function = self._functions[function_name]
+
+        self._replace = False
         params = [self.visit(node) for node in params_ctx.getTypedRuleContexts(
             GuardedParser.ExpressionContext)]
+        self._replace = True
 
         self._replacement_stack.append(dict(zip(function.parameters, params)))
         self.visitOperatorList(function.body)
