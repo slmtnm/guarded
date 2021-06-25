@@ -1,18 +1,19 @@
-from gclang.guarded_exception import GuardedException
+import sys
+
 import click
+from antlr4 import CommonTokenStream, FileStream, InputStream
+
+from gclang.guarded_exception import GuardedException
 
 from .deriving.reverse_visitor import ReverseVisitor as DerivingVisitor
 from .executing.visitor import Visitor as ExecutingVisitor
-from .translate.latex_visitor import LatexVisitor
-from .translate.python_visitor import PythonVisitor
 from .gen.GuardedLexer import GuardedLexer
 from .gen.GuardedParser import GuardedParser
-import sys
+from .translate.latex_visitor import LatexVisitor
+from .translate.python_visitor import PythonVisitor
 
-from click_repl import register_repl
-
-from antlr4 import CommonTokenStream, FileStream, InputStream
-
+def build_tree(file):
+    return GuardedParser(CommonTokenStream(GuardedLexer(FileStream(file)))).start()
 
 @click.group(help='Guarded command language interpreter')
 @click.version_option(prog_name='guarded')
@@ -26,8 +27,7 @@ def cli(ctx):
 @click.option('--verbose', '-v', is_flag=True, help='Print result state')
 def run(ctx, file, verbose):
     try:
-        tree = GuardedParser(CommonTokenStream(GuardedLexer(FileStream(file)))).start()
-        result = ExecutingVisitor().visit(tree)
+        result = ExecutingVisitor().visit(build_tree(file))
         if verbose:
             print('Final state:')
             for k, v in result.items():
@@ -41,8 +41,7 @@ def run(ctx, file, verbose):
 @click.argument('file')
 @click.pass_context
 def derive(ctx, file):
-    tree = GuardedParser(CommonTokenStream(GuardedLexer(FileStream(file)))).start()
-    DerivingVisitor().visit(tree)
+    DerivingVisitor().visit(build_tree(file))
 
 
 @cli.group(help='Translate guarded program to other language')
@@ -51,21 +50,23 @@ def translate():
 
 
 @translate.command()
+@click.argument('file')
 @click.pass_context
-def latex(ctx):
-    print(LatexVisitor().visit(ctx.obj))
+def latex(ctx, file):
+    print(LatexVisitor().visit(build_tree(file)))
 
 
 @translate.command()
+@click.argument('file')
 @click.pass_context
-def python(ctx):
+def python(ctx, file):
     PythonVisitor().visit(ctx.obj)
 
 @cli.command(name='repl', help='REPL for guarded command language')
 def repl():
     visitor = ExecutingVisitor()
     while True:
-        line = input('> ')
+        line = input('>>> ')
         try:
             tree = GuardedParser(CommonTokenStream(GuardedLexer(InputStream(line)))).start()
             result = visitor.visit(tree)

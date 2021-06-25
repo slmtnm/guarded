@@ -181,7 +181,7 @@ class ReverseVisitor(GuardedVisitor):
         )
 
         claim_predicate = sp.Implies(
-            R.simplify(), old_predicate).simplify()
+            R.simplify(), old_predicate)
         self._claims.append(str(claim_predicate))
 
     def visitOperatorList(self, ctx: GuardedParser.OperatorListContext):
